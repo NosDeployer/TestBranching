@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="UnitsOfMeasurementAssociationsToolTDS" targetNamespace="http://tempuri.org/UnitsOfMeasurementAssociationsToolTDS.xsd" xmlns:mstns="http://tempuri.org/UnitsOfMeasurementAssociationsToolTDS.xsd" xmlns="http://tempuri.org/UnitsOfMeasurementAssociationsToolTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LFSDB9ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LFSDB9ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.Resources.Properties.Settings.GlobalReference.Default.LFSDB9ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="UnitsOfMeasurementAssociationsToolTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="UnitsOfMeasurementAssociationsToolTDS" msprop:Generator_UserDSName="UnitsOfMeasurementAssociationsToolTDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="AssociatedUnits" msprop:Generator_UserTableName="AssociatedUnits" msprop:Generator_RowDeletedName="AssociatedUnitsRowDeleted" msprop:Generator_TableClassName="AssociatedUnitsDataTable" msprop:Generator_RowChangedName="AssociatedUnitsRowChanged" msprop:Generator_RowClassName="AssociatedUnitsRow" msprop:Generator_RowChangingName="AssociatedUnitsRowChanging" msprop:Generator_RowEvArgName="AssociatedUnitsRowChangeEvent" msprop:Generator_RowEvHandlerName="AssociatedUnitsRowChangeEventHandler" msprop:Generator_TablePropName="AssociatedUnits" msprop:Generator_TableVarName="tableAssociatedUnits" msprop:Generator_RowDeletingName="AssociatedUnitsRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AssociationsID" msprop:Generator_UserColumnName="AssociationsID" msprop:Generator_ColumnPropNameInRow="AssociationsID" msprop:Generator_ColumnVarNameInTable="columnAssociationsID" msprop:Generator_ColumnPropNameInTable="AssociationsIDColumn" type="xs:int" />
+              <xs:element name="UnitOfMeasurementID" msprop:Generator_UserColumnName="UnitOfMeasurementID" msprop:Generator_ColumnPropNameInRow="UnitOfMeasurementID" msprop:Generator_ColumnVarNameInTable="columnUnitOfMeasurementID" msprop:Generator_ColumnPropNameInTable="UnitOfMeasurementIDColumn" type="xs:int" />
+              <xs:element name="Module" msprop:Generator_UserColumnName="Module" msprop:Generator_ColumnPropNameInRow="Module" msprop:Generator_ColumnVarNameInTable="columnModule" msprop:Generator_ColumnPropNameInTable="ModuleColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ByDefault" msprop:Generator_UserColumnName="ByDefault" msprop:Generator_ColumnPropNameInRow="ByDefault" msprop:Generator_ColumnVarNameInTable="columnByDefault" msprop:Generator_ColumnPropNameInTable="ByDefaultColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Selected" msprop:Generator_UserColumnName="Selected" msprop:Generator_ColumnPropNameInRow="Selected" msprop:Generator_ColumnVarNameInTable="columnSelected" msprop:Generator_ColumnPropNameInTable="SelectedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="InDataBase" msprop:Generator_UserColumnName="InDataBase" msprop:Generator_ColumnPropNameInRow="InDataBase" msprop:Generator_ColumnVarNameInTable="columnInDataBase" msprop:Generator_ColumnPropNameInTable="InDataBaseColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AssociatedUnits" />
+      <xs:field xpath="mstns:AssociationsID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

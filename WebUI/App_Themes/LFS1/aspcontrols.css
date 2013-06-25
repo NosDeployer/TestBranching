@@ -1,0 +1,280 @@
+﻿/* Line */
+.Line_Separator_Color
+{
+	background-color: lime;
+}
+
+
+/* Backgrounds */
+
+.Background_Separator
+{
+	background-color: #2f82c7;
+}
+
+.Background_PageTitle
+{
+	background-color: lime;
+}
+
+.Background_NavigatorsNoResults
+{
+	background-color: #ebebeb;
+	vertical-align: middle;
+	font-size: 10px;
+	color: red;
+	font-family: 'Microsoft Sans Serif';
+	height: 25px;
+	padding-left: 2px;
+}
+
+.Background_Views_Add
+{
+	background-image: url(images/views_add.gif); 
+	width: 15px; 
+	height: 16px; 
+	border-width: 0	
+}
+
+.Background_Views_Edit
+{
+	background-image: url(images/views_edit.gif); 
+	width: 15px; 
+	height: 16px; 
+	border-width: 0	
+}
+
+.Background_Views_Delete
+{
+	background-image: url(images/views_delete.gif); 
+	width: 15px; 
+	height: 16px; 
+	border-width: 0	
+}
+
+
+
+
+
+
+
+/* Labels */
+.LabelPageTitle1
+{
+	font-weight: bold;
+	font-size: 18px;
+	color: white;
+	font-family: 'Microsoft Sans Serif';
+	vertical-align: middle;
+}
+
+.LabelPageTitle2
+{
+	font-weight: bold;
+	font-size: 12px;
+	color: white;
+	font-family: 'Microsoft Sans Serif';
+	vertical-align: middle;
+}
+
+.LabelTitle1
+{
+	font-weight: bold;
+	font-size: 14px;
+	color: #2f82c7;
+	font-family: 'Microsoft Sans Serif';
+}
+
+.LabelTitle2
+{
+	font-weight: bold;
+	font-size: 12px;
+	color: #2f82c7;
+	font-family: 'Microsoft Sans Serif';
+}
+
+.Label
+{
+	font-size: 10px;
+	color: #2f82c7;
+	font-family: 'Microsoft Sans Serif';
+	font-weight: bold;
+}
+
+.LabelSmall
+{
+	font-size: 9px;
+	color: #2f82c7;
+	font-family: 'Microsoft Sans Serif';
+	font-weight: bold;
+	text-align: right;
+}
+
+.LabelError
+{
+	font-size: 9px;
+	color: red;
+	font-family: 'Microsoft Sans Serif';
+}
+
+.LabelNoResults
+{
+	font-size: 10px;
+	color: lime;
+	font-family: 'Microsoft Sans Serif';
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+
+
+/* Controls */
+.Control
+{
+	color: #2f82c7;
+	font-family: 'Microsoft Sans Serif';
+	font-size: 10px;
+	background-color: white;
+	border-right: #2f82c7 1px solid;
+	border-top: #2f82c7 1px solid;
+	border-left: #2f82c7 1px solid;
+	border-bottom: #2f82c7 1px solid;
+	padding-right: 1px;
+	padding-left: 1px;
+	font-weight: bold;
+	height: 19px;
+}
+
+
+
+.ControlMemo
+{
+	color: #2f82c7;
+	font-family: 'Microsoft Sans Serif';
+	font-size: 10px;
+	background-color: white;
+	border-right: #2f82c7 1px solid;
+	border-top: #2f82c7 1px solid;
+	border-left: #2f82c7 1px solid;
+	border-bottom: #2f82c7 1px solid;
+	padding-right: 1px;
+	padding-left: 1px;
+	font-weight: bold;
+}
+
+
+
+.ControlReadOnly
+{
+	color: gray;
+	font-family: 'Microsoft Sans Serif';
+	font-size: 10px;
+	background-color: #f3f3f3;
+	border-right: #2f82c7 1px solid;
+	border-top: #2f82c7 1px solid;
+	border-left: #2f82c7 1px solid;
+	border-bottom: #2f82c7 1px solid;
+	padding-right: 1px;
+	padding-left: 1px;
+	font-weight: bold;
+}
+
+.ControlRight
+{
+	color: #2f82c7;
+	font-family: 'Microsoft Sans Serif';
+	font-size: 10px;
+	background-color: white;
+	border-right: #2f82c7 1px solid;
+	border-top: #2f82c7 1px solid;
+	border-left: #2f82c7 1px solid;
+	border-bottom: #2f82c7 1px solid;
+	padding-right: 1px;
+	padding-left: 1px;
+	text-align: right;
+	font-weight: bold;
+}
+
+.ControlRightReadOnly
+{
+	color: gray;
+	font-family: 'Microsoft Sans Serif';
+	font-size: 10px;
+	background-color: #f3f3f3;
+	border-right: #2f82c7 1px solid;
+	border-top: #2f82c7 1px solid;
+	border-left: #2f82c7 1px solid;
+	border-bottom: #2f82c7 1px solid;
+	padding-right: 1px;
+	padding-left: 1px;
+	text-align: right;
+	font-weight: bold;
+}
+
+.ControlSmall
+{
+	color: #2f82c7;
+	font-family: 'Microsoft Sans Serif';
+	font-size: 9px;
+	background-color: white;
+	border-right: #2f82c7 1px solid;
+	border-top: #2f82c7 1px solid;
+	border-left: #2f82c7 1px solid;
+	border-bottom: #2f82c7 1px solid;
+	padding-right: 1px;
+	padding-left: 1px;
+	font-weight: bold;
+}
+
+
+
+/* Buttons */
+.Button
+{
+	font-weight: bold;
+	font-size: 10px;
+	color: #ffffff;
+	font-family: 'Microsoft Sans Serif';
+	background-color: #2f82c7;
+	text-align: center;
+}
+
+.Button:Hover
+{
+	font-weight: bold;
+	font-size: 10px;
+	color: #f7941c;
+	font-family: 'Microsoft Sans Serif';
+	background-color: #2f82c7;
+	text-align: center;
+}
+
+.ButtonPageTitle
+{
+	font-weight: bold;
+	font-size: 10px;
+	color: #2f82b0;
+	font-family: 'Microsoft Sans Serif';
+	background-color: #c8dbed;
+	text-align: center;
+	border-right: white 1px solid;
+	border-top: white 1px solid;
+	border-left: white 1px solid;
+	border-bottom: white 1px solid;
+}
+
+.ButtonPageTitle:Hover
+{
+	color: #f7941c;
+}
+
+
+
+.DropDownLook
+{
+	padding:0px;
+	border-style:solid;
+	border-width:1px;
+}
+
+

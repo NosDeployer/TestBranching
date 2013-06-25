@@ -1,0 +1,129 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{530AB705-0919-4EF4-AC9E-C8FFC3BFB3BD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LiquiForce.LFSLive.DA.Assets</RootNamespace>
+    <AssemblyName>LiquiForce.LFSLive.DA.Assets</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LiquiForce.LFSLive.DA.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.DA.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LiquiForce.LFSLive.Server, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\AssetGateway.cs" />
+    <Compile Include="Assets\AssetSewerGateway.cs" />
+    <Compile Include="Assets\AssetSewerLateralGateway.cs" />
+    <Compile Include="Assets\AssetSewerMaterialGateway.cs" />
+    <Compile Include="Assets\AssetSewerMHGateway.cs" />
+    <Compile Include="Assets\AssetSewerSectionGateway.cs" />
+    <Compile Include="Assets\AssetSewerSectionListGateway.cs" />
+    <Compile Include="Assets\AssetsTDS.cs">
+      <DependentUpon>AssetsTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Assets\AssetsTDS.Designer.cs">
+      <DependentUpon>AssetsTDS.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Assets\AssetSewerMHShapeListGateway.cs" />
+    <Compile Include="Assets\AssetSewerMHLocationListGateway.cs" />
+    <Compile Include="Assets\AssetSewerMHRugsListGateway.cs" />
+    <Compile Include="Assets\AssetSewerMHMaterialTypeListGateway.cs" />
+    <Compile Include="Assets\AssetSewerMHMaterialTypeGateway.cs" />
+    <Compile Include="Assets\AssetSewerMHListGateway.cs" />
+    <Compile Include="Assets\LateralStateListGateway.cs" />
+    <Compile Include="Assets\MaterialInformationGateway.cs" />
+    <Compile Include="Assets\MaterialInformationTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaterialInformationTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\MaterialTypeListGateway.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="app.config" />
+    <None Include="Assets\AssetsTDS.xsc">
+      <DependentUpon>AssetsTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Assets\AssetsTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AssetsTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Assets\AssetsTDS.xss">
+      <DependentUpon>AssetsTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Assets\MaterialInformationTDS.xsc">
+      <DependentUpon>MaterialInformationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Assets\MaterialInformationTDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MaterialInformationTDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Assets\MaterialInformationTDS.xss">
+      <DependentUpon>MaterialInformationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DA.CWP\DA.CWP.csproj">
+      <Project>{946577F7-3264-4C79-B032-7F2DE3831002}</Project>
+      <Name>DA.CWP</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="TDSOverviewReport" targetNamespace="http://tempuri.org/TDSOverviewReport.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/TDSOverviewReport.xsd"
+	xmlns:mstns="http://tempuri.org/TDSOverviewReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="TDSOverviewReport" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="OverviewReport">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:string" />
+							<xs:element name="COMPANY_ID" type="xs:int" />
+							<xs:element name="ClientID" type="xs:string" minOccurs="0" />
+							<xs:element name="SubArea" type="xs:string" minOccurs="0" />
+							<xs:element name="Street" type="xs:string" minOccurs="0" />
+							<xs:element name="USMH" type="xs:string" minOccurs="0" />
+							<xs:element name="DSMH" type="xs:string" minOccurs="0" />
+							<xs:element name="Size_" type="xs:string" minOccurs="0" />
+							<xs:element name="ConfirmedSize" type="xs:int" minOccurs="0" />
+							<xs:element name="ScaledLength" type="xs:string" minOccurs="0" />
+							<xs:element name="ActualLength" type="xs:string" minOccurs="0" />
+							<xs:element name="P1Date" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="CXIsRemoved" type="xs:string" minOccurs="0" />
+							<xs:element name="LiveLats" type="xs:double" minOccurs="0" />
+							<xs:element name="M1Date" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="M2Date" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="InstallDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FinalVideo" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IssueIdentified" type="xs:boolean" minOccurs="0" />
+							<xs:element name="SalesIssue" type="xs:boolean" minOccurs="0" />
+							<xs:element name="LFSIssue" type="xs:boolean" minOccurs="0" />
+							<xs:element name="ClientIssue" type="xs:boolean" minOccurs="0" />
+							<xs:element name="IssueGivenToBayCity" type="xs:boolean" minOccurs="0" />
+							<xs:element name="IssueResolved" type="xs:boolean" minOccurs="0" />
+							<xs:element name="FullLengthLining" type="xs:boolean" minOccurs="0" />
+							<xs:element name="NAME" type="xs:string" minOccurs="0" />
+							<xs:element name="COMPANIES_ID" type="xs:string" minOccurs="0" />
+							<xs:element name="RecordID" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="TDSOverviewReportKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:OverviewReport" />
+			<xs:field xpath="mstns:ID" />
+			<xs:field xpath="mstns:COMPANY_ID" />
+		</xs:unique>
+		<xs:unique name="TDSOverviewReportKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:ReadyForLining" />
+			<xs:field xpath="mstns:ID" />
+			<xs:field xpath="mstns:COMPANY_ID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

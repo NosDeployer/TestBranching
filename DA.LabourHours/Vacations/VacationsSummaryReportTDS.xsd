@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="VacationsSummaryReportTDS" targetNamespace="http://tempuri.org/VacationsSummaryReportTDS.xsd" xmlns:mstns="http://tempuri.org/VacationsSummaryReportTDS.xsd" xmlns="http://tempuri.org/VacationsSummaryReportTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="VacationsSummaryReportTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="VacationsSummaryReportTDS" msprop:Generator_DataSetName="VacationsSummaryReportTDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="EmployeeDetails" msprop:Generator_UserTableName="EmployeeDetails" msprop:Generator_RowDeletedName="EmployeeDetailsRowDeleted" msprop:Generator_RowChangedName="EmployeeDetailsRowChanged" msprop:Generator_RowClassName="EmployeeDetailsRow" msprop:Generator_RowChangingName="EmployeeDetailsRowChanging" msprop:Generator_RowEvArgName="EmployeeDetailsRowChangeEvent" msprop:Generator_RowEvHandlerName="EmployeeDetailsRowChangeEventHandler" msprop:Generator_TableClassName="EmployeeDetailsDataTable" msprop:Generator_TableVarName="tableEmployeeDetails" msprop:Generator_RowDeletingName="EmployeeDetailsRowDeleting" msprop:Generator_TablePropName="EmployeeDetails">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Year" msprop:Generator_UserColumnName="Year" msprop:Generator_ColumnPropNameInRow="Year" msprop:Generator_ColumnVarNameInTable="columnYear" msprop:Generator_ColumnPropNameInTable="YearColumn" type="xs:int" />
+              <xs:element name="EmployeeID" msprop:Generator_UserColumnName="EmployeeID" msprop:Generator_ColumnPropNameInRow="EmployeeID" msprop:Generator_ColumnVarNameInTable="columnEmployeeID" msprop:Generator_ColumnPropNameInTable="EmployeeIDColumn" type="xs:int" />
+              <xs:element name="VacationDays" msprop:Generator_UserColumnName="VacationDays" msprop:Generator_ColumnPropNameInRow="VacationDays" msprop:Generator_ColumnVarNameInTable="columnVacationDays" msprop:Generator_ColumnPropNameInTable="VacationDaysColumn" type="xs:double" />
+              <xs:element name="RemainingPayVacationDays" msprop:Generator_UserColumnName="RemainingPayVacationDays" msprop:Generator_ColumnPropNameInRow="RemainingPayVacationDays" msprop:Generator_ColumnVarNameInTable="columnRemainingPayVacationDays" msprop:Generator_ColumnPropNameInTable="RemainingPayVacationDaysColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalApprovedVacations" msprop:Generator_UserColumnName="TotalApprovedVacations" msprop:Generator_ColumnPropNameInRow="TotalApprovedVacations" msprop:Generator_ColumnVarNameInTable="columnTotalApprovedVacations" msprop:Generator_ColumnPropNameInTable="TotalApprovedVacationsColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="EmployeeName" msprop:Generator_UserColumnName="EmployeeName" msprop:Generator_ColumnPropNameInRow="EmployeeName" msprop:Generator_ColumnVarNameInTable="columnEmployeeName" msprop:Generator_ColumnPropNameInTable="EmployeeNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EmployeeType" msprop:Generator_UserColumnName="EmployeeType" msprop:Generator_ColumnVarNameInTable="columnEmployeeType" msprop:Generator_ColumnPropNameInRow="EmployeeType" msprop:Generator_ColumnPropNameInTable="EmployeeTypeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalVacationDays" msprop:Generator_UserColumnName="TotalVacationDays" msprop:Generator_ColumnVarNameInTable="columnTotalVacationDays" msprop:Generator_ColumnPropNameInRow="TotalVacationDays" msprop:Generator_ColumnPropNameInTable="TotalVacationDaysColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="CarryOverDays" msprop:Generator_UserColumnName="CarryOverDays" msprop:Generator_ColumnVarNameInTable="columnCarryOverDays" msprop:Generator_ColumnPropNameInRow="CarryOverDays" msprop:Generator_ColumnPropNameInTable="CarryOverDaysColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VacationDetails" msprop:Generator_UserTableName="VacationDetails" msprop:Generator_RowDeletedName="VacationDetailsRowDeleted" msprop:Generator_RowChangedName="VacationDetailsRowChanged" msprop:Generator_RowClassName="VacationDetailsRow" msprop:Generator_RowChangingName="VacationDetailsRowChanging" msprop:Generator_RowEvArgName="VacationDetailsRowChangeEvent" msprop:Generator_RowEvHandlerName="VacationDetailsRowChangeEventHandler" msprop:Generator_TableClassName="VacationDetailsDataTable" msprop:Generator_TableVarName="tableVacationDetails" msprop:Generator_RowDeletingName="VacationDetailsRowDeleting" msprop:Generator_TablePropName="VacationDetails">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RequestID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="RequestID" msprop:Generator_ColumnPropNameInRow="RequestID" msprop:Generator_ColumnVarNameInTable="columnRequestID" msprop:Generator_ColumnPropNameInTable="RequestIDColumn" type="xs:int" />
+              <xs:element name="EmployeeID" msprop:Generator_UserColumnName="EmployeeID" msprop:Generator_ColumnPropNameInRow="EmployeeID" msprop:Generator_ColumnVarNameInTable="columnEmployeeID" msprop:Generator_ColumnPropNameInTable="EmployeeIDColumn" type="xs:int" />
+              <xs:element name="StartDate" msprop:Generator_UserColumnName="StartDate" msprop:Generator_ColumnPropNameInRow="StartDate" msprop:Generator_ColumnVarNameInTable="columnStartDate" msprop:Generator_ColumnPropNameInTable="StartDateColumn" type="xs:dateTime" />
+              <xs:element name="EndDate" msprop:Generator_UserColumnName="EndDate" msprop:Generator_ColumnPropNameInRow="EndDate" msprop:Generator_ColumnVarNameInTable="columnEndDate" msprop:Generator_ColumnPropNameInTable="EndDateColumn" type="xs:dateTime" />
+              <xs:element name="State" msprop:Generator_UserColumnName="State" msprop:Generator_ColumnPropNameInRow="State" msprop:Generator_ColumnVarNameInTable="columnState" msprop:Generator_ColumnPropNameInTable="StateColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TotalDays" msprop:Generator_UserColumnName="TotalDays" msprop:Generator_ColumnPropNameInRow="TotalDays" msprop:Generator_ColumnVarNameInTable="columnTotalDays" msprop:Generator_ColumnPropNameInTable="TotalDaysColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalPaidVacationDays" msprop:Generator_UserColumnName="TotalPaidVacationDays" msprop:Generator_ColumnPropNameInRow="TotalPaidVacationDays" msprop:Generator_ColumnVarNameInTable="columnTotalPaidVacationDays" msprop:Generator_ColumnPropNameInTable="TotalPaidVacationDaysColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalNoPaidVacationDays" msprop:Generator_UserColumnName="TotalNoPaidVacationDays" msprop:Generator_ColumnVarNameInTable="columnTotalNoPaidVacationDays" msprop:Generator_ColumnPropNameInRow="TotalNoPaidVacationDays" msprop:Generator_ColumnPropNameInTable="TotalNoPaidVacationDaysColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Details" msprop:Generator_UserColumnName="Details" msprop:Generator_ColumnPropNameInRow="Details" msprop:Generator_ColumnVarNameInTable="columnDetails" msprop:Generator_ColumnPropNameInTable="DetailsColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Comments" msprop:Generator_UserColumnName="Comments" msprop:Generator_ColumnPropNameInRow="Comments" msprop:Generator_ColumnVarNameInTable="columnComments" msprop:Generator_ColumnPropNameInTable="CommentsColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:EmployeeDetails" />
+      <xs:field xpath="mstns:Year" />
+      <xs:field xpath="mstns:EmployeeID" />
+    </xs:unique>
+    <xs:unique name="VacationDetails_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VacationDetails" />
+      <xs:field xpath="mstns:RequestID" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="VacationInformation_EmployeeInformation" msdata:parent="VacationDetails" msdata:child="EmployeeDetails" msdata:parentkey="EmployeeID" msdata:childkey="EmployeeID" msprop:Generator_UserRelationName="VacationInformation_EmployeeInformation" msprop:Generator_RelationVarName="relationVacationInformation_EmployeeInformation" msprop:Generator_UserChildTable="EmployeeDetails" msprop:Generator_UserParentTable="VacationDetails" msprop:Generator_ParentPropName="VacationDetailsRow" msprop:Generator_ChildPropName="GetEmployeeDetailsRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

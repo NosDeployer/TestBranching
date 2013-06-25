@@ -1,0 +1,430 @@
+﻿/* Backgrounds */
+
+.Background_Separator
+{
+	background-color: #797b7d;
+}
+
+.Background_NavigatorsNoResults
+{
+	background-color: #a5c5d8;
+	vertical-align: middle;
+	font-size: 9px;
+	color: red;
+	font-family: 'Verdana';
+	height: 25px;
+	padding-left: 2px;
+}
+
+.Background_Views_Add
+{
+	background-image: url(images/views/add.png); 
+	width: 16px; 
+	height: 16px; 
+	border-width: 0	
+}
+
+.Background_Views_Edit
+{
+	background-image: url(images/views/edit.png); 
+	width: 16px; 
+	height: 16px; 
+	border-width: 0	
+}
+
+.Background_Views_Delete
+{
+	background-image: url(images/views/delete.png); 
+	width: 16px; 
+	height: 16px; 
+	border-width: 0	
+}
+
+
+
+
+
+
+
+/* Labels */
+.LabelPageTitle1
+{
+	font-weight: bold;
+	font-size: 20px;
+	color: #797b7d;
+	font-family: 'Verdana';
+	vertical-align: middle;
+}
+
+.LabelPageTitle2
+{
+	font-size: 12px;
+	color: white;
+	font-family: 'Verdana';
+	vertical-align: middle;
+}
+
+.LabelTitle1
+{
+	font-weight: bold;
+	font-size: 14px;
+	color: #797b7d;
+	font-family: 'Verdana';
+}
+
+.LabelTitle2
+{
+	font-weight: bold;
+	font-size: 12px;
+	color: #797b7d;
+	font-family: 'Verdana';
+}
+
+.Label
+{
+	font-size: 10px;
+	color: #797b7d;
+	font-family: 'Verdana';
+}
+
+.LabelBold
+{
+	font-size: 10px;
+	color: #797b7d;
+	font-family: 'Verdana';
+	font-weight:bold;
+}
+
+.LabelSmall
+{
+	font-size: 9px;
+	color: #797b7d;
+	font-family: 'Verdana';
+	text-align: right;
+}
+
+.LabelError
+{
+	font-size: 9px;
+	color: red;
+	font-family: 'Verdana';
+}
+
+
+
+
+
+
+/* Controls */
+.Control
+{
+	color: #797b7d;
+	font-family: 'Verdana';
+	font-size: 10px;
+	background-color: #f3f3f3;
+	border: solid 1px #7f9db9;
+	/ border: solid 1px #7f9db9;
+	padding-right: 1px;
+	padding-left: 1px;
+	vertical-align: middle;	
+	resize: none;
+}
+
+.ControlBlueText
+{
+	color: #3a94cc;
+	font-family: 'Verdana';
+	font-size: 10px;
+	background-color: #f3f3f3;
+	border: solid 1px #7f9db9;
+	/ border: solid 1px #7f9db9;
+	padding-right: 1px;
+	padding-left: 1px;
+	vertical-align: middle;	
+}
+
+.ControlWithoutBorder
+{
+	color: #797b7d;
+	font-family: 'Verdana';
+	font-size: 9px;
+	background-color: #f3f3f3;
+	border: none;
+	padding-right: 1px;
+	padding-left: 1px;
+	vertical-align: middle;
+}
+
+
+.ControlWithoutBorderReadOnly
+{
+	color: #7f9db9;
+	font-family: 'Verdana';
+	font-size: 9px;
+	background-color: #e2e4e5;
+	border: none;
+	padding-right: 1px;
+	padding-left: 1px;
+	vertical-align: middle;
+}
+
+.ControlMemo
+{
+	color: #797b7d;
+	font-family: 'Verdana';
+	font-size: 10px;
+	background-color: #f3f3f3;
+	border: #7f9db9 1px solid;
+	padding-right: 1px;
+	padding-left: 1px;
+}
+
+.ControlReadOnly
+{
+	color: #7f9db9;
+	font-family: 'Verdana';
+	font-size: 10px;
+	background-color: #e2e4e5;
+	border: #7f9db9 1px solid;
+	padding-right: 1px;
+	padding-left: 1px;
+	vertical-align: middle;
+	resize: none;
+}
+
+.ControlRight
+{
+	color: #797b7d;
+	font-family: 'Verdana';
+	font-size: 10px;
+	background-color: #f3f3f3;
+	border: #7f9db9 1px solid;
+	padding-right: 1px;
+	padding-left: 1px;
+	text-align: right;
+	vertical-align: middle;
+}
+
+.ControlRightReadOnly
+{
+	color: #7f9db9;
+	font-family: 'Verdana';
+	font-size: 10px;
+	background-color: #e2e4e5;
+	border: #7f9db9 1px solid;
+	padding-right: 1px;
+	padding-left: 1px;
+	text-align: right;
+	vertical-align: middle;
+}
+
+.ControlSmall
+{
+	color: #797b7d;
+	font-family: 'Verdana';
+	font-size: 9px;
+	background-color: #f3f3f3;
+	border: #7f9db9 1px solid;
+	padding-right: 1px;
+	padding-left: 1px;
+	vertical-align: middle;
+}
+
+.ControlSmallReadOnly
+{
+	color: #7f9db9;
+	font-family: 'Verdana';
+	font-size: 9px;
+	background-color: #e2e4e5;
+	border: #7f9db9 1px solid;
+	padding-right: 1px;
+	padding-left: 1px;
+	vertical-align: middle;
+}
+
+.ControlSpecialWhite
+{
+	background-color: #3a94cc;
+	font-family: 'Verdana';
+	font-size: 10px;
+	color: white;
+	border: #7f9db9 1px solid;
+	padding-right: 1px;
+	padding-left: 1px;
+	vertical-align: middle;
+}
+
+
+
+
+
+/* Buttons */
+.Button
+{
+	font-size: 10px;
+	color: #ffffff;
+	font-family: 'Verdana';
+	background-color: #3a94cc;
+	text-align: center;
+	border: #3a94cc 1px solid;
+}
+
+.Button:Hover
+{
+	color: #3a94cc;
+	background-color: #dfe7ec;
+	border: #dfe7ec 1px solid;
+}
+
+
+.ButtonSmallText
+{
+	font-size: 9px;
+	color: #ffffff;
+	font-family: 'Verdana';
+	background-color: #3a94cc;
+	text-align: center;
+	border: #3a94cc 1px solid;
+	white-space: normal;
+}
+
+.ButtonSmallText:Hover
+{
+	color: #3a94cc;
+	background-color: #dfe7ec;
+	border: #dfe7ec 1px solid;
+	white-space: normal;	
+}
+
+.ButtonRedText
+{
+	font-size: 10px;
+	color: red;
+	font-family: 'Verdana';
+	background-color: #3a94cc;
+	text-align: center;
+	border: #3a94cc 1px solid;
+}
+
+.ButtonRedText:Hover
+{
+	color: red;
+	background-color: #dfe7ec;
+	border: #dfe7ec 1px solid;
+}
+
+.ButtonPageTitle
+{
+	font-size: 10px;
+	color: #3a94cc;
+	font-family: 'Verdana';
+	background-color: #dfe7ec;
+	text-align: center;
+	border: white 2px solid;
+}
+
+.ButtonPageTitle:Hover
+{
+	color: white;
+}
+
+
+
+/* SpecialPanelFLWetOut */
+.FLWetOutPanel
+{
+	color: #7f9db9;
+	font-family: 'Verdana';
+	font-size: 10px;
+	background-image: url(./../../App_Themes/LFS2/images/wetOutImageForFl.jpg);
+	background-repeat:no-repeat;
+	border: none;	
+	padding-right: 1px;
+	padding-left: 1px;
+	vertical-align: middle;	
+	border: #7f9db9 1px solid;
+	
+}
+
+
+
+/* SpecialPanelFLInversion */
+.FLInversionPanel
+{
+	color: #7f9db9;
+	font-family: 'Verdana';
+	font-size: 10px;
+	background-image: url(./../../App_Themes/LFS2/images/inversionImageForFl.jpg);
+	background-repeat:no-repeat;
+	border: none;	
+	padding-right: 1px;
+	padding-left: 1px;
+	vertical-align: middle;	
+	border: #7f9db9 1px solid;
+	
+}
+
+
+
+/* SpecialPanelMrRoundShape */
+.MrRoundShapePanel
+{
+	color: #7f9db9;
+	font-family: 'Verdana';
+	font-size: 10px;
+	background-image: url(./../../App_Themes/LFS2/images/mrRoundShape.jpg);
+	background-repeat:no-repeat;
+	border: none;	
+	padding-right: 1px;
+	padding-left: 1px;
+	vertical-align: middle;	
+	border: #7f9db9 1px solid;
+	
+}
+
+
+
+/* SpecialPanelMrRectangularShape */
+.MrRectangularShapePanel
+{
+	color: #7f9db9;
+	font-family: 'Verdana';
+	font-size: 10px;
+	background-image: url(./../../App_Themes/LFS2/images/mrRectangularShape.jpg);
+	background-repeat:no-repeat;
+	border: none;	
+	padding-right: 1px;
+	padding-left: 1px;
+	vertical-align: middle;	
+	border: #7f9db9 1px solid;
+	
+}
+
+
+
+/* SpecialPanelMrMixedShape */
+.MrMixedShapePanel
+{
+	color: #7f9db9;
+	font-family: 'Verdana';
+	font-size: 10px;
+	background-image: url(./../../App_Themes/LFS2/images/mrMixedShape.jpg);
+	background-repeat:no-repeat;
+	border: none;	
+	padding-right: 1px;
+	padding-left: 1px;
+	vertical-align: middle;	
+	border: #7f9db9 1px solid;
+	
+}
+
+
+
+/* hint images */
+img.helpHint
+{
+    border-style: none; 
+    border-color: #DFE7EC; 
+    width: 10px; 
+    height: 10px;
+}

@@ -1,0 +1,150 @@
+<%-- Labels --%>
+
+<asp:Label SkinId="LabelPageTitle1" runat="server" CssClass="LabelPageTitle1"></asp:Label>
+<asp:Label SkinId="LabelPageTitle2" runat="server" CssClass="LabelPageTitle2"></asp:Label>
+
+<asp:Label SkinId="LabelTitle1" runat="server" CssClass="LabelTitle1"></asp:Label>
+<asp:Label SkinId="LabelTitle2" runat="server" CssClass="LabelTitle2"></asp:Label>
+
+<asp:Label SkinId="Label" runat="server" CssClass="Label"></asp:Label>
+<asp:Label SkinId="LabelBold" runat="server" CssClass="LabelBold"></asp:Label>
+<asp:Label SkinId="LabelSmall" runat="server" CssClass="LabelSmall"></asp:Label>
+<asp:Label SkinId="LabelError" runat="server" CssClass="LabelError"></asp:Label>
+<asp:Label SkinId="LabelNoResults" runat="server" CssClass="LabelNoResults"></asp:Label>
+
+
+
+<%-- CheckBoxes --%>
+<asp:CheckBox SkinId="CheckBox" runat="server" CssClass="Label"/>
+<asp:CheckBox SkinId="CheckBoxSmall" runat="server" CssClass="LabelSmall"/>
+
+
+
+<%-- RadioButtons --%>
+<asp:RadioButton SkinId="RadioButton" runat="server" CssClass="Label"/>
+<asp:RadioButton SkinId="RadioButtonSmall" runat="server" CssClass="LabelSmall"/>
+
+
+
+<%-- DropDownLists --%>
+<asp:DropDownList SkinId="DropDownList" runat="server" CssClass="Control"></asp:DropDownList>
+<asp:DropDownList SkinId="DropDownListLookup" runat="server" CssClass="Control"></asp:DropDownList>
+<asp:DropDownList SkinId="DropDownListLookupBlueText" runat="server" CssClass="ControlBlueText"></asp:DropDownList>
+
+
+
+<%-- TextBoxes --%>
+<asp:TextBox SkinId="TextBox" runat="server" CssClass="Control"></asp:TextBox>
+<asp:TextBox SkinId="TextBoxBlueText" runat="server" CssClass="ControlBlueText"></asp:TextBox>
+<asp:TextBox SkinId="TextBoxMemo" runat="server" CssClass="ControlMemo"></asp:TextBox>
+<asp:TextBox SkinId="TextBoxReadOnly" runat="server" CssClass="ControlReadOnly"></asp:TextBox>
+<asp:TextBox SkinId="TextBoxRight" runat="server" CssClass="ControlRight"></asp:TextBox>
+<asp:TextBox SkinId="TextBoxRightReadOnly" runat="server" CssClass="ControlRightReadOnly"></asp:TextBox>
+<asp:TextBox SkinId="TextBoxSmall" runat="server" CssClass="ControlSmall"></asp:TextBox>
+<asp:TextBox SkinId="TextBoxSmallReadOnly" runat="server" CssClass="ControlSmallReadOnly"></asp:TextBox>
+<asp:TextBox SkinId="TextBoxSpecialWhite" runat="server" CssClass="ControlSpecialWhite"></asp:TextBox>
+
+
+
+<%-- ListBoxes --%>
+<asp:ListBox SkinId="ListBox" runat="server" CssClass="Control"></asp:ListBox>
+
+<%-- CheckBoxLists --%>
+<asp:CheckBoxList SkinId="CheckBoxList" runat="server" CssClass="Control"></asp:CheckBoxList>
+<asp:CheckBoxList SkinId="CheckBoxListReadOnly" runat="server" CssClass="ControlReadOnly"></asp:CheckBoxList>
+<asp:CheckBoxList SkinId="CheckBoxListWithoutBorder" runat="server" CssClass="ControlWithoutBorder"></asp:CheckBoxList>
+<asp:CheckBoxList SkinId="CheckBoxListWithoutBorderReadOnly" runat="server" CssClass="ControlWithoutBorderReadOnly"></asp:CheckBoxList>
+
+
+
+<%-- Buttons --%>
+<asp:Button SkinId="Button" runat="server" CssClass="Button"/>
+<asp:Button SkinId="ButtonSmallText" runat="server" CssClass="ButtonSmallText"/>
+<asp:Button SkinId="ButtonRedText" runat="server" CssClass="ButtonRedText"/>
+<asp:Button SkinId="ButtonPageTitle" runat="server" CssClass="ButtonPageTitle"/>
+<asp:Button SkinId="ViewAddButton" runat="server" CssClass="Background_Views_Add"/>
+<asp:Button SkinId="ViewEditButton" runat="server" CssClass="Background_Views_Edit"/>
+<asp:Button SkinId="ViewDeleteButton" runat="server" CssClass="Background_Views_Delete"/>
+
+
+
+<%-- Wizards --%>
+<asp:Wizard SkinID="Wizard" runat="server">
+    <NavigationButtonStyle CssClass="Button" Width="80px" />
+    <StepStyle VerticalAlign="Top" />
+</asp:Wizard>
+
+
+
+<%-- Validators --%>
+<asp:CustomValidator SkinID="Validator" runat="server" CssClass="LabelError"/>
+<asp:RequiredFieldValidator SkinID="Validator" runat="server" CssClass="LabelError"/>
+<asp:CompareValidator SkinID="Validator" runat="server" CssClass="LabelError"/>
+
+
+
+<%-- HyperLinks --%>
+<asp:HyperLink SkinID="HyperLink" runat="server" CssClass="Label"></asp:HyperLink>
+
+
+
+<%-- LinkButton --%>
+<asp:LinkButton SkinID="LinkButton" runat="server" CssClass="Label"></asp:LinkButton>
+
+
+
+<%-- RadioButtonLists--%>
+<asp:RadioButtonList SkinID="RadioButtonList" runat="server" CssClass="Control">
+</asp:RadioButtonList>
+
+
+
+<%-- TreeView --%>
+<asp:TreeView SkinId="TreeView" 
+      RootNodeStyle-ImageUrl="../../Common/images/root.gif"
+      ParentNodeStyle-ImageUrl="../../Common/images/folder.gif"
+      LeafNodeStyle-ImageUrl="../../Common/images/folder.gif"      
+      CollapseImageUrl="../../Common/images/minus.gif"
+      ExpandImageUrl="../../Common/images/plus.gif"
+      NoExpandImageUrl="../../Common/images/blank.gif"
+      NodeStyle-Font-Names="Microsoft Sans Serif" 
+      NodeStyle-Font-Size="11px" 
+      NodeStyle-ForeColor="#2f82c7"
+      NodeStyle-HorizontalPadding="5"
+      RootNodeStyle-Font-Bold="true"
+      SelectedNodeStyle-ForeColor="White"
+      SelectedNodeStyle-BackColor="#2f82c7"
+      HoverNodeStyle-Font-Underline="true"
+      runat="server"
+/>  
+<asp:TreeView SkinId="SimpleTreeView" 
+      NodeStyle-Font-Names="Microsoft Sans Serif" 
+      NodeStyle-Font-Size="11px" 
+      NodeStyle-ForeColor="#2f82c7"
+      NodeStyle-HorizontalPadding="5"
+      RootNodeStyle-Font-Bold="true"
+      SelectedNodeStyle-ForeColor="White"
+      SelectedNodeStyle-BackColor="#2f82c7"
+      HoverNodeStyle-Font-Underline="true"
+      runat="server"
+/>
+
+
+
+<%-- Panel --%>
+<asp:Panel SkinId="Panel" runat="server" CssClass="Control" ScrollBars="Auto"></asp:Panel>
+<asp:Panel SkinId="FLWetOutPanel" runat="server" CssClass="FLWetOutPanel" ScrollBars="Auto"></asp:Panel>
+<asp:Panel SkinId="FLInversionPanel" runat="server" CssClass="FLInversionPanel" ScrollBars="Auto"></asp:Panel>
+
+<asp:Panel SkinId="MrRoundShapePanel" runat="server" CssClass="MrRoundShapePanel" ScrollBars="Auto"></asp:Panel>
+<asp:Panel SkinId="MrRectangularShapePanel" runat="server" CssClass="MrRectangularShapePanel" ScrollBars="Auto"></asp:Panel>
+<asp:Panel SkinId="MrMixedShapePanel" runat="server" CssClass="MrMixedShapePanel" ScrollBars="Auto"></asp:Panel>
+
+<asp:Panel SkinId="PanelReadOnly" runat="server" CssClass="ControlReadOnly" ScrollBars="Auto"></asp:Panel>
+    
+    
+    
+<%-- Images --%>
+<asp:Image SkinId="Ajax_Grey" runat="server" ImageUrl="./../../app_themes/lfs2/images/ajax_grey.gif"></asp:Image> 
+<asp:Image SkinId="Ajax_White" runat="server" ImageUrl="./../../app_themes/lfs2/images/ajax_white.gif"></asp:Image> 
+<asp:Image SkinId="Ajax_Blue" runat="server" ImageUrl="./../../app_themes/lfs2/images/ajax_blue.gif"></asp:Image> 

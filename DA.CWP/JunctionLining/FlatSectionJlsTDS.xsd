@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FlatSectionJlsTDS" targetNamespace="http://tempuri.org/FlatSectionJlsTDS.xsd" xmlns:mstns="http://tempuri.org/FlatSectionJlsTDS.xsd" xmlns="http://tempuri.org/FlatSectionJlsTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LFSDB_ProductionConnectionString1" IsAppSettingsProperty="true" Modifier="Assembly" Name="LFSDB_ProductionConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.CWP.Properties.Settings.GlobalReference.Default.LFSDB_ProductionConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FlatSectionJlsTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="FlatSectionJlsTDS" msprop:Generator_DataSetName="FlatSectionJlsTDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FlatSectionJls" msprop:Generator_UserTableName="FlatSectionJls" msprop:Generator_RowDeletedName="FlatSectionJlsRowDeleted" msprop:Generator_RowChangedName="FlatSectionJlsRowChanged" msprop:Generator_RowClassName="FlatSectionJlsRow" msprop:Generator_RowChangingName="FlatSectionJlsRowChanging" msprop:Generator_RowEvArgName="FlatSectionJlsRowChangeEvent" msprop:Generator_RowEvHandlerName="FlatSectionJlsRowChangeEventHandler" msprop:Generator_TableClassName="FlatSectionJlsDataTable" msprop:Generator_TableVarName="tableFlatSectionJls" msprop:Generator_RowDeletingName="FlatSectionJlsRowDeleting" msprop:Generator_TablePropName="FlatSectionJls">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WorkID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="WorkID" msprop:Generator_ColumnPropNameInRow="WorkID" msprop:Generator_ColumnVarNameInTable="columnWorkID" msprop:Generator_ColumnPropNameInTable="WorkIDColumn" type="xs:int" />
+              <xs:element name="AssetID" msprop:Generator_UserColumnName="AssetID" msprop:Generator_ColumnPropNameInRow="AssetID" msprop:Generator_ColumnVarNameInTable="columnAssetID" msprop:Generator_ColumnPropNameInTable="AssetIDColumn" type="xs:int" />
+              <xs:element name="SectionID" msprop:Generator_UserColumnName="SectionID" msprop:Generator_ColumnPropNameInRow="SectionID" msprop:Generator_ColumnVarNameInTable="columnSectionID" msprop:Generator_ColumnPropNameInTable="SectionIDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Street" msprop:Generator_UserColumnName="Street" msprop:Generator_ColumnPropNameInRow="Street" msprop:Generator_ColumnVarNameInTable="columnStreet" msprop:Generator_ColumnPropNameInTable="StreetColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USMH" msprop:Generator_UserColumnName="USMH" msprop:Generator_ColumnPropNameInRow="USMH" msprop:Generator_ColumnVarNameInTable="columnUSMH" msprop:Generator_ColumnPropNameInTable="USMHColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="USMHID" msprop:Generator_UserColumnName="USMHID" msprop:Generator_ColumnPropNameInRow="USMHID" msprop:Generator_ColumnVarNameInTable="columnUSMHID" msprop:Generator_ColumnPropNameInTable="USMHIDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DSMH" msprop:Generator_UserColumnName="DSMH" msprop:Generator_ColumnPropNameInRow="DSMH" msprop:Generator_ColumnVarNameInTable="columnDSMH" msprop:Generator_ColumnPropNameInTable="DSMHColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DSMHID" msprop:Generator_UserColumnName="DSMHID" msprop:Generator_ColumnPropNameInRow="DSMHID" msprop:Generator_ColumnVarNameInTable="columnDSMHID" msprop:Generator_ColumnPropNameInTable="DSMHIDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Size_" msprop:Generator_UserColumnName="Size_" msprop:Generator_ColumnVarNameInTable="columnSize_" msprop:Generator_ColumnPropNameInRow="Size_" msprop:Generator_ColumnPropNameInTable="Size_Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Length" msprop:Generator_UserColumnName="Length" msprop:Generator_ColumnPropNameInRow="Length" msprop:Generator_ColumnVarNameInTable="columnLength" msprop:Generator_ColumnPropNameInTable="LengthColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SubArea" msprop:Generator_UserColumnName="SubArea" msprop:Generator_ColumnPropNameInRow="SubArea" msprop:Generator_ColumnVarNameInTable="columnSubArea" msprop:Generator_ColumnPropNameInTable="SubAreaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NumLats" msprop:Generator_UserColumnName="NumLats" msprop:Generator_ColumnPropNameInRow="NumLats" msprop:Generator_ColumnVarNameInTable="columnNumLats" msprop:Generator_ColumnPropNameInTable="NumLatsColumn" type="xs:int" />
+              <xs:element name="NotLinedYet" msprop:Generator_UserColumnName="NotLinedYet" msprop:Generator_ColumnPropNameInRow="NotLinedYet" msprop:Generator_ColumnVarNameInTable="columnNotLinedYet" msprop:Generator_ColumnPropNameInTable="NotLinedYetColumn" type="xs:int" />
+              <xs:element name="AllMeasured" msprop:Generator_UserColumnName="AllMeasured" msprop:Generator_ColumnPropNameInRow="AllMeasured" msprop:Generator_ColumnVarNameInTable="columnAllMeasured" msprop:Generator_ColumnPropNameInTable="AllMeasuredColumn" type="xs:boolean" />
+              <xs:element name="IssueWithLaterals" msprop:Generator_UserColumnName="IssueWithLaterals" msprop:Generator_ColumnPropNameInRow="IssueWithLaterals" msprop:Generator_ColumnVarNameInTable="columnIssueWithLaterals" msprop:Generator_ColumnPropNameInTable="IssueWithLateralsColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NotMeasuredYet" msprop:Generator_UserColumnName="NotMeasuredYet" msprop:Generator_ColumnPropNameInRow="NotMeasuredYet" msprop:Generator_ColumnVarNameInTable="columnNotMeasuredYet" msprop:Generator_ColumnPropNameInTable="NotMeasuredYetColumn" type="xs:int" />
+              <xs:element name="NotDeliveredYet" msprop:Generator_UserColumnName="NotDeliveredYet" msprop:Generator_ColumnPropNameInRow="NotDeliveredYet" msprop:Generator_ColumnVarNameInTable="columnNotDeliveredYet" msprop:Generator_ColumnPropNameInTable="NotDeliveredYetColumn" type="xs:int" />
+              <xs:element name="TrafficControl" msprop:Generator_UserColumnName="TrafficControl" msprop:Generator_ColumnPropNameInRow="TrafficControl" msprop:Generator_ColumnVarNameInTable="columnTrafficControl" msprop:Generator_ColumnPropNameInTable="TrafficControlColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TrafficControlDetails" msprop:Generator_UserColumnName="TrafficControlDetails" msprop:Generator_ColumnPropNameInRow="TrafficControlDetails" msprop:Generator_ColumnVarNameInTable="columnTrafficControlDetails" msprop:Generator_ColumnPropNameInTable="TrafficControlDetailsColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StandardBypass" msprop:Generator_UserColumnName="StandardBypass" msprop:Generator_ColumnPropNameInRow="StandardBypass" msprop:Generator_ColumnVarNameInTable="columnStandardBypass" msprop:Generator_ColumnPropNameInTable="StandardBypassColumn" type="xs:boolean" />
+              <xs:element name="StandardBypassComments" msprop:Generator_UserColumnName="StandardBypassComments" msprop:Generator_ColumnPropNameInRow="StandardBypassComments" msprop:Generator_ColumnVarNameInTable="columnStandardBypassComments" msprop:Generator_ColumnPropNameInTable="StandardBypassCommentsColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Selected" msprop:Generator_UserColumnName="Selected" msprop:Generator_ColumnVarNameInTable="columnSelected" msprop:Generator_ColumnPropNameInRow="Selected" msprop:Generator_ColumnPropNameInTable="SelectedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="FlowOrderID" msprop:Generator_UserColumnName="FlowOrderID" msprop:Generator_ColumnPropNameInRow="FlowOrderID" msprop:Generator_ColumnVarNameInTable="columnFlowOrderID" msprop:Generator_ColumnPropNameInTable="FlowOrderIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="OriginalSectionID" msprop:Generator_UserColumnName="OriginalSectionID" msprop:Generator_ColumnVarNameInTable="columnOriginalSectionID" msprop:Generator_ColumnPropNameInRow="OriginalSectionID" msprop:Generator_ColumnPropNameInTable="OriginalSectionIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="AvailableToLine" msprop:Generator_UserColumnName="AvailableToLine" msprop:Generator_ColumnPropNameInRow="AvailableToLine" msprop:Generator_ColumnVarNameInTable="columnAvailableToLine" msprop:Generator_ColumnPropNameInTable="AvailableToLineColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:FlatSectionJls" />
+      <xs:field xpath="mstns:WorkID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

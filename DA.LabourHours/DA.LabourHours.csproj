@@ -1,0 +1,786 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{20E11C1C-31A5-4E1D-9393-8E000FBB12ED}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LiquiForce.LFSLive.DA.LabourHours</RootNamespace>
+    <AssemblyName>LiquiForce.LFSLive.DA.LabourHours</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>http://localhost/LiquiForce.LFSLive.DA.LabourHours/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LiquiForce.LFSLive.DA.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.DA.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LiquiForce.LFSLive.Server, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActualCosts\ActualCostsNavigatorTDS.cs">
+      <DependentUpon>ActualCostsNavigatorTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ActualCosts\ActualCostsReportGeneralGateway.cs" />
+    <Compile Include="ActualCosts\ActualCostsReportSubcontractorCostsGateway.cs" />
+    <Compile Include="ActualCosts\ActualCostsAddTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ActualCostsAddTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ActualCosts\ActualCostsInformationTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ActualCostsInformationTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ActualCosts\ActualCostsNavigatorTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ActualCostsNavigatorTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ActualCosts\ActualCostsNavigatorSubcontractorCostsGateway.cs" />
+    <Compile Include="ActualCosts\ActualCostsReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ActualCostsReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ActualCosts\ActualCostsTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ActualCostsTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ActualCosts\ActualCostsSubcontractorCostsGateway.cs" />
+    <Compile Include="ActualCosts\ActualCostsAddSubcontractorCostsGateway.cs" />
+    <Compile Include="ActualCosts\ActualCostsAddHotelCostsGateway.cs" />
+    <Compile Include="ActualCosts\ActualCostsNavigatorHotelCostsGateway.cs" />
+    <Compile Include="ActualCosts\ActualCostsHotelCostsGateway.cs" />
+    <Compile Include="ActualCosts\ActualCostsAddBondingCompaniesCostsGateway.cs" />
+    <Compile Include="ActualCosts\ActualCostsAddInsuranceCompaniesCostsGateway.cs" />
+    <Compile Include="ActualCosts\ActualCostsBondingCompaniesCostsGateway.cs" />
+    <Compile Include="ActualCosts\ActualCostsInsuranceCompaniesCostsGateway.cs" />
+    <Compile Include="ActualCosts\ActualCostsOtherCostsGateway.cs" />
+    <Compile Include="ActualCosts\ActualCostsCategoryListGateway.cs" />
+    <Compile Include="ActualCosts\ActualCostsInformationSubcontractorBasicInformationGateway.cs" />
+    <Compile Include="ActualCosts\ActualCostsAddOtherCostsGateway.cs" />
+    <Compile Include="ActualCosts\ActualCostsInformationHotelCostsBasicInformationGateway.cs" />
+    <Compile Include="ActualCosts\ActualCostsInformationBondingCostsBasicInformationGateway.cs" />
+    <Compile Include="ActualCosts\ActualCostsInformationInsuranceCostsBasicInformationGateway.cs" />
+    <Compile Include="ActualCosts\ActualCostsInformationOtherCostsBasicInformationGateway.cs" />
+    <Compile Include="ActualCosts\ActualCostsNavigatorBondingCompaniesCostsGateway.cs" />
+    <Compile Include="ActualCosts\ActualCostsNavigatorInsuranceCompaniesCostsGateway.cs" />
+    <Compile Include="ActualCosts\ActualCostsNavigatorOtherCostsGateway.cs" />
+    <Compile Include="ActualCosts\ActualCostsReportHotelCostsGateway.cs" />
+    <Compile Include="ActualCosts\ActualCostsReportInsuranceCostsGateway.cs" />
+    <Compile Include="ActualCosts\ActualCostsReportBondingCostsGateway.cs" />
+    <Compile Include="ActualCosts\ActualCostsReportOtherCostsGateway.cs" />
+    <Compile Include="PayPeriod\PayPeriodGateway.cs" />
+    <Compile Include="ProjectTime\MealsAllowanceGateway.cs" />
+    <Compile Include="ProjectTime\Print3ChartReportGateway.cs" />
+    <Compile Include="ProjectTime\Print3ChartReportTDS.Designer.cs">
+      <DependentUpon>Print3ChartReportTDS.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="ProjectTime\Print3ChartReportTempGateway.cs" />
+    <Compile Include="ProjectTime\PrintEmployeeHoursForRestartWeekGateway.cs" />
+    <Compile Include="ProjectTime\PrintEmployeeHoursForRestartWeekTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintEmployeeHoursForRestartWeekTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectTime\PrintEmployeeLocationTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintEmployeeLocationTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectTime\PrintEmployeLocationGateway.cs" />
+    <Compile Include="ProjectTime\PrintHoursForPayrollPeriodGateway.cs" />
+    <Compile Include="ProjectTime\PrintHoursForPayrollPeriodOriginalGateway.cs" />
+    <Compile Include="ProjectTime\PrintHoursForPayrollPeriodTDS.cs">
+      <DependentUpon>PrintHoursForPayrollPeriodTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProjectTime\PrintHoursForPayrollPeriodTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintHoursForPayrollPeriodTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectTime\PrintHoursForProjectGateway.cs" />
+    <Compile Include="ProjectTime\PrintHoursForProjectOriginalGateway.cs" />
+    <Compile Include="ProjectTime\PrintHoursForProjectTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintHoursForProjectTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectTime\PrintLogsOver15HoursGateway.cs" />
+    <Compile Include="ProjectTime\PrintLogsOver15HoursTDS.cs">
+      <DependentUpon>PrintLogsOver15HoursTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProjectTime\PrintLogsOver15HoursTDS.Designer.cs">
+      <DependentUpon>PrintLogsOver15HoursTDS.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ProjectTime\PrintLogsOver15HoursTowedGateway.cs" />
+    <Compile Include="ProjectTime\PrintLogsOver15HoursUnitGateway.cs" />
+    <Compile Include="ProjectTime\PrintManHoursPerPhaseFLLGateway.cs" />
+    <Compile Include="ProjectTime\PrintManHoursPerPhaseFLLInstallGateway.cs" />
+    <Compile Include="ProjectTime\PrintManHoursPerPhaseFLLPrepMeasureGateway.cs" />
+    <Compile Include="ProjectTime\PrintManHoursPerPhaseFLLReinstatePostVideoGateway.cs" />
+    <Compile Include="ProjectTime\PrintManhoursPerPhaseGateway.cs" />
+    <Compile Include="ProjectTime\PrintManHoursPerPhaseGeneralGateway.cs" />
+    <Compile Include="ProjectTime\PrintManHoursPerPhaseJLInstallGateway.cs" />
+    <Compile Include="ProjectTime\PrintManHoursPerPhaseJLPrepFromMainGateway.cs" />
+    <Compile Include="ProjectTime\PrintManHoursPerPhaseMHGateway.cs" />
+    <Compile Include="ProjectTime\PrintManHoursPerPhaseMHPrepGateway.cs" />
+    <Compile Include="ProjectTime\PrintManHoursPerPhaseMHSprayGateway.cs" />
+    <Compile Include="ProjectTime\PrintManHoursPerPhasePLGateway.cs" />
+    <Compile Include="ProjectTime\PrintManHoursPerPhasePLInstallGateway.cs" />
+    <Compile Include="ProjectTime\PrintManHoursPerPhasePLPrepGateway.cs" />
+    <Compile Include="ProjectTime\PrintManHoursPerPhasePLReinstateGateway.cs" />
+    <Compile Include="ProjectTime\PrintManHoursPerPhaseRAGateway.cs" />
+    <Compile Include="ProjectTime\PrintManHoursPerPhaseRAPreFlushGateway.cs" />
+    <Compile Include="ProjectTime\PrintManHoursPerPhaseRAPreVideoGateway.cs" />
+    <Compile Include="ProjectTime\PrintManhoursPerPhaseTDS.cs">
+      <DependentUpon>PrintManhoursPerPhaseTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProjectTime\PrintManhoursPerPhaseTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintManhoursPerPhaseTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectTime\PrintMealsGateway.cs" />
+    <Compile Include="ProjectTime\PrintMealsOriginalGateway.cs" />
+    <Compile Include="ProjectTime\PrintMealsTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintMealsTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectTime\PrintProjectCostingGateway.cs" />
+    <Compile Include="ProjectTime\PrintProjectCostingTDS.cs">
+      <DependentUpon>PrintProjectCostingTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProjectTime\PrintProjectCostingTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintProjectCostingTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectTime\PrintSummaryCostingSheetByMonthTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintSummaryCostingSheetByMonthTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectTime\PrintUnnapprovedProjectTimesGateway.cs" />
+    <Compile Include="ProjectTime\PrintUnnapprovedProjectTimesTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintUnnapprovedProjectTimesTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectTime\PrintVehicleLocationDaysGateway.cs" />
+    <Compile Include="ProjectTime\PrintVehicleLocationGateway.cs" />
+    <Compile Include="ProjectTime\PrintVehicleLocationTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintVehicleLocationTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectTime\PrintVehicleUsageInUsaGateway.cs" />
+    <Compile Include="ProjectTime\PrintVehicleUsageInUsaTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintVehicleUsageInUsaTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectTime\PrintVehicleUsageInUsaTowedGateway.cs" />
+    <Compile Include="ProjectTime\ProjectTimeApproveGateway.cs" />
+    <Compile Include="ProjectTime\ProjectTimeApproveTDS.cs">
+      <DependentUpon>ProjectTimeApproveTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProjectTime\ProjectTimeApproveTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectTimeApproveTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectTime\ProjectTimeGateway.cs" />
+    <Compile Include="ProjectTime\ProjectTimeJobClassTypeListGateway.cs" />
+    <Compile Include="ProjectTime\ProjectTimeSectionGateway.cs" />
+    <Compile Include="ProjectTime\ProjectTimeSectionTempGateway.cs" />
+    <Compile Include="ProjectTime\ProjectTimeTDS.cs">
+      <DependentUpon>ProjectTimeTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProjectTime\ProjectTimeTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectTimeTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectTime\ProjectTimeTempGateway.cs" />
+    <Compile Include="ProjectTime\ProjectTimeWorkFunctionListGateway.cs" />
+    <Compile Include="ProjectTime\ProjectTimeWorkListGateway.cs" />
+    <Compile Include="ProjectTime\TimesheetMissingReportGateway.cs" />
+    <Compile Include="ProjectTime\TimesheetMissingReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimesheetMissingReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectTime\WorkingDetailsGateway.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="TeamProjectTime\TeamProjectTime2DetailGateway.cs" />
+    <Compile Include="TeamProjectTime\TeamProjectTime2Gateway.cs" />
+    <Compile Include="TeamProjectTime\TeamProjectTime2SectionGateway.cs" />
+    <Compile Include="TeamProjectTime\TeamProjectTime2SectionLateralGateway.cs" />
+    <Compile Include="TeamProjectTime\TeamProjectTime2SectionMHGateway.cs" />
+    <Compile Include="TeamProjectTime\TeamProjectTime2TDS.cs">
+      <DependentUpon>TeamProjectTime2TDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TeamProjectTime\TeamProjectTime2TDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TeamProjectTime2TDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TeamProjectTime\TeamProjectTime2TemplateGateway.cs" />
+    <Compile Include="TeamProjectTime\TeamProjectTimeWorkFunctionConcatGateway.cs" />
+    <Compile Include="Timesheet\TimesheetAllGateway.cs" />
+    <Compile Include="Timesheet\TimesheetAllTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimesheetAllTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Timesheet\TimesheetGateway.cs" />
+    <Compile Include="Timesheet\TimesheetNavigatorGateway.cs" />
+    <Compile Include="Timesheet\TimesheetNavigatorTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimesheetNavigatorTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Timesheet\TimesheetTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimesheetTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Timesheet\TimesheetWaitingGateway.cs" />
+    <Compile Include="Timesheet\TimesheetWaitingTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimesheetWaitingTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vacations\VacationDaysGateway.cs" />
+    <Compile Include="Vacations\VacationsAddBasicInformationGateway.cs" />
+    <Compile Include="Vacations\VacationsAddDaysInformationGateway.cs" />
+    <Compile Include="Vacations\VacationRequestsGateway.cs" />
+    <Compile Include="Vacations\VacationsAddRequestsInformationGateway.cs" />
+    <Compile Include="Vacations\VacationsAddTDS.cs">
+      <DependentUpon>VacationsAddTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Vacations\VacationsAddTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VacationsAddTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vacations\VacationsEmployeeMaxPaidVacationsGateway.cs" />
+    <Compile Include="Vacations\VacationsInformationBasicInformationGateway.cs" />
+    <Compile Include="Vacations\VacationsInformationDaysInformationGateway.cs" />
+    <Compile Include="Vacations\VacationsInformationGateway.cs" />
+    <Compile Include="Vacations\VacationsInformationRequestsInformationGateway.cs" />
+    <Compile Include="Vacations\VacationsInformationTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VacationsInformationTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vacations\VacationsNonWorkingDaysGateway.cs" />
+    <Compile Include="Vacations\VacationsNonWorkingDaysInformationGateway.cs" />
+    <Compile Include="Vacations\VacationsNonWorkingDaysInformationTDS.cs">
+      <DependentUpon>VacationsNonWorkingDaysInformationTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Vacations\VacationsNonWorkingDaysInformationTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VacationsNonWorkingDaysInformationTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vacations\VacationsPaymentTypeListGateway.cs" />
+    <Compile Include="Vacations\VacationsSetupGateway.cs" />
+    <Compile Include="Vacations\VacationsSetupTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VacationsSetupTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vacations\VacationsSummaryReportEmployeeDetailsGateway.cs" />
+    <Compile Include="Vacations\VacationsSummaryReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VacationsSummaryReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vacations\VacationsSummaryReportVacationDetailsGateway.cs" />
+    <Compile Include="Vacations\VacationsTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VacationsTDS.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ActualCosts\ActualCostsAddTDS.xsc">
+      <DependentUpon>ActualCostsAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ActualCosts\ActualCostsAddTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ActualCostsAddTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ActualCosts\ActualCostsAddTDS.xss">
+      <DependentUpon>ActualCostsAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ActualCosts\ActualCostsInformationTDS.xsc">
+      <DependentUpon>ActualCostsInformationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ActualCosts\ActualCostsInformationTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ActualCostsInformationTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ActualCosts\ActualCostsInformationTDS.xss">
+      <DependentUpon>ActualCostsInformationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ActualCosts\ActualCostsNavigatorTDS.xsc">
+      <DependentUpon>ActualCostsNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ActualCosts\ActualCostsNavigatorTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ActualCostsNavigatorTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ActualCosts\ActualCostsNavigatorTDS.xss">
+      <DependentUpon>ActualCostsNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ActualCosts\ActualCostsReportTDS.xsc">
+      <DependentUpon>ActualCostsReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ActualCosts\ActualCostsReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ActualCostsReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ActualCosts\ActualCostsReportTDS.xss">
+      <DependentUpon>ActualCostsReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ActualCosts\ActualCostsTDS.xsc">
+      <DependentUpon>ActualCostsTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ActualCosts\ActualCostsTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ActualCostsTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ActualCosts\ActualCostsTDS.xss">
+      <DependentUpon>ActualCostsTDS.xsd</DependentUpon>
+    </None>
+    <None Include="app.config" />
+    <None Include="ProjectTime\Print3ChartReportTDS.xsc">
+      <DependentUpon>Print3ChartReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectTime\Print3ChartReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Print3ChartReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ProjectTime\Print3ChartReportTDS.xss">
+      <DependentUpon>Print3ChartReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectTime\PrintEmployeeHoursForRestartWeekTDS.xsc">
+      <DependentUpon>PrintEmployeeHoursForRestartWeekTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectTime\PrintEmployeeHoursForRestartWeekTDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PrintEmployeeHoursForRestartWeekTDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjectTime\PrintEmployeeHoursForRestartWeekTDS.xss">
+      <DependentUpon>PrintEmployeeHoursForRestartWeekTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectTime\PrintEmployeeLocationTDS.xsc">
+      <DependentUpon>PrintEmployeeLocationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectTime\PrintEmployeeLocationTDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PrintEmployeeLocationTDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjectTime\PrintEmployeeLocationTDS.xss">
+      <DependentUpon>PrintEmployeeLocationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectTime\PrintHoursForPayrollPeriodTDS.xsc">
+      <DependentUpon>PrintHoursForPayrollPeriodTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectTime\PrintHoursForPayrollPeriodTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PrintHoursForPayrollPeriodTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ProjectTime\PrintHoursForPayrollPeriodTDS.xss">
+      <DependentUpon>PrintHoursForPayrollPeriodTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectTime\PrintHoursForProjectTDS.xsc">
+      <DependentUpon>PrintHoursForProjectTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectTime\PrintHoursForProjectTDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PrintHoursForProjectTDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjectTime\PrintHoursForProjectTDS.xss">
+      <DependentUpon>PrintHoursForProjectTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectTime\PrintLogsOver15HoursTDS.xsc">
+      <DependentUpon>PrintLogsOver15HoursTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectTime\PrintLogsOver15HoursTDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PrintLogsOver15HoursTDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjectTime\PrintLogsOver15HoursTDS.xss">
+      <DependentUpon>PrintLogsOver15HoursTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectTime\PrintManhoursPerPhaseTDS.xsc">
+      <DependentUpon>PrintManhoursPerPhaseTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectTime\PrintManhoursPerPhaseTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PrintManhoursPerPhaseTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ProjectTime\PrintManhoursPerPhaseTDS.xss">
+      <DependentUpon>PrintManhoursPerPhaseTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectTime\PrintMealsTDS.xsc">
+      <DependentUpon>PrintMealsTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectTime\PrintMealsTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PrintMealsTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ProjectTime\PrintMealsTDS.xss">
+      <DependentUpon>PrintMealsTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectTime\PrintProjectCostingTDS.xsc">
+      <DependentUpon>PrintProjectCostingTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectTime\PrintProjectCostingTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PrintProjectCostingTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ProjectTime\PrintProjectCostingTDS.xss">
+      <DependentUpon>PrintProjectCostingTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectTime\PrintSummaryCostingSheetByMonthTDS.xsc">
+      <DependentUpon>PrintSummaryCostingSheetByMonthTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectTime\PrintSummaryCostingSheetByMonthTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PrintSummaryCostingSheetByMonthTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ProjectTime\PrintSummaryCostingSheetByMonthTDS.xss">
+      <DependentUpon>PrintSummaryCostingSheetByMonthTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectTime\PrintUnnapprovedProjectTimesTDS.xsc">
+      <DependentUpon>PrintUnnapprovedProjectTimesTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectTime\PrintUnnapprovedProjectTimesTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PrintUnnapprovedProjectTimesTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ProjectTime\PrintUnnapprovedProjectTimesTDS.xss">
+      <DependentUpon>PrintUnnapprovedProjectTimesTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectTime\PrintVehicleLocationTDS.xsc">
+      <DependentUpon>PrintVehicleLocationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectTime\PrintVehicleLocationTDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PrintVehicleLocationTDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjectTime\PrintVehicleLocationTDS.xss">
+      <DependentUpon>PrintVehicleLocationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectTime\PrintVehicleUsageInUsaTDS.xsc">
+      <DependentUpon>PrintVehicleUsageInUsaTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectTime\PrintVehicleUsageInUsaTDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PrintVehicleUsageInUsaTDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjectTime\PrintVehicleUsageInUsaTDS.xss">
+      <DependentUpon>PrintVehicleUsageInUsaTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectTime\ProjectTimeApproveTDS.xsc">
+      <DependentUpon>ProjectTimeApproveTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectTime\ProjectTimeApproveTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjectTimeApproveTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ProjectTime\ProjectTimeApproveTDS.xss">
+      <DependentUpon>ProjectTimeApproveTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectTime\ProjectTimeTDS.xsc">
+      <DependentUpon>ProjectTimeTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectTime\ProjectTimeTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjectTimeTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ProjectTime\ProjectTimeTDS.xss">
+      <DependentUpon>ProjectTimeTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectTime\TimesheetMissingReportTDS.xsc">
+      <DependentUpon>TimesheetMissingReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectTime\TimesheetMissingReportTDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimesheetMissingReportTDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjectTime\TimesheetMissingReportTDS.xss">
+      <DependentUpon>TimesheetMissingReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="TeamProjectTime\TeamProjectTime2TDS.xsc">
+      <DependentUpon>TeamProjectTime2TDS.xsd</DependentUpon>
+    </None>
+    <None Include="TeamProjectTime\TeamProjectTime2TDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TeamProjectTime2TDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="TeamProjectTime\TeamProjectTime2TDS.xss">
+      <DependentUpon>TeamProjectTime2TDS.xsd</DependentUpon>
+    </None>
+    <None Include="Timesheet\TimesheetAllTDS.xsc">
+      <DependentUpon>TimesheetAllTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Timesheet\TimesheetAllTDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimesheetAllTDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Timesheet\TimesheetAllTDS.xss">
+      <DependentUpon>TimesheetAllTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Timesheet\TimesheetNavigatorTDS.xsc">
+      <DependentUpon>TimesheetNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Timesheet\TimesheetNavigatorTDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimesheetNavigatorTDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Timesheet\TimesheetNavigatorTDS.xss">
+      <DependentUpon>TimesheetNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Timesheet\TimesheetTDS.xsc">
+      <DependentUpon>TimesheetTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Timesheet\TimesheetTDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimesheetTDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Timesheet\TimesheetTDS.xss">
+      <DependentUpon>TimesheetTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Timesheet\TimesheetWaitingTDS.xsc">
+      <DependentUpon>TimesheetWaitingTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Timesheet\TimesheetWaitingTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimesheetWaitingTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Timesheet\TimesheetWaitingTDS.xss">
+      <DependentUpon>TimesheetWaitingTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Vacations\VacationsAddTDS.xsc">
+      <DependentUpon>VacationsAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Vacations\VacationsAddTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VacationsAddTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Vacations\VacationsAddTDS.xss">
+      <DependentUpon>VacationsAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Vacations\VacationsInformationTDS.xsc">
+      <DependentUpon>VacationsInformationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Vacations\VacationsInformationTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VacationsInformationTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Vacations\VacationsInformationTDS.xss">
+      <DependentUpon>VacationsInformationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Vacations\VacationsNonWorkingDaysInformationTDS.xsc">
+      <DependentUpon>VacationsNonWorkingDaysInformationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Vacations\VacationsNonWorkingDaysInformationTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VacationsNonWorkingDaysInformationTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Vacations\VacationsNonWorkingDaysInformationTDS.xss">
+      <DependentUpon>VacationsNonWorkingDaysInformationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Vacations\VacationsSetupTDS.xsc">
+      <DependentUpon>VacationsSetupTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Vacations\VacationsSetupTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VacationsSetupTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Vacations\VacationsSetupTDS.xss">
+      <DependentUpon>VacationsSetupTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Vacations\VacationsSummaryReportTDS.xsc">
+      <DependentUpon>VacationsSummaryReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Vacations\VacationsSummaryReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VacationsSummaryReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Vacations\VacationsSummaryReportTDS.xss">
+      <DependentUpon>VacationsSummaryReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Vacations\VacationsTDS.xsc">
+      <DependentUpon>VacationsTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Vacations\VacationsTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VacationsTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Vacations\VacationsTDS.xss">
+      <DependentUpon>VacationsTDS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DA.FleetManagement\DA.FleetManagement.csproj">
+      <Project>{80016E93-9B76-4284-9018-B0D156B5DC2D}</Project>
+      <Name>DA.FleetManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DA.Projects\DA.Projects.csproj">
+      <Project>{94F2537E-6075-4EA6-83EB-393A48DEFBB5}</Project>
+      <Name>DA.Projects</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

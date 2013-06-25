@@ -1,0 +1,91 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A8A8C4ED-3D5C-4BB5-A3DA-DDBCA1FE8FF2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LiquiForce.LFSLive.BL.Assets</RootNamespace>
+    <AssemblyName>LiquiForce.LFSLive.BL.Assets</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LiquiForce.LFSLive.BL.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.BL.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LiquiForce.LFSLive.DA.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.DA.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LiquiForce.LFSLive.Server, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Asset.cs" />
+    <Compile Include="Assets\AssetSewer.cs" />
+    <Compile Include="Assets\AssetSewerLateral.cs" />
+    <Compile Include="Assets\AssetSewerMaterial.cs" />
+    <Compile Include="Assets\AssetSewerMH.cs" />
+    <Compile Include="Assets\AssetSewerMHShapeList.cs" />
+    <Compile Include="Assets\AssetSewerSection.cs" />
+    <Compile Include="Assets\AssetSewerSectionList.cs" />
+    <Compile Include="Assets\AssetSewerMHLocationList.cs" />
+    <Compile Include="Assets\AssetSewerMHRugsList.cs" />
+    <Compile Include="Assets\AssetSewerMHMaterialTypeList.cs" />
+    <Compile Include="Assets\AssetSewerMHMaterialType.cs" />
+    <Compile Include="Assets\AssetSewerMHList.cs" />
+    <Compile Include="Assets\LateralStateList.cs" />
+    <Compile Include="Assets\MaterialInformation.cs" />
+    <Compile Include="Assets\MaterialTypeList.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DA.Assets\DA.Assets.csproj">
+      <Project>{530AB705-0919-4EF4-AC9E-C8FFC3BFB3BD}</Project>
+      <Name>DA.Assets</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.csproj">
+      <Project>{16842E60-30B0-414A-8FFA-0AC20F8B9B67}</Project>
+      <Name>Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

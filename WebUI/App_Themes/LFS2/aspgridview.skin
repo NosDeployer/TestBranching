@@ -1,0 +1,31 @@
+<%-- Labels --%>
+<asp:Label SkinId="ViewGridHeader" runat="server" CssClass="ViewGrid_Header"></asp:Label>
+
+
+
+<%-- GridViews --%>
+<asp:GridView SkinID="GridView" runat="server" BackColor="#ECECEC" BorderColor="#DEDEDE" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="10px" ForeColor="#797B7D">
+    <HeaderStyle Height="20px" BackColor="#797B7D" Font-Bold="False" ForeColor="White" /> 
+    <FooterStyle BackColor="#B5D1E3" />
+    <EditRowStyle Height="20px"  />         
+    <RowStyle Height="20px"  />    
+    <AlternatingRowStyle BackColor="#DFE7EC" VerticalAlign="Middle" Height="20px"  /> 
+    <PagerStyle BackColor="#3a94cc" CssClass="GridView_Pager" ForeColor="#DEDEDE" />
+</asp:GridView>
+
+<asp:GridView SkinID="GridViewInTabs" runat="server" BackColor="#ECECEC" BorderColor="#DEDEDE" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="10px" ForeColor="#797B7D">
+    <HeaderStyle Height="20px" BackColor="#797B7D" Font-Bold="False" ForeColor="White" /> 
+    <FooterStyle BackColor="#B5D1E3"  />
+    <EditRowStyle Height="20px"  />       
+    <RowStyle Height="20px"  />
+    <PagerStyle BackColor="#3a94cc" CssClass="GridView_Pager" ForeColor="#DEDEDE" />
+</asp:GridView>
+
+
+
+<%-- Buttons --%>
+<asp:ImageButton SkinID="GridView_Add" runat="server" ImageUrl="./../../App_Themes/LFS2/images/gridview/add.png" />
+<asp:ImageButton SkinID="GridView_Edit" runat="server" ImageUrl="./../../App_Themes/LFS2/images/gridview/edit.png" />
+<asp:ImageButton SkinID="GridView_Delete" runat="server" ImageUrl="./../../App_Themes/LFS2/images/gridview/delete.png" />
+<asp:ImageButton SkinID="GridView_Update" runat="server" ImageUrl="./../../App_Themes/LFS2/images/gridview/update.png" />
+<asp:ImageButton SkinID="GridView_Cancel" runat="server" ImageUrl="./../../App_Themes/LFS2/images/gridview/cancel.png" />

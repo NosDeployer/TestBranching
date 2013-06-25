@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="JlAddLateralsTDS" targetNamespace="http://tempuri.org/JlAddLateralsTDS.xsd" xmlns:mstns="http://tempuri.org/JlAddLateralsTDS.xsd" xmlns="http://tempuri.org/JlAddLateralsTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="JlAddLateralsTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="JlAddLateralsTDS" msprop:Generator_DataSetName="JlAddLateralsTDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="JlAddLateralsSearch" msprop:Generator_UserTableName="JlAddLateralsSearch" msprop:Generator_RowDeletedName="JlAddLateralsSearchRowDeleted" msprop:Generator_RowChangedName="JlAddLateralsSearchRowChanged" msprop:Generator_RowClassName="JlAddLateralsSearchRow" msprop:Generator_RowChangingName="JlAddLateralsSearchRowChanging" msprop:Generator_RowEvArgName="JlAddLateralsSearchRowChangeEvent" msprop:Generator_RowEvHandlerName="JlAddLateralsSearchRowChangeEventHandler" msprop:Generator_TableClassName="JlAddLateralsSearchDataTable" msprop:Generator_TableVarName="tableJlAddLateralsSearch" msprop:Generator_RowDeletingName="JlAddLateralsSearchRowDeleting" msprop:Generator_TablePropName="JlAddLateralsSearch">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WorkID" msprop:Generator_UserColumnName="WorkID" msprop:Generator_ColumnVarNameInTable="columnWorkID" msprop:Generator_ColumnPropNameInRow="WorkID" msprop:Generator_ColumnPropNameInTable="WorkIDColumn" type="xs:int" />
+              <xs:element name="AssetId" msprop:Generator_UserColumnName="AssetId" msprop:Generator_ColumnVarNameInTable="columnAssetId" msprop:Generator_ColumnPropNameInRow="AssetId" msprop:Generator_ColumnPropNameInTable="AssetIdColumn" type="xs:int" />
+              <xs:element name="SectionID" msprop:Generator_UserColumnName="SectionID" msprop:Generator_ColumnVarNameInTable="columnSectionID" msprop:Generator_ColumnPropNameInRow="SectionID" msprop:Generator_ColumnPropNameInTable="SectionIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Street" msprop:Generator_UserColumnName="Street" msprop:Generator_ColumnVarNameInTable="columnStreet" msprop:Generator_ColumnPropNameInRow="Street" msprop:Generator_ColumnPropNameInTable="StreetColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NumLats" msprop:Generator_UserColumnName="NumLats" msprop:Generator_ColumnVarNameInTable="columnNumLats" msprop:Generator_ColumnPropNameInRow="NumLats" msprop:Generator_ColumnPropNameInTable="NumLatsColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="NotLinedYet" msprop:Generator_UserColumnName="NotLinedYet" msprop:Generator_ColumnVarNameInTable="columnNotLinedYet" msprop:Generator_ColumnPropNameInRow="NotLinedYet" msprop:Generator_ColumnPropNameInTable="NotLinedYetColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Selected" msprop:Generator_UserColumnName="Selected" msprop:Generator_ColumnVarNameInTable="columnSelected" msprop:Generator_ColumnPropNameInRow="Selected" msprop:Generator_ColumnPropNameInTable="SelectedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="FlowOrderID" msprop:Generator_UserColumnName="FlowOrderID" msprop:Generator_ColumnPropNameInRow="FlowOrderID" msprop:Generator_ColumnVarNameInTable="columnFlowOrderID" msprop:Generator_ColumnPropNameInTable="FlowOrderIDColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="JlAddLateralsNew" msprop:Generator_UserTableName="JlAddLateralsNew" msprop:Generator_RowDeletedName="JlAddLateralsNewRowDeleted" msprop:Generator_RowChangedName="JlAddLateralsNewRowChanged" msprop:Generator_RowClassName="JlAddLateralsNewRow" msprop:Generator_RowChangingName="JlAddLateralsNewRowChanging" msprop:Generator_RowEvArgName="JlAddLateralsNewRowChangeEvent" msprop:Generator_RowEvHandlerName="JlAddLateralsNewRowChangeEventHandler" msprop:Generator_TableClassName="JlAddLateralsNewDataTable" msprop:Generator_TableVarName="tableJlAddLateralsNew" msprop:Generator_RowDeletingName="JlAddLateralsNewRowDeleting" msprop:Generator_TablePropName="JlAddLateralsNew">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AssetID" msprop:Generator_UserColumnName="AssetID" msprop:Generator_ColumnVarNameInTable="columnAssetID" msprop:Generator_ColumnPropNameInRow="AssetID" msprop:Generator_ColumnPropNameInTable="AssetIDColumn" type="xs:int" />
+              <xs:element name="LateralID" msprop:Generator_UserColumnName="LateralID" msprop:Generator_ColumnVarNameInTable="columnLateralID" msprop:Generator_ColumnPropNameInRow="LateralID" msprop:Generator_ColumnPropNameInTable="LateralIDColumn" type="xs:string" />
+              <xs:element name="Address" msprop:Generator_UserColumnName="Address" msprop:Generator_ColumnVarNameInTable="columnAddress" msprop:Generator_ColumnPropNameInRow="Address" msprop:Generator_ColumnPropNameInTable="AddressColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DistanceFromUSMH" msprop:Generator_UserColumnName="DistanceFromUSMH" msprop:Generator_ColumnVarNameInTable="columnDistanceFromUSMH" msprop:Generator_ColumnPropNameInRow="DistanceFromUSMH" msprop:Generator_ColumnPropNameInTable="DistanceFromUSMHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DistanceFromDSMH" msprop:Generator_UserColumnName="DistanceFromDSMH" msprop:Generator_ColumnPropNameInRow="DistanceFromDSMH" msprop:Generator_ColumnVarNameInTable="columnDistanceFromDSMH" msprop:Generator_ColumnPropNameInTable="DistanceFromDSMHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="State" msprop:Generator_UserColumnName="State" msprop:Generator_ColumnVarNameInTable="columnState" msprop:Generator_ColumnPropNameInRow="State" msprop:Generator_ColumnPropNameInTable="StateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="InProject" msprop:Generator_UserColumnName="InProject" msprop:Generator_ColumnVarNameInTable="columnInProject" msprop:Generator_ColumnPropNameInRow="InProject" msprop:Generator_ColumnPropNameInTable="InProjectColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="InProjectDatabase" msprop:Generator_UserColumnName="InProjectDatabase" msprop:Generator_ColumnPropNameInRow="InProjectDatabase" msprop:Generator_ColumnVarNameInTable="columnInProjectDatabase" msprop:Generator_ColumnPropNameInTable="InProjectDatabaseColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="InDatabase" msprop:Generator_UserColumnName="InDatabase" msprop:Generator_ColumnVarNameInTable="columnInDatabase" msprop:Generator_ColumnPropNameInRow="InDatabase" msprop:Generator_ColumnPropNameInTable="InDatabaseColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="JlAddLateralsTemp" msprop:Generator_UserTableName="JlAddLateralsTemp" msprop:Generator_RowDeletedName="JlAddLateralsTempRowDeleted" msprop:Generator_RowChangedName="JlAddLateralsTempRowChanged" msprop:Generator_RowClassName="JlAddLateralsTempRow" msprop:Generator_RowChangingName="JlAddLateralsTempRowChanging" msprop:Generator_RowEvArgName="JlAddLateralsTempRowChangeEvent" msprop:Generator_RowEvHandlerName="JlAddLateralsTempRowChangeEventHandler" msprop:Generator_TableClassName="JlAddLateralsTempDataTable" msprop:Generator_TableVarName="tableJlAddLateralsTemp" msprop:Generator_RowDeletingName="JlAddLateralsTempRowDeleting" msprop:Generator_TablePropName="JlAddLateralsTemp">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" />
+              <xs:element name="AssetID" msprop:Generator_UserColumnName="AssetID" msprop:Generator_ColumnVarNameInTable="columnAssetID" msprop:Generator_ColumnPropNameInRow="AssetID" msprop:Generator_ColumnPropNameInTable="AssetIDColumn" type="xs:int" />
+              <xs:element name="SectionWorkID" msprop:Generator_UserColumnName="SectionWorkID" msprop:Generator_ColumnVarNameInTable="columnSectionWorkID" msprop:Generator_ColumnPropNameInRow="SectionWorkID" msprop:Generator_ColumnPropNameInTable="SectionWorkIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="SectionAssetID" msprop:Generator_UserColumnName="SectionAssetID" msprop:Generator_ColumnVarNameInTable="columnSectionAssetID" msprop:Generator_ColumnPropNameInRow="SectionAssetID" msprop:Generator_ColumnPropNameInTable="SectionAssetIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="SectionID" msprop:Generator_UserColumnName="SectionID" msprop:Generator_ColumnVarNameInTable="columnSectionID" msprop:Generator_ColumnPropNameInRow="SectionID" msprop:Generator_ColumnPropNameInTable="SectionIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LateralID" msprop:Generator_UserColumnName="LateralID" msprop:Generator_ColumnVarNameInTable="columnLateralID" msprop:Generator_ColumnPropNameInRow="LateralID" msprop:Generator_ColumnPropNameInTable="LateralIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Address" msprop:Generator_UserColumnName="Address" msprop:Generator_ColumnVarNameInTable="columnAddress" msprop:Generator_ColumnPropNameInRow="Address" msprop:Generator_ColumnPropNameInTable="AddressColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DistanceFromUSMH" msprop:Generator_UserColumnName="DistanceFromUSMH" msprop:Generator_ColumnVarNameInTable="columnDistanceFromUSMH" msprop:Generator_ColumnPropNameInRow="DistanceFromUSMH" msprop:Generator_ColumnPropNameInTable="DistanceFromUSMHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DistanceFromDSMH" msprop:Generator_UserColumnName="DistanceFromDSMH" msprop:Generator_ColumnVarNameInTable="columnDistanceFromDSMH" msprop:Generator_ColumnPropNameInRow="DistanceFromDSMH" msprop:Generator_ColumnPropNameInTable="DistanceFromDSMHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="State" msprop:Generator_UserColumnName="State" msprop:Generator_ColumnVarNameInTable="columnState" msprop:Generator_ColumnPropNameInRow="State" msprop:Generator_ColumnPropNameInTable="StateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="InProject" msprop:Generator_UserColumnName="InProject" msprop:Generator_ColumnVarNameInTable="columnInProject" msprop:Generator_ColumnPropNameInRow="InProject" msprop:Generator_ColumnPropNameInTable="InProjectColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="InProjectDatabase" msprop:Generator_UserColumnName="InProjectDatabase" msprop:Generator_ColumnVarNameInTable="columnInProjectDatabase" msprop:Generator_ColumnPropNameInRow="InProjectDatabase" msprop:Generator_ColumnPropNameInTable="InProjectDatabaseColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="InDatabase" msprop:Generator_UserColumnName="InDatabase" msprop:Generator_ColumnVarNameInTable="columnInDatabase" msprop:Generator_ColumnPropNameInRow="InDatabase" msprop:Generator_ColumnPropNameInTable="InDatabaseColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:JlAddLateralsSearch" />
+      <xs:field xpath="mstns:WorkID" />
+    </xs:unique>
+    <xs:unique name="JlAddLateralsNew_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:JlAddLateralsNew" />
+      <xs:field xpath="mstns:AssetID" />
+    </xs:unique>
+    <xs:unique name="JlAddLateralsTemp_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:JlAddLateralsTemp" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,21 @@
+
+ <asp:WebPartZone SkinID="Dashboard" runat="Server" 
+    BorderColor="#CCCCCC" Font-Names="Verdana"  Height="300px" Padding="6" Width="240px">
+    
+    <HeaderStyle Font-Size="0.7em" ForeColor="#CCCCCC" HorizontalAlign="Center" />
+    <EmptyZoneTextStyle Font-Size="0.8em" />
+    
+    <MenuLabelHoverStyle ForeColor="#DFE7EC" />    
+    <MenuLabelStyle ForeColor="White" />
+    <MenuVerbHoverStyle BackColor="#a5c5d8" BorderColor="#CCCCCC" BorderStyle="Solid"
+        BorderWidth="1px" ForeColor="#333333" />    
+    <MenuVerbStyle BorderColor="#3a94cc" BorderStyle="Solid" BorderWidth="1px" ForeColor="White" />
+    <MenuPopupStyle BackColor="#a5c5d8" BorderColor="#CCCCCC" BorderWidth="1px" Font-Names="Verdana"
+        Font-Size="0.6em" />
+        
+    <TitleBarVerbStyle Font-Size="0.6em" Font-Underline="False" ForeColor="White" />    
+    
+    <PartChromeStyle BackColor="#f4f5f7" BorderColor="#3a94cc" Font-Names="Verdana" ForeColor="#333333" />
+    <PartTitleStyle BackColor="#3a94cc" Font-Bold="True" Font-Size="0.8em" ForeColor="White" />
+    <PartStyle Font-Size="0.8em" ForeColor="#333333" />
+</asp:WebPartZone>

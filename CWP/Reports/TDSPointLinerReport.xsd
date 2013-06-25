@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="TDSPointLinerReport" targetNamespace="http://tempuri.org/TDSPointLinerReport.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/TDSPointLinerReport.xsd"
+	xmlns:mstns="http://tempuri.org/TDSPointLinerReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="TDSPointLinerReport" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="PointLinerReport">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:string" />
+							<xs:element name="COMPANY_ID" type="xs:int" />
+							<xs:element name="ClientID" type="xs:string" minOccurs="0" />
+							<xs:element name="COMPANIES_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="SubArea" type="xs:string" minOccurs="0" />
+							<xs:element name="Street" type="xs:string" minOccurs="0" />
+							<xs:element name="USMH" type="xs:string" minOccurs="0" />
+							<xs:element name="DSMH" type="xs:string" minOccurs="0" />
+							<xs:element name="P1Date" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="M1Date" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FinalVideo" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Comments" type="xs:string" minOccurs="0" />
+							<xs:element name="NAME" type="xs:string" minOccurs="0" />
+							<xs:element name="RecordId" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="LFS_POINT_REPAIRS">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:string" />
+							<xs:element name="RefID" type="xs:int" />
+							<xs:element name="COMPANY_ID" type="xs:int" />
+							<xs:element name="RepairSize" type="xs:string" minOccurs="0" />
+							<xs:element name="InstallDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Distance" type="xs:string" minOccurs="0" />
+							<xs:element name="Reinstates" type="xs:int" minOccurs="0" />
+							<xs:element name="DetailID" type="xs:string" minOccurs="0" />
+							<xs:element name="ExtraRepair" type="xs:boolean" minOccurs="0" />
+							<xs:element name="Cancelled" type="xs:boolean" minOccurs="0" />
+							<xs:element name="Approved" type="xs:boolean" minOccurs="0" />
+							<xs:element name="NotApproved" type="xs:boolean" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="TDSPointLinerReportKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:PointLinerReport" />
+			<xs:field xpath="mstns:ID" />
+			<xs:field xpath="mstns:COMPANY_ID" />
+		</xs:unique>
+		<xs:unique name="TDSPointLinerReportKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:LFS_POINT_REPAIRS" />
+			<xs:field xpath="mstns:ID" />
+			<xs:field xpath="mstns:RefID" />
+			<xs:field xpath="mstns:COMPANY_ID" />
+		</xs:unique>
+		<xs:keyref name="PointLinerReportLFS_POINT_REPAIRS" refer="TDSPointLinerReportKey1">
+			<xs:selector xpath=".//mstns:LFS_POINT_REPAIRS" />
+			<xs:field xpath="mstns:ID" />
+			<xs:field xpath="mstns:COMPANY_ID" />
+		</xs:keyref>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{75443F4F-BE39-496C-A272-E438AA124E05}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LiquiForce.LFSLive.BL.ITTechSupportTicket</RootNamespace>
+    <AssemblyName>LiquiForce.LFSLive.BL.ITTechSupportTicket</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LiquiForce.LFSLive.BL.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.BL.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LiquiForce.LFSLive.DA.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.DA.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LiquiForce.LFSLive.Server, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dashboard\DashboardMySupportTicket.cs" />
+    <Compile Include="Dashboard\DashboardMySupportTicketOnHold.cs" />
+    <Compile Include="Dashboard\DashboardSupportTicketAssignedToMe.cs" />
+    <Compile Include="Dashboard\DashboardSupportTicketAssignedToMeOnHold.cs" />
+    <Compile Include="SupportTicket\SupportTicketAddBasicInformation.cs" />
+    <Compile Include="SupportTicket\SupportTicketCategoryAddNew.cs" />
+    <Compile Include="SupportTicket\SupportTicketCategory.cs" />
+    <Compile Include="SupportTicket\SupportTicketInformationActivityInformation.cs" />
+    <Compile Include="SupportTicket\SupportTicketInformationBasicInformation.cs" />
+    <Compile Include="SupportTicket\SupportTicketNavigator.cs" />
+    <Compile Include="SupportTicket\SupportTicketSupportTicket.cs" />
+    <Compile Include="SupportTicket\SupportTicketSupportTicketActivity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DA.ITTechSupportTicket\DA.ITTechSupportTicket.csproj">
+      <Project>{30882274-F34B-40F9-AC12-9382347C2EE4}</Project>
+      <Name>DA.ITTechSupportTicket</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

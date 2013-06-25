@@ -1,0 +1,153 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="LiquiForce.LFSLive.WebUI.mForm3" Codebehind="mForm3.master.cs" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajax" %>
+      
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <link href="./common/images/lfslive.css" type="text/css" rel="stylesheet" />
+</head>
+<body id="myBody" runat="server" style="margin-left: 0px; margin-right: 0px; margin-top: 10px; margin-bottom: 0px">
+    <form id="form1" runat="server" enctype="multipart/form-data" method="post">
+        <!-- 
+            FRAMEWORK: FORM3
+            LAYOUT:    Centered [950]
+            PARTS:     Header, left menu [200], toolbar, content, footer. 
+        -->
+        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+                <td>
+                    &nbsp;</td>
+                <td style="width: 950px" valign="top">
+                    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                            <td colspan="2">
+                                <!-- HEADER -->
+                                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                    <tr>
+                                        <td style="width: 200px" align="left" valign="top">
+                                            <!-- .. Logo -->
+                                            <asp:Image ID="Image2" runat="server" ImageUrl="./common/images/lfslive.png" EnableViewState="False" /></td>
+                                        <td align="left" valign="bottom">
+                                            <!-- .. Top toolbar -->
+                                            <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                                <tr style="height: 15px">
+                                                    <!-- Page element: Ajax Scriptmanager -->
+                                                    <td colspan="2">
+                                                        <ajax:ToolkitScriptManager ID="ScriptManagerForm3Master" runat="server" ScriptMode="Release" EnableHistory="true" 
+                                                            EnableSecureHistoryState="false" EnablePageMethods="True" CombineScripts="true" >
+                                                                <Scripts>
+                                                                    <asp:ScriptReference Path="./App_Themes/LFS2/scripts/webkit.js" />
+                                                                </Scripts>
+                                                        </ajax:ToolkitScriptManager>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="middle">
+                                                    <td style="height: 40px">
+                                                        <!-- .. Top toolbar items -->                                                        
+                                                    </td>
+                                                    <td style="height: 40px">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td style="width: 200px" align="right" valign="bottom">
+                                            <!-- .. Info and options -->
+                                            <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                                <tr style="height: 15px">
+                                                    <td valign="top" style="text-align: right">
+                                                        <asp:Label ID="lblUserEmail" runat="server" SkinID="UserEmail" Text="user@liquiforce.com"></asp:Label></td>
+                                                </tr>
+                                                <tr style="height: 15px">
+                                                    <td valign="bottom" style="height: 15px; text-align: right;">
+                                                        <asp:LinkButton ID="lkbtnSignOut" runat="server" CssClass="SignOut" OnClick="lkbtnSignOut_Click">Sign Out</asp:LinkButton></td>
+                                                </tr>
+                                                <tr style="height: 6px">
+                                                    <td>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" style="height: 5px">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <!-- .. horizontal rule -->
+                                        <td colspan="3">
+                                            <hr style="color: #2f82c7; height: 1px" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" style="height: 12px">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 200px" valign="top">
+                                <!-- LEFT MENU -->
+                                <asp:ContentPlaceHolder ID="LeftMenuPlaceHolder" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </td>
+                            <td style="width: 750px" valign="top">
+                                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                    <tr>
+                                        <td>
+                                            <!-- TOOLBAR -->
+                                            <asp:ContentPlaceHolder ID="ToolbarPlaceHolder" runat="server">
+                                            </asp:ContentPlaceHolder>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="height: 25px">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <!-- CONTENT -->
+                                            <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+                                            </asp:ContentPlaceHolder>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <!-- FOOTER -->
+                                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                    <tr>
+                                        <td colspan="2" style="height: 20px">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 65%">
+                                            <hr style="color: #2f82c7; height: 1px" />
+                                        </td>
+                                        <td style="width: 35%">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+        <!-- Page element:  refresh IFrame-->
+        <table>
+            <tr>
+                <td style="height: 7px">
+                    <iframe id="iframe" frameborder="0" height="0" width="0" src="../../refresh_iframe.aspx">
+                        Your web browser don't accept iFrame tag. Contact with your Administrator. </iframe>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

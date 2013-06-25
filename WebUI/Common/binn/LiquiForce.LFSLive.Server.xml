@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LiquiForce.LFSLive.Server</name>
+    </assembly>
+    <members>
+        <member name="M:LiquiForce.LFSLive.Server.DisposableObject.DisposeManagedResources">
+            <summary>
+            Try to dispose managed objects on demand.
+            </summary>
+        </member>
+        <member name="M:LiquiForce.LFSLive.Server.DisposableObject.DisposeUnmanagedResources">
+            <summary>
+            Try to dispose unmanaged objects on object destruction
+            </summary>
+        </member>
+        <member name="M:LiquiForce.LFSLive.Server.DisposableObject.Dispose">
+            <summary>
+            Try to dispose internal used managed an unmanaged objects.
+            </summary>
+        </member>
+        <member name="M:LiquiForce.LFSLive.Server.DisposableObject.Finalize">
+            <summary>
+            Destructor member, the object is destructed dispose unmanaged internal objects.
+            </summary>
+        </member>
+    </members>
+</doc>

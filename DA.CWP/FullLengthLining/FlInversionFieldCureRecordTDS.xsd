@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FlInversionFieldCureRecordTDS" targetNamespace="http://tempuri.org/FlInversionFieldCureRecordTDS.xsd" xmlns:mstns="http://tempuri.org/FlInversionFieldCureRecordTDS.xsd" xmlns="http://tempuri.org/FlInversionFieldCureRecordTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LFSDB9ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LFSDB9ConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.CWP.Properties.Settings.GlobalReference.Default.LFSDB9ConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FlInversionFieldCureRecordTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="FlInversionFieldCureRecordTDS" msprop:Generator_DataSetName="FlInversionFieldCureRecordTDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="InversionFieldCureRecord" msprop:Generator_UserTableName="InversionFieldCureRecord" msprop:Generator_RowDeletedName="InversionFieldCureRecordRowDeleted" msprop:Generator_RowChangedName="InversionFieldCureRecordRowChanged" msprop:Generator_RowClassName="InversionFieldCureRecordRow" msprop:Generator_RowChangingName="InversionFieldCureRecordRowChanging" msprop:Generator_RowEvArgName="InversionFieldCureRecordRowChangeEvent" msprop:Generator_RowEvHandlerName="InversionFieldCureRecordRowChangeEventHandler" msprop:Generator_TableClassName="InversionFieldCureRecordDataTable" msprop:Generator_TableVarName="tableInversionFieldCureRecord" msprop:Generator_RowDeletingName="InversionFieldCureRecordRowDeleting" msprop:Generator_TablePropName="InversionFieldCureRecord">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WorkID" msprop:Generator_UserColumnName="WorkID" msprop:Generator_ColumnVarNameInTable="columnWorkID" msprop:Generator_ColumnPropNameInRow="WorkID" msprop:Generator_ColumnPropNameInTable="WorkIDColumn" type="xs:int" />
+              <xs:element name="RefID" msprop:Generator_UserColumnName="RefID" msprop:Generator_ColumnVarNameInTable="columnRefID" msprop:Generator_ColumnPropNameInRow="RefID" msprop:Generator_ColumnPropNameInTable="RefIDColumn" type="xs:int" />
+              <xs:element name="ReadingTime" msprop:Generator_UserColumnName="ReadingTime" msprop:Generator_ColumnVarNameInTable="columnReadingTime" msprop:Generator_ColumnPropNameInRow="ReadingTime" msprop:Generator_ColumnPropNameInTable="ReadingTimeColumn" type="xs:dateTime" />
+              <xs:element name="HeadFt" msprop:Generator_UserColumnName="HeadFt" msprop:Generator_ColumnVarNameInTable="columnHeadFt" msprop:Generator_ColumnPropNameInRow="HeadFt" msprop:Generator_ColumnPropNameInTable="HeadFtColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BoilerInF" msprop:Generator_UserColumnName="BoilerInF" msprop:Generator_ColumnVarNameInTable="columnBoilerInF" msprop:Generator_ColumnPropNameInRow="BoilerInF" msprop:Generator_ColumnPropNameInTable="BoilerInFColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BoilerOutF" msprop:Generator_UserColumnName="BoilerOutF" msprop:Generator_ColumnVarNameInTable="columnBoilerOutF" msprop:Generator_ColumnPropNameInRow="BoilerOutF" msprop:Generator_ColumnPropNameInTable="BoilerOutFColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PumpFlow" msprop:Generator_UserColumnName="PumpFlow" msprop:Generator_ColumnVarNameInTable="columnPumpFlow" msprop:Generator_ColumnPropNameInRow="PumpFlow" msprop:Generator_ColumnPropNameInTable="PumpFlowColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PumpPsi" msprop:Generator_UserColumnName="PumpPsi" msprop:Generator_ColumnVarNameInTable="columnPumpPsi" msprop:Generator_ColumnPropNameInRow="PumpPsi" msprop:Generator_ColumnPropNameInTable="PumpPsiColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MH1Top" msprop:Generator_UserColumnName="MH1Top" msprop:Generator_ColumnVarNameInTable="columnMH1Top" msprop:Generator_ColumnPropNameInRow="MH1Top" msprop:Generator_ColumnPropNameInTable="MH1TopColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MH1Bot" msprop:Generator_UserColumnName="MH1Bot" msprop:Generator_ColumnVarNameInTable="columnMH1Bot" msprop:Generator_ColumnPropNameInRow="MH1Bot" msprop:Generator_ColumnPropNameInTable="MH1BotColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MH2Top" msprop:Generator_UserColumnName="MH2Top" msprop:Generator_ColumnVarNameInTable="columnMH2Top" msprop:Generator_ColumnPropNameInRow="MH2Top" msprop:Generator_ColumnPropNameInTable="MH2TopColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MH2Bot" msprop:Generator_UserColumnName="MH2Bot" msprop:Generator_ColumnVarNameInTable="columnMH2Bot" msprop:Generator_ColumnPropNameInRow="MH2Bot" msprop:Generator_ColumnPropNameInTable="MH2BotColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MH3Top" msprop:Generator_UserColumnName="MH3Top" msprop:Generator_ColumnVarNameInTable="columnMH3Top" msprop:Generator_ColumnPropNameInRow="MH3Top" msprop:Generator_ColumnPropNameInTable="MH3TopColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MH3Bot" msprop:Generator_UserColumnName="MH3Bot" msprop:Generator_ColumnVarNameInTable="columnMH3Bot" msprop:Generator_ColumnPropNameInRow="MH3Bot" msprop:Generator_ColumnPropNameInTable="MH3BotColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MH4Top" msprop:Generator_UserColumnName="MH4Top" msprop:Generator_ColumnVarNameInTable="columnMH4Top" msprop:Generator_ColumnPropNameInRow="MH4Top" msprop:Generator_ColumnPropNameInTable="MH4TopColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MH4Bot" msprop:Generator_UserColumnName="MH4Bot" msprop:Generator_ColumnVarNameInTable="columnMH4Bot" msprop:Generator_ColumnPropNameInRow="MH4Bot" msprop:Generator_ColumnPropNameInTable="MH4BotColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Comments" msprop:Generator_UserColumnName="Comments" msprop:Generator_ColumnVarNameInTable="columnComments" msprop:Generator_ColumnPropNameInRow="Comments" msprop:Generator_ColumnPropNameInTable="CommentsColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="InDatabase" msprop:Generator_UserColumnName="InDatabase" msprop:Generator_ColumnVarNameInTable="columnInDatabase" msprop:Generator_ColumnPropNameInRow="InDatabase" msprop:Generator_ColumnPropNameInTable="InDatabaseColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:InversionFieldCureRecord" />
+      <xs:field xpath="mstns:WorkID" />
+      <xs:field xpath="mstns:RefID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

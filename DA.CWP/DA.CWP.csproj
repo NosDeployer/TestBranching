@@ -1,0 +1,1389 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{946577F7-3264-4C79-B032-7F2DE3831002}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LiquiForce.LFSLive.DA.CWP</RootNamespace>
+    <AssemblyName>LiquiForce.LFSLive.DA.CWP</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>http://localhost/LiquiForce.LFSLive.DA.CWP/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LiquiForce.LFSLive.DA.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.DA.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LiquiForce.LFSLive.Server, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.TeamSystem.Data.UnitTesting, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\LfsAssetSewerMHConditionRatingListGateway.cs" />
+    <Compile Include="Assets\LfsAssetSewerLateralClientGateway.cs" />
+    <Compile Include="Assets\LfsAssetSewerLateralGateway.cs" />
+    <Compile Include="Assets\LfsAssetSewerMHGateway.cs" />
+    <Compile Include="Assets\LfsAssetGateway.cs" />
+    <Compile Include="Assets\LfsAssetSewerGateway.cs" />
+    <Compile Include="Assets\LfsAssetSewerSectionGateway.cs" />
+    <Compile Include="Assets\LfsAssetSewerSectionThicknessListGateway.cs" />
+    <Compile Include="Assets\LfsAssetsTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LfsAssetsTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\AddManholeNewGateway.cs" />
+    <Compile Include="Common\AddManholeTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddManholeTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\BulkUploadGateway.cs" />
+    <Compile Include="Common\BulkUploadTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BulkUploadTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\GerencialWeeklyProductionReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GerencialWeeklyProductionReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\GerencialWeeklyProductionReportGateway.cs" />
+    <Compile Include="Common\GerencialDailyProductionReportGateway.cs" />
+    <Compile Include="Common\GerencialDailyProductionReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GerencialDailyProductionReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\LateralLocationSheetLateralDetailsReportGateway.cs" />
+    <Compile Include="Common\LateralLocationSheetReportGateway.cs" />
+    <Compile Include="Common\LateralLocationSheetReportTDS.cs">
+      <DependentUpon>LateralLocationSheetReportTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\LateralLocationSheetReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LateralLocationSheetReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ProjectAddSectionsTDS.cs">
+      <DependentUpon>ProjectAddSectionsTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\SelectProjectLastUsedProjectsGateway.cs" />
+    <Compile Include="Common\SelectProjectTDS.cs">
+      <DependentUpon>SelectProjectTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\SelectProjectTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SelectProjectTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\WincanBulkUploadGateway.cs" />
+    <Compile Include="Common\WincanBulkUploadTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WincanBulkUploadTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\WorkTypeViewConditionGateway.cs" />
+    <Compile Include="Common\WorkTypeViewConditionItemListGateway.cs" />
+    <Compile Include="Common\WorkTypeViewConditionListGateway.cs" />
+    <Compile Include="Common\WorkTypeViewDisplayGateway.cs" />
+    <Compile Include="Common\WorkTypeViewOperatorListGateway.cs" />
+    <Compile Include="Common\WorkTypeViewSortGateway.cs" />
+    <Compile Include="Common\WorkTypeViewSortListGateway.cs" />
+    <Compile Include="Common\WorkTypeViewSubAreaListGateway.cs" />
+    <Compile Include="Common\WorkViewColumnGateway.cs" />
+    <Compile Include="Common\WorkViewConditionNewGateway.cs" />
+    <Compile Include="Common\WorkViewConditionTempGateway.cs" />
+    <Compile Include="Common\WorkViewDisplayGateway.cs" />
+    <Compile Include="Common\WorkViewForDisplayGateway.cs" />
+    <Compile Include="Common\ProjectAddSectionsNewGateway.cs" />
+    <Compile Include="Common\ProjectAddSectionsSearchGateway.cs" />
+    <Compile Include="Common\ProjectAddSectionsTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectAddSectionsTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ProjectAddSectionsTempGateway.cs" />
+    <Compile Include="Common\WorkViewConditionGateway.cs" />
+    <Compile Include="Common\WorkViewForDisplayListGateway.cs" />
+    <Compile Include="Common\WorkViewGateway.cs" />
+    <Compile Include="Common\WorkViewListGateway.cs" />
+    <Compile Include="Common\WorkViewSortByListGateway.cs" />
+    <Compile Include="Common\WorkViewSortGateway.cs" />
+    <Compile Include="Common\WorkViewTDS.cs">
+      <DependentUpon>WorkViewTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\WorkViewTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkViewTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FullLengthLining\FlAllOutstandingIssuesReportGateway.cs" />
+    <Compile Include="FullLengthLining\FlAllOutstandingIssuesReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FlAllOutstandingIssuesReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FullLengthLining\FlCatalystsAddGateway.cs" />
+    <Compile Include="FullLengthLining\FlCatalystsAddTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FlCatalystsAddTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FullLengthLining\FlCXIRemovedReportGateway.cs" />
+    <Compile Include="FullLengthLining\FlCXIRemovedReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FlCXIRemovedReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FullLengthLining\FlInversionFieldCureRecordGateway.cs" />
+    <Compile Include="FullLengthLining\FlInversionFieldCureRecordReportGateway.cs" />
+    <Compile Include="FullLengthLining\FlInversionFieldCureRecordTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FlInversionFieldCureRecordTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FullLengthLining\FlInversionReportGateway.cs" />
+    <Compile Include="FullLengthLining\FlInversionReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FlInversionReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FullLengthLining\FlLiningCompletedReportGateway.cs" />
+    <Compile Include="FullLengthLining\FlLiningCompletedReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FlLiningCompletedReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FullLengthLining\FlM12ReportGateway.cs" />
+    <Compile Include="FullLengthLining\FlM1LateralLateralReportGateway.cs" />
+    <Compile Include="FullLengthLining\FlM1LateralReportGateway.cs" />
+    <Compile Include="FullLengthLining\FlM1LateralReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FlM1LateralReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FullLengthLining\FlM1LateralSectionReportGateway.cs" />
+    <Compile Include="FullLengthLining\FlM1ReportGateway.cs" />
+    <Compile Include="FullLengthLining\FlM1ReportTDS.cs">
+      <DependentUpon>FlM1ReportTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FullLengthLining\FlM1ReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FlM1ReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FullLengthLining\FlM2ReportGateway.cs" />
+    <Compile Include="FullLengthLining\FlM2ReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FlM2ReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FullLengthLining\FlNavigatorGateway.cs" />
+    <Compile Include="FullLengthLining\FlNavigatorTDS.cs">
+      <DependentUpon>FlNavigatorTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FullLengthLining\FlNavigatorTDS.Designer.cs">
+      <DependentUpon>FlNavigatorTDS.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="FullLengthLining\FlOutstandingClientInvestigationIssuesCityCopyReportGateway.cs" />
+    <Compile Include="FullLengthLining\FlOutstandingClientInvestigationIssuesCityCopyReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FlOutstandingClientInvestigationIssuesCityCopyReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FullLengthLining\FlOutstandingClientIssuesReportGateway.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullLengthLining\FlOutstandingClientIssuesReportTDS.Designer.cs">
+      <DependentUpon>FlOutstandingClientIssuesReportTDS.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="FullLengthLining\FlOutstandingInvestigationIssuesReportGateway.cs" />
+    <Compile Include="FullLengthLining\FlOutstandingInvestigationIssuesReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FlOutstandingInvestigationIssuesReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FullLengthLining\FlOutstandingLFSIssuesReportGateway.cs" />
+    <Compile Include="FullLengthLining\FlOutstandingLFSIssuesReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FlOutstandingLFSIssuesReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FullLengthLining\FlOutstandingSalesIssuesReportGateway.cs" />
+    <Compile Include="FullLengthLining\FlOutstandingSalesIssuesReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FlOutstandingSalesIssuesReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FullLengthLining\FlOverviewReportGateway.cs" />
+    <Compile Include="FullLengthLining\FlOverviewReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FlOverviewReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FullLengthLining\FlReadyForLiningReportGateway.cs" />
+    <Compile Include="FullLengthLining\FlReadyForLiningReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FlReadyForLiningReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FullLengthLining\FlReinstateLateralReportGateway.cs" />
+    <Compile Include="FullLengthLining\FlReinstateReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FlReinstateReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FullLengthLining\FlReinstateSectionReportGateway.cs" />
+    <Compile Include="FullLengthLining\FlResinsAddGateway.cs" />
+    <Compile Include="FullLengthLining\FlResinsAddTDS.cs">
+      <DependentUpon>FlResinsAddTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FullLengthLining\FlResinsAddTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FlResinsAddTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FullLengthLining\FlToBeMeasuredReportGateway.cs" />
+    <Compile Include="FullLengthLining\FlToBeMeasuredReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FlToBeMeasuredReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FullLengthLining\FlToBePreppedReportGateway.cs" />
+    <Compile Include="FullLengthLining\FlToBePreppedReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FlToBePreppedReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FullLengthLining\FlWetOutCatalystsReportGateway.cs" />
+    <Compile Include="FullLengthLining\FlWetOutReportGateway.cs" />
+    <Compile Include="FullLengthLining\FlWetOutReportTDS.cs">
+      <DependentUpon>FlWetOutReportTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FullLengthLining\FlWetOutReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FlWetOutReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FullLengthLining\FlWorkAheadReportGateway.cs" />
+    <Compile Include="FullLengthLining\FLWorkAheadReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FLWorkAheadReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FullLengthLining\FullLengthLiningAllCommentsGateway.cs" />
+    <Compile Include="FullLengthLining\FullLengthLiningCommentDetailsGateway.cs" />
+    <Compile Include="FullLengthLining\FullLengthLiningLateralDetailsGateway.cs" />
+    <Compile Include="FullLengthLining\FullLengthLiningSectionDetailsGateway.cs" />
+    <Compile Include="FullLengthLining\FullLengthLiningTDS.cs">
+      <DependentUpon>FullLengthLiningTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FullLengthLining\FullLengthLiningTDS1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FullLengthLiningTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FullLengthLining\FullLengthLiningWetOutCatalystsDetailsGateway.cs" />
+    <Compile Include="FullLengthLining\FullLengthLiningWetOutCommentDetailsGateway.cs" />
+    <Compile Include="FullLengthLining\FullLengthLiningWorkDetailsGateway.cs" />
+    <Compile Include="ManholeRehabilitation\ManholeRehabilitationManholeDetailsGateway.cs" />
+    <Compile Include="ManholeRehabilitation\ManholeRehabilitationTDS.cs">
+      <DependentUpon>ManholeRehabilitationTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ManholeRehabilitation\ManholeRehabilitationWorkDetailsGateway.cs" />
+    <Compile Include="ManholeRehabilitation\ManholeRehabilitationCommentDetailsGateway.cs" />
+    <Compile Include="ManholeRehabilitation\ManholeRehabilitationTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ManholeRehabilitationTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ManholeRehabilitation\MrNavigatorGateway.cs" />
+    <Compile Include="ManholeRehabilitation\MrBatchVerificationGateway.cs" />
+    <Compile Include="ManholeRehabilitation\MrBatchVerificationTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MrBatchVerificationTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ManholeRehabilitation\MrNavigatorTDS.cs">
+      <DependentUpon>MrNavigatorTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ManholeRehabilitation\MrNavigatorTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MrNavigatorTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ManholeRehabilitation\MrSummaryReportManholeRehabilitationGateway.cs" />
+    <Compile Include="ManholeRehabilitation\MrSummaryReportTDS.cs">
+      <DependentUpon>MrSummaryReportTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ManholeRehabilitation\MrSummaryReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MrSummaryReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Works\WorkManholeRehabilitationBatchListGateway.cs" />
+    <Compile Include="Works\WorkFullLengthLiningCatalystsListGateway.cs" />
+    <Compile Include="Works\WorkFullLengthLiningInversionFieldCureRecordGateway.cs" />
+    <Compile Include="Works\WorkFullLengthLiningInversionGateway.cs" />
+    <Compile Include="Works\WorkFullLengthLiningInversionGroundMoistureListGateway.cs" />
+    <Compile Include="Works\WorkFullLengthLiningInversionPipeConditionListGateway.cs" />
+    <Compile Include="Works\WorkFullLengthLiningInversionPipeTypeListGateway.cs" />
+    <Compile Include="Works\WorkFullLengthLiningWetOutCatalystsGateway.cs" />
+    <Compile Include="Works\WorkFullLengthLiningWetOutCommentsGateway.cs" />
+    <Compile Include="Works\WorkFullLengthLiningWetOutGateway.cs" />
+    <Compile Include="Works\WorkFullLengthLiningWetOutLinerTubeListGateway.cs" />
+    <Compile Include="Jliner\FlatSectionJlinerGateway.cs" />
+    <Compile Include="Jliner\FlatSectionJlinerJuntionLiner2CommentGateway.cs" />
+    <Compile Include="Jliner\FlatSectionJlinerJuntionLiner2HistoryGateway.cs" />
+    <Compile Include="Jliner\FlatSectionJlinerTDS.cs">
+      <DependentUpon>FlatSectionJlinerTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Jliner\FlatSectionJlinerTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FlatSectionJlinerTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Jliner\JlinerAddJunctionLiner2CommentGateway.cs" />
+    <Compile Include="Jliner\JlinerAddJunctionLiner2Gateway.cs" />
+    <Compile Include="Jliner\JlinerAddMasterAreaGateway.cs" />
+    <Compile Include="Jliner\JlinerAddTDS.Designer.cs" />
+    <Compile Include="Jliner\JlinerCommentGateway.cs" />
+    <Compile Include="Jliner\JlinerCoPitLocationListGateway.cs" />
+    <Compile Include="Jliner\JlinerGateway.cs" />
+    <Compile Include="Jliner\JlinerHistoryGateway.cs" />
+    <Compile Include="Jliner\JlinerNavigatorGateway.cs" />
+    <Compile Include="Jliner\JlinerNavigatorTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JlinerNavigatorTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Jliner\JlinerOverviewReportGateway.cs" />
+    <Compile Include="Jliner\JlinerOverviewReportTDS.cs">
+      <DependentUpon>JlinerOverviewReportTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Jliner\JlinerOverviewReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JlinerOverviewReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Jliner\JlinertoBuildReportGateway.cs" />
+    <Compile Include="Jliner\JlinertoBuildReportTDS.cs">
+      <DependentUpon>JlinertoBuildReportTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Jliner\JlinertoBuildReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JlinertoBuildReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Jliner\LinningPlanGateway.cs" />
+    <Compile Include="Jliner\LinningPlanJlinerGateway.cs" />
+    <Compile Include="Jliner\LinningPlanTDS.cs">
+      <DependentUpon>LinningPlanTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Jliner\LinningPlanTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LinningPlanTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="JunctionLining\FlatSectionJLAllCommentsGateway.cs" />
+    <Compile Include="JunctionLining\FlatSectionJLAllHistoryGateway.cs" />
+    <Compile Include="JunctionLining\FlatSectionJlCommentDetailsGateway.cs" />
+    <Compile Include="JunctionLining\FlatSectionJlGateway.cs" />
+    <Compile Include="JunctionLining\FlatSectionJlHistoryDetailsGateway.cs" />
+    <Compile Include="JunctionLining\FlatSectionJlsGateway.cs" />
+    <Compile Include="JunctionLining\FlatSectionJlsTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FlatSectionJlsTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="JunctionLining\FlatSectionJlTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FlatSectionJlTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="JunctionLining\JlAddLateralsNewGateway.cs" />
+    <Compile Include="JunctionLining\JlAddLateralsSearchGateway.cs" />
+    <Compile Include="JunctionLining\JlAddLateralsTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JlAddLateralsTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="JunctionLining\JlAddLateralsTempGateway.cs" />
+    <Compile Include="JunctionLining\JlLiningPlanGateway.cs" />
+    <Compile Include="JunctionLining\JlLiningPlanJlinerGateway.cs" />
+    <Compile Include="JunctionLining\JlLiningPlanTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JlLiningPlanTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="JunctionLining\JlNavigatorGateway.cs" />
+    <Compile Include="JunctionLining\JlNavigatorTDS.cs">
+      <DependentUpon>JlNavigatorTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="JunctionLining\JlNavigatorTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JlNavigatorTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="JunctionLining\JlOverviewReportGateway.cs" />
+    <Compile Include="JunctionLining\JlOverviewReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JlOverviewReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="JunctionLining\JlsNavigatorGateway.cs" />
+    <Compile Include="JunctionLining\JlsNavigatorTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JlsNavigatorTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="JunctionLining\JltoBuildReportGateway.cs" />
+    <Compile Include="JunctionLining\JltoBuildReportTDS.cs">
+      <DependentUpon>JltoBuildReportTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="JunctionLining\JltoBuildReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JltoBuildReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PointRepairs\PlLiningPlanTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlLiningPlanTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PointRepairs\PointRepairsCommentDetailsGateway.cs" />
+    <Compile Include="PointRepairs\PointRepairsRepairDetailsGateway.cs" />
+    <Compile Include="PointRepairs\PointRepairsSectionDetailsGateway.cs" />
+    <Compile Include="PointRepairs\PointRepairsTDS.cs">
+      <DependentUpon>PointRepairsTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PointRepairs\PointRepairsTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PointRepairsTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PointRepairs\PointRepairsWorkDetailsGateway.cs" />
+    <Compile Include="PointRepairs\PrLiningPlanGateway.cs" />
+    <Compile Include="PointRepairs\PrNavigatorGateway.cs" />
+    <Compile Include="PointRepairs\PrNavigatorTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrNavigatorTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PointRepairs\PrOverviewReportGateway.cs" />
+    <Compile Include="PointRepairs\PrOverviewReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrOverviewReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PointRepairs\SizeInformationGateway.cs" />
+    <Compile Include="PointRepairs\SizeInformationTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SizeInformationTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RehabAssessment\RaLiningPlanGateway.cs" />
+    <Compile Include="RehabAssessment\RaLiningPlanTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RaLiningPlanTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RehabAssessment\RaNavigatorGateway.cs" />
+    <Compile Include="RehabAssessment\RaNavigatorTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RaNavigatorTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RehabAssessment\RehabAssessmentCommentDetailsGateway.cs" />
+    <Compile Include="RehabAssessment\RehabAssessmentLateralDetailsGateway.cs" />
+    <Compile Include="RehabAssessment\RehabAssessmentSectionDetailsGateway.cs" />
+    <Compile Include="RehabAssessment\RehabAssessmentTDS.cs">
+      <DependentUpon>RehabAssessmentTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RehabAssessment\RehabAssessmentTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RehabAssessmentTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RehabAssessment\RehabAssessmentWorkDetailsGateway.cs" />
+    <Compile Include="Section\SectionGateway.cs" />
+    <Compile Include="Section\SectionSubAreaGateway.cs" />
+    <Compile Include="Section\SectionTDS.cs">
+      <DependentUpon>SectionTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Section\SectionTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SectionTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Section\SectionMHGateway.cs" />
+    <Compile Include="Works\WorkCommentsGateway.cs" />
+    <Compile Include="Works\WorkCommentTypeListGateway.cs" />
+    <Compile Include="Works\WorkFullLengthLiningCatalystsGateway.cs" />
+    <Compile Include="Works\WorkFullLengthLiningGateway.cs" />
+    <Compile Include="Works\WorkFullLengthLiningM1Gateway.cs" />
+    <Compile Include="Works\WorkFullLengthLiningM1SiteDetailsListGateway.cs" />
+    <Compile Include="Works\WorkFullLengthLiningM1TrafficControlListGateway.cs" />
+    <Compile Include="Works\WorkFullLengthLiningM2Gateway.cs" />
+    <Compile Include="Works\WorkFullLengthLiningM1LateralGateway.cs" />
+    <Compile Include="Works\WorkFullLengthLiningM1MeasurementTypeListGateway.cs" />
+    <Compile Include="Works\WorkFullLengthLiningM2SurfaceGradeListGateway.cs" />
+    <Compile Include="Works\WorkFullLengthLiningP1Gateway.cs" />
+    <Compile Include="Works\WorkFullLengthLiningResinsGateway.cs" />
+    <Compile Include="Works\WorkFullLengthLiningResinsListGateway.cs" />
+    <Compile Include="Works\WorkGateway.cs" />
+    <Compile Include="Works\WorkHistoryGateway.cs" />
+    <Compile Include="Works\WorkJunctionLiningCoPitLocationListGateway.cs" />
+    <Compile Include="Works\WorkJunctionLiningFlangeGasketListGateway.cs" />
+    <Compile Include="Works\WorkJunctionLiningFlangeListGateway.cs" />
+    <Compile Include="Works\WorkJunctionLiningLateralGateway.cs" />
+    <Compile Include="Works\WorkJunctionLiningSectionGateway.cs" />
+    <Compile Include="Works\WorkJunctionLiningSectionTrafficControlListGateway.cs" />
+    <Compile Include="Works\WorkManholeRehabilitationBatchGateway.cs" />
+    <Compile Include="Works\WorkManholeRehabilitationGateway.cs" />
+    <Compile Include="Works\WorkPointRepairsGateway.cs" />
+    <Compile Include="Works\WorkPointRepairsRepairGateway.cs" />
+    <Compile Include="Works\WorkPointRepairsRepairPointLengthListGateway.cs" />
+    <Compile Include="Works\WorkPointRepairsRepairPointSizeGateway.cs" />
+    <Compile Include="Works\WorkPointRepairsRepairPointSizeListGateway.cs">
+    </Compile>
+    <Compile Include="Works\WorkProjectLoginProjectLastLoginGateway.cs" />
+    <Compile Include="Works\WorkProjectLoginTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkProjectLoginTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Works\WorkRehabAssessmentGateway.cs" />
+    <Compile Include="Common\WorkViewTypeListGateway.cs" />
+    <Compile Include="Works\WorkTDS.cs">
+      <DependentUpon>WorkTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Works\WorkTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkTDS.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Assets\LfsAssetsTDS.xsc">
+      <DependentUpon>LfsAssetsTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Assets\LfsAssetsTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LfsAssetsTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Assets\LfsAssetsTDS.xss">
+      <DependentUpon>LfsAssetsTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Common\AddManholeTDS.xsc">
+      <DependentUpon>AddManholeTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Common\AddManholeTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AddManholeTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Common\AddManholeTDS.xss">
+      <DependentUpon>AddManholeTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Common\BulkUploadTDS.xsc">
+      <DependentUpon>BulkUploadTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Common\BulkUploadTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BulkUploadTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Common\BulkUploadTDS.xss">
+      <DependentUpon>BulkUploadTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Common\GerencialWeeklyProductionReportTDS.xsc">
+      <DependentUpon>GerencialWeeklyProductionReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Common\GerencialWeeklyProductionReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GerencialWeeklyProductionReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Common\GerencialWeeklyProductionReportTDS.xss">
+      <DependentUpon>GerencialWeeklyProductionReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Common\GerencialDailyProductionReportTDS.xsc">
+      <DependentUpon>GerencialDailyProductionReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Common\GerencialDailyProductionReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GerencialDailyProductionReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Common\GerencialDailyProductionReportTDS.xss">
+      <DependentUpon>GerencialDailyProductionReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Common\LateralLocationSheetReportTDS.xsc">
+      <DependentUpon>LateralLocationSheetReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Common\LateralLocationSheetReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LateralLocationSheetReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Common\LateralLocationSheetReportTDS.xss">
+      <DependentUpon>LateralLocationSheetReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Common\ProjectAddSectionsTDS.xsc">
+      <DependentUpon>ProjectAddSectionsTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Common\ProjectAddSectionsTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjectAddSectionsTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Common\ProjectAddSectionsTDS.xss">
+      <DependentUpon>ProjectAddSectionsTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Common\SelectProjectTDS.xsc">
+      <DependentUpon>SelectProjectTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Common\SelectProjectTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SelectProjectTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Common\SelectProjectTDS.xss">
+      <DependentUpon>SelectProjectTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Common\WincanBulkUploadTDS.xsc">
+      <DependentUpon>WincanBulkUploadTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Common\WincanBulkUploadTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WincanBulkUploadTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Common\WincanBulkUploadTDS.xss">
+      <DependentUpon>WincanBulkUploadTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Common\WorkViewTDS.xsc">
+      <DependentUpon>WorkViewTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Common\WorkViewTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WorkViewTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Common\WorkViewTDS.xss">
+      <DependentUpon>WorkViewTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlAllOutstandingIssuesReportTDS.xsc">
+      <DependentUpon>FlAllOutstandingIssuesReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlAllOutstandingIssuesReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FlAllOutstandingIssuesReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FullLengthLining\FlAllOutstandingIssuesReportTDS.xss">
+      <DependentUpon>FlAllOutstandingIssuesReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlCatalystsAddTDS.xsc">
+      <DependentUpon>FlCatalystsAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlCatalystsAddTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FlCatalystsAddTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FullLengthLining\FlCatalystsAddTDS.xss">
+      <DependentUpon>FlCatalystsAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlCXIRemovedReportTDS.xsc">
+      <DependentUpon>FlCXIRemovedReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlCXIRemovedReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FlCXIRemovedReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FullLengthLining\FlCXIRemovedReportTDS.xss">
+      <DependentUpon>FlCXIRemovedReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlInversionFieldCureRecordTDS.xsc">
+      <DependentUpon>FlInversionFieldCureRecordTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlInversionFieldCureRecordTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FlInversionFieldCureRecordTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FullLengthLining\FlInversionFieldCureRecordTDS.xss">
+      <DependentUpon>FlInversionFieldCureRecordTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlInversionReportTDS.xsc">
+      <DependentUpon>FlInversionReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlInversionReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FlInversionReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FullLengthLining\FlInversionReportTDS.xss">
+      <DependentUpon>FlInversionReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlLiningCompletedReportTDS.xsc">
+      <DependentUpon>FlLiningCompletedReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlLiningCompletedReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FlLiningCompletedReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FullLengthLining\FlLiningCompletedReportTDS.xss">
+      <DependentUpon>FlLiningCompletedReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlM1LateralReportTDS.xsc">
+      <DependentUpon>FlM1LateralReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlM1LateralReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FlM1LateralReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FullLengthLining\FlM1LateralReportTDS.xss">
+      <DependentUpon>FlM1LateralReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlM1ReportTDS.xsc">
+      <DependentUpon>FlM1ReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlM1ReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FlM1ReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FullLengthLining\FlM1ReportTDS.xss">
+      <DependentUpon>FlM1ReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlM2ReportTDS.xsc">
+      <DependentUpon>FlM2ReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlM2ReportTDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FlM2ReportTDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FullLengthLining\FlM2ReportTDS.xss">
+      <DependentUpon>FlM2ReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlNavigatorTDS.xsc">
+      <DependentUpon>FlNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlNavigatorTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FlNavigatorTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FullLengthLining\FlNavigatorTDS.xss">
+      <DependentUpon>FlNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlOutstandingClientInvestigationIssuesCityCopyReportTDS.xsc">
+      <DependentUpon>FlOutstandingClientInvestigationIssuesCityCopyReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlOutstandingClientInvestigationIssuesCityCopyReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FlOutstandingClientInvestigationIssuesCityCopyReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FullLengthLining\FlOutstandingClientInvestigationIssuesCityCopyReportTDS.xss">
+      <DependentUpon>FlOutstandingClientInvestigationIssuesCityCopyReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlOutstandingClientIssuesReportTDS.xsc">
+      <DependentUpon>FlOutstandingClientIssuesReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlOutstandingClientIssuesReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FlOutstandingClientIssuesReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FullLengthLining\FlOutstandingClientIssuesReportTDS.xss">
+      <DependentUpon>FlOutstandingClientIssuesReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlOutstandingInvestigationIssuesReportTDS.xsc">
+      <DependentUpon>FlOutstandingInvestigationIssuesReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlOutstandingInvestigationIssuesReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FlOutstandingInvestigationIssuesReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FullLengthLining\FlOutstandingInvestigationIssuesReportTDS.xss">
+      <DependentUpon>FlOutstandingInvestigationIssuesReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlOutstandingLFSIssuesReportTDS.xsc">
+      <DependentUpon>FlOutstandingLFSIssuesReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlOutstandingLFSIssuesReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FlOutstandingLFSIssuesReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FullLengthLining\FlOutstandingLFSIssuesReportTDS.xss">
+      <DependentUpon>FlOutstandingLFSIssuesReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlOutstandingSalesIssuesReportTDS.xsc">
+      <DependentUpon>FlOutstandingSalesIssuesReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlOutstandingSalesIssuesReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FlOutstandingSalesIssuesReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FullLengthLining\FlOutstandingSalesIssuesReportTDS.xss">
+      <DependentUpon>FlOutstandingSalesIssuesReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlOverviewReportTDS.xsc">
+      <DependentUpon>FlOverviewReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlOverviewReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FlOverviewReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FullLengthLining\FlOverviewReportTDS.xss">
+      <DependentUpon>FlOverviewReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlReadyForLiningReportTDS.xsc">
+      <DependentUpon>FlReadyForLiningReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlReadyForLiningReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FlReadyForLiningReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FullLengthLining\FlReadyForLiningReportTDS.xss">
+      <DependentUpon>FlReadyForLiningReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlReinstateReportTDS.xsc">
+      <DependentUpon>FlReinstateReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlReinstateReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FlReinstateReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FullLengthLining\FlReinstateReportTDS.xss">
+      <DependentUpon>FlReinstateReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlResinsAddTDS.xsc">
+      <DependentUpon>FlResinsAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlResinsAddTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FlResinsAddTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FullLengthLining\FlResinsAddTDS.xss">
+      <DependentUpon>FlResinsAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlToBeMeasuredReportTDS.xsc">
+      <DependentUpon>FlToBeMeasuredReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlToBeMeasuredReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FlToBeMeasuredReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FullLengthLining\FlToBeMeasuredReportTDS.xss">
+      <DependentUpon>FlToBeMeasuredReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlToBePreppedReportTDS.xsc">
+      <DependentUpon>FlToBePreppedReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlToBePreppedReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FlToBePreppedReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FullLengthLining\FlToBePreppedReportTDS.xss">
+      <DependentUpon>FlToBePreppedReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlWetOutReportTDS.xsc">
+      <DependentUpon>FlWetOutReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FlWetOutReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FlWetOutReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FullLengthLining\FlWetOutReportTDS.xss">
+      <DependentUpon>FlWetOutReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FLWorkAheadReportTDS.xsc">
+      <DependentUpon>FLWorkAheadReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FLWorkAheadReportTDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FLWorkAheadReportTDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FullLengthLining\FLWorkAheadReportTDS.xss">
+      <DependentUpon>FLWorkAheadReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FullLengthLiningTDS.xsc">
+      <DependentUpon>FullLengthLiningTDS.xsd</DependentUpon>
+    </None>
+    <None Include="FullLengthLining\FullLengthLiningTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FullLengthLiningTDS1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FullLengthLining\FullLengthLiningTDS.xss">
+      <DependentUpon>FullLengthLiningTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Jliner\FlatSectionJlinerTDS.xsc">
+      <DependentUpon>FlatSectionJlinerTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Jliner\FlatSectionJlinerTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FlatSectionJlinerTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Jliner\FlatSectionJlinerTDS.xss">
+      <DependentUpon>FlatSectionJlinerTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Jliner\JlinerAddTDS.xsc">
+      <DependentUpon>JlinerAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Jliner\JlinerAddTDS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Jliner\JlinerAddTDS.xss">
+      <DependentUpon>JlinerAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Jliner\JlinerNavigatorTDS.xsc">
+      <DependentUpon>JlinerNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Jliner\JlinerNavigatorTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JlinerNavigatorTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Jliner\JlinerNavigatorTDS.xss">
+      <DependentUpon>JlinerNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Jliner\JlinerOverviewReportTDS.xsc">
+      <DependentUpon>JlinerOverviewReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Jliner\JlinerOverviewReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JlinerOverviewReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Jliner\JlinerOverviewReportTDS.xss">
+      <DependentUpon>JlinerOverviewReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Jliner\JlinertoBuildReportTDS.xsc">
+      <DependentUpon>JlinertoBuildReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Jliner\JlinertoBuildReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JlinertoBuildReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Jliner\JlinertoBuildReportTDS.xss">
+      <DependentUpon>JlinertoBuildReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Jliner\LinningPlanTDS.xsc">
+      <DependentUpon>LinningPlanTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Jliner\LinningPlanTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LinningPlanTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Jliner\LinningPlanTDS.xss">
+      <DependentUpon>LinningPlanTDS.xsd</DependentUpon>
+    </None>
+    <None Include="JunctionLining\FlatSectionJlsTDS.xsc">
+      <DependentUpon>FlatSectionJlsTDS.xsd</DependentUpon>
+    </None>
+    <None Include="JunctionLining\FlatSectionJlsTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FlatSectionJlsTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="JunctionLining\FlatSectionJlsTDS.xss">
+      <DependentUpon>FlatSectionJlsTDS.xsd</DependentUpon>
+    </None>
+    <None Include="JunctionLining\FlatSectionJlTDS.xsc">
+      <DependentUpon>FlatSectionJlTDS.xsd</DependentUpon>
+    </None>
+    <None Include="JunctionLining\FlatSectionJlTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FlatSectionJlTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="JunctionLining\FlatSectionJlTDS.xss">
+      <DependentUpon>FlatSectionJlTDS.xsd</DependentUpon>
+    </None>
+    <None Include="JunctionLining\JlAddLateralsTDS.xsc">
+      <DependentUpon>JlAddLateralsTDS.xsd</DependentUpon>
+    </None>
+    <None Include="JunctionLining\JlAddLateralsTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JlAddLateralsTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="JunctionLining\JlAddLateralsTDS.xss">
+      <DependentUpon>JlAddLateralsTDS.xsd</DependentUpon>
+    </None>
+    <None Include="JunctionLining\JlLiningPlanTDS.xsc">
+      <DependentUpon>JlLiningPlanTDS.xsd</DependentUpon>
+    </None>
+    <None Include="JunctionLining\JlLiningPlanTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JlLiningPlanTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="JunctionLining\JlLiningPlanTDS.xss">
+      <DependentUpon>JlLiningPlanTDS.xsd</DependentUpon>
+    </None>
+    <None Include="JunctionLining\JlNavigatorTDS.xsc">
+      <DependentUpon>JlNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="JunctionLining\JlNavigatorTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JlNavigatorTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="JunctionLining\JlNavigatorTDS.xss">
+      <DependentUpon>JlNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="JunctionLining\JlOverviewReportTDS.xsc">
+      <DependentUpon>JlOverviewReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="JunctionLining\JlOverviewReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JlOverviewReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="JunctionLining\JlOverviewReportTDS.xss">
+      <DependentUpon>JlOverviewReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="JunctionLining\JlsNavigatorTDS.xsc">
+      <DependentUpon>JlsNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="JunctionLining\JlsNavigatorTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JlsNavigatorTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="JunctionLining\JlsNavigatorTDS.xss">
+      <DependentUpon>JlsNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="JunctionLining\JltoBuildReportTDS.xsc">
+      <DependentUpon>JltoBuildReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="JunctionLining\JltoBuildReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JltoBuildReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="JunctionLining\JltoBuildReportTDS.xss">
+      <DependentUpon>JltoBuildReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ManholeRehabilitation\ManholeRehabilitationTDS.xsc">
+      <DependentUpon>ManholeRehabilitationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ManholeRehabilitation\ManholeRehabilitationTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ManholeRehabilitationTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ManholeRehabilitation\ManholeRehabilitationTDS.xss">
+      <DependentUpon>ManholeRehabilitationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ManholeRehabilitation\MrBatchVerificationTDS.xsc">
+      <DependentUpon>MrBatchVerificationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ManholeRehabilitation\MrBatchVerificationTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MrBatchVerificationTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ManholeRehabilitation\MrBatchVerificationTDS.xss">
+      <DependentUpon>MrBatchVerificationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ManholeRehabilitation\MrNavigatorTDS.xsc">
+      <DependentUpon>MrNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ManholeRehabilitation\MrNavigatorTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MrNavigatorTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ManholeRehabilitation\MrNavigatorTDS.xss">
+      <DependentUpon>MrNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ManholeRehabilitation\MrSummaryReportTDS.xsc">
+      <DependentUpon>MrSummaryReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ManholeRehabilitation\MrSummaryReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MrSummaryReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ManholeRehabilitation\MrSummaryReportTDS.xss">
+      <DependentUpon>MrSummaryReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="PointRepairs\PlLiningPlanTDS.xsc">
+      <DependentUpon>PlLiningPlanTDS.xsd</DependentUpon>
+    </None>
+    <None Include="PointRepairs\PlLiningPlanTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PlLiningPlanTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PointRepairs\PlLiningPlanTDS.xss">
+      <DependentUpon>PlLiningPlanTDS.xsd</DependentUpon>
+    </None>
+    <None Include="PointRepairs\PointRepairsTDS.xsc">
+      <DependentUpon>PointRepairsTDS.xsd</DependentUpon>
+    </None>
+    <None Include="PointRepairs\PointRepairsTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PointRepairsTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PointRepairs\PointRepairsTDS.xss">
+      <DependentUpon>PointRepairsTDS.xsd</DependentUpon>
+    </None>
+    <None Include="PointRepairs\PrNavigatorTDS.xsc">
+      <DependentUpon>PrNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="PointRepairs\PrNavigatorTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PrNavigatorTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PointRepairs\PrNavigatorTDS.xss">
+      <DependentUpon>PrNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="PointRepairs\PrOverviewReportTDS.xsc">
+      <DependentUpon>PrOverviewReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="PointRepairs\PrOverviewReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PrOverviewReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PointRepairs\PrOverviewReportTDS.xss">
+      <DependentUpon>PrOverviewReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="PointRepairs\SizeInformationTDS.xsc">
+      <DependentUpon>SizeInformationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="PointRepairs\SizeInformationTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SizeInformationTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PointRepairs\SizeInformationTDS.xss">
+      <DependentUpon>SizeInformationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RehabAssessment\RaLiningPlanTDS.xsc">
+      <DependentUpon>RaLiningPlanTDS.xsd</DependentUpon>
+    </None>
+    <None Include="RehabAssessment\RaLiningPlanTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RaLiningPlanTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RehabAssessment\RaLiningPlanTDS.xss">
+      <DependentUpon>RaLiningPlanTDS.xsd</DependentUpon>
+    </None>
+    <None Include="RehabAssessment\RaNavigatorTDS.xsc">
+      <DependentUpon>RaNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="RehabAssessment\RaNavigatorTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RaNavigatorTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RehabAssessment\RaNavigatorTDS.xss">
+      <DependentUpon>RaNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="RehabAssessment\RehabAssessmentTDS.xsc">
+      <DependentUpon>RehabAssessmentTDS.xsd</DependentUpon>
+    </None>
+    <None Include="RehabAssessment\RehabAssessmentTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RehabAssessmentTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RehabAssessment\RehabAssessmentTDS.xss">
+      <DependentUpon>RehabAssessmentTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Section\SectionTDS.xsc">
+      <DependentUpon>SectionTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Section\SectionTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SectionTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Section\SectionTDS.xss">
+      <DependentUpon>SectionTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Works\WorkProjectLoginTDS.xsc">
+      <DependentUpon>WorkProjectLoginTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Works\WorkProjectLoginTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WorkProjectLoginTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Works\WorkProjectLoginTDS.xss">
+      <DependentUpon>WorkProjectLoginTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Works\WorkTDS.xsc">
+      <DependentUpon>WorkTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Works\WorkTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WorkTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Works\WorkTDS.xss">
+      <DependentUpon>WorkTDS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DA.RAF\DA.RAF.csproj">
+      <Project>{A7412996-397D-4881-B6E1-88F52435368A}</Project>
+      <Name>DA.RAF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.csproj">
+      <Project>{16842E60-30B0-414A-8FFA-0AC20F8B9B67}</Project>
+      <Name>Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ViewFullLengthLiningTDS" targetNamespace="http://tempuri.org/ViewFullLengthLiningTDS.xsd" xmlns:mstns="http://tempuri.org/ViewFullLengthLiningTDS.xsd" xmlns="http://tempuri.org/ViewFullLengthLiningTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsPropertyName="LFSDB9ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="LFSDB9ConnectionString ()" ParameterPrefix="@" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ViewFullLengthLiningTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ViewFullLengthLiningTDS" msprop:Generator_DataSetName="ViewFullLengthLiningTDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LfsM2Tables" msprop:Generator_UserTableName="LfsM2Tables" msprop:Generator_RowDeletedName="LfsM2TablesRowDeleted" msprop:Generator_TableClassName="LfsM2TablesDataTable" msprop:Generator_RowChangedName="LfsM2TablesRowChanged" msprop:Generator_RowClassName="LfsM2TablesRow" msprop:Generator_RowChangingName="LfsM2TablesRowChanging" msprop:Generator_RowEvArgName="LfsM2TablesRowChangeEvent" msprop:Generator_RowEvHandlerName="LfsM2TablesRowChangeEventHandler" msprop:Generator_TablePropName="LfsM2Tables" msprop:Generator_TableVarName="tableLfsM2Tables" msprop:Generator_RowDeletingName="LfsM2TablesRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:string" />
+              <xs:element name="RefID" msprop:Generator_UserColumnName="RefID" msprop:Generator_ColumnPropNameInRow="RefID" msprop:Generator_ColumnVarNameInTable="columnRefID" msprop:Generator_ColumnPropNameInTable="RefIDColumn" type="xs:int" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="VideoDistance" msprop:Generator_UserColumnName="VideoDistance" msprop:Generator_ColumnPropNameInRow="VideoDistance" msprop:Generator_ColumnVarNameInTable="columnVideoDistance" msprop:Generator_ColumnPropNameInTable="VideoDistanceColumn" type="xs:float" minOccurs="0" />
+              <xs:element name="ClockPosition" msprop:Generator_UserColumnName="ClockPosition" msprop:Generator_ColumnPropNameInRow="ClockPosition" msprop:Generator_ColumnVarNameInTable="columnClockPosition" msprop:Generator_ColumnPropNameInTable="ClockPositionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LiveOrAbandoned" msprop:Generator_UserColumnName="LiveOrAbandoned" msprop:Generator_ColumnPropNameInRow="LiveOrAbandoned" msprop:Generator_ColumnVarNameInTable="columnLiveOrAbandoned" msprop:Generator_ColumnPropNameInTable="LiveOrAbandonedColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DistanceToCentreOfLateral" msprop:Generator_UserColumnName="DistanceToCentreOfLateral" msprop:Generator_ColumnPropNameInRow="DistanceToCentreOfLateral" msprop:Generator_ColumnVarNameInTable="columnDistanceToCentreOfLateral" msprop:Generator_ColumnPropNameInTable="DistanceToCentreOfLateralColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LateralDiameter" msprop:Generator_UserColumnName="LateralDiameter" msprop:Generator_ColumnPropNameInRow="LateralDiameter" msprop:Generator_ColumnVarNameInTable="columnLateralDiameter" msprop:Generator_ColumnPropNameInTable="LateralDiameterColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LateralType" msprop:Generator_UserColumnName="LateralType" msprop:Generator_ColumnPropNameInRow="LateralType" msprop:Generator_ColumnVarNameInTable="columnLateralType" msprop:Generator_ColumnPropNameInTable="LateralTypeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DateTimeOpened" msprop:Generator_UserColumnName="DateTimeOpened" msprop:Generator_ColumnPropNameInRow="DateTimeOpened" msprop:Generator_ColumnVarNameInTable="columnDateTimeOpened" msprop:Generator_ColumnPropNameInTable="DateTimeOpenedColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Comments" msprop:Generator_UserColumnName="Comments" msprop:Generator_ColumnPropNameInRow="Comments" msprop:Generator_ColumnVarNameInTable="columnComments" msprop:Generator_ColumnPropNameInTable="CommentsColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ReverseSetup" msprop:Generator_UserColumnName="ReverseSetup" msprop:Generator_ColumnPropNameInRow="ReverseSetup" msprop:Generator_ColumnVarNameInTable="columnReverseSetup" msprop:Generator_ColumnPropNameInTable="ReverseSetupColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Archived" msprop:Generator_UserColumnName="Archived" msprop:Generator_ColumnPropNameInRow="Archived" msprop:Generator_ColumnVarNameInTable="columnArchived" msprop:Generator_ColumnPropNameInTable="ArchivedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="InDatabase" msprop:Generator_UserColumnName="InDatabase" msprop:Generator_ColumnPropNameInRow="InDatabase" msprop:Generator_ColumnVarNameInTable="columnInDatabase" msprop:Generator_ColumnPropNameInTable="InDatabaseColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LfsM2Tables" />
+      <xs:field xpath="mstns:ID" />
+      <xs:field xpath="mstns:RefID" />
+      <xs:field xpath="mstns:COMPANY_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ProjectCostingSheetsNavigatorTDS" targetNamespace="http://tempuri.org/ProjectCostingSheetsNavigatorTDS.xsd" xmlns:mstns="http://tempuri.org/ProjectCostingSheetsNavigatorTDS.xsd" xmlns="http://tempuri.org/ProjectCostingSheetsNavigatorTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ProjectCostingSheetsNavigatorTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ProjectCostingSheetsNavigatorTDS" msprop:Generator_DataSetName="ProjectCostingSheetsNavigatorTDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ProjectCostingSheetsNavigator" msprop:Generator_UserTableName="ProjectCostingSheetsNavigator" msprop:Generator_RowDeletedName="ProjectCostingSheetsNavigatorRowDeleted" msprop:Generator_RowChangedName="ProjectCostingSheetsNavigatorRowChanged" msprop:Generator_RowClassName="ProjectCostingSheetsNavigatorRow" msprop:Generator_RowChangingName="ProjectCostingSheetsNavigatorRowChanging" msprop:Generator_RowEvArgName="ProjectCostingSheetsNavigatorRowChangeEvent" msprop:Generator_RowEvHandlerName="ProjectCostingSheetsNavigatorRowChangeEventHandler" msprop:Generator_TableClassName="ProjectCostingSheetsNavigatorDataTable" msprop:Generator_TableVarName="tableProjectCostingSheetsNavigator" msprop:Generator_RowDeletingName="ProjectCostingSheetsNavigatorRowDeleting" msprop:Generator_TablePropName="ProjectCostingSheetsNavigator">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CostingSheetID" msprop:Generator_UserColumnName="CostingSheetID" msprop:Generator_ColumnPropNameInRow="CostingSheetID" msprop:Generator_ColumnVarNameInTable="columnCostingSheetID" msprop:Generator_ColumnPropNameInTable="CostingSheetIDColumn" type="xs:int" />
+              <xs:element name="StartDate" msprop:Generator_UserColumnName="StartDate" msprop:Generator_ColumnPropNameInRow="StartDate" msprop:Generator_ColumnVarNameInTable="columnStartDate" msprop:Generator_ColumnPropNameInTable="StartDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EndDate" msprop:Generator_UserColumnName="EndDate" msprop:Generator_ColumnPropNameInRow="EndDate" msprop:Generator_ColumnVarNameInTable="columnEndDate" msprop:Generator_ColumnPropNameInTable="EndDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DataRange" msprop:Generator_UserColumnName="DataRange" msprop:Generator_ColumnPropNameInRow="DataRange" msprop:Generator_ColumnVarNameInTable="columnDataRange" msprop:Generator_ColumnPropNameInTable="DataRangeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Selected" msprop:Generator_UserColumnName="Selected" msprop:Generator_ColumnVarNameInTable="columnSelected" msprop:Generator_ColumnPropNameInRow="Selected" msprop:Generator_ColumnPropNameInTable="SelectedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="State" msprop:Generator_UserColumnName="State" msprop:Generator_ColumnVarNameInTable="columnState" msprop:Generator_ColumnPropNameInRow="State" msprop:Generator_ColumnPropNameInTable="StateColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ProjectCombinedCostingSheetsNavigator" msprop:Generator_UserTableName="ProjectCombinedCostingSheetsNavigator" msprop:Generator_RowDeletedName="ProjectCombinedCostingSheetsNavigatorRowDeleted" msprop:Generator_TableClassName="ProjectCombinedCostingSheetsNavigatorDataTable" msprop:Generator_RowChangedName="ProjectCombinedCostingSheetsNavigatorRowChanged" msprop:Generator_RowClassName="ProjectCombinedCostingSheetsNavigatorRow" msprop:Generator_RowChangingName="ProjectCombinedCostingSheetsNavigatorRowChanging" msprop:Generator_RowEvArgName="ProjectCombinedCostingSheetsNavigatorRowChangeEvent" msprop:Generator_RowEvHandlerName="ProjectCombinedCostingSheetsNavigatorRowChangeEventHandler" msprop:Generator_TablePropName="ProjectCombinedCostingSheetsNavigator" msprop:Generator_TableVarName="tableProjectCombinedCostingSheetsNavigator" msprop:Generator_RowDeletingName="ProjectCombinedCostingSheetsNavigatorRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CostingSheetID" msprop:Generator_UserColumnName="CostingSheetID" msprop:Generator_ColumnPropNameInRow="CostingSheetID" msprop:Generator_ColumnVarNameInTable="columnCostingSheetID" msprop:Generator_ColumnPropNameInTable="CostingSheetIDColumn" type="xs:int" />
+              <xs:element name="StartDate" msprop:Generator_UserColumnName="StartDate" msprop:Generator_ColumnPropNameInRow="StartDate" msprop:Generator_ColumnVarNameInTable="columnStartDate" msprop:Generator_ColumnPropNameInTable="StartDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EndDate" msprop:Generator_UserColumnName="EndDate" msprop:Generator_ColumnPropNameInRow="EndDate" msprop:Generator_ColumnVarNameInTable="columnEndDate" msprop:Generator_ColumnPropNameInTable="EndDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DataRange" msprop:Generator_UserColumnName="DataRange" msprop:Generator_ColumnPropNameInRow="DataRange" msprop:Generator_ColumnVarNameInTable="columnDataRange" msprop:Generator_ColumnPropNameInTable="DataRangeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Selected" msprop:Generator_UserColumnName="Selected" msprop:Generator_ColumnPropNameInRow="Selected" msprop:Generator_ColumnVarNameInTable="columnSelected" msprop:Generator_ColumnPropNameInTable="SelectedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="State" msprop:Generator_UserColumnName="State" msprop:Generator_ColumnPropNameInRow="State" msprop:Generator_ColumnVarNameInTable="columnState" msprop:Generator_ColumnPropNameInTable="StateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CombinedProjects" msprop:Generator_UserColumnName="CombinedProjects" msprop:Generator_ColumnPropNameInRow="CombinedProjects" msprop:Generator_ColumnVarNameInTable="columnCombinedProjects" msprop:Generator_ColumnPropNameInTable="CombinedProjectsColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ProjectCostingSheetsNavigator" />
+      <xs:field xpath="mstns:CostingSheetID" />
+    </xs:unique>
+    <xs:unique name="ProjectCombinedCostingSheetsNavigator_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ProjectCombinedCostingSheetsNavigator" />
+      <xs:field xpath="mstns:CostingSheetID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

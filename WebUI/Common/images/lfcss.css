@@ -1,0 +1,270 @@
+/* CSS Document */
+
+.* 
+{
+}
+
+body 
+{
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+.tmain /* Text main page*/
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 12px;
+	font-weight: bolder;
+	color: #2f82c7;
+}
+
+.tmainlink /* Text main page link*/
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 14px;
+	text-decoration:none;
+	font-weight:bolder;
+	color:#2f82c7;
+}
+
+.tmainlink:hover /* Text main page link*/
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 14px;
+	font-weight:bolder;
+	color:#f7941c;
+	
+}
+
+.tmainlinkorange /* Text main page link*/
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 14px;
+	text-decoration:none;
+	font-weight:bolder;
+	color:#f7941c;
+}
+
+.tmainlinkorange:hover /* Text main page link*/
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 14px;
+	font-weight:bolder;
+	color:#2f82c7;
+	
+}
+
+.tsignoutlink /* Text "Sign Out"*/
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 14px;
+	color:#2f82c7;
+	font-weight:bolder;
+	text-decoration:none;
+}
+
+.tsignoutlink:hover /* Text Hover "Sign Out"*/
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 14px;
+	color:#93b7dd;
+	font-weight:bolder;
+}
+
+.tsignoutlinkdefault /* Text "Sign Out" default*/
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 14px;
+	color:#404040;
+	font-weight:bolder;
+	text-decoration:none;
+}
+
+.tsignoutlinkdefault:hover /* Text Hover "Sign Out" default*/
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 14px;
+	color:#ffffff;
+	font-weight:bolder;
+}
+
+.tTitle /* Text Title*/
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 22px;
+	font-weight: bolder;
+	color: #f7941c;
+}
+
+.tDialogTitle /* Dialog Title*/
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 18px;
+	font-weight: bolder;
+	color: #f7941c;
+}
+
+.tDialogTitleNew /* Dialog Title*/
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 18px;
+	font-weight: bolder;
+	color: #797B7D;
+}
+
+.tSection /* Text Section*/
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 15px;
+	font-weight: bolder;
+	color: #2f82c7;
+}
+
+.tLabel /* Text Label*/
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 11px;
+	font-weight: bold;
+	color: #2f82c7;
+}
+
+.tLabelNew /* Text Label*/
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 11px;
+	font-weight: bold;
+	color: #797b7d;
+}
+
+.tGroup /* Text Group*/
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 14px;
+	font-weight: bolder;
+	color: #ffffff;
+	background-color:#7c8c96;
+}
+
+.tColumns
+{
+	font-weight: bold;
+	font-size: 10pt;
+	color: #ffffff;
+	font-family: "Microsoft Sans Serif";
+	background-color: #2f82c7;
+}
+
+.tItem
+{
+	font-weight: bold;
+	font-size: 9pt;
+	color: #2f82c7;
+	font-family: "Microsoft Sans Serif";
+	background-color: #e7e9eb;
+}
+
+.tStatus /* Text Status*/
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 12px;
+	color: #2f82c7;
+	font-weight: bold;
+	background-color:#c8dbed;
+}
+
+.tTextField
+{
+	font-weight: bold;
+	font-size: 12px;
+	color: #2f82c7;
+	font-family: 'Microsoft Sans Serif';
+	background-color: #e7e9eb;
+}
+
+.tTextFieldCenter
+{
+	font-weight: bold;
+	font-size: 12px;
+	color: #2f82c7;
+	font-family: 'Microsoft Sans Serif';
+	background-color: #e7e9eb;
+	text-align: center;
+}
+
+.tButtonOkCancel
+{
+	font-family: "Century Gothic";
+	font-size: 11px;
+	font-weight: bold;
+	color: #ffffff;
+	background-color:#2f82c7;
+}
+
+.tButtonPrevNext
+{
+	font-family: "Century Gothic";
+	font-size: 11px;
+	font-weight: bold;
+	color: #404040;
+	background-color:#f7941c;
+}
+
+.tButtonDelete
+{
+	font-family: "Century Gothic";
+	font-size: 11px;
+	font-weight: bold;
+	color: #ffffff;
+	background-color:red;
+}
+
+.tOptionON /* Style Button*/
+{
+	font-family: "Century Gothic";
+	font-size: 11px;
+	font-weight: bolder;
+	color: #2f82c7;
+}
+
+.tOptionOFF /* Style Button*/
+{
+	font-family: "Century Gothic";
+	font-size: 11px;
+	font-weight: bolder;
+	color: #7c8c96;
+	text-decoration:none;
+	background: "/images/Im_OptionOff.gif"
+}
+
+.tOptionOFF:hover /* Style Button*/
+{
+	font-family: "Century Gothic";
+	font-size: 11px;
+	font-weight: bolder;
+	color: #2f82c7;
+	text-decoration:none;
+}
+
+
+/* NAVBARS */
+.ASPxNavBar_LinkButton
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 10px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #2f82c7;
+	background-color: #ffffff;
+}
+
+.ASPxNavBar_LinkButton:hover
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 10px;
+	font-weight: bold;
+	text-decoration:underline;
+	color: #f7941c;
+	background-color: #ffffff;
+}

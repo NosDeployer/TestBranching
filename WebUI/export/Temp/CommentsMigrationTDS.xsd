@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CommentsMigrationTDS" targetNamespace="http://tempuri.org/CommentsMigrationTDS.xsd" xmlns:mstns="http://tempuri.org/CommentsMigrationTDS.xsd" xmlns="http://tempuri.org/CommentsMigrationTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CommentsMigrationTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="CommentsMigrationTDS" msprop:Generator_UserDSName="CommentsMigrationTDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CommentsMigration" msprop:Generator_UserTableName="CommentsMigration" msprop:Generator_RowDeletedName="CommentsMigrationRowDeleted" msprop:Generator_TableClassName="CommentsMigrationDataTable" msprop:Generator_RowChangedName="CommentsMigrationRowChanged" msprop:Generator_RowClassName="CommentsMigrationRow" msprop:Generator_RowChangingName="CommentsMigrationRowChanging" msprop:Generator_RowEvArgName="CommentsMigrationRowChangeEvent" msprop:Generator_RowEvHandlerName="CommentsMigrationRowChangeEventHandler" msprop:Generator_TablePropName="CommentsMigration" msprop:Generator_TableVarName="tableCommentsMigration" msprop:Generator_RowDeletingName="CommentsMigrationRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AssetID" msprop:Generator_UserColumnName="AssetID" msprop:Generator_ColumnPropNameInRow="AssetID" msprop:Generator_ColumnVarNameInTable="columnAssetID" msprop:Generator_ColumnPropNameInTable="AssetIDColumn" type="xs:int" />
+              <xs:element name="SectionID" msprop:Generator_UserColumnName="SectionID" msprop:Generator_ColumnPropNameInRow="SectionID" msprop:Generator_ColumnVarNameInTable="columnSectionID" msprop:Generator_ColumnPropNameInTable="SectionIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="RehabAssessmentPrevWork" msprop:Generator_UserColumnName="RehabAssessmentPrevWork" msprop:Generator_ColumnPropNameInRow="RehabAssessmentPrevWork" msprop:Generator_ColumnVarNameInTable="columnRehabAssessmentPrevWork" msprop:Generator_ColumnPropNameInTable="RehabAssessmentPrevWorkColumn" type="xs:boolean" />
+              <xs:element name="FullLengthLiningPrevWork" msprop:Generator_UserColumnName="FullLengthLiningPrevWork" msprop:Generator_ColumnPropNameInRow="FullLengthLiningPrevWork" msprop:Generator_ColumnVarNameInTable="columnFullLengthLiningPrevWork" msprop:Generator_ColumnPropNameInTable="FullLengthLiningPrevWorkColumn" type="xs:boolean" />
+              <xs:element name="JunctionLiningPrevWork" msprop:Generator_UserColumnName="JunctionLiningPrevWork" msprop:Generator_ColumnPropNameInRow="JunctionLiningPrevWork" msprop:Generator_ColumnVarNameInTable="columnJunctionLiningPrevWork" msprop:Generator_ColumnPropNameInTable="JunctionLiningPrevWorkColumn" type="xs:boolean" />
+              <xs:element name="PointRepairsPrevWork" msprop:Generator_UserColumnName="PointRepairsPrevWork" msprop:Generator_ColumnPropNameInRow="PointRepairsPrevWork" msprop:Generator_ColumnVarNameInTable="columnPointRepairsPrevWork" msprop:Generator_ColumnPropNameInTable="PointRepairsPrevWorkColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="MigrateComments" msprop:Generator_UserColumnName="MigrateComments" msprop:Generator_ColumnPropNameInRow="MigrateComments" msprop:Generator_ColumnVarNameInTable="columnMigrateComments" msprop:Generator_ColumnPropNameInTable="MigrateCommentsColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="FlowOrderID" msprop:Generator_UserColumnName="FlowOrderID" msprop:Generator_ColumnPropNameInRow="FlowOrderID" msprop:Generator_ColumnVarNameInTable="columnFlowOrderID" msprop:Generator_ColumnPropNameInTable="FlowOrderIDColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CommentsMigration" />
+      <xs:field xpath="mstns:AssetID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

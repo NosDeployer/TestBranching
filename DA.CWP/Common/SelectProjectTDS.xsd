@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SelectProjectTDS" targetNamespace="http://tempuri.org/SelectProjectTDS.xsd" xmlns:mstns="http://tempuri.org/SelectProjectTDS.xsd" xmlns="http://tempuri.org/SelectProjectTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LFSDB9ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LFSDB9ConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.CWP.Properties.Settings.GlobalReference.Default.LFSDB9ConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SelectProjectTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SelectProjectTDS" msprop:Generator_DataSetName="SelectProjectTDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LastUsedProjects" msprop:Generator_UserTableName="LastUsedProjects" msprop:Generator_RowDeletedName="LastUsedProjectsRowDeleted" msprop:Generator_TableClassName="LastUsedProjectsDataTable" msprop:Generator_RowChangedName="LastUsedProjectsRowChanged" msprop:Generator_RowClassName="LastUsedProjectsRow" msprop:Generator_RowChangingName="LastUsedProjectsRowChanging" msprop:Generator_RowEvArgName="LastUsedProjectsRowChangeEvent" msprop:Generator_RowEvHandlerName="LastUsedProjectsRowChangeEventHandler" msprop:Generator_TablePropName="LastUsedProjects" msprop:Generator_TableVarName="tableLastUsedProjects" msprop:Generator_RowDeletingName="LastUsedProjectsRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProjectID" msprop:Generator_UserColumnName="ProjectID" msprop:Generator_ColumnPropNameInRow="ProjectID" msprop:Generator_ColumnVarNameInTable="columnProjectID" msprop:Generator_ColumnPropNameInTable="ProjectIDColumn" type="xs:int" />
+              <xs:element name="ClientID" msprop:Generator_UserColumnName="ClientID" msprop:Generator_ColumnPropNameInRow="ClientID" msprop:Generator_ColumnVarNameInTable="columnClientID" msprop:Generator_ColumnPropNameInTable="ClientIDColumn" type="xs:int" />
+              <xs:element name="UserID" msprop:Generator_UserColumnName="UserID" msprop:Generator_ColumnPropNameInRow="UserID" msprop:Generator_ColumnVarNameInTable="columnUserID" msprop:Generator_ColumnPropNameInTable="UserIDColumn" type="xs:int" />
+              <xs:element name="LastLoggedInDate" msprop:Generator_UserColumnName="LastLoggedInDate" msprop:Generator_ColumnPropNameInRow="LastLoggedInDate" msprop:Generator_ColumnVarNameInTable="columnLastLoggedInDate" msprop:Generator_ColumnPropNameInTable="LastLoggedInDateColumn" type="xs:dateTime" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="WorkType" msprop:Generator_UserColumnName="WorkType" msprop:Generator_ColumnPropNameInRow="WorkType" msprop:Generator_ColumnVarNameInTable="columnWorkType" msprop:Generator_ColumnPropNameInTable="WorkTypeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProjectName" msprop:Generator_UserColumnName="ProjectName" msprop:Generator_ColumnPropNameInRow="ProjectName" msprop:Generator_ColumnVarNameInTable="columnProjectName" msprop:Generator_ColumnPropNameInTable="ProjectNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ClientName" msprop:Generator_UserColumnName="ClientName" msprop:Generator_ColumnPropNameInRow="ClientName" msprop:Generator_ColumnVarNameInTable="columnClientName" msprop:Generator_ColumnPropNameInTable="ClientNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="InDataBase" msprop:Generator_UserColumnName="InDataBase" msprop:Generator_ColumnPropNameInRow="InDataBase" msprop:Generator_ColumnVarNameInTable="columnInDataBase" msprop:Generator_ColumnPropNameInTable="InDataBaseColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LastUsedProjects" />
+      <xs:field xpath="mstns:ProjectID" />
+      <xs:field xpath="mstns:ClientID" />
+      <xs:field xpath="mstns:UserID" />
+      <xs:field xpath="mstns:COMPANY_ID" />
+      <xs:field xpath="mstns:WorkType" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

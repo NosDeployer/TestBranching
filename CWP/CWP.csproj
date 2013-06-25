@@ -1,0 +1,958 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0E8CBAD9-186D-4CF5-A163-314FB77A3DBC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LiquiForce.LFSLive.CWP</RootNamespace>
+    <AssemblyName>LiquiForce.LFSLive.CWP</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>http://localhost/LiquiForce.LFSLive.CWP/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="LiquiForce.LFSLive.BL.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.BL.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LiquiForce.LFSLive.DA.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.DA.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LiquiForce.LFSLive.Server, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BL\AddRecordPointRepairs.cs" />
+    <Compile Include="BL\LFSRecordJuntionLiner.cs" />
+    <Compile Include="BL\LFSRecordM2Tables.cs" />
+    <Compile Include="BL\LFSRecordPointRepairs.cs" />
+    <Compile Include="BL\ViewFullLengthLiningLfsM2Tables.cs" />
+    <Compile Include="BL\ViewJLinersheetJunctionLiner.cs" />
+    <Compile Include="DatabaseGateway\AddRecordPointRepairsGateway.cs" />
+    <Compile Include="DatabaseGateway\AddRecordTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddRecordTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseGateway\CompaniesGateway.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatabaseGateway\LFSDirectionsGateway.cs" />
+    <Compile Include="DatabaseGateway\LFSMainConnectionGateway.cs" />
+    <Compile Include="DatabaseGateway\LFSMasterAreaGateway.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatabaseGateway\LFSMeasurementTypeGateway.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatabaseGateway\LFSMHShotsGateway.cs" />
+    <Compile Include="DatabaseGateway\LFSRecordForArchiveToolGateway.cs" />
+    <Compile Include="DatabaseGateway\LFSRecordJuntionLinerGateway.cs" />
+    <Compile Include="DatabaseGateway\LFSRecordForNavigatorGateway.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatabaseGateway\LFSRecordM2TablesGateway.cs" />
+    <Compile Include="DatabaseGateway\LFSRecordPointRepairsGateway.cs" />
+    <Compile Include="DatabaseGateway\TDSLFSRecordForArchiveTool.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TDSLFSRecordForArchiveTool.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseGateway\TDSLFSRecordForJlinerSheetTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TDSLFSRecordForJlinerSheetTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseGateway\ViewFullLengthLiningLfsM2TablesGateway.cs" />
+    <Compile Include="DatabaseGateway\ViewFullLengthLiningTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ViewFullLengthLiningTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseGateway\ViewJLinersheetJunctionLinerGateway.cs" />
+    <Compile Include="DatabaseGateway\ViewJLinersheetTDS.cs">
+      <DependentUpon>ViewJLinersheetTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseGateway\ViewJLinersheetTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ViewJLinersheetTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\LFSRecordForReportsGateway.cs" />
+    <Compile Include="DatabaseGateway\LFSRecordGateway.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatabaseGateway\LFSTrafficControlGateway.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatabaseGateway\LoginGateway.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reports\rAllOutstandingIssues.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rAllOutstandingIssues.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rClientInvestigationIssuesCityCopy.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rClientInvestigationIssuesCityCopy.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rCXIRemovedReport.cs">
+      <DependentUpon>rCXIRemovedReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\rJLinerOverviewReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rJLinerOverviewReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rJLinerOverviewReportSimple.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rJLinerOverviewReportSimple.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rJLinersReadyToLine.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rJLinersReadyToLine.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rJLinersToBuild.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rJLinersToBuild.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rLiningCompleted.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rLiningCompleted.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rM1ReportByClient.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rM1ReportByClient.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rM2ReportByID.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rM2ReportByID.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rOutstandingClientIssues.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rOutstandingClientIssues.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rOutstandingInvestigationIssues.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rOutstandingInvestigationIssues.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rOutstandingLFSIssues.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rOutstandingLFSIssues.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rOutstandingPointRepairs.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rOutstandingPointRepairs.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rOutstandingSalesIssues.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rOutstandingSalesIssues.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rOverviewReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rOverviewReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rPointLinerReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rPointLinerReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rPointLinerScopeSheet.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rPointLinerScopeSheet.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rReadyForLining.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rReadyForLining.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rRehabAssessmentAreas.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rRehabAssessmentAreas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rToBeMeasured.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rToBeMeasured.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rToBePrepped.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rToBePrepped.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rWorkAhead.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rWorkAhead.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\TDSAllOutstandingIssues.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TDSAllOutstandingIssues.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TDSClientInvestigationIssuesCityCopy.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TDSClientInvestigationIssuesCityCopy.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TDSCXIRemovedReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TDSCXIRemovedReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TDSJLinerOverviewReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TDSJLinerOverviewReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TDSJLinersReadyToLine.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TDSJLinersReadyToLine.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TDSJLinersToBuild.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TDSJLinersToBuild.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseGateway\TDSLFSRecord.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TDSLFSRecord.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseGateway\TDSLFSRecordForNavigator.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TDSLFSRecordForNavigator.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseGateway\TDSLFSRecordForRCT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TDSLFSRecordForRCT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TDSLiningCompleted.Designer.cs">
+      <DependentUpon>TDSLiningCompleted.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\TDSM1ReportByClient.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TDSM1ReportByClient.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TDSM2ReportByID.Designer.cs">
+      <DependentUpon>TDSM2ReportByID.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\TDSOutstandingClientIssues.Designer.cs">
+      <DependentUpon>TDSOutstandingClientIssues.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\TDSOutstandingInvestigationIssues.Designer.cs">
+      <DependentUpon>TDSOutstandingInvestigationIssues.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\TDSOutstandingLFSIssues.Designer.cs">
+      <DependentUpon>TDSOutstandingLFSIssues.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\TDSOutstandingPointRepairs.Designer.cs">
+      <DependentUpon>TDSOutstandingPointRepairs.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\TDSOutstandingSalesIssues.Designer.cs">
+      <DependentUpon>TDSOutstandingSalesIssues.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\TDSOverviewReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TDSOverviewReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TDSPointLinerReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TDSPointLinerReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TDSPointLinerScopeSheet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TDSPointLinerScopeSheet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TDSReadyForLining.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TDSReadyForLining.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TDSRehabAssessmentAreas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TDSRehabAssessmentAreas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TDSToBeMeasured.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TDSToBeMeasured.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TDSToBePrepped.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TDSToBePrepped.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TDSWorkAhead.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TDSWorkAhead.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools\Distance.cs" />
+    <Compile Include="Tools\Generator.cs" />
+    <Compile Include="Tools\Navigator.cs" />
+    <Compile Include="Tools\RecordChangeTracking.cs" />
+    <Compile Include="Tools\Validator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DatabaseGateway\AddRecordTDS.xsc">
+      <DependentUpon>AddRecordTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGateway\AddRecordTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AddRecordTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DatabaseGateway\AddRecordTDS.xss">
+      <DependentUpon>AddRecordTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGateway\TDSLFSRecordForArchiveTool.xsc">
+      <DependentUpon>TDSLFSRecordForArchiveTool.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGateway\TDSLFSRecordForArchiveTool.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TDSLFSRecordForArchiveTool.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseGateway\TDSLFSRecordForArchiveTool.xss">
+      <DependentUpon>TDSLFSRecordForArchiveTool.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGateway\TDSLFSRecordForArchiveTool.xsx">
+      <DependentUpon>TDSLFSRecordForArchiveTool.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGateway\TDSLFSRecordForJlinerSheetTDS.xsc">
+      <DependentUpon>TDSLFSRecordForJlinerSheetTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGateway\TDSLFSRecordForJlinerSheetTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TDSLFSRecordForJlinerSheetTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DatabaseGateway\TDSLFSRecordForJlinerSheetTDS.xss">
+      <DependentUpon>TDSLFSRecordForJlinerSheetTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGateway\ViewFullLengthLiningTDS.xsc">
+      <DependentUpon>ViewFullLengthLiningTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGateway\ViewFullLengthLiningTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ViewFullLengthLiningTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DatabaseGateway\ViewFullLengthLiningTDS.xss">
+      <DependentUpon>ViewFullLengthLiningTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGateway\ViewJLinersheetTDS.xsc">
+      <DependentUpon>ViewJLinersheetTDS.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGateway\ViewJLinersheetTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ViewJLinersheetTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DatabaseGateway\ViewJLinersheetTDS.xss">
+      <DependentUpon>ViewJLinersheetTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\TDSAllOutstandingIssues.xsc">
+      <DependentUpon>TDSAllOutstandingIssues.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSAllOutstandingIssues.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TDSAllOutstandingIssues.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reports\TDSAllOutstandingIssues.xss">
+      <DependentUpon>TDSAllOutstandingIssues.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSAllOutstandingIssues.xsx">
+      <DependentUpon>TDSAllOutstandingIssues.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSClientInvestigationIssuesCityCopy.xsc">
+      <DependentUpon>TDSClientInvestigationIssuesCityCopy.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSClientInvestigationIssuesCityCopy.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TDSClientInvestigationIssuesCityCopy.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reports\TDSClientInvestigationIssuesCityCopy.xss">
+      <DependentUpon>TDSClientInvestigationIssuesCityCopy.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSClientInvestigationIssuesCityCopy.xsx">
+      <DependentUpon>TDSClientInvestigationIssuesCityCopy.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSCXIRemovedReport.xsc">
+      <DependentUpon>TDSCXIRemovedReport.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSCXIRemovedReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TDSCXIRemovedReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\TDSCXIRemovedReport.xss">
+      <DependentUpon>TDSCXIRemovedReport.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSCXIRemovedReport.xsx">
+      <DependentUpon>TDSCXIRemovedReport.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSJLinerOverviewReport.xsc">
+      <DependentUpon>TDSJLinerOverviewReport.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSJLinerOverviewReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TDSJLinerOverviewReport.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reports\TDSJLinerOverviewReport.xss">
+      <DependentUpon>TDSJLinerOverviewReport.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSJLinerOverviewReport.xsx">
+      <DependentUpon>TDSJLinerOverviewReport.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSJLinersReadyToLine.xsc">
+      <DependentUpon>TDSJLinersReadyToLine.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSJLinersReadyToLine.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TDSJLinersReadyToLine.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reports\TDSJLinersReadyToLine.xss">
+      <DependentUpon>TDSJLinersReadyToLine.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSJLinersReadyToLine.xsx">
+      <DependentUpon>TDSJLinersReadyToLine.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSJLinersToBuild.xsc">
+      <DependentUpon>TDSJLinersToBuild.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSJLinersToBuild.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TDSJLinersToBuild.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reports\TDSJLinersToBuild.xss">
+      <DependentUpon>TDSJLinersToBuild.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSJLinersToBuild.xsx">
+      <DependentUpon>TDSJLinersToBuild.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGateway\TDSLFSRecord.xsc">
+      <DependentUpon>TDSLFSRecord.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGateway\TDSLFSRecord.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TDSLFSRecord.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DatabaseGateway\TDSLFSRecord.xss">
+      <DependentUpon>TDSLFSRecord.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGateway\TDSLFSRecord.xsx">
+      <DependentUpon>TDSLFSRecord.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGateway\TDSLFSRecordForNavigator.xsc">
+      <DependentUpon>TDSLFSRecordForNavigator.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGateway\TDSLFSRecordForNavigator.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TDSLFSRecordForNavigator.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DatabaseGateway\TDSLFSRecordForNavigator.xss">
+      <DependentUpon>TDSLFSRecordForNavigator.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGateway\TDSLFSRecordForNavigator.xsx">
+      <DependentUpon>TDSLFSRecordForNavigator.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGateway\TDSLFSRecordForRCT.xsc">
+      <DependentUpon>TDSLFSRecordForRCT.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGateway\TDSLFSRecordForRCT.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TDSLFSRecordForRCT.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DatabaseGateway\TDSLFSRecordForRCT.xss">
+      <DependentUpon>TDSLFSRecordForRCT.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGateway\TDSLFSRecordForRCT.xsx">
+      <DependentUpon>TDSLFSRecordForRCT.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSLiningCompleted.xsc">
+      <DependentUpon>TDSLiningCompleted.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSLiningCompleted.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TDSLiningCompleted.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\TDSLiningCompleted.xss">
+      <DependentUpon>TDSLiningCompleted.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSLiningCompleted.xsx">
+      <DependentUpon>TDSLiningCompleted.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSM1ReportByClient.xsc">
+      <DependentUpon>TDSM1ReportByClient.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSM1ReportByClient.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TDSM1ReportByClient.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reports\TDSM1ReportByClient.xss">
+      <DependentUpon>TDSM1ReportByClient.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSM1ReportByClient.xsx">
+      <DependentUpon>TDSM1ReportByClient.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSM2ReportByID.xsc">
+      <DependentUpon>TDSM2ReportByID.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSM2ReportByID.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TDSM2ReportByID.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\TDSM2ReportByID.xss">
+      <DependentUpon>TDSM2ReportByID.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSOutstandingClientIssues.xsc">
+      <DependentUpon>TDSOutstandingClientIssues.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSOutstandingClientIssues.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TDSOutstandingClientIssues.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\TDSOutstandingClientIssues.xss">
+      <DependentUpon>TDSOutstandingClientIssues.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSOutstandingClientIssues.xsx">
+      <DependentUpon>TDSOutstandingClientIssues.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSOutstandingInvestigationIssues.xsc">
+      <DependentUpon>TDSOutstandingInvestigationIssues.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSOutstandingInvestigationIssues.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TDSOutstandingInvestigationIssues.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\TDSOutstandingInvestigationIssues.xss">
+      <DependentUpon>TDSOutstandingInvestigationIssues.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSOutstandingLFSIssues.xsc">
+      <DependentUpon>TDSOutstandingLFSIssues.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSOutstandingLFSIssues.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TDSOutstandingLFSIssues.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\TDSOutstandingLFSIssues.xss">
+      <DependentUpon>TDSOutstandingLFSIssues.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSOutstandingLFSIssues.xsx">
+      <DependentUpon>TDSOutstandingLFSIssues.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSOutstandingPointRepairs.xsc">
+      <DependentUpon>TDSOutstandingPointRepairs.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSOutstandingPointRepairs.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TDSOutstandingPointRepairs.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\TDSOutstandingPointRepairs.xss">
+      <DependentUpon>TDSOutstandingPointRepairs.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSOutstandingSalesIssues.xsc">
+      <DependentUpon>TDSOutstandingSalesIssues.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSOutstandingSalesIssues.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TDSOutstandingSalesIssues.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\TDSOutstandingSalesIssues.xss">
+      <DependentUpon>TDSOutstandingSalesIssues.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSOutstandingSalesIssues.xsx">
+      <DependentUpon>TDSOutstandingSalesIssues.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSOverviewReport.xsc">
+      <DependentUpon>TDSOverviewReport.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSOverviewReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TDSOverviewReport.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reports\TDSOverviewReport.xss">
+      <DependentUpon>TDSOverviewReport.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSOverviewReport.xsx">
+      <DependentUpon>TDSOverviewReport.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSPointLinerReport.xsc">
+      <DependentUpon>TDSPointLinerReport.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSPointLinerReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TDSPointLinerReport.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reports\TDSPointLinerReport.xss">
+      <DependentUpon>TDSPointLinerReport.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSPointLinerReport.xsx">
+      <DependentUpon>TDSPointLinerReport.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSPointLinerScopeSheet.xsc">
+      <DependentUpon>TDSPointLinerScopeSheet.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSPointLinerScopeSheet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TDSPointLinerScopeSheet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reports\TDSPointLinerScopeSheet.xss">
+      <DependentUpon>TDSPointLinerScopeSheet.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSPointLinerScopeSheet.xsx">
+      <DependentUpon>TDSPointLinerScopeSheet.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSReadyForLining.xsc">
+      <DependentUpon>TDSReadyForLining.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSReadyForLining.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TDSReadyForLining.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reports\TDSReadyForLining.xss">
+      <DependentUpon>TDSReadyForLining.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSReadyForLining.xsx">
+      <DependentUpon>TDSReadyForLining.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSRehabAssessmentAreas.xsc">
+      <DependentUpon>TDSRehabAssessmentAreas.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSRehabAssessmentAreas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TDSRehabAssessmentAreas.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reports\TDSRehabAssessmentAreas.xss">
+      <DependentUpon>TDSRehabAssessmentAreas.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSRehabAssessmentAreas.xsx">
+      <DependentUpon>TDSRehabAssessmentAreas.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSToBeMeasured.xsc">
+      <DependentUpon>TDSToBeMeasured.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSToBeMeasured.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TDSToBeMeasured.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reports\TDSToBeMeasured.xss">
+      <DependentUpon>TDSToBeMeasured.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSToBeMeasured.xsx">
+      <DependentUpon>TDSToBeMeasured.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSToBePrepped.xsc">
+      <DependentUpon>TDSToBePrepped.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSToBePrepped.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TDSToBePrepped.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reports\TDSToBePrepped.xss">
+      <DependentUpon>TDSToBePrepped.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSToBePrepped.xsx">
+      <DependentUpon>TDSToBePrepped.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSWorkAhead.xsc">
+      <DependentUpon>TDSWorkAhead.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSWorkAhead.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TDSWorkAhead.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reports\TDSWorkAhead.xss">
+      <DependentUpon>TDSWorkAhead.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\TDSWorkAhead.xsx">
+      <DependentUpon>TDSWorkAhead.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\rAllOutstandingIssues.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rAllOutstandingIssues.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rClientInvestigationIssuesCityCopy.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rClientInvestigationIssuesCityCopy.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rCXIRemovedReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rCXIRemovedReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rJLinerOverviewReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rJLinerOverviewReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rJLinerOverviewReportSimple.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rJLinerOverviewReportSimple.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rJLinersReadyToLine.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rJLinersReadyToLine.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rJLinersToBuild.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rJLinersToBuild.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rLiningCompleted.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rLiningCompleted.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rM1ReportByClient.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rM1ReportByClient.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rM2ReportByID.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rM2ReportByID.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rOutstandingClientIssues.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rOutstandingClientIssues.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rOutstandingInvestigationIssues.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rOutstandingInvestigationIssues.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rOutstandingLFSIssues.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rOutstandingLFSIssues.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rOutstandingPointRepairs.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rOutstandingPointRepairs.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rOutstandingSalesIssues.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rOutstandingSalesIssues.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rOverviewReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rOverviewReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rPointLinerReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rPointLinerReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rPointLinerScopeSheet.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rPointLinerScopeSheet.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rReadyForLining.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rReadyForLining.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rRehabAssessmentAreas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rRehabAssessmentAreas.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rToBeMeasured.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rToBeMeasured.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rToBePrepped.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rToBePrepped.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rWorkAhead.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rWorkAhead.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

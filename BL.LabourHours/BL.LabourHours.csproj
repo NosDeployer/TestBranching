@@ -1,0 +1,194 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3BDA8120-4A44-4646-BE56-41C8D5F6881E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LiquiForce.LFSLive.BL.LabourHours</RootNamespace>
+    <AssemblyName>LiquiForce.LFSLive.BL.LabourHours</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LiquiForce.LFSLive.BL.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.BL.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LiquiForce.LFSLive.DA.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.DA.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LiquiForce.LFSLive.Server, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActualCosts\ActualCostsNavigatorSubcontractorCosts.cs" />
+    <Compile Include="ActualCosts\ActualCostsReportSubcontractorCosts.cs" />
+    <Compile Include="ActualCosts\ActualCostsSubcontractorCosts.cs" />
+    <Compile Include="ActualCosts\ActualCostsAddSubcontractorCostss.cs" />
+    <Compile Include="ActualCosts\ActualCostsAddHotelCosts.cs" />
+    <Compile Include="ActualCosts\ActualCostsHotelCosts.cs" />
+    <Compile Include="ActualCosts\ActualCostsAddBondingCompaniesCosts.cs" />
+    <Compile Include="ActualCosts\ActualCostsAddInsuranceCompaniesCosts.cs" />
+    <Compile Include="ActualCosts\ActualCostsBondingCompaniesCosts.cs" />
+    <Compile Include="ActualCosts\ActualCostsInsuranceCompaniesCosts.cs" />
+    <Compile Include="ActualCosts\ActualCostsCategoryList.cs" />
+    <Compile Include="ActualCosts\ActualCostsInformationSubcontractorBasicInformation.cs" />
+    <Compile Include="ActualCosts\ActualCostsAddOtherCosts.cs" />
+    <Compile Include="ActualCosts\ActualCostsOtherCosts.cs" />
+    <Compile Include="ActualCosts\ActualCostsInformationHotelCostsBasicInformation.cs" />
+    <Compile Include="ActualCosts\ActualCostsInformationBondingCostsBasicInformation.cs" />
+    <Compile Include="ActualCosts\ActualCostsInformationInsuranceCostsBasicInformation.cs" />
+    <Compile Include="ActualCosts\ActualCostsInformationOtherCostsBasicInformation.cs" />
+    <Compile Include="ActualCosts\ActualCostsNavigatorInsuranceCompaniesCosts.cs" />
+    <Compile Include="ActualCosts\ActualCostsNavigatorBondingCompaniesCosts.cs" />
+    <Compile Include="ActualCosts\ActualCostsNavigatorOtherCosts.cs" />
+    <Compile Include="ActualCosts\ActualCostsNavigatoHotelCosts.cs" />
+    <Compile Include="ActualCosts\ActualCostsReportHotelCosts.cs" />
+    <Compile Include="ActualCosts\ActualCostsReportBondingCosts.cs" />
+    <Compile Include="ActualCosts\ActualCostsReportInsuranceCosts.cs" />
+    <Compile Include="ActualCosts\ActualCostsReportOtherCosts.cs" />
+    <Compile Include="ActualCosts\ActualCostsReportGeneral.cs" />
+    <Compile Include="ProjectTime\MealsAllowance.cs" />
+    <Compile Include="ProjectTime\PrintManhoursPerPhase.cs" />
+    <Compile Include="ProjectTime\PrintManhoursPerPhaseFLL.cs" />
+    <Compile Include="ProjectTime\PrintManHoursPerPhaseFLLInstall.cs" />
+    <Compile Include="ProjectTime\PrintManHoursPerPhaseFLLPrepMeasure.cs" />
+    <Compile Include="ProjectTime\PrintManHoursPerPhaseFLLReinstatePostVideo.cs" />
+    <Compile Include="ProjectTime\PrintManhoursPerPhaseGeneral.cs" />
+    <Compile Include="ProjectTime\PrintManhoursPerPhaseJLInstall.cs" />
+    <Compile Include="ProjectTime\PrintManhoursPerPhaseJLPrepFromMain.cs" />
+    <Compile Include="ProjectTime\PrintManHoursPerPhaseMH.cs" />
+    <Compile Include="ProjectTime\PrintManHoursPerPhaseMHPrep.cs" />
+    <Compile Include="ProjectTime\PrintManHoursPerPhaseMHSpray.cs" />
+    <Compile Include="ProjectTime\PrintManHoursPerPhasePL.cs" />
+    <Compile Include="ProjectTime\PrintManHoursPerPhasePLInstall.cs" />
+    <Compile Include="ProjectTime\PrintManHoursPerPhasePLPrep.cs" />
+    <Compile Include="ProjectTime\PrintManHoursPerPhasePLReinstate.cs" />
+    <Compile Include="ProjectTime\PrintManHoursPerPhaseRA.cs" />
+    <Compile Include="ProjectTime\PrintManHoursPerPhaseRAPreFlush.cs" />
+    <Compile Include="ProjectTime\PrintManHoursPerPhaseRAPreVideo.cs" />
+    <Compile Include="ProjectTime\PrintProjectCosting.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProjectTime\PrintUnnapprovedProjectTimes.cs" />
+    <Compile Include="ProjectTime\ProjectTime.cs" />
+    <Compile Include="ProjectTime\ProjectTimeApprove.cs" />
+    <Compile Include="ProjectTime\ProjectTimeJobClassTypeList.cs" />
+    <Compile Include="ProjectTime\ProjectTimeSection.cs" />
+    <Compile Include="ProjectTime\ProjectTimeSectionTemp.cs" />
+    <Compile Include="ProjectTime\ProjectTimeTemp.cs" />
+    <Compile Include="ProjectTime\ProjectTimeWorkFunctionList.cs" />
+    <Compile Include="ProjectTime\ProjectTimeWorkList.cs" />
+    <Compile Include="ProjectTime\WorkingDetails.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TeamProjectTime\TeamProjectTime2.cs" />
+    <Compile Include="TeamProjectTime\TeamProjectTime2Detail.cs" />
+    <Compile Include="TeamProjectTime\TeamProjectTime2DetailTemp.cs" />
+    <Compile Include="TeamProjectTime\TeamProjectTime2Section.cs" />
+    <Compile Include="TeamProjectTime\TeamProjectTime2SectionLateral.cs" />
+    <Compile Include="TeamProjectTime\TeamProjectTime2SectionMH.cs" />
+    <Compile Include="TeamProjectTime\TeamProjectTime2Template.cs" />
+    <Compile Include="TeamProjectTime\TeamProjectTimeWorkFunctionConcatList.cs" />
+    <Compile Include="TimeSheet\Timesheet.cs" />
+    <Compile Include="TimeSheet\TimesheetAll.cs" />
+    <Compile Include="TimeSheet\TimesheetNavigator.cs" />
+    <Compile Include="TimeSheet\TimesheetWaiting.cs" />
+    <Compile Include="TimeSheet\VacationDays.cs" />
+    <Compile Include="Vacations\VacationDays.cs" />
+    <Compile Include="Vacations\VacationRequests.cs" />
+    <Compile Include="Vacations\VacationsAddBasicInformation.cs" />
+    <Compile Include="Vacations\VacationsAddDaysInformation.cs" />
+    <Compile Include="Vacations\VacationsAddRequestsInformation.cs" />
+    <Compile Include="Vacations\VacationsEmployeeMaxPaidVacations.cs" />
+    <Compile Include="Vacations\VacationsInformation.cs" />
+    <Compile Include="Vacations\VacationsInformationBasicInformation.cs" />
+    <Compile Include="Vacations\VacationsInformationDaysInformation.cs" />
+    <Compile Include="Vacations\VacationsInformationRequestsInformation.cs" />
+    <Compile Include="Vacations\VacationsNonWorkingDays.cs" />
+    <Compile Include="Vacations\VacationsNonWorkingDaysInformation.cs" />
+    <Compile Include="Vacations\VacationsPaymentTypeList.cs" />
+    <Compile Include="Vacations\VacationsSetup.cs" />
+    <Compile Include="Vacations\VacationsSummaryReportEmployeeDetails.cs" />
+    <Compile Include="Vacations\VacationsSummaryReportVacationDetails.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BL.Resources\BL.Resources.csproj">
+      <Project>{D8EBE1D8-6FD3-4E9C-BF1B-21433E232C11}</Project>
+      <Name>BL.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DA.CWP\DA.CWP.csproj">
+      <Project>{946577F7-3264-4C79-B032-7F2DE3831002}</Project>
+      <Name>DA.CWP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DA.FleetManagement\DA.FleetManagement.csproj">
+      <Project>{80016E93-9B76-4284-9018-B0D156B5DC2D}</Project>
+      <Name>DA.FleetManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DA.LabourHours\DA.LabourHours.csproj">
+      <Project>{20E11C1C-31A5-4E1D-9393-8E000FBB12ED}</Project>
+      <Name>DA.LabourHours</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DA.Projects\DA.Projects.csproj">
+      <Project>{94F2537E-6075-4EA6-83EB-393A48DEFBB5}</Project>
+      <Name>DA.Projects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DA.Resources\DA.Resources.csproj">
+      <Project>{337C14FC-8E53-45E5-9687-6B86AEE5BC2F}</Project>
+      <Name>DA.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.csproj">
+      <Project>{16842E60-30B0-414A-8FFA-0AC20F8B9B67}</Project>
+      <Name>Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PayPeriod\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

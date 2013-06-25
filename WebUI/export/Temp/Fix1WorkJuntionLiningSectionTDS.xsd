@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Fix1WorkJuntionLiningSectionTDS" targetNamespace="http://tempuri.org/Fix1WorkJuntionLiningSectionTDS.xsd" xmlns:mstns="http://tempuri.org/Fix1WorkJuntionLiningSectionTDS.xsd" xmlns="http://tempuri.org/Fix1WorkJuntionLiningSectionTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsPropertyName="LFSDB9ConnectionString" ConnectionStringObject="Data Source=DEVENV;Initial Catalog=LFSDB9;Integrated Security=True" IsAppSettingsProperty="false" Modifier="Assembly" Name="LFSDB9ConnectionString" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Fix1WorkJuntionLiningSectionTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="Fix1WorkJuntionLiningSectionTDS" msprop:Generator_UserDSName="Fix1WorkJuntionLiningSectionTDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LFS_WORK_JUNCTIONLINING_SECTION" msprop:Generator_UserTableName="LFS_WORK_JUNCTIONLINING_SECTION" msprop:Generator_RowDeletedName="LFS_WORK_JUNCTIONLINING_SECTIONRowDeleted" msprop:Generator_TableClassName="LFS_WORK_JUNCTIONLINING_SECTIONDataTable" msprop:Generator_RowChangedName="LFS_WORK_JUNCTIONLINING_SECTIONRowChanged" msprop:Generator_RowClassName="LFS_WORK_JUNCTIONLINING_SECTIONRow" msprop:Generator_RowChangingName="LFS_WORK_JUNCTIONLINING_SECTIONRowChanging" msprop:Generator_RowEvArgName="LFS_WORK_JUNCTIONLINING_SECTIONRowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_WORK_JUNCTIONLINING_SECTIONRowChangeEventHandler" msprop:Generator_TablePropName="LFS_WORK_JUNCTIONLINING_SECTION" msprop:Generator_TableVarName="tableLFS_WORK_JUNCTIONLINING_SECTION" msprop:Generator_RowDeletingName="LFS_WORK_JUNCTIONLINING_SECTIONRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WorkID" msprop:Generator_UserColumnName="WorkID" msprop:Generator_ColumnPropNameInRow="WorkID" msprop:Generator_ColumnVarNameInTable="columnWorkID" msprop:Generator_ColumnPropNameInTable="WorkIDColumn" type="xs:int" />
+              <xs:element name="NumLats" msprop:Generator_UserColumnName="NumLats" msprop:Generator_ColumnPropNameInRow="NumLats" msprop:Generator_ColumnVarNameInTable="columnNumLats" msprop:Generator_ColumnPropNameInTable="NumLatsColumn" type="xs:int" />
+              <xs:element name="NotLinedYet" msprop:Generator_UserColumnName="NotLinedYet" msprop:Generator_ColumnPropNameInRow="NotLinedYet" msprop:Generator_ColumnVarNameInTable="columnNotLinedYet" msprop:Generator_ColumnPropNameInTable="NotLinedYetColumn" type="xs:int" />
+              <xs:element name="AllMeasured" msprop:Generator_UserColumnName="AllMeasured" msprop:Generator_ColumnPropNameInRow="AllMeasured" msprop:Generator_ColumnVarNameInTable="columnAllMeasured" msprop:Generator_ColumnPropNameInTable="AllMeasuredColumn" type="xs:boolean" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="IssueWithLaterals" msprop:Generator_UserColumnName="IssueWithLaterals" msprop:Generator_ColumnPropNameInRow="IssueWithLaterals" msprop:Generator_ColumnVarNameInTable="columnIssueWithLaterals" msprop:Generator_ColumnPropNameInTable="IssueWithLateralsColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NotMeasuredYet" msprop:Generator_UserColumnName="NotMeasuredYet" msprop:Generator_ColumnPropNameInRow="NotMeasuredYet" msprop:Generator_ColumnVarNameInTable="columnNotMeasuredYet" msprop:Generator_ColumnPropNameInTable="NotMeasuredYetColumn" type="xs:int" />
+              <xs:element name="NotDeliveredYet" msprop:Generator_UserColumnName="NotDeliveredYet" msprop:Generator_ColumnPropNameInRow="NotDeliveredYet" msprop:Generator_ColumnVarNameInTable="columnNotDeliveredYet" msprop:Generator_ColumnPropNameInTable="NotDeliveredYetColumn" type="xs:int" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="TrafficControl" msprop:Generator_UserColumnName="TrafficControl" msprop:Generator_ColumnPropNameInRow="TrafficControl" msprop:Generator_ColumnVarNameInTable="columnTrafficControl" msprop:Generator_ColumnPropNameInTable="TrafficControlColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TrafficControlDetails" msprop:Generator_UserColumnName="TrafficControlDetails" msprop:Generator_ColumnPropNameInRow="TrafficControlDetails" msprop:Generator_ColumnVarNameInTable="columnTrafficControlDetails" msprop:Generator_ColumnPropNameInTable="TrafficControlDetailsColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StandardBypass" msprop:Generator_UserColumnName="StandardBypass" msprop:Generator_ColumnPropNameInRow="StandardBypass" msprop:Generator_ColumnVarNameInTable="columnStandardBypass" msprop:Generator_ColumnPropNameInTable="StandardBypassColumn" type="xs:boolean" />
+              <xs:element name="StandardBypassComments" msprop:Generator_UserColumnName="StandardBypassComments" msprop:Generator_ColumnPropNameInRow="StandardBypassComments" msprop:Generator_ColumnVarNameInTable="columnStandardBypassComments" msprop:Generator_ColumnPropNameInTable="StandardBypassCommentsColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AvailableToLine" msprop:Generator_UserColumnName="AvailableToLine" msprop:Generator_ColumnPropNameInRow="AvailableToLine" msprop:Generator_ColumnVarNameInTable="columnAvailableToLine" msprop:Generator_ColumnPropNameInTable="AvailableToLineColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_WORK_JUNCTIONLINING_SECTION" />
+      <xs:field xpath="mstns:WorkID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

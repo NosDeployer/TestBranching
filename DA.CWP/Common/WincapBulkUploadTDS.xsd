@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="WincapBulkUploadTDS" targetNamespace="http://tempuri.org/WincapBulkUploadTDS.xsd" xmlns:mstns="http://tempuri.org/WincapBulkUploadTDS.xsd" xmlns="http://tempuri.org/WincapBulkUploadTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="WincapBulkUploadTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="WincapBulkUploadTDS" msprop:Generator_DataSetName="WincapBulkUploadTDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="WincapBulkUpload" msprop:Generator_UserTableName="WincapBulkUpload" msprop:Generator_RowDeletedName="WincapBulkUploadRowDeleted" msprop:Generator_RowChangedName="WincapBulkUploadRowChanged" msprop:Generator_RowClassName="WincapBulkUploadRow" msprop:Generator_RowChangingName="WincapBulkUploadRowChanging" msprop:Generator_RowEvArgName="WincapBulkUploadRowChangeEvent" msprop:Generator_RowEvHandlerName="WincapBulkUploadRowChangeEventHandler" msprop:Generator_TableClassName="WincapBulkUploadDataTable" msprop:Generator_TableVarName="tableWincapBulkUpload" msprop:Generator_RowDeletingName="WincapBulkUploadRowDeleting" msprop:Generator_TablePropName="WincapBulkUpload">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:string" />
+              <xs:element name="State" msprop:Generator_UserColumnName="State" msprop:Generator_ColumnVarNameInTable="columnState" msprop:Generator_ColumnPropNameInRow="State" msprop:Generator_ColumnPropNameInTable="StateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Direction" msprop:Generator_UserColumnName="Direction" msprop:Generator_ColumnVarNameInTable="columnDirection" msprop:Generator_ColumnPropNameInRow="Direction" msprop:Generator_ColumnPropNameInTable="DirectionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Distance" msprop:Generator_UserColumnName="Distance" msprop:Generator_ColumnVarNameInTable="columnDistance" msprop:Generator_ColumnPropNameInRow="Distance" msprop:Generator_ColumnPropNameInTable="DistanceColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VideoDistance" msprop:Generator_UserColumnName="VideoDistance" msprop:Generator_ColumnVarNameInTable="columnVideoDistance" msprop:Generator_ColumnPropNameInRow="VideoDistance" msprop:Generator_ColumnPropNameInTable="VideoDistanceColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ClockPosition" msprop:Generator_UserColumnName="ClockPosition" msprop:Generator_ColumnVarNameInTable="columnClockPosition" msprop:Generator_ColumnPropNameInRow="ClockPosition" msprop:Generator_ColumnPropNameInTable="ClockPositionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DistanceToCentre" msprop:Generator_UserColumnName="DistanceToCentre" msprop:Generator_ColumnVarNameInTable="columnDistanceToCentre" msprop:Generator_ColumnPropNameInRow="DistanceToCentre" msprop:Generator_ColumnPropNameInTable="DistanceToCentreColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ReverseSetup" msprop:Generator_UserColumnName="ReverseSetup" msprop:Generator_ColumnVarNameInTable="columnReverseSetup" msprop:Generator_ColumnPropNameInRow="ReverseSetup" msprop:Generator_ColumnPropNameInTable="ReverseSetupColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DistanceFromUSMH" msprop:Generator_UserColumnName="DistanceFromUSMH" msprop:Generator_ColumnVarNameInTable="columnDistanceFromUSMH" msprop:Generator_ColumnPropNameInRow="DistanceFromUSMH" msprop:Generator_ColumnPropNameInTable="DistanceFromUSMHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DistanceFromDSMH" msprop:Generator_UserColumnName="DistanceFromDSMH" msprop:Generator_ColumnVarNameInTable="columnDistanceFromDSMH" msprop:Generator_ColumnPropNameInRow="DistanceFromDSMH" msprop:Generator_ColumnPropNameInTable="DistanceFromDSMHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Comments" msprop:Generator_UserColumnName="Comments" msprop:Generator_ColumnVarNameInTable="columnComments" msprop:Generator_ColumnPropNameInRow="Comments" msprop:Generator_ColumnPropNameInTable="CommentsColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SectionID" msprop:Generator_UserColumnName="SectionID" msprop:Generator_ColumnPropNameInRow="SectionID" msprop:Generator_ColumnVarNameInTable="columnSectionID" msprop:Generator_ColumnPropNameInTable="SectionIDColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:WincapBulkUpload" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

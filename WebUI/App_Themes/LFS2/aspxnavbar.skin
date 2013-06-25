@@ -1,0 +1,23 @@
+﻿<%-- Labels --%>
+<asp:Label SkinID="ASPxNavBar1_Label" runat="server" CssClass="ASPxNavBar1_Label"></asp:Label>
+<asp:Label SkinID="ASPxNavBar2_Label" runat="server" CssClass="ASPxNavBar2_Label"></asp:Label>
+
+
+
+<%-- TextBoxs --%>
+<asp:TextBox SkinID="ASPxNavBar1_TextBox" runat="server" CssClass="ASPxNavBar1_Control"></asp:TextBox>
+<asp:TextBox SkinID="ASPxNavBar1_TextBoxReadOnly" runat="server" CssClass="ASPxNavBar1_ControlReadOnly"></asp:TextBox>
+<asp:TextBox SkinID="ASPxNavBar2_TextBox" runat="server" CssClass="ASPxNavBar2_Control"></asp:TextBox>
+<asp:TextBox SkinID="ASPxNavBar2_TextBoxReadOnly" runat="server" CssClass="ASPxNavBar2_ControlReadOnly"></asp:TextBox>
+
+
+
+<%-- DropDownLists --%>
+<asp:DropDownList SkinID="ASPxNavBar1_DropDownList" runat="server" CssClass="ASPxNavBar1_Control"></asp:DropDownList>
+<asp:DropDownList SkinID="ASPxNavBar2_DropDownList" runat="server" CssClass="ASPxNavBar2_Control"></asp:DropDownList>
+
+
+
+<%-- LinksButtons --%>
+<asp:LinkButton SkinID="ASPxNavBar1_LinkButton" runat="server" CssClass="ASPxNavBar1_LinkButton"></asp:LinkButton>
+<asp:LinkButton SkinID="ASPxNavBar2_LinkButton" runat="server" CssClass="ASPxNavBar2_LinkButton"></asp:LinkButton>

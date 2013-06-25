@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FlCatalystsAddTDS" targetNamespace="http://tempuri.org/FlCatalystsAddTDS.xsd" xmlns:mstns="http://tempuri.org/FlCatalystsAddTDS.xsd" xmlns="http://tempuri.org/FlCatalystsAddTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LFSDB9ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LFSDB9ConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.CWP.Properties.Settings.GlobalReference.Default.LFSDB9ConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FlCatalystsAddTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="FlCatalystsAddTDS" msprop:Generator_DataSetName="FlCatalystsAddTDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FlCatalystsAdd" msprop:Generator_UserTableName="FlCatalystsAdd" msprop:Generator_RowDeletedName="FlCatalystsAddRowDeleted" msprop:Generator_RowChangedName="FlCatalystsAddRowChanged" msprop:Generator_RowClassName="FlCatalystsAddRow" msprop:Generator_RowChangingName="FlCatalystsAddRowChanging" msprop:Generator_RowEvArgName="FlCatalystsAddRowChangeEvent" msprop:Generator_RowEvHandlerName="FlCatalystsAddRowChangeEventHandler" msprop:Generator_TableClassName="FlCatalystsAddDataTable" msprop:Generator_TableVarName="tableFlCatalystsAdd" msprop:Generator_RowDeletingName="FlCatalystsAddRowDeleting" msprop:Generator_TablePropName="FlCatalystsAdd">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CatalystID" msprop:Generator_UserColumnName="CatalystID" msprop:Generator_ColumnPropNameInRow="CatalystID" msprop:Generator_ColumnVarNameInTable="columnCatalystID" msprop:Generator_ColumnPropNameInTable="CatalystIDColumn" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInTable="NameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DefaultPercentageByWeight" msprop:Generator_UserColumnName="DefaultPercentageByWeight" msprop:Generator_ColumnPropNameInRow="DefaultPercentageByWeight" msprop:Generator_ColumnVarNameInTable="columnDefaultPercentageByWeight" msprop:Generator_ColumnPropNameInTable="DefaultPercentageByWeightColumn" type="xs:decimal" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="InDatabase" msprop:Generator_UserColumnName="InDatabase" msprop:Generator_ColumnPropNameInRow="InDatabase" msprop:Generator_ColumnVarNameInTable="columnInDatabase" msprop:Generator_ColumnPropNameInTable="InDatabaseColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:FlCatalystsAdd" />
+      <xs:field xpath="mstns:CatalystID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

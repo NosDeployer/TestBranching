@@ -1,0 +1,5 @@
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+
+<%-- AutoCompleteExtender --%>
+
+<cc1:AutoCompleteExtender SkinID="AutoCompleteExtender" runat="server" CompletionListCssClass="ajax_autocompleteextender_list" CompletionListItemCssClass="ajax_autocompleteextender_listitem" CompletionListHighlightedItemCssClass="ajax_autocompleteextender_hoverlistitem"/>

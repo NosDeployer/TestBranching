@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LiquiForce.LFSLive.BL.Common</name>
+    </assembly>
+    <members>
+        <member name="T:LiquiForce.LFSLive.BL.Common.TableModule">
+            <summary>
+            Implements the Table Module software pattern.
+            </summary>
+        </member>
+        <member name="F:LiquiForce.LFSLive.BL.Common.TableModule._data">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LiquiForce.LFSLive.BL.Common.TableModule.#ctor(System.String)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="tableName">The name of the Table on which the class will work on.</param>
+        </member>
+        <member name="M:LiquiForce.LFSLive.BL.Common.TableModule.#ctor(System.Data.DataSet,System.String)">
+            <summary>
+            Overloaded constructor.
+            </summary>
+            <param name="data">An externally instantiated dataset or typed dataset to be assigned to Data.</param>
+            <param name="tableName">The name of the Table on which the class will work on.</param>
+        </member>
+        <member name="M:LiquiForce.LFSLive.BL.Common.TableModule.InitData">
+            <summary>
+            Initializes the Data property.
+            </summary>
+        </member>
+        <member name="P:LiquiForce.LFSLive.BL.Common.TableModule.Data">
+            <summary>
+            Gets the dataset or typed dataset encapsulated by the class.
+            </summary>
+        </member>
+        <member name="P:LiquiForce.LFSLive.BL.Common.TableModule.TableName">
+            <summary>
+            Gets the name of the Table being encapsulated by the class.
+            </summary>
+        </member>
+        <member name="P:LiquiForce.LFSLive.BL.Common.TableModule.Table">
+            <summary>
+            Gets the data table encapsulated by the class.
+            </summary>
+        </member>
+    </members>
+</doc>

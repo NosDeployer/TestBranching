@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ServicesSRUnassignedReportTDS" targetNamespace="http://tempuri.org/ServicesSRUnassignedReportTDS.xsd" xmlns:mstns="http://tempuri.org/ServicesSRUnassignedReportTDS.xsd" xmlns="http://tempuri.org/ServicesSRUnassignedReportTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ServicesSRUnassignedReportTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ServicesSRUnassignedReportTDS" msprop:Generator_DataSetName="ServicesSRUnassignedReportTDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="UnassignedServiceRequests" msprop:Generator_UserTableName="UnassignedServiceRequests" msprop:Generator_RowDeletedName="UnassignedServiceRequestsRowDeleted" msprop:Generator_RowChangedName="UnassignedServiceRequestsRowChanged" msprop:Generator_RowClassName="UnassignedServiceRequestsRow" msprop:Generator_RowChangingName="UnassignedServiceRequestsRowChanging" msprop:Generator_RowEvArgName="UnassignedServiceRequestsRowChangeEvent" msprop:Generator_RowEvHandlerName="UnassignedServiceRequestsRowChangeEventHandler" msprop:Generator_TableClassName="UnassignedServiceRequestsDataTable" msprop:Generator_TableVarName="tableUnassignedServiceRequests" msprop:Generator_RowDeletingName="UnassignedServiceRequestsRowDeleting" msprop:Generator_TablePropName="UnassignedServiceRequests">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ServiceID" msprop:Generator_UserColumnName="ServiceID" msprop:Generator_ColumnVarNameInTable="columnServiceID" msprop:Generator_ColumnPropNameInRow="ServiceID" msprop:Generator_ColumnPropNameInTable="ServiceIDColumn" type="xs:int" />
+              <xs:element name="ServiceNumber" msprop:Generator_UserColumnName="ServiceNumber" msprop:Generator_ColumnVarNameInTable="columnServiceNumber" msprop:Generator_ColumnPropNameInRow="ServiceNumber" msprop:Generator_ColumnPropNameInTable="ServiceNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="UnitCode" msprop:Generator_UserColumnName="UnitCode" msprop:Generator_ColumnPropNameInRow="UnitCode" msprop:Generator_ColumnVarNameInTable="columnUnitCode" msprop:Generator_ColumnPropNameInTable="UnitCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MTO" msprop:Generator_UserColumnName="MTO" msprop:Generator_ColumnVarNameInTable="columnMTO" msprop:Generator_ColumnPropNameInRow="MTO" msprop:Generator_ColumnPropNameInTable="MTOColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ServiceDescription" msprop:Generator_UserColumnName="ServiceDescription" msprop:Generator_ColumnVarNameInTable="columnServiceDescription" msprop:Generator_ColumnPropNameInRow="ServiceDescription" msprop:Generator_ColumnPropNameInTable="ServiceDescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="UnitDescription" msprop:Generator_UserColumnName="UnitDescription" msprop:Generator_ColumnVarNameInTable="columnUnitDescription" msprop:Generator_ColumnPropNameInRow="UnitDescription" msprop:Generator_ColumnPropNameInTable="UnitDescriptionColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:UnassignedServiceRequests" />
+      <xs:field xpath="mstns:ServiceID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

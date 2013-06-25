@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="TDSM1ReportByClient" targetNamespace="http://tempuri.org/TDSM1ReportByClient.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/TDSM1ReportByClient.xsd"
+	xmlns:mstns="http://tempuri.org/TDSM1ReportByClient.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="TDSM1ReportByClient" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="M1ReportByClient">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:string" />
+							<xs:element name="COMPANY_ID" type="xs:int" />
+							<xs:element name="RecordID" type="xs:string" minOccurs="0" />
+							<xs:element name="COMPANIES_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="NAME" type="xs:string" minOccurs="0" />
+							<xs:element name="SubArea" type="xs:string" minOccurs="0" />
+							<xs:element name="Street" type="xs:string" minOccurs="0" />
+							<xs:element name="USMH" type="xs:string" minOccurs="0" />
+							<xs:element name="DSMH" type="xs:string" minOccurs="0" />
+							<xs:element name="ActualLength" type="xs:string" minOccurs="0" />
+							<xs:element name="M1Date" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ConfirmedSize" type="xs:int" minOccurs="0" />
+							<xs:element name="USMHMN" type="xs:string" minOccurs="0" />
+							<xs:element name="DSMHMN" type="xs:string" minOccurs="0" />
+							<xs:element name="USMHDepth" type="xs:string" minOccurs="0" />
+							<xs:element name="DSMHDepth" type="xs:string" minOccurs="0" />
+							<xs:element name="MeasurementsTakenBy" type="xs:string" minOccurs="0" />
+							<xs:element name="USMHAtMouth1200" type="xs:double" minOccurs="0" />
+							<xs:element name="USMHAtMouth100" type="xs:double" minOccurs="0" />
+							<xs:element name="USMHAtMouth200" type="xs:double" minOccurs="0" />
+							<xs:element name="USMHAtMouth300" type="xs:double" minOccurs="0" />
+							<xs:element name="USMHAtMouth400" type="xs:double" minOccurs="0" />
+							<xs:element name="USMHAtMouth500" type="xs:double" minOccurs="0" />
+							<xs:element name="DSMHAtMouth1200" type="xs:double" minOccurs="0" />
+							<xs:element name="DSMHAtMouth100" type="xs:double" minOccurs="0" />
+							<xs:element name="DSMHAtMouth200" type="xs:double" minOccurs="0" />
+							<xs:element name="DSMHAtMouth300" type="xs:double" minOccurs="0" />
+							<xs:element name="DSMHAtMouth400" type="xs:double" minOccurs="0" />
+							<xs:element name="DSMHAtMouth500" type="xs:double" minOccurs="0" />
+							<xs:element name="HydrantAddress" type="xs:string" minOccurs="0" />
+							<xs:element name="DistanceToInversionMH" type="xs:string" minOccurs="0" />
+							<xs:element name="RampsRequired" type="xs:boolean" minOccurs="0" />
+							<xs:element name="DegreeOfTrafficControl" type="xs:string" minOccurs="0" />
+							<xs:element name="TrafficControl" type="xs:string" minOccurs="0" />
+							<xs:element name="StandarBypass" type="xs:boolean" minOccurs="0" />
+							<xs:element name="HydroWireDetails" type="xs:string" minOccurs="0" />
+							<xs:element name="PipeMaterialType" type="xs:string" minOccurs="0" />
+							<xs:element name="RoboticPrepRequired" type="xs:boolean" minOccurs="0" />
+							<xs:element name="PipeSizeChange" type="xs:boolean" minOccurs="0" />
+							<xs:element name="M1Comments" type="xs:string" minOccurs="0" />
+							<xs:element name="TrafficControlDetails" type="xs:string" minOccurs="0" />
+							<xs:element name="LineWithID" type="xs:string" minOccurs="0" />
+							<xs:element name="SchoolZone" type="xs:boolean" minOccurs="0" />
+							<xs:element name="RestaurantArea" type="xs:boolean" minOccurs="0" />
+							<xs:element name="CarwashLaundromat" type="xs:boolean" minOccurs="0" />
+							<xs:element name="HydroPulley" type="xs:boolean" minOccurs="0" />
+							<xs:element name="FridgeCart" type="xs:boolean" minOccurs="0" />
+							<xs:element name="TwoInchPump" type="xs:boolean" minOccurs="0" />
+							<xs:element name="SixInchBypass" type="xs:boolean" minOccurs="0" />
+							<xs:element name="Scaffolding" type="xs:boolean" minOccurs="0" />
+							<xs:element name="WinchExtension" type="xs:boolean" minOccurs="0" />
+							<xs:element name="ExtraGenerator" type="xs:boolean" minOccurs="0" />
+							<xs:element name="GreyCableExtension" type="xs:boolean" minOccurs="0" />
+							<xs:element name="EasementMats" type="xs:boolean" minOccurs="0" />
+							<xs:element name="DropPipe" type="xs:boolean" minOccurs="0" />
+							<xs:element name="DropPipeInvertDepth" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="TDSM1ReportByClientKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:M1ReportByClient" />
+			<xs:field xpath="mstns:ID" />
+			<xs:field xpath="mstns:COMPANY_ID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

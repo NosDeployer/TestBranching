@@ -1,0 +1,152 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D8EBE1D8-6FD3-4E9C-BF1B-21433E232C11}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LiquiForce.LFSLive.BL.Resources</RootNamespace>
+    <AssemblyName>LiquiForce.LFSLive.BL.Resources</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LiquiForce.LFSLive.BL.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.BL.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LiquiForce.LFSLive.DA.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.DA.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LiquiForce.LFSLive.Server, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BondingCompanies\BondingCompanies.cs" />
+    <Compile Include="BondingCompanies\BondingCompaniesAddBondingCompanies.cs" />
+    <Compile Include="BondingCompanies\BondingCompaniesList.cs" />
+    <Compile Include="BondingCompanies\BondingCompaniesSetupBondingCompaniesSetup.cs" />
+    <Compile Include="Common\ResourceTypeViewConditionList.cs" />
+    <Compile Include="Common\ResourceTypeViewDisplay.cs" />
+    <Compile Include="Common\ResourceTypeViewSortList.cs" />
+    <Compile Include="Companies\CompaniesList.cs" />
+    <Compile Include="Employees\EmployeeInformationTypeHistoryInformation.cs" />
+    <Compile Include="Employees\EmployeeAddTypeHistory.cs" />
+    <Compile Include="Employees\EmployeeTypeHistory.cs" />
+    <Compile Include="Employees\CrewList.cs" />
+    <Compile Include="Employees\Employee.cs" />
+    <Compile Include="Employees\EmployeeAdd.cs" />
+    <Compile Include="Employees\EmployeeCategoryApproveTimesheets.cs" />
+    <Compile Include="Employees\EmployeeCategoryList.cs" />
+    <Compile Include="Employees\EmployeeCostHistory.cs" />
+    <Compile Include="Employees\EmployeeCostHistoryExceptions.cs" />
+    <Compile Include="Employees\EmployeeInformationBasicInformation.cs" />
+    <Compile Include="Employees\EmployeeInformationCategoryApproveTimesheetsInformation.cs" />
+    <Compile Include="Employees\EmployeeInformationCostExceptionsInformation.cs" />
+    <Compile Include="Employees\EmployeeInformationCostInformation.cs" />
+    <Compile Include="Employees\EmployeeInformationNoteInformation.cs" />
+    <Compile Include="Employees\EmployeeInformationPayVacationDaysInformation.cs" />
+    <Compile Include="Employees\EmployeeInformationPayVacationDaysInformationList.cs" />
+    <Compile Include="Employees\EmployeeInformationVacationInformation.cs" />
+    <Compile Include="Employees\EmployeeList.cs" />
+    <Compile Include="Employees\EmployeeNavigator.cs" />
+    <Compile Include="Employees\EmployeeNotes.cs" />
+    <Compile Include="Employees\EmployeePersonalAgency.cs" />
+    <Compile Include="Employees\EmployeeStandardCostsSetup.cs" />
+    <Compile Include="Employees\PersonalAgencyInformation.cs" />
+    <Compile Include="Employees\PersonalAgencyList.cs" />
+    <Compile Include="Employees\Salesman.cs" />
+    <Compile Include="Employees\SalesmanList.cs" />
+    <Compile Include="Employees\SalesmanNavigator.cs" />
+    <Compile Include="Hotels\Hotels.cs" />
+    <Compile Include="Hotels\HotelsAddHotels.cs" />
+    <Compile Include="Hotels\HotelsList.cs" />
+    <Compile Include="Hotels\HotelsSetupHotelsSetup.cs" />
+    <Compile Include="InsuranceCompanies\InsuranceCompanies.cs" />
+    <Compile Include="InsuranceCompanies\InsuranceCompaniesAddInsuranceCompanies.cs" />
+    <Compile Include="InsuranceCompanies\InsuranceCompaniesList.cs" />
+    <Compile Include="InsuranceCompanies\InsuranceCompaniesSetupInsuranceCompaniesSetup.cs" />
+    <Compile Include="Materials\Materials.cs" />
+    <Compile Include="Materials\MaterialsAdd.cs" />
+    <Compile Include="Materials\MaterialsByProcessReport.cs" />
+    <Compile Include="Materials\MaterialsCostHistory.cs" />
+    <Compile Include="Materials\MaterialsCostHistoryExceptions.cs" />
+    <Compile Include="Materials\MaterialsInformationBasicInformation.cs" />
+    <Compile Include="Materials\MaterialsInformationCostHistoryExceptionsInformation.cs" />
+    <Compile Include="Materials\MaterialsInformationCostHistoryInformation.cs" />
+    <Compile Include="Materials\MaterialsInformationNoteInformation.cs" />
+    <Compile Include="Materials\MaterialsList.cs" />
+    <Compile Include="Materials\MaterialsNavigator.cs" />
+    <Compile Include="Materials\MaterialsNotes.cs" />
+    <Compile Include="Materials\MaterialsTypeList.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Subcontractors\SubcontractorsList.cs" />
+    <Compile Include="Subcontractors\SubcontractorsAddSubcontractors.cs" />
+    <Compile Include="Subcontractors\SubcontractorsSetupSubcontractorsSetup.cs" />
+    <Compile Include="Subcontractors\SubcontractorsResoucesSubcontractors.cs" />
+    <Compile Include="UnitsOfMeasurement\UnitsOfMeasurement.cs" />
+    <Compile Include="UnitsOfMeasurement\UnitsOfMeasurementAssociations.cs" />
+    <Compile Include="UnitsOfMeasurement\UnitsOfMeasurementAssociationsToolAssociatedUnits.cs" />
+    <Compile Include="UnitsOfMeasurement\UnitsOfMeasurementAssociationsToolAssociatedUnitsList.cs" />
+    <Compile Include="UnitsOfMeasurement\UnitsOfMeasurementModulesToAssociateList.cs" />
+    <Compile Include="UnitsOfMeasurement\UnitsOfMeasurementNavigator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DA.RAF\DA.RAF.csproj">
+      <Project>{A7412996-397D-4881-B6E1-88F52435368A}</Project>
+      <Name>DA.RAF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DA.Resources\DA.Resources.csproj">
+      <Project>{337C14FC-8E53-45E5-9687-6B86AEE5BC2F}</Project>
+      <Name>DA.Resources</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

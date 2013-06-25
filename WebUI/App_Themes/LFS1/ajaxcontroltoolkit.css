@@ -1,0 +1,87 @@
+﻿/* AutoCompleteExtender*/
+.ajax_autocompleteextender_list
+{
+	border: 1px solid #2F82C7;
+	list-style-type: none;
+	margin: 0px;
+	background-color: white;
+}
+
+ul.ajax_autocompleteextender_list li
+{
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.ajax_autocompleteextender_listitem
+{
+	color: #2f82c7;
+	font-weight: bold;
+	font-size: 10px;
+	font-family: 'Microsoft Sans Serif';
+}
+
+.ajax_autocompleteextender_hoverlistitem
+{
+	color: #2f82c7;
+	font-weight: bold;
+	font-size: 10px;
+	font-family: 'Microsoft Sans Serif';
+	background-color: #e7e9eb;
+}
+
+
+/* TabContainer */
+
+.ajax_tabcontainer .ajax__tab_header
+{
+	font-family: 'Microsoft Sans Serif';
+	font-size: 10px;
+	display: block;
+	color: #2f82b0;
+	font-weight: bold;
+}
+
+.ajax_tabcontainer .ajax__tab_header .ajax__tab_outer
+{
+	background-color: #E1E3E5;
+	padding-left: 10px;
+	margin-right: 5px;
+	border-right: #2F82C7 1px solid;
+	border-top: #2F82C7 1px solid;
+	border-left: #2F82C7 1px solid;
+}
+
+.ajax_tabcontainer .ajax__tab_header .ajax__tab_inner 
+{
+    padding:4px 10px 4px 0px;
+}
+
+.ajax_tabcontainer .ajax__tab_hover .ajax__tab_inner
+{
+	color: #F7941C;
+}
+
+.ajax_tabcontainer .ajax__tab_active .ajax__tab_outer
+{
+	background-color: #2F82C7;
+	border-right: #2F82C7 1px solid;
+	border-top: #2F82C7 1px solid;
+	border-left: #2F82C7 1px solid;
+}
+
+.ajax_tabcontainer .ajax__tab_active .ajax__tab_inner 
+{
+	background-color: #2F82C7;
+    color: white;
+}
+
+.ajax_tabcontainer .ajax__tab_body
+{
+	padding: 10px;
+	background-color: #E7E9EB;
+	border-right: #2f82c7 2px solid;
+	border-top: #2f82c7 2px solid;
+	border-left: #2f82c7 2px solid;
+	border-bottom: #2f82c7 2px solid;
+}

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="UnitsAddTDS" targetNamespace="http://tempuri.org/UnitsAddTDS.xsd" xmlns:mstns="http://tempuri.org/UnitsAddTDS.xsd" xmlns="http://tempuri.org/UnitsAddTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="UnitsAddTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="UnitsAddTDS" msprop:Generator_DataSetName="UnitsAddTDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="UnitsAddNew" msprop:Generator_UserTableName="UnitsAddNew" msprop:Generator_RowDeletedName="UnitsAddNewRowDeleted" msprop:Generator_RowChangedName="UnitsAddNewRowChanged" msprop:Generator_RowClassName="UnitsAddNewRow" msprop:Generator_RowChangingName="UnitsAddNewRowChanging" msprop:Generator_RowEvArgName="UnitsAddNewRowChangeEvent" msprop:Generator_RowEvHandlerName="UnitsAddNewRowChangeEventHandler" msprop:Generator_TableClassName="UnitsAddNewDataTable" msprop:Generator_TableVarName="tableUnitsAddNew" msprop:Generator_RowDeletingName="UnitsAddNewRowDeleting" msprop:Generator_TablePropName="UnitsAddNew">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UnitID" msprop:Generator_UserColumnName="UnitID" msprop:Generator_ColumnPropNameInRow="UnitID" msprop:Generator_ColumnVarNameInTable="columnUnitID" msprop:Generator_ColumnPropNameInTable="UnitIDColumn" type="xs:int" />
+              <xs:element name="Type" msprop:Generator_UserColumnName="Type" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInTable="TypeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Code" msprop:Generator_UserColumnName="Code" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInTable="CodeColumn" type="xs:string" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VIN" msprop:Generator_UserColumnName="VIN" msprop:Generator_ColumnPropNameInRow="VIN" msprop:Generator_ColumnVarNameInTable="columnVIN" msprop:Generator_ColumnPropNameInTable="VINColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Manufacturer" msprop:Generator_UserColumnName="Manufacturer" msprop:Generator_ColumnPropNameInRow="Manufacturer" msprop:Generator_ColumnVarNameInTable="columnManufacturer" msprop:Generator_ColumnPropNameInTable="ManufacturerColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Model" msprop:Generator_UserColumnName="Model" msprop:Generator_ColumnPropNameInRow="Model" msprop:Generator_ColumnVarNameInTable="columnModel" msprop:Generator_ColumnPropNameInTable="ModelColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Year_" msprop:Generator_UserColumnName="Year_" msprop:Generator_ColumnPropNameInRow="Year_" msprop:Generator_ColumnVarNameInTable="columnYear_" msprop:Generator_ColumnPropNameInTable="Year_Column" type="xs:string" minOccurs="0" />
+              <xs:element name="IsTowable" msprop:Generator_UserColumnName="IsTowable" msprop:Generator_ColumnPropNameInRow="IsTowable" msprop:Generator_ColumnVarNameInTable="columnIsTowable" msprop:Generator_ColumnPropNameInTable="IsTowableColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="LicenseCountry" msprop:Generator_UserColumnName="LicenseCountry" msprop:Generator_ColumnPropNameInRow="LicenseCountry" msprop:Generator_ColumnVarNameInTable="columnLicenseCountry" msprop:Generator_ColumnPropNameInTable="LicenseCountryColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="LicenseState" msprop:Generator_UserColumnName="LicenseState" msprop:Generator_ColumnPropNameInRow="LicenseState" msprop:Generator_ColumnVarNameInTable="columnLicenseState" msprop:Generator_ColumnPropNameInTable="LicenseStateColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="LicensePlateNumber" msprop:Generator_UserColumnName="LicensePlateNumber" msprop:Generator_ColumnPropNameInRow="LicensePlateNumber" msprop:Generator_ColumnVarNameInTable="columnLicensePlateNumber" msprop:Generator_ColumnPropNameInTable="LicensePlateNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ApportionedTagNumber" msprop:Generator_UserColumnName="ApportionedTagNumber" msprop:Generator_ColumnPropNameInRow="ApportionedTagNumber" msprop:Generator_ColumnVarNameInTable="columnApportionedTagNumber" msprop:Generator_ColumnPropNameInTable="ApportionedTagNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CompanyLevelID" msprop:Generator_UserColumnName="CompanyLevelID" msprop:Generator_ColumnPropNameInRow="CompanyLevelID" msprop:Generator_ColumnVarNameInTable="columnCompanyLevelID" msprop:Generator_ColumnPropNameInTable="CompanyLevelIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="UnitsChecklistRulesTemp" msprop:Generator_UserTableName="UnitsChecklistRulesTemp" msprop:Generator_RowDeletedName="UnitsChecklistRulesTempRowDeleted" msprop:Generator_RowChangedName="UnitsChecklistRulesTempRowChanged" msprop:Generator_RowClassName="UnitsChecklistRulesTempRow" msprop:Generator_RowChangingName="UnitsChecklistRulesTempRowChanging" msprop:Generator_RowEvArgName="UnitsChecklistRulesTempRowChangeEvent" msprop:Generator_RowEvHandlerName="UnitsChecklistRulesTempRowChangeEventHandler" msprop:Generator_TableClassName="UnitsChecklistRulesTempDataTable" msprop:Generator_TableVarName="tableUnitsChecklistRulesTemp" msprop:Generator_RowDeletingName="UnitsChecklistRulesTempRowDeleting" msprop:Generator_TablePropName="UnitsChecklistRulesTemp">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RuleID" msprop:Generator_UserColumnName="RuleID" msprop:Generator_ColumnPropNameInRow="RuleID" msprop:Generator_ColumnVarNameInTable="columnRuleID" msprop:Generator_ColumnPropNameInTable="RuleIDColumn" type="xs:int" />
+              <xs:element name="Count" msprop:Generator_UserColumnName="Count" msprop:Generator_ColumnPropNameInRow="Count" msprop:Generator_ColumnVarNameInTable="columnCount" msprop:Generator_ColumnPropNameInTable="CountColumn" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Frequency" msprop:Generator_UserColumnName="Frequency" msprop:Generator_ColumnVarNameInTable="columnFrequency" msprop:Generator_ColumnPropNameInRow="Frequency" msprop:Generator_ColumnPropNameInTable="FrequencyColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LastService" msprop:Generator_UserColumnName="LastService" msprop:Generator_ColumnPropNameInRow="LastService" msprop:Generator_ColumnVarNameInTable="columnLastService" msprop:Generator_ColumnPropNameInTable="LastServiceColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NextDue" msprop:Generator_UserColumnName="NextDue" msprop:Generator_ColumnPropNameInRow="NextDue" msprop:Generator_ColumnVarNameInTable="columnNextDue" msprop:Generator_ColumnPropNameInTable="NextDueColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Done" msprop:Generator_UserColumnName="Done" msprop:Generator_ColumnPropNameInRow="Done" msprop:Generator_ColumnVarNameInTable="columnDone" msprop:Generator_ColumnPropNameInTable="DoneColumn" type="xs:boolean" />
+              <xs:element name="State" msprop:Generator_UserColumnName="State" msprop:Generator_ColumnPropNameInRow="State" msprop:Generator_ColumnVarNameInTable="columnState" msprop:Generator_ColumnPropNameInTable="StateColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Selected" msprop:Generator_UserColumnName="Selected" msprop:Generator_ColumnPropNameInRow="Selected" msprop:Generator_ColumnVarNameInTable="columnSelected" msprop:Generator_ColumnPropNameInTable="SelectedColumn" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:UnitsAddNew" />
+      <xs:field xpath="mstns:UnitID" />
+    </xs:unique>
+    <xs:unique name="UnitsChecklistRulesTemp_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:UnitsChecklistRulesTemp" />
+      <xs:field xpath="mstns:Count" />
+      <xs:field xpath="mstns:RuleID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

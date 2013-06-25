@@ -1,0 +1,72 @@
+﻿/* Backgrounds */
+
+.MasterPage_Background
+{
+	background-color: white;
+}
+
+.MasterPage_Title_Background
+{
+	background-color: #2f82b0;
+}
+
+.MasterPage_Content_Background
+{
+	background-color: #c8dbed;
+}
+
+.MasterPage_Footer_Background
+{
+	background-color: #2f82b0;
+}
+
+
+
+.MasterPage_Dialog_Title_Background
+{
+	background-color: #2f82b0;
+}
+
+.MasterPage_Dialog_Content_Background
+{
+	background-color: #c8dbed;
+}
+
+.MasterPage_Dialog_Button_Background
+{
+	background-color: #c8dbed;
+}
+
+
+
+.MasterPage_Report_Title_Background
+{
+	background-color: #2f82b0;
+}
+
+.MasterPage_Report_Criteria_Background
+{
+	background-color: #c8dbed;
+}
+
+.MasterPage_Report_Report_Background
+{
+	background-color: #ffffff;
+}
+
+
+
+.MasterPage_Wizard_Title_Background
+{
+	background-color: #2f82b0;
+}
+
+.MasterPage_Wizard_Title_Separator
+{
+	background-color: #c8dbed;
+}
+
+.MasterPage_Wizard_Content_Background
+{
+	background-color: #c8dbed;
+}

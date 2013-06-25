@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LibraryTDS" targetNamespace="http://tempuri.org/LibraryTDS.xsd" xmlns:mstns="http://tempuri.org/LibraryTDS.xsd" xmlns="http://tempuri.org/LibraryTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LfsdbLiveSite3ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="LfsdbLiveSite3ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.RAF.Properties.Settings.GlobalReference.Default.LfsdbLiveSite3ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LibraryTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="LibraryTDS" msprop:Generator_DataSetName="LibraryTDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LIBRARY_CATEGORIES" msprop:Generator_UserTableName="LIBRARY_CATEGORIES" msprop:Generator_RowDeletedName="LIBRARY_CATEGORIESRowDeleted" msprop:Generator_RowChangedName="LIBRARY_CATEGORIESRowChanged" msprop:Generator_RowClassName="LIBRARY_CATEGORIESRow" msprop:Generator_RowChangingName="LIBRARY_CATEGORIESRowChanging" msprop:Generator_RowEvArgName="LIBRARY_CATEGORIESRowChangeEvent" msprop:Generator_RowEvHandlerName="LIBRARY_CATEGORIESRowChangeEventHandler" msprop:Generator_TableClassName="LIBRARY_CATEGORIESDataTable" msprop:Generator_TableVarName="tableLIBRARY_CATEGORIES" msprop:Generator_RowDeletingName="LIBRARY_CATEGORIESRowDeleting" msprop:Generator_TablePropName="LIBRARY_CATEGORIES">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LIBRARY_CATEGORIES_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="LIBRARY_CATEGORIES_ID" msprop:Generator_ColumnPropNameInRow="LIBRARY_CATEGORIES_ID" msprop:Generator_ColumnVarNameInTable="columnLIBRARY_CATEGORIES_ID" msprop:Generator_ColumnPropNameInTable="LIBRARY_CATEGORIES_IDColumn" type="xs:int" />
+              <xs:element name="CATEGORY_NAME" msprop:Generator_UserColumnName="CATEGORY_NAME" msprop:Generator_ColumnPropNameInRow="CATEGORY_NAME" msprop:Generator_ColumnVarNameInTable="columnCATEGORY_NAME" msprop:Generator_ColumnPropNameInTable="CATEGORY_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PARENT_ID" msprop:Generator_UserColumnName="PARENT_ID" msprop:Generator_ColumnPropNameInRow="PARENT_ID" msprop:Generator_ColumnVarNameInTable="columnPARENT_ID" msprop:Generator_ColumnPropNameInTable="PARENT_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ACTIVE" msprop:Generator_UserColumnName="ACTIVE" msprop:Generator_ColumnPropNameInRow="ACTIVE" msprop:Generator_ColumnVarNameInTable="columnACTIVE" msprop:Generator_ColumnPropNameInTable="ACTIVEColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="DEV_MATRIX_CATEGORIES_ID" msprop:Generator_UserColumnName="DEV_MATRIX_CATEGORIES_ID" msprop:Generator_ColumnPropNameInRow="DEV_MATRIX_CATEGORIES_ID" msprop:Generator_ColumnVarNameInTable="columnDEV_MATRIX_CATEGORIES_ID" msprop:Generator_ColumnPropNameInTable="DEV_MATRIX_CATEGORIES_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DEV_MATRIX_STUDY_ID" msprop:Generator_UserColumnName="DEV_MATRIX_STUDY_ID" msprop:Generator_ColumnPropNameInRow="DEV_MATRIX_STUDY_ID" msprop:Generator_ColumnVarNameInTable="columnDEV_MATRIX_STUDY_ID" msprop:Generator_ColumnPropNameInTable="DEV_MATRIX_STUDY_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="INHERIT_LIBRARY_LOGIN" msprop:Generator_UserColumnName="INHERIT_LIBRARY_LOGIN" msprop:Generator_ColumnPropNameInRow="INHERIT_LIBRARY_LOGIN" msprop:Generator_ColumnVarNameInTable="columnINHERIT_LIBRARY_LOGIN" msprop:Generator_ColumnPropNameInTable="INHERIT_LIBRARY_LOGINColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="INHERIT_LIBRARY_LOGIN_WRITE" msprop:Generator_UserColumnName="INHERIT_LIBRARY_LOGIN_WRITE" msprop:Generator_ColumnPropNameInRow="INHERIT_LIBRARY_LOGIN_WRITE" msprop:Generator_ColumnVarNameInTable="columnINHERIT_LIBRARY_LOGIN_WRITE" msprop:Generator_ColumnPropNameInTable="INHERIT_LIBRARY_LOGIN_WRITEColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="INHERIT_LIBRARY_LOGIN_ADMIN" msprop:Generator_UserColumnName="INHERIT_LIBRARY_LOGIN_ADMIN" msprop:Generator_ColumnPropNameInRow="INHERIT_LIBRARY_LOGIN_ADMIN" msprop:Generator_ColumnVarNameInTable="columnINHERIT_LIBRARY_LOGIN_ADMIN" msprop:Generator_ColumnPropNameInTable="INHERIT_LIBRARY_LOGIN_ADMINColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LIBRARY_FILES" msprop:Generator_UserTableName="LIBRARY_FILES" msprop:Generator_RowDeletedName="LIBRARY_FILESRowDeleted" msprop:Generator_RowChangedName="LIBRARY_FILESRowChanged" msprop:Generator_RowClassName="LIBRARY_FILESRow" msprop:Generator_RowChangingName="LIBRARY_FILESRowChanging" msprop:Generator_RowEvArgName="LIBRARY_FILESRowChangeEvent" msprop:Generator_RowEvHandlerName="LIBRARY_FILESRowChangeEventHandler" msprop:Generator_TableClassName="LIBRARY_FILESDataTable" msprop:Generator_TableVarName="tableLIBRARY_FILES" msprop:Generator_RowDeletingName="LIBRARY_FILESRowDeleting" msprop:Generator_TablePropName="LIBRARY_FILES">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LIBRARY_FILES_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="LIBRARY_FILES_ID" msprop:Generator_ColumnVarNameInTable="columnLIBRARY_FILES_ID" msprop:Generator_ColumnPropNameInRow="LIBRARY_FILES_ID" msprop:Generator_ColumnPropNameInTable="LIBRARY_FILES_IDColumn" type="xs:int" />
+              <xs:element name="LIBRARY_CATEGORIES_ID" msprop:Generator_UserColumnName="LIBRARY_CATEGORIES_ID" msprop:Generator_ColumnVarNameInTable="columnLIBRARY_CATEGORIES_ID" msprop:Generator_ColumnPropNameInRow="LIBRARY_CATEGORIES_ID" msprop:Generator_ColumnPropNameInTable="LIBRARY_CATEGORIES_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DESCRIPTION" msprop:Generator_UserColumnName="DESCRIPTION" msprop:Generator_ColumnVarNameInTable="columnDESCRIPTION" msprop:Generator_ColumnPropNameInRow="DESCRIPTION" msprop:Generator_ColumnPropNameInTable="DESCRIPTIONColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ACTIVE" msprop:Generator_UserColumnName="ACTIVE" msprop:Generator_ColumnVarNameInTable="columnACTIVE" msprop:Generator_ColumnPropNameInRow="ACTIVE" msprop:Generator_ColumnPropNameInTable="ACTIVEColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="FILENAME" msprop:Generator_UserColumnName="FILENAME" msprop:Generator_ColumnVarNameInTable="columnFILENAME" msprop:Generator_ColumnPropNameInRow="FILENAME" msprop:Generator_ColumnPropNameInTable="FILENAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ORIGINAL_FILENAME" msprop:Generator_UserColumnName="ORIGINAL_FILENAME" msprop:Generator_ColumnVarNameInTable="columnORIGINAL_FILENAME" msprop:Generator_ColumnPropNameInRow="ORIGINAL_FILENAME" msprop:Generator_ColumnPropNameInTable="ORIGINAL_FILENAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="105" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DATE_TIME" msprop:Generator_UserColumnName="DATE_TIME" msprop:Generator_ColumnVarNameInTable="columnDATE_TIME" msprop:Generator_ColumnPropNameInRow="DATE_TIME" msprop:Generator_ColumnPropNameInTable="DATE_TIMEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LOGIN_ID" msprop:Generator_UserColumnName="LOGIN_ID" msprop:Generator_ColumnVarNameInTable="columnLOGIN_ID" msprop:Generator_ColumnPropNameInRow="LOGIN_ID" msprop:Generator_ColumnPropNameInTable="LOGIN_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="FILE_SIZE" msprop:Generator_UserColumnName="FILE_SIZE" msprop:Generator_ColumnVarNameInTable="columnFILE_SIZE" msprop:Generator_ColumnPropNameInRow="FILE_SIZE" msprop:Generator_ColumnPropNameInTable="FILE_SIZEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="THUMBNAIL_FILENAME" msprop:Generator_UserColumnName="THUMBNAIL_FILENAME" msprop:Generator_ColumnVarNameInTable="columnTHUMBNAIL_FILENAME" msprop:Generator_ColumnPropNameInRow="THUMBNAIL_FILENAME" msprop:Generator_ColumnPropNameInTable="THUMBNAIL_FILENAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NO_RECENTLY_UPLOADED" msprop:Generator_UserColumnName="NO_RECENTLY_UPLOADED" msprop:Generator_ColumnVarNameInTable="columnNO_RECENTLY_UPLOADED" msprop:Generator_ColumnPropNameInRow="NO_RECENTLY_UPLOADED" msprop:Generator_ColumnPropNameInTable="NO_RECENTLY_UPLOADEDColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LIBRARY_CATEGORIES" />
+      <xs:field xpath="mstns:LIBRARY_CATEGORIES_ID" />
+    </xs:unique>
+    <xs:unique name="LIBRARY_FILES_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LIBRARY_FILES" />
+      <xs:field xpath="mstns:LIBRARY_FILES_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

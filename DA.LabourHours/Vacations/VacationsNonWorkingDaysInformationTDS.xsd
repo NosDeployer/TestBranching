@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="VacationsNonWorkingDaysInformationTDS" targetNamespace="http://tempuri.org/VacationsNonWorkingDaysInformationTDS.xsd" xmlns:mstns="http://tempuri.org/VacationsNonWorkingDaysInformationTDS.xsd" xmlns="http://tempuri.org/VacationsNonWorkingDaysInformationTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="eCRMLive6ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="eCRMLive6ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.LabourHours.Properties.Settings.GlobalReference.Default.eCRMLive6ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="VacationsNonWorkingDaysInformationTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="VacationsNonWorkingDaysInformationTDS" msprop:Generator_DataSetName="VacationsNonWorkingDaysInformationTDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="NonWorkingDaysInformation" msprop:Generator_UserTableName="NonWorkingDaysInformation" msprop:Generator_RowDeletedName="NonWorkingDaysInformationRowDeleted" msprop:Generator_RowChangedName="NonWorkingDaysInformationRowChanged" msprop:Generator_RowClassName="NonWorkingDaysInformationRow" msprop:Generator_RowChangingName="NonWorkingDaysInformationRowChanging" msprop:Generator_RowEvArgName="NonWorkingDaysInformationRowChangeEvent" msprop:Generator_RowEvHandlerName="NonWorkingDaysInformationRowChangeEventHandler" msprop:Generator_TableClassName="NonWorkingDaysInformationDataTable" msprop:Generator_TableVarName="tableNonWorkingDaysInformation" msprop:Generator_RowDeletingName="NonWorkingDaysInformationRowDeleting" msprop:Generator_TablePropName="NonWorkingDaysInformation">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NonWorkingDayID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="NonWorkingDayID" msprop:Generator_ColumnVarNameInTable="columnNonWorkingDayID" msprop:Generator_ColumnPropNameInRow="NonWorkingDayID" msprop:Generator_ColumnPropNameInTable="NonWorkingDayIDColumn" type="xs:int" />
+              <xs:element name="StartDate" msprop:Generator_UserColumnName="StartDate" msprop:Generator_ColumnVarNameInTable="columnStartDate" msprop:Generator_ColumnPropNameInRow="StartDate" msprop:Generator_ColumnPropNameInTable="StartDateColumn" type="xs:dateTime" />
+              <xs:element name="CompanyLevelID" msprop:Generator_UserColumnName="CompanyLevelID" msprop:Generator_ColumnVarNameInTable="columnCompanyLevelID" msprop:Generator_ColumnPropNameInRow="CompanyLevelID" msprop:Generator_ColumnPropNameInTable="CompanyLevelIDColumn" type="xs:int" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="InDatabase" msprop:Generator_UserColumnName="InDatabase" msprop:Generator_ColumnVarNameInTable="columnInDatabase" msprop:Generator_ColumnPropNameInRow="InDatabase" msprop:Generator_ColumnPropNameInTable="InDatabaseColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="EndDate" msprop:Generator_UserColumnName="EndDate" msprop:Generator_ColumnPropNameInRow="EndDate" msprop:Generator_ColumnVarNameInTable="columnEndDate" msprop:Generator_ColumnPropNameInTable="EndDateColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:NonWorkingDaysInformation" />
+      <xs:field xpath="mstns:NonWorkingDayID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

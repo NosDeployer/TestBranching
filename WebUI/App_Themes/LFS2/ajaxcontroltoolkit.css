@@ -1,0 +1,78 @@
+﻿/* AutoCompleteExtender*/
+.ajax_autocompleteextender_list
+{
+	list-style-type: none;
+	margin: 0px;
+	background-color: #f3f3f3;
+	border: #7f9db9 1px solid;
+}
+
+ul.ajax_autocompleteextender_list li
+{
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.ajax_autocompleteextender_listitem
+{
+	color: #79787d;
+	font-size: 10px;
+	font-family: 'Verdana';
+}
+
+.ajax_autocompleteextender_hoverlistitem
+{
+	color: #ffffff;
+	font-size: 10px;
+	font-family: 'Verdana';
+	background-color: #79787d;
+}
+
+
+/* TabContainer */
+
+.ajax_tabcontainer .ajax__tab_header
+{
+	font-family: 'Verdana';
+	font-size: 10px;
+	display: block;
+	color: white;
+	
+}
+
+.ajax_tabcontainer .ajax__tab_header .ajax__tab_outer
+{
+	background-color: #c2c2c4;
+	padding-left: 8px;
+	margin-right: 5px;
+}
+
+.ajax_tabcontainer .ajax__tab_header .ajax__tab_inner 
+{
+    padding:4px 5px 4px 0px;
+}
+
+.ajax_tabcontainer .ajax__tab_hover .ajax__tab_inner
+{
+	color: #3a94cc;
+}
+
+.ajax_tabcontainer .ajax__tab_active .ajax__tab_outer
+{
+	background-color: #3a94cc;
+	border-right: #3a94cc 1px solid;
+	border-top: #3a94cc 2px solid;
+	border-left: #3a94cc 1px solid;
+}
+
+.ajax_tabcontainer .ajax__tab_active .ajax__tab_inner 
+{
+	background-color: #3a94cc;
+    color: white;
+}
+
+.ajax_tabcontainer .ajax__tab_body
+{
+	padding: 10px;
+	background-color: #dfe7ec;
+}

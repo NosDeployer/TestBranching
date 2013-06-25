@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DetailedWorkOnHandReportTDS" targetNamespace="http://tempuri.org/DetailedWorkOnHandReportTDS.xsd" xmlns:mstns="http://tempuri.org/DetailedWorkOnHandReportTDS.xsd" xmlns="http://tempuri.org/DetailedWorkOnHandReportTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DetailedWorkOnHandReportTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DetailedWorkOnHandReportTDS" msprop:Generator_DataSetName="DetailedWorkOnHandReportTDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DetailedWorkOnHandReport" msprop:Generator_UserTableName="DetailedWorkOnHandReport" msprop:Generator_RowDeletedName="DetailedWorkOnHandReportRowDeleted" msprop:Generator_RowChangedName="DetailedWorkOnHandReportRowChanged" msprop:Generator_RowClassName="DetailedWorkOnHandReportRow" msprop:Generator_RowChangingName="DetailedWorkOnHandReportRowChanging" msprop:Generator_RowEvArgName="DetailedWorkOnHandReportRowChangeEvent" msprop:Generator_RowEvHandlerName="DetailedWorkOnHandReportRowChangeEventHandler" msprop:Generator_TableClassName="DetailedWorkOnHandReportDataTable" msprop:Generator_TableVarName="tableDetailedWorkOnHandReport" msprop:Generator_RowDeletingName="DetailedWorkOnHandReportRowDeleting" msprop:Generator_TablePropName="DetailedWorkOnHandReport">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProjectID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="ProjectID" msprop:Generator_ColumnVarNameInTable="columnProjectID" msprop:Generator_ColumnPropNameInRow="ProjectID" msprop:Generator_ColumnPropNameInTable="ProjectIDColumn" type="xs:int" />
+              <xs:element name="ProjectName" msprop:Generator_UserColumnName="ProjectName" msprop:Generator_ColumnVarNameInTable="columnProjectName" msprop:Generator_ColumnPropNameInRow="ProjectName" msprop:Generator_ColumnPropNameInTable="ProjectNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BillMoney" msprop:Generator_UserColumnName="BillMoney" msprop:Generator_ColumnVarNameInTable="columnBillMoney" msprop:Generator_ColumnPropNameInRow="BillMoney" msprop:Generator_ColumnPropNameInTable="BillMoneyColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BillPrice" msprop:Generator_UserColumnName="BillPrice" msprop:Generator_ColumnVarNameInTable="columnBillPrice" msprop:Generator_ColumnPropNameInRow="BillPrice" msprop:Generator_ColumnPropNameInTable="BillPriceColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="EndDate" msprop:Generator_UserColumnName="EndDate" msprop:Generator_ColumnVarNameInTable="columnEndDate" msprop:Generator_ColumnPropNameInRow="EndDate" msprop:Generator_ColumnPropNameInTable="EndDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="GeneralBondingSupplied" msprop:Generator_UserColumnName="GeneralBondingSupplied" msprop:Generator_ColumnPropNameInRow="GeneralBondingSupplied" msprop:Generator_ColumnVarNameInTable="columnGeneralBondingSupplied" msprop:Generator_ColumnPropNameInTable="GeneralBondingSuppliedColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ExtrasToDate" msprop:Generator_UserColumnName="ExtrasToDate" msprop:Generator_ColumnVarNameInTable="columnExtrasToDate" msprop:Generator_ColumnPropNameInRow="ExtrasToDate" msprop:Generator_ColumnPropNameInTable="ExtrasToDateColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CostsIncurred" msprop:Generator_UserColumnName="CostsIncurred" msprop:Generator_ColumnVarNameInTable="columnCostsIncurred" msprop:Generator_ColumnPropNameInRow="CostsIncurred" msprop:Generator_ColumnPropNameInTable="CostsIncurredColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CostToComplete" msprop:Generator_UserColumnName="CostToComplete" msprop:Generator_ColumnVarNameInTable="columnCostToComplete" msprop:Generator_ColumnPropNameInRow="CostToComplete" msprop:Generator_ColumnPropNameInTable="CostToCompleteColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OriginalProfitEstimated" msprop:Generator_UserColumnName="OriginalProfitEstimated" msprop:Generator_ColumnVarNameInTable="columnOriginalProfitEstimated" msprop:Generator_ColumnPropNameInRow="OriginalProfitEstimated" msprop:Generator_ColumnPropNameInTable="OriginalProfitEstimatedColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalAmountIncludingExtras" msprop:Generator_UserColumnName="TotalAmountIncludingExtras" msprop:Generator_ColumnPropNameInRow="TotalAmountIncludingExtras" msprop:Generator_ColumnVarNameInTable="columnTotalAmountIncludingExtras" msprop:Generator_ColumnPropNameInTable="TotalAmountIncludingExtrasColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="InvoicedToDate" msprop:Generator_UserColumnName="InvoicedToDate" msprop:Generator_ColumnPropNameInRow="InvoicedToDate" msprop:Generator_ColumnVarNameInTable="columnInvoicedToDate" msprop:Generator_ColumnPropNameInTable="InvoicedToDateColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ClientName" msprop:Generator_UserColumnName="ClientName" msprop:Generator_ColumnVarNameInTable="columnClientName" msprop:Generator_ColumnPropNameInRow="ClientName" msprop:Generator_ColumnPropNameInTable="ClientNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ClientProjectNumber" msprop:Generator_UserColumnName="ClientProjectNumber" msprop:Generator_ColumnPropNameInRow="ClientProjectNumber" msprop:Generator_ColumnVarNameInTable="columnClientProjectNumber" msprop:Generator_ColumnPropNameInTable="ClientProjectNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BondNumber" msprop:Generator_UserColumnName="BondNumber" msprop:Generator_ColumnPropNameInRow="BondNumber" msprop:Generator_ColumnVarNameInTable="columnBondNumber" msprop:Generator_ColumnPropNameInTable="BondNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LeftToInvoice" msprop:Generator_UserColumnName="LeftToInvoice" msprop:Generator_ColumnVarNameInTable="columnLeftToInvoice" msprop:Generator_ColumnPropNameInRow="LeftToInvoice" msprop:Generator_ColumnPropNameInTable="LeftToInvoiceColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PercentageCompleted" msprop:Generator_UserColumnName="PercentageCompleted" msprop:Generator_ColumnPropNameInRow="PercentageCompleted" msprop:Generator_ColumnVarNameInTable="columnPercentageCompleted" msprop:Generator_ColumnPropNameInTable="PercentageCompletedColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

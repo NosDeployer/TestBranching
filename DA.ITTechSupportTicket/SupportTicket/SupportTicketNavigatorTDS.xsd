@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SupportTicketNavigatorTDS" targetNamespace="http://tempuri.org/SupportTicketNavigatorTDS.xsd" xmlns:mstns="http://tempuri.org/SupportTicketNavigatorTDS.xsd" xmlns="http://tempuri.org/SupportTicketNavigatorTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SupportTicketNavigatorTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SupportTicketNavigatorTDS" msprop:Generator_DataSetName="SupportTicketNavigatorTDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SupportTicketNavigator" msprop:Generator_UserTableName="SupportTicketNavigator" msprop:Generator_RowDeletedName="SupportTicketNavigatorRowDeleted" msprop:Generator_RowChangedName="SupportTicketNavigatorRowChanged" msprop:Generator_RowClassName="SupportTicketNavigatorRow" msprop:Generator_RowChangingName="SupportTicketNavigatorRowChanging" msprop:Generator_RowEvArgName="SupportTicketNavigatorRowChangeEvent" msprop:Generator_RowEvHandlerName="SupportTicketNavigatorRowChangeEventHandler" msprop:Generator_TableClassName="SupportTicketNavigatorDataTable" msprop:Generator_TableVarName="tableSupportTicketNavigator" msprop:Generator_RowDeletingName="SupportTicketNavigatorRowDeleting" msprop:Generator_TablePropName="SupportTicketNavigator">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SupportTicketID" msprop:Generator_UserColumnName="SupportTicketID" msprop:Generator_ColumnVarNameInTable="columnSupportTicketID" msprop:Generator_ColumnPropNameInRow="SupportTicketID" msprop:Generator_ColumnPropNameInTable="SupportTicketIDColumn" type="xs:int" />
+              <xs:element name="Subject" msprop:Generator_UserColumnName="Subject" msprop:Generator_ColumnVarNameInTable="columnSubject" msprop:Generator_ColumnPropNameInRow="Subject" msprop:Generator_ColumnPropNameInTable="SubjectColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CreationDate" msprop:Generator_UserColumnName="CreationDate" msprop:Generator_ColumnVarNameInTable="columnCreationDate" msprop:Generator_ColumnPropNameInRow="CreationDate" msprop:Generator_ColumnPropNameInTable="CreationDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="State" msprop:Generator_UserColumnName="State" msprop:Generator_ColumnVarNameInTable="columnState" msprop:Generator_ColumnPropNameInRow="State" msprop:Generator_ColumnPropNameInTable="StateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DueDate" msprop:Generator_UserColumnName="DueDate" msprop:Generator_ColumnVarNameInTable="columnDueDate" msprop:Generator_ColumnPropNameInRow="DueDate" msprop:Generator_ColumnPropNameInTable="DueDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="OwnerID" msprop:Generator_UserColumnName="OwnerID" msprop:Generator_ColumnVarNameInTable="columnOwnerID" msprop:Generator_ColumnPropNameInRow="OwnerID" msprop:Generator_ColumnPropNameInTable="OwnerIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="OwnerName" msprop:Generator_UserColumnName="OwnerName" msprop:Generator_ColumnVarNameInTable="columnOwnerName" msprop:Generator_ColumnPropNameInRow="OwnerName" msprop:Generator_ColumnPropNameInTable="OwnerNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LastAssignedTeamMemberID" msprop:Generator_UserColumnName="LastAssignedTeamMemberID" msprop:Generator_ColumnVarNameInTable="columnLastAssignedTeamMemberID" msprop:Generator_ColumnPropNameInRow="LastAssignedTeamMemberID" msprop:Generator_ColumnPropNameInTable="LastAssignedTeamMemberIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LastAssignedTeamMemberName" msprop:Generator_UserColumnName="LastAssignedTeamMemberName" msprop:Generator_ColumnVarNameInTable="columnLastAssignedTeamMemberName" msprop:Generator_ColumnPropNameInRow="LastAssignedTeamMemberName" msprop:Generator_ColumnPropNameInTable="LastAssignedTeamMemberNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LastComment" msprop:Generator_UserColumnName="LastComment" msprop:Generator_ColumnVarNameInTable="columnLastComment" msprop:Generator_ColumnPropNameInRow="LastComment" msprop:Generator_ColumnPropNameInTable="LastCommentColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LastCommentDate" msprop:Generator_UserColumnName="LastCommentDate" msprop:Generator_ColumnVarNameInTable="columnLastCommentDate" msprop:Generator_ColumnPropNameInRow="LastCommentDate" msprop:Generator_ColumnPropNameInTable="LastCommentDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Selected" msprop:Generator_UserColumnName="Selected" msprop:Generator_ColumnVarNameInTable="columnSelected" msprop:Generator_ColumnPropNameInRow="Selected" msprop:Generator_ColumnPropNameInTable="SelectedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CategoryName" msprop:Generator_UserColumnName="CategoryName" msprop:Generator_ColumnPropNameInRow="CategoryName" msprop:Generator_ColumnVarNameInTable="columnCategoryName" msprop:Generator_ColumnPropNameInTable="CategoryNameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SupportTicketNavigator" />
+      <xs:field xpath="mstns:SupportTicketID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

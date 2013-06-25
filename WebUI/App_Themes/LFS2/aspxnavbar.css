@@ -1,0 +1,108 @@
+﻿/* Separators */
+.ASPxNavBar1_Separator
+{
+	background-color: #3a94cc;
+}
+
+.ASPxNavBar2_Separator
+{
+	background-color: #797b7d;
+}
+
+
+
+/* Labels */
+.ASPxNavBar1_Label
+{
+	font-family: "Verdana";
+	font-size: 11px;
+	text-decoration: none;
+	color: #3a94cc;
+}
+
+.ASPxNavBar2_Label
+{
+	font-family: "Verdana";
+	font-size: 11px;
+	text-decoration: none;
+	color: #797b7d;
+}
+
+
+
+/* Control */
+.ASPxNavBar1_Control
+{
+	color: #797b7d;
+	font-family: 'Verdana';
+	font-size: 10px;
+	background-color: #f3f3f3;
+	border: #7f9db9 1px solid;
+	padding-right: 1px;
+	padding-left: 1px;
+	vertical-align: middle;
+}
+
+.ASPxNavBar1_ControlReadOnly
+{
+	color: white;
+	font-family: 'Verdana';
+	font-size: 10px;
+	background-color: #e2e4e5;
+	border: #7f9db9 1px solid;
+	padding-right: 1px;
+	padding-left: 1px;
+	vertical-align: middle;
+}
+
+.ASPxNavBar1_LinkButton
+{
+	color: #3a94cc;
+	font-family: 'Verdana';
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.ASPxNavBar1_LinkButton:hover
+{
+	color: #FAA722;
+}
+
+.ASPxNavBar2_Control
+{
+	color: #797b7d;
+	font-family: 'Verdana';
+	font-size: 10px;
+	background-color: #f3f3f3;
+	border: #7f9db9 1px solid;
+	padding-right: 1px;
+	padding-left: 1px;
+	vertical-align: middle;
+}
+
+.ASPxNavBar2_ControlReadOnly
+{
+	color: #7f9db9;
+	font-family: 'Verdana';
+	font-size: 10px;
+	background-color: #e2e4e5;
+	border: #7f9db9 1px solid;
+	padding-right: 1px;
+	padding-left: 1px;
+	vertical-align: middle;
+}
+
+.ASPxNavBar2_LinkButton
+{
+	color: #797b7d;
+	font-family: 'Verdana';
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.ASPxNavBar2_LinkButton:hover
+{
+	color: #FAA722;
+}
+
+

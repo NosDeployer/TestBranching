@@ -1,0 +1,12 @@
+﻿<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+
+<telerik:RadTextBox SkinID="RadTextBox" runat="server" EnableEmbeddedSkins="false" Skin="LFS"></telerik:RadTextBox>
+<telerik:RadCalendar SkinId="RadCalendar" runat="server" EnableEmbeddedSkins="false" Skin="LFS"></telerik:RadCalendar>
+<telerik:RadCalendar SkinId="RadCalendarVista" runat="server" EnableEmbeddedSkins="false" Skin="Windows7"></telerik:RadCalendar>
+<telerik:RadDatePicker SkinId="RadDatePicker" Runat="server" EnableEmbeddedSkins="false" Skin="LFS"></telerik:RadDatePicker>
+<telerik:RadDatePicker SkinId="RadDatePickerVista" Runat="server" EnableEmbeddedSkins="false" Skin="Windows7"></telerik:RadDatePicker>
+<telerik:RadScheduler SkinID="RadScheduler" runat="server" EnableEmbeddedSkins="false" Skin="LFS" />
+<telerik:RadMenu SkinID="RadMenu" runat="server" EnableEmbeddedSkins="false" Skin="LFS" BorderStyle="None" Font-Names="Verdana" Font-Size="11px" ForeColor="#3A94CC" BorderColor="#C2C2C4" BackColor="#C2C2C4"></telerik:RadMenu>
+<telerik:RadPanelBar SkinID="RadPanelBar" runat="server" EnableEmbeddedSkins="false" Skin="LFS"></telerik:RadPanelBar>
+<telerik:RadPanelBar SkinID="RadPanelBar2" runat="server" EnableEmbeddedSkins="false" Skin="LFS2"></telerik:RadPanelBar>
+<telerik:RadPanelBar SkinID="RadPanelBar3" runat="server" EnableEmbeddedSkins="false" Skin="LFS3"></telerik:RadPanelBar>

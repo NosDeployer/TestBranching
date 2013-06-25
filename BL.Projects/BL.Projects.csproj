@@ -1,0 +1,262 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{44AB722F-BBD2-4346-9B18-59F42D35F30B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LiquiForce.LFSLive.BL.Projects</RootNamespace>
+    <AssemblyName>LiquiForce.LFSLive.BL.Projects</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LiquiForce.LFSLive.BL.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.BL.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LiquiForce.LFSLive.DA.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.DA.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LiquiForce.LFSLive.Server, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Projects\BallparkSummaryReport.cs" />
+    <Compile Include="Projects\PrintSummaryCostingSheetByMonthDummyInformation.cs" />
+    <Compile Include="Projects\ProjectJobInfo.cs" />
+    <Compile Include="Projects\ProjectNavigatorProjectJobInfo.cs" />
+    <Compile Include="Projects\ProjectBondingsBudget.cs" />
+    <Compile Include="Projects\ProjectCombinedCostingSheet.cs" />
+    <Compile Include="Projects\ProjectCombinedCostingSheetAddBasicInformation.cs" />
+    <Compile Include="Projects\ProjectCombinedCostingSheetAddLabourHoursInformation.cs" />
+    <Compile Include="Projects\ProjectCombinedCostingSheetAddMaterialsInformation.cs" />
+    <Compile Include="Projects\ProjectCombinedCostingSheetAddOtherCostsInformation.cs" />
+    <Compile Include="Projects\ProjectCombinedCostingSheetAddRevenueInformation.cs" />
+    <Compile Include="Projects\ProjectCombinedCostingSheetAddSubcontractorsInformation.cs" />
+    <Compile Include="Projects\ProjectCombinedCostingSheetAddUnitsInformation.cs" />
+    <Compile Include="Projects\ProjectCombinedCostingSheetInformationBasicInformation.cs" />
+    <Compile Include="Projects\ProjectCombinedCostingSheetInformationLabourHoursInformation.cs" />
+    <Compile Include="Projects\ProjectCombinedCostingSheetInformationMaterialsInformation.cs" />
+    <Compile Include="Projects\ProjectCombinedCostingSheetInformationOtherCostsInformation.cs" />
+    <Compile Include="Projects\projectCombinedCostingSheetInformationRevenueInformation.cs" />
+    <Compile Include="Projects\ProjectCombinedCostingSheetInformationSubcontractorsInformation.cs" />
+    <Compile Include="Projects\ProjectCombinedCostingSheetInformationUnitsInformation.cs" />
+    <Compile Include="Projects\ProjectCombinedCostingSheetLabourHours.cs" />
+    <Compile Include="Projects\ProjectCombinedCostingSheetList.cs" />
+    <Compile Include="Projects\ProjectCombinedCostingSheetMaterials.cs" />
+    <Compile Include="Projects\ProjectCombinedCostingSheetOtherCosts.cs" />
+    <Compile Include="Projects\ProjectCombinedCostingSheetRevenue.cs" />
+    <Compile Include="Projects\ProjectCombinedCostingSheetsNavigator.cs" />
+    <Compile Include="Projects\ProjectCombinedCostingSheetSubcontractors.cs" />
+    <Compile Include="Projects\ProjectCombinedCostingSheetUnits.cs" />
+    <Compile Include="Projects\ProjectCostingSheetAddBondingsInformation.cs" />
+    <Compile Include="Projects\ProjectCostingSheetAddHotelsInformation.cs" />
+    <Compile Include="Projects\ProjectCostingSheetAddInsurancesInformation.cs" />
+    <Compile Include="Projects\ProjectCostingSheetAddOtherCategoryInformation.cs" />
+    <Compile Include="Projects\ProjectCostingSheetAddRevenueInformation.cs" />
+    <Compile Include="Projects\ProjectCostingSheetBondings.cs" />
+    <Compile Include="Projects\ProjectCostingSheetHotels.cs" />
+    <Compile Include="Projects\ProjectCostingSheetInformationBondingsInformation.cs" />
+    <Compile Include="Projects\ProjectCostingSheetInformationHotelsInformation.cs" />
+    <Compile Include="Projects\ProjectCostingSheetInformationInsurancesInformation.cs" />
+    <Compile Include="Projects\ProjectCostingSheetInformationOtherCategoryInformation.cs" />
+    <Compile Include="Projects\projectCostingSheetInformationRevenueInformation.cs" />
+    <Compile Include="Projects\ProjectCostingSheetInsurances.cs" />
+    <Compile Include="Projects\ProjectCostingSheetOtherCategory.cs" />
+    <Compile Include="Projects\ProjectCostingSheetRevenue.cs" />
+    <Compile Include="Projects\ProjectCostingSheetTemplate.cs" />
+    <Compile Include="Projects\ProjectCostingSheetTemplateInformation.cs" />
+    <Compile Include="Projects\ProjectCostingSheetTemplateList.cs" />
+    <Compile Include="Projects\ProjectHotelsBudget.cs" />
+    <Compile Include="Projects\ProjectInsurancesBudget.cs" />
+    <Compile Include="Projects\ProjectMaterialsBudget.cs" />
+    <Compile Include="Projects\ProjectNavigatorProjectBondingsBudget.cs" />
+    <Compile Include="Projects\ProjectNavigatorProjectHotelsBudget.cs" />
+    <Compile Include="Projects\ProjectNavigatorProjectInsurancesBudget.cs" />
+    <Compile Include="Projects\ProjectNavigatorProjectMaterialsBudget.cs" />
+    <Compile Include="Projects\ProjectNavigatorProjectOtherCostsBudget.cs" />
+    <Compile Include="Projects\ProjectNavigatorProjectSubcontractorsBudget.cs" />
+    <Compile Include="Projects\ProjectNavigatorProjectUnitsBudget.cs" />
+    <Compile Include="Projects\ProjectOtherCostsBudget.cs" />
+    <Compile Include="Projects\ProjectRevenue.cs" />
+    <Compile Include="Projects\DetailedWorkOnHandReport.cs" />
+    <Compile Include="Projects\ProductionReport.cs" />
+    <Compile Include="Projects\ProjectCostingSheet.cs" />
+    <Compile Include="Projects\ProjectCostingSheetAddBasicInformation.cs" />
+    <Compile Include="Projects\ProjectCostingSheetAddLabourHoursInformation.cs" />
+    <Compile Include="Projects\ProjectCostingSheetAddMaterialsInformation.cs" />
+    <Compile Include="Projects\ProjectCostingSheetAddOtherCostsInformation.cs" />
+    <Compile Include="Projects\ProjectCostingSheetAddSubcontractorsInformation.cs">
+    </Compile>
+    <Compile Include="Projects\ProjectCostingSheetAddUnitsInformation.cs" />
+    <Compile Include="Projects\ProjectCostingSheetInformationBasicInformation.cs" />
+    <Compile Include="Projects\ProjectCostingSheetInformationLabourHoursInformation.cs" />
+    <Compile Include="Projects\ProjectCostingSheetInformationMaterialsInformation.cs" />
+    <Compile Include="Projects\ProjectCostingSheetInformationOtherCostsInformation.cs" />
+    <Compile Include="Projects\ProjectCostingSheetInformationReportInformation.cs" />
+    <Compile Include="Projects\ProjectCostingSheetInformationSubcontractorsInformation.cs" />
+    <Compile Include="Projects\ProjectCostingSheetInformationUnitsInformation.cs" />
+    <Compile Include="Projects\ProjectCostingSheetLabourHours.cs" />
+    <Compile Include="Projects\ProjectCostingSheetList.cs" />
+    <Compile Include="Projects\ProjectCostingSheetMaterials.cs" />
+    <Compile Include="Projects\ProjectCostingSheetOtherCosts.cs" />
+    <Compile Include="Projects\ProjectCostingSheetsNavigator.cs" />
+    <Compile Include="Projects\ProjectCostingSheetSubcontractors.cs" />
+    <Compile Include="Projects\ProjectCostingSheetUnits.cs" />
+    <Compile Include="Projects\ProjectCostingUpdates.cs" />
+    <Compile Include="Projects\ProjectEngineerSubcontractors.cs" />
+    <Compile Include="Projects\ProjectJobClassTyeRate.cs" />
+    <Compile Include="Projects\ProjectLoginProjectLastLogin.cs" />
+    <Compile Include="Projects\ProjectNavigator.cs" />
+    <Compile Include="Projects\ProjectNavigatorProjectJobClassTypeRate.cs" />
+    <Compile Include="Projects\ProjectNavigatorProjectNotes.cs" />
+    <Compile Include="Projects\ProjectNavigatorProjectService.cs" />
+    <Compile Include="Projects\ProjectNavigatorProjectWorkFunctionBudget.cs" />
+    <Compile Include="Projects\ProjectNavigatorProjectWorkFunctionFairWage.cs" />
+    <Compile Include="Projects\ProjectNotes.cs" />
+    <Compile Include="Projects\Project.cs" />
+    <Compile Include="Projects\ProjectHistory.cs" />
+    <Compile Include="Projects\ProjectList.cs" />
+    <Compile Include="Projects\ProjectNumber.cs" />
+    <Compile Include="Projects\ProjectSaleBillingPricing.cs" />
+    <Compile Include="Projects\ProjectSectionsNavigator.cs" />
+    <Compile Include="Projects\ProjectService.cs" />
+    <Compile Include="Projects\ProjectsSummaryReport.cs" />
+    <Compile Include="Projects\ProjectSubcontractor.cs" />
+    <Compile Include="Projects\ProjectSubcontractorsBudget.cs" />
+    <Compile Include="Projects\ProjectSynopsisEngineerSubcontractors.cs" />
+    <Compile Include="Projects\ProjectSynopsisNote.cs" />
+    <Compile Include="Projects\ProjectSynopsisReport.cs" />
+    <Compile Include="Projects\ProjectSynopsisService.cs" />
+    <Compile Include="Projects\ProjectSynopsisSubcontractor.cs" />
+    <Compile Include="Projects\ProjectTechnical.cs" />
+    <Compile Include="Projects\ProjectTermsPO.cs" />
+    <Compile Include="Projects\ProjectUnistBudget.cs" />
+    <Compile Include="Projects\ProjectWorkFunctionBudget.cs" />
+    <Compile Include="Projects\ProjectWorkFunctionFairWage.cs" />
+    <Compile Include="Projects\SalesOverviewReport.cs" />
+    <Compile Include="Projects\ProjectSelectProjectLastUsedProjects.cs" />
+    <Compile Include="Projects\TermsRelationshipVehicleAccess.cs" />
+    <Compile Include="Projects\TotalValueWorkAheadReport.cs" />
+    <Compile Include="Projects\VideoCompleteReport.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Revenue\RevenueInformationBasicInformation.cs" />
+    <Compile Include="Revenue\RevenueNavigator.cs" />
+    <Compile Include="Revenue\RevenueAddProjectRevenue.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BL.Assets\BL.Assets.csproj">
+      <Project>{A8A8C4ED-3D5C-4BB5-A3DA-DDBCA1FE8FF2}</Project>
+      <Name>BL.Assets</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BL.CWP\BL.CWP.csproj">
+      <Project>{E0635C37-F685-4868-B8AB-AC7BBBBD7D10}</Project>
+      <Name>BL.CWP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BL.FleetManagement\BL.FleetManagement.csproj">
+      <Project>{D49E58B6-A7EE-4B29-B5B1-D19CFC85D527}</Project>
+      <Name>BL.FleetManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BL.LabourHours\BL.LabourHours.csproj">
+      <Project>{3BDA8120-4A44-4646-BE56-41C8D5F6881E}</Project>
+      <Name>BL.LabourHours</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BL.Resources\BL.Resources.csproj">
+      <Project>{D8EBE1D8-6FD3-4E9C-BF1B-21433E232C11}</Project>
+      <Name>BL.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BL.Services\BL.Services.csproj">
+      <Project>{89A3BA3D-7B5F-41E2-98B5-F56147C02A3A}</Project>
+      <Name>BL.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DA.Assets\DA.Assets.csproj">
+      <Project>{530AB705-0919-4EF4-AC9E-C8FFC3BFB3BD}</Project>
+      <Name>DA.Assets</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DA.Company\DA.Company.csproj">
+      <Project>{7B9D803C-0415-4770-84DA-EA866443EAF3}</Project>
+      <Name>DA.Company</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DA.CWP\DA.CWP.csproj">
+      <Project>{946577F7-3264-4C79-B032-7F2DE3831002}</Project>
+      <Name>DA.CWP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DA.FleetManagement\DA.FleetManagement.csproj">
+      <Project>{80016E93-9B76-4284-9018-B0D156B5DC2D}</Project>
+      <Name>DA.FleetManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DA.LabourHours\DA.LabourHours.csproj">
+      <Project>{20E11C1C-31A5-4E1D-9393-8E000FBB12ED}</Project>
+      <Name>DA.LabourHours</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DA.Projects\DA.Projects.csproj">
+      <Project>{94F2537E-6075-4EA6-83EB-393A48DEFBB5}</Project>
+      <Name>DA.Projects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DA.RAF\DA.RAF.csproj">
+      <Project>{A7412996-397D-4881-B6E1-88F52435368A}</Project>
+      <Name>DA.RAF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DA.Resources\DA.Resources.csproj">
+      <Project>{337C14FC-8E53-45E5-9687-6B86AEE5BC2F}</Project>
+      <Name>DA.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DA.Services\DA.Services.csproj">
+      <Project>{77E4B9B7-C56A-4D8A-99E2-4CA29EEA183F}</Project>
+      <Name>DA.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.csproj">
+      <Project>{16842E60-30B0-414A-8FFA-0AC20F8B9B67}</Project>
+      <Name>Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

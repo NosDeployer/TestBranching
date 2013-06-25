@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PersonalAgencyInformationTDS" targetNamespace="http://tempuri.org/PersonalAgencyInformationTDS.xsd" xmlns:mstns="http://tempuri.org/PersonalAgencyInformationTDS.xsd" xmlns="http://tempuri.org/PersonalAgencyInformationTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PersonalAgencyInformationTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="PersonalAgencyInformationTDS" msprop:Generator_UserDSName="PersonalAgencyInformationTDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PersonalAgencyInformation" msprop:Generator_UserTableName="PersonalAgencyInformation" msprop:Generator_RowDeletedName="PersonalAgencyInformationRowDeleted" msprop:Generator_TableClassName="PersonalAgencyInformationDataTable" msprop:Generator_RowChangedName="PersonalAgencyInformationRowChanged" msprop:Generator_RowClassName="PersonalAgencyInformationRow" msprop:Generator_RowChangingName="PersonalAgencyInformationRowChanging" msprop:Generator_RowEvArgName="PersonalAgencyInformationRowChangeEvent" msprop:Generator_RowEvHandlerName="PersonalAgencyInformationRowChangeEventHandler" msprop:Generator_TablePropName="PersonalAgencyInformation" msprop:Generator_TableVarName="tablePersonalAgencyInformation" msprop:Generator_RowDeletingName="PersonalAgencyInformationRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PersonalAgencyName" msdata:Caption="Size_" msprop:Generator_UserColumnName="PersonalAgencyName" msprop:Generator_ColumnPropNameInRow="PersonalAgencyName" msprop:Generator_ColumnVarNameInTable="columnPersonalAgencyName" msprop:Generator_ColumnPropNameInTable="PersonalAgencyNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="InDatabase" msprop:Generator_UserColumnName="InDatabase" msprop:Generator_ColumnPropNameInRow="InDatabase" msprop:Generator_ColumnVarNameInTable="columnInDatabase" msprop:Generator_ColumnPropNameInTable="InDatabaseColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="NewPersonalAgencyName" msdata:Caption="NewSize_" msprop:Generator_UserColumnName="NewPersonalAgencyName" msprop:Generator_ColumnPropNameInRow="NewPersonalAgencyName" msprop:Generator_ColumnVarNameInTable="columnNewPersonalAgencyName" msprop:Generator_ColumnPropNameInTable="NewPersonalAgencyNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Selected" msprop:Generator_UserColumnName="Selected" msprop:Generator_ColumnPropNameInRow="Selected" msprop:Generator_ColumnVarNameInTable="columnSelected" msprop:Generator_ColumnPropNameInTable="SelectedColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PersonalAgencyInformation" />
+      <xs:field xpath="mstns:PersonalAgencyName" />
+      <xs:field xpath="mstns:COMPANY_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

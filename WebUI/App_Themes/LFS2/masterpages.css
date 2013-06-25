@@ -1,0 +1,147 @@
+/* Backgrounds */
+
+.MasterPage_Background
+{
+	background-color: #4b4848;
+}
+
+.MasterPage_Header_Background
+{
+	background-image: url(images/masterpage_header.jpg);
+}
+
+.MasterPage_Left_BackGround
+{
+	background-color: white;
+}
+
+.MasterPage_Right1_BackGround
+{
+	background-color: #f4f5f7;
+}
+
+.MasterPage_Right2_BackGround
+{
+	background-color: white;
+}
+
+.MasterPage_Title_BackGround
+{
+	background-color: #c2c2c4;
+}
+
+.MasterPage_Toolbar_BackGround
+{
+	background-color: #c2c2c4;
+}
+
+.MasterPage_Footer_BackGround1
+{
+	background-color: white;
+	background-image: url(images/masterpage_footer1.jpg);
+}
+
+.MasterPage_Footer_BackGround2
+{
+	background-color: white;
+	background-image: url(images/masterpage_footer2.jpg);
+}
+
+.MasterPage_Footer_BackGround3
+{
+	background-color: white;
+	background-image: url(images/masterpage_footer3.jpg);
+}
+
+.MasterPage_Footer_BackGround4
+{
+	background-color: #231f20;
+}
+
+
+
+
+
+.MasterPage_Dialog_Title_Background
+{
+	background-color: #c2c2c4;
+}
+
+.MasterPage_Dialog_Content_Background
+{
+	background-color: white;
+}
+
+.MasterPage_Dialog_Button_Background
+{
+	background-color: white;
+}
+
+.MasterPage_Dialog_Footer_Background
+{
+	background-color: white;
+	background-image: url(images/masterpage_dialog_footer1.jpg);
+}
+
+
+
+
+
+
+.MasterPage_Wizard_Title_Background
+{
+	background-color: #c2c2c4;
+}
+
+.MasterPage_Wizard_Title_Separator
+{
+	background-color: #797b7d;
+}
+
+.MasterPage_Wizard_Content_Background
+{
+	background-color: white;
+}
+
+.MasterPage_Wizard_Footer_Background
+{
+	background-color: white;
+	background-image: url(images/masterpage_wizard_footer1.jpg);
+}
+
+
+
+
+
+
+.MasterPage_Report_Title_Background
+{
+	background-color: #c2c2c4;
+}
+
+.MasterPage_Report_Title_Separator
+{
+	background-color: #797b7d;
+}
+
+.MasterPage_Report_Criteria_Background
+{
+	background-color: #f4f5f7;
+}
+
+.MasterPage_Report_Report_Background
+{
+	background-color: white;	
+}
+
+.MasterPage_Report_Empty_Background
+{
+	background-color: white;
+}
+
+.MasterPage_Report_Footer_Background
+{
+	background-color: white;
+	background-image: url(images/masterpage_dialog_footer1.jpg);
+}
+

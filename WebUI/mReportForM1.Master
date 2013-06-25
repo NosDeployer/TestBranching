@@ -1,0 +1,182 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="mReportForM1.master.cs" Inherits="LiquiForce.LFSLive.WebUI.mReportForM1" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajax" %>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>Report</title>
+</head>
+<body id="MyBody" runat="server" style="margin:0px">
+    <form id="form1" runat="server">
+    <div>
+        <!-- 
+            FRAMEWORK: REPORT1
+            PARTS:     Title, left options, reports
+        -->
+        <table cellpadding="0" cellspacing="0" border="0" style="width: 100%; height: 680px">
+            <tr>
+                <td>
+                    <!-- Page element: Title -->
+                    <table id="tableTitle" runat="server" cellpadding="0" cellspacing="0" border="0" style="width: 100%" class="MasterPage_Report_Title_Background">
+                        <tr>
+                            <td style="width: 10px; height: 10px">
+                            </td>
+                            <td>
+                                <ajax:ToolkitScriptManager ID="ScriptManagerMasterReportForM1" runat="server" ScriptMode="Release" EnableHistory="true" 
+                                    EnableSecureHistoryState="false" EnablePageMethods="True" CombineScripts="true" >
+                                        <Scripts>
+                                            <asp:ScriptReference Path="./App_Themes/LFS2/scripts/webkit.js" />
+                                        </Scripts>
+                                </ajax:ToolkitScriptManager>
+                            </td>
+                            <td style="width: 10px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                <asp:Label ID="lblTitle" runat="server" Text="Title" SkinID="MasterPage_ReportTitle"></asp:Label>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+				        <tr id="trTableTitleWithToolbar1" runat="server">
+				            <td colspan="3" style="height: 5px">
+				            </td>
+				        </tr>
+				        <tr id="trTableTitleWithToolbar2" runat="server">
+				            <td>
+				            </td>
+				            <td style="height: 3px" class="MasterPage_Report_Title_Separator">
+				            </td>
+				            <td>
+				            </td>
+				        </tr>
+				        <tr id="trTableTitleWithoutToolbar1" runat="server">
+				            <td colspan="3" style="height: 10px">
+				            </td>
+				        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- Page element: Toolbar -->
+                    <table id="tableToolbar" runat="server" cellpadding="0" cellspacing="0" border="0" style="width: 100%" class="MasterPage_Report_Title_Background">
+                        <tr>
+                            <td style="height: 10px" colspan="3">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 10px">
+                            </td>
+                            <td>
+                                <telerik:RadMenu ID="tkrmReportToolbar" SkinID="RadMenu" runat="server" OnItemClick="tkrmTop_ItemClick">                        
+                                    <Items>
+                                        <telerik:RadMenuItem Value="mCriteria" Text="CRITERIA" />
+                                        <telerik:RadMenuItem Value="mPrintM1" Text="PRINT M1" />
+                                        <telerik:RadMenuItem Value="mExportM1" Text="EXPORT M1" />
+                                        <telerik:RadMenuItem Value="mPrintM2" Text="PRINT M2" />
+                                        <telerik:RadMenuItem Value="mExportM2" Text="EXPORT M2" />
+                                        <telerik:RadMenuItem Value="mPrintM1M2" Text="PRINT M1 & M2" />
+                                        <telerik:RadMenuItem Value="mExportM1M2" Text="EXPORT M1 & M2" />
+                                        <telerik:RadMenuItem Value="mClose" Text="CLOSE" NavigateUrl="javascript:window.close();" />
+                                    </Items>
+                                </telerik:RadMenu>
+                            </td>
+                            <td style="width: 10px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height: 10px" colspan="3">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr style="height: 600px">
+                <td>
+                    <!-- Page element: Criteria & Report -->
+                    <table cellpadding="0" cellspacing="0" border="0" style="width: 100%; height: 600px;">
+                        <tr>
+                            <td id="tdCriteria" runat="server" style="vertical-align: top">
+                                <!-- Page element: Criteria -->
+                                <table cellpadding="0" cellspacing="0" border="0" style="width: 100%; height: 600px;" class="MasterPage_Report_Criteria_Background">
+                                    <tr>
+                                        <td style="width: 10px; height: 10px">
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td style="width: 10px">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="height: 580px">
+                                        </td>
+                                        <td style="vertical-align: top; ">
+                                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                            </asp:ContentPlaceHolder>
+                                        </td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="height: 10px">
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <!-- Page element: Report -->
+                                <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;  height: 600px" class="MasterPage_Report_Report_Background">
+                                    <tr id="trTopReport" runat="server">
+                                        <td style="width: 10px; height: 10px">
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td style="width: 10px">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td id="tdLeftReport" runat="server" style="height: 522px">
+                                        </td> 
+                                        <td>
+                                            <asp:Literal ID="lReportFrame" runat="server"></asp:Literal>
+                                        </td>
+                                        <td id="tdRightReport" runat="server">
+                                        </td>
+                                    </tr>
+                                    <tr id="trBottomReport" runat="server">
+                                        <td colspan="3" style="height: 78px;">
+			                                <table  cellpadding="0" cellspacing="0" border="0" style="width: 100%; height: 78px" class="MasterPage_Report_Footer_Background">
+			                                    <tr>
+			                                        <td>
+			                                        </td>
+			                                    </tr>
+			                                </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <table cellpadding="0" cellspacing="0" border="0" style="width: 100%">
+            <tr>
+                <td>
+                    <asp:HiddenField ID="hdfFormat1" runat="server" />
+                    <asp:HiddenField ID="hdfFormat2" runat="server" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

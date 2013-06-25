@@ -1,0 +1,269 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E0635C37-F685-4868-B8AB-AC7BBBBD7D10}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LiquiForce.LFSLive.BL.CWP</RootNamespace>
+    <AssemblyName>LiquiForce.LFSLive.BL.CWP</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LiquiForce.LFSLive.BL.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.BL.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LiquiForce.LFSLive.DA.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.DA.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LiquiForce.LFSLive.Server, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\LfsAsset.cs" />
+    <Compile Include="Assets\LfsAssetSewer.cs" />
+    <Compile Include="Assets\LfsAssetSewerLateral.cs" />
+    <Compile Include="Assets\LfsAssetSewerLateralClient.cs" />
+    <Compile Include="Assets\LfsAssetSewerMH.cs" />
+    <Compile Include="Assets\LfsAssetSewerMHConditionRatingList.cs" />
+    <Compile Include="Assets\LfsAssetSewerSection.cs" />
+    <Compile Include="Assets\LfsAssetSewerSectionThicknessList.cs" />
+    <Compile Include="Common\AddManholeNew.cs" />
+    <Compile Include="Common\BulkUpload.cs" />
+    <Compile Include="Common\GerencialDailyProductionReport.cs" />
+    <Compile Include="Common\GerencialWeeklyProductionReport.cs" />
+    <Compile Include="Common\LateralLocationSheetLateralDetailsReport.cs" />
+    <Compile Include="Common\LateralLocationSheetReport.cs" />
+    <Compile Include="Common\ProjectAddSectionsNew.cs" />
+    <Compile Include="Common\ProjectAddSectionsSearch.cs" />
+    <Compile Include="Common\ProjectAddSectionsTemp.cs" />
+    <Compile Include="Common\SelectProjectLastUsedProjects.cs" />
+    <Compile Include="Common\WincanBulkUpload.cs" />
+    <Compile Include="Common\WorkTypeViewCondition.cs" />
+    <Compile Include="Common\WorkTypeViewConditionItemList.cs" />
+    <Compile Include="Common\WorkTypeViewConditionList.cs" />
+    <Compile Include="Common\WorkTypeViewDisplay.cs" />
+    <Compile Include="Common\WorkTypeViewOperatorList.cs" />
+    <Compile Include="Common\WorkTypeViewSort.cs" />
+    <Compile Include="Common\WorkTypeViewSortList.cs" />
+    <Compile Include="Common\WorkTypeViewSubAreaList.cs" />
+    <Compile Include="Common\WorkView.cs" />
+    <Compile Include="Common\WorkViewColumn.cs" />
+    <Compile Include="Common\WorkViewCondition.cs" />
+    <Compile Include="Common\WorkViewConditionNew.cs" />
+    <Compile Include="Common\WorkViewConditionTemp.cs" />
+    <Compile Include="Common\WorkViewDisplay.cs" />
+    <Compile Include="Common\WorkViewDisplayTemp.cs" />
+    <Compile Include="Common\WorkViewForDisplay.cs" />
+    <Compile Include="Common\WorkViewForDisplayList.cs" />
+    <Compile Include="Common\WorkViewList.cs" />
+    <Compile Include="Common\WorkViewSort.cs" />
+    <Compile Include="Common\WorkViewSortByList.cs" />
+    <Compile Include="Common\WorkViewSortTemp.cs" />
+    <Compile Include="Common\WorkViewTypeList.cs" />
+    <Compile Include="FullLengthLining\FlAllOutstandingIssuesReport.cs" />
+    <Compile Include="FullLengthLining\FlCatalystsAdd.cs" />
+    <Compile Include="FullLengthLining\FlCXIRemovedReport.cs" />
+    <Compile Include="FullLengthLining\FlInversionFieldCureRecord.cs" />
+    <Compile Include="FullLengthLining\FlInversionReport.cs" />
+    <Compile Include="FullLengthLining\FlLiningCompletedReport.cs" />
+    <Compile Include="FullLengthLining\FlM12Report.cs" />
+    <Compile Include="FullLengthLining\FlM1LateralLateralReport.cs" />
+    <Compile Include="FullLengthLining\FlM1LateralReport.cs" />
+    <Compile Include="FullLengthLining\FlM1LateralSectionReport.cs" />
+    <Compile Include="FullLengthLining\FlM1Report.cs" />
+    <Compile Include="FullLengthLining\FlM2LateralReport.cs" />
+    <Compile Include="FullLengthLining\FlM2Report.cs" />
+    <Compile Include="FullLengthLining\FlNavigator.cs" />
+    <Compile Include="FullLengthLining\FlOutstandingClientInvestigationIssuesCityCopyReport.cs" />
+    <Compile Include="FullLengthLining\FlOutstandingClientIssuesReport.cs" />
+    <Compile Include="FullLengthLining\FlOutstandingInvestigationIssuesReport.cs" />
+    <Compile Include="FullLengthLining\FlOutstandingLFSIssuesReport.cs" />
+    <Compile Include="FullLengthLining\FlOutstandingSalesIssuesReport.cs" />
+    <Compile Include="FullLengthLining\FlOverviewReport.cs" />
+    <Compile Include="FullLengthLining\FlReadyForLiningReport.cs" />
+    <Compile Include="FullLengthLining\FlReinstateLateralReport.cs" />
+    <Compile Include="FullLengthLining\FlReinstateSectionReport.cs" />
+    <Compile Include="FullLengthLining\FlResinsAdd.cs" />
+    <Compile Include="FullLengthLining\FlToBeMeasuredReport.cs" />
+    <Compile Include="FullLengthLining\FlToBePreppedReport.cs" />
+    <Compile Include="FullLengthLining\FlWetOutCatalystsReport.cs" />
+    <Compile Include="FullLengthLining\FlWetOutReport.cs" />
+    <Compile Include="FullLengthLining\FlWorkAheadReport.cs" />
+    <Compile Include="FullLengthLining\FullLengthLiningAllComments.cs" />
+    <Compile Include="FullLengthLining\FullLengthLiningCommentDetails.cs" />
+    <Compile Include="FullLengthLining\FullLengthLiningLateralDetails.cs" />
+    <Compile Include="FullLengthLining\FullLengthLiningSectionDetails.cs" />
+    <Compile Include="FullLengthLining\FullLengthLiningWetOutCatalystsDetails.cs" />
+    <Compile Include="FullLengthLining\FullLengthLiningWetOutCommentDetails.cs" />
+    <Compile Include="FullLengthLining\FullLengthLiningWorkDetails.cs" />
+    <Compile Include="Jliner\FlatSectionJliner.cs" />
+    <Compile Include="Jliner\FlatSectionJlinerJuntionLiner2Comment.cs" />
+    <Compile Include="Jliner\FlatSectionJlinerJuntionLiner2History.cs" />
+    <Compile Include="Jliner\Jliner.cs" />
+    <Compile Include="Jliner\JlinerAddJunctionLiner2.cs" />
+    <Compile Include="Jliner\JlinerAddJunctionLiner2Comment.cs" />
+    <Compile Include="Jliner\JlinerAddMasterArea.cs" />
+    <Compile Include="Jliner\JlinerComments.cs" />
+    <Compile Include="Jliner\JlinerCoPitLocationList.cs" />
+    <Compile Include="Jliner\JlinerHistory.cs" />
+    <Compile Include="Jliner\JlinerId.cs" />
+    <Compile Include="Jliner\JlinerNavigator.cs" />
+    <Compile Include="Jliner\JlinerOverviewReport.cs" />
+    <Compile Include="Jliner\JlinerToBuildReport.cs" />
+    <Compile Include="Jliner\LinningPlan.cs" />
+    <Compile Include="Jliner\LinningPlanJliner.cs" />
+    <Compile Include="JunctionLining\FlatSectionJl.cs" />
+    <Compile Include="JunctionLining\FlatSectionJLAllComments.cs" />
+    <Compile Include="JunctionLining\FlatSectionJLAllHistory.cs" />
+    <Compile Include="JunctionLining\FlatSectionJlCommentDetails.cs" />
+    <Compile Include="JunctionLining\FlatSectionJlHistoryDetails.cs" />
+    <Compile Include="JunctionLining\FlatSectionJls.cs" />
+    <Compile Include="JunctionLining\JlAddLateralsNew.cs" />
+    <Compile Include="JunctionLining\JlAddLateralsSearch.cs" />
+    <Compile Include="JunctionLining\JlAddLateralsTemp.cs" />
+    <Compile Include="JunctionLining\JlId.cs" />
+    <Compile Include="JunctionLining\JlLiningPlan.cs" />
+    <Compile Include="JunctionLining\JlLiningPlanJliner.cs" />
+    <Compile Include="JunctionLining\JlNavigator.cs" />
+    <Compile Include="JunctionLining\JlOverviewReport.cs" />
+    <Compile Include="JunctionLining\JlsId.cs" />
+    <Compile Include="JunctionLining\JlsNavigator.cs" />
+    <Compile Include="JunctionLining\JlToBuildReport.cs" />
+    <Compile Include="ManholeRehabilitation\MrSummaryReport.cs" />
+    <Compile Include="ManholeRehabilitation\ManholeRehabilitationManholeDetails.cs" />
+    <Compile Include="ManholeRehabilitation\ManholeRehabilitationWorkDetails.cs" />
+    <Compile Include="ManholeRehabilitation\ManholeRehabilitationCommentDetails.cs" />
+    <Compile Include="ManholeRehabilitation\MrNavigator.cs" />
+    <Compile Include="ManholeRehabilitation\MrBatchVerification.cs" />
+    <Compile Include="PointRepairs\PointRepairsCommentDetails.cs" />
+    <Compile Include="PointRepairs\PointRepairsRepairDetails.cs" />
+    <Compile Include="PointRepairs\PointRepairsSectionDetails.cs" />
+    <Compile Include="PointRepairs\PointRepairsWorkDetails.cs" />
+    <Compile Include="PointRepairs\PrLiningPlan.cs" />
+    <Compile Include="PointRepairs\PrNavigator.cs" />
+    <Compile Include="PointRepairs\PrOverviewReport.cs" />
+    <Compile Include="PointRepairs\SizeInformation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RehabAssessment\RaLiningPlan.cs" />
+    <Compile Include="RehabAssessment\RaNavigator.cs" />
+    <Compile Include="RehabAssessment\RehabAssessmentCommentDetails.cs" />
+    <Compile Include="RehabAssessment\RehabAssessmentLateralDetails.cs" />
+    <Compile Include="RehabAssessment\RehabAssessmentSectionDetails.cs" />
+    <Compile Include="RehabAssessment\RehabAssessmentWorkDetails.cs" />
+    <Compile Include="Section\Section.cs" />
+    <Compile Include="Section\SectionMH.cs" />
+    <Compile Include="Section\SectionSubArea.cs" />
+    <Compile Include="Works\WorkManholeRehabilitationBatchList.cs" />
+    <Compile Include="Works\WorkManholeRehabilitation.cs" />
+    <Compile Include="Works\WorkFullLengthLiningCatalysts.cs" />
+    <Compile Include="Works\WorkFullLengthLiningInversion.cs" />
+    <Compile Include="Works\WorkFullLengthLiningInversionFieldCureRecord.cs" />
+    <Compile Include="Works\WorkFullLengthLiningInversionGroundMoistureList.cs" />
+    <Compile Include="Works\WorkFullLengthLiningInversionPipeConditionList.cs" />
+    <Compile Include="Works\WorkFullLengthLiningInversionPipeTypeList.cs" />
+    <Compile Include="Works\WorkFullLengthLiningM2SurfaceGradeList.cs" />
+    <Compile Include="Works\Work.cs" />
+    <Compile Include="Works\WorkComments.cs" />
+    <Compile Include="Works\WorkCommentTypeList.cs" />
+    <Compile Include="Works\WorkFulllengthLining.cs" />
+    <Compile Include="Works\WorkFullLengthLiningM1.cs" />
+    <Compile Include="Works\WorkFullLengthLiningM1TrafficControlList.cs" />
+    <Compile Include="Works\WorkFullLengthLiningM2.cs" />
+    <Compile Include="Works\WorkFullLengthLiningM1Lateral.cs" />
+    <Compile Include="Works\WorkFullLengthLiningM1MeasurementTypeList.cs" />
+    <Compile Include="Works\WorkFullLengthLiningP1.cs" />
+    <Compile Include="Works\WorkFullLengthLiningResins.cs" />
+    <Compile Include="Works\WorkFullLengthLiningResinsList.cs" />
+    <Compile Include="Works\WorkFullLengthLiningCatalystsList.cs" />
+    <Compile Include="Works\WorkFullLengthLiningWetOut.cs" />
+    <Compile Include="Works\WorkFullLengthLiningWetOutCatalysts.cs" />
+    <Compile Include="Works\WorkFullLengthLiningWetOutComments.cs" />
+    <Compile Include="Works\WorkFullLengthLiningWetOutLinerTubeList.cs" />
+    <Compile Include="Works\WorkHistory.cs" />
+    <Compile Include="Works\WorkJunctionLiningCoPitLocationList.cs" />
+    <Compile Include="Works\WorkJunctionLiningFlangeGasketList.cs" />
+    <Compile Include="Works\WorkJunctionLiningFlangeList.cs" />
+    <Compile Include="Works\WorkJunctionLiningLateral.cs" />
+    <Compile Include="Works\WorkJunctionLiningSection.cs" />
+    <Compile Include="Works\WorkFullLengthLiningM1SiteDetailsList.cs" />
+    <Compile Include="Works\WorkJunctionLiningSectionTrafficControlList.cs" />
+    <Compile Include="Works\WorkManholeRehabilitationBatch.cs" />
+    <Compile Include="Works\WorkPointRepairs.cs" />
+    <Compile Include="Works\WorkPointRepairsRepair.cs" />
+    <Compile Include="Works\WorkPointRepairsRepairPointLengthList.cs" />
+    <Compile Include="Works\WorkPointRepairsRepairPointSize.cs" />
+    <Compile Include="Works\WorkPointRepairsRepairPointSizeList.cs" />
+    <Compile Include="Works\WorkProjectLoginProjectLastLogin.cs" />
+    <Compile Include="Works\WorkRehabAssessment.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BL.Assets\BL.Assets.csproj">
+      <Project>{A8A8C4ED-3D5C-4BB5-A3DA-DDBCA1FE8FF2}</Project>
+      <Name>BL.Assets</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DA.Assets\DA.Assets.csproj">
+      <Project>{530AB705-0919-4EF4-AC9E-C8FFC3BFB3BD}</Project>
+      <Name>DA.Assets</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DA.CWP\DA.CWP.csproj">
+      <Project>{946577F7-3264-4C79-B032-7F2DE3831002}</Project>
+      <Name>DA.CWP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DA.Projects\DA.Projects.csproj">
+      <Project>{94F2537E-6075-4EA6-83EB-393A48DEFBB5}</Project>
+      <Name>DA.Projects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DA.RAF\DA.RAF.csproj">
+      <Project>{A7412996-397D-4881-B6E1-88F52435368A}</Project>
+      <Name>DA.RAF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.csproj">
+      <Project>{16842E60-30B0-414A-8FFA-0AC20F8B9B67}</Project>
+      <Name>Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

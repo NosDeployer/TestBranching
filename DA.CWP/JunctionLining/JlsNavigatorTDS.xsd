@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="JlsNavigatorTDS" targetNamespace="http://tempuri.org/JlsNavigatorTDS.xsd" xmlns:mstns="http://tempuri.org/JlsNavigatorTDS.xsd" xmlns="http://tempuri.org/JlsNavigatorTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="JlsNavigatorTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="JlsNavigatorTDS" msprop:Generator_DataSetName="JlsNavigatorTDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="JlsNavigator" msprop:Generator_UserTableName="JlsNavigator" msprop:Generator_RowDeletedName="JlsNavigatorRowDeleted" msprop:Generator_RowChangedName="JlsNavigatorRowChanged" msprop:Generator_RowClassName="JlsNavigatorRow" msprop:Generator_RowChangingName="JlsNavigatorRowChanging" msprop:Generator_RowEvArgName="JlsNavigatorRowChangeEvent" msprop:Generator_RowEvHandlerName="JlsNavigatorRowChangeEventHandler" msprop:Generator_TableClassName="JlsNavigatorDataTable" msprop:Generator_TableVarName="tableJlsNavigator" msprop:Generator_RowDeletingName="JlsNavigatorRowDeleting" msprop:Generator_TablePropName="JlsNavigator">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WorkID" msprop:Generator_UserColumnName="WorkID" msprop:Generator_ColumnPropNameInRow="WorkID" msprop:Generator_ColumnVarNameInTable="columnWorkID" msprop:Generator_ColumnPropNameInTable="WorkIDColumn" type="xs:int" />
+              <xs:element name="AssetID" msprop:Generator_UserColumnName="AssetID" msprop:Generator_ColumnPropNameInRow="AssetID" msprop:Generator_ColumnVarNameInTable="columnAssetID" msprop:Generator_ColumnPropNameInTable="AssetIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="SectionID" msprop:Generator_UserColumnName="SectionID" msprop:Generator_ColumnPropNameInRow="SectionID" msprop:Generator_ColumnVarNameInTable="columnSectionID" msprop:Generator_ColumnPropNameInTable="SectionIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SubArea" msprop:Generator_UserColumnName="SubArea" msprop:Generator_ColumnPropNameInRow="SubArea" msprop:Generator_ColumnVarNameInTable="columnSubArea" msprop:Generator_ColumnPropNameInTable="SubAreaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Street" msprop:Generator_UserColumnName="Street" msprop:Generator_ColumnPropNameInRow="Street" msprop:Generator_ColumnVarNameInTable="columnStreet" msprop:Generator_ColumnPropNameInTable="StreetColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="USMH" msprop:Generator_UserColumnName="USMH" msprop:Generator_ColumnPropNameInRow="USMH" msprop:Generator_ColumnVarNameInTable="columnUSMH" msprop:Generator_ColumnPropNameInTable="USMHColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="USMHID" msprop:Generator_UserColumnName="USMHID" msprop:Generator_ColumnPropNameInRow="USMHID" msprop:Generator_ColumnVarNameInTable="columnUSMHID" msprop:Generator_ColumnPropNameInTable="USMHIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DSMH" msprop:Generator_UserColumnName="DSMH" msprop:Generator_ColumnPropNameInRow="DSMH" msprop:Generator_ColumnVarNameInTable="columnDSMH" msprop:Generator_ColumnPropNameInTable="DSMHColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DSMHID" msprop:Generator_UserColumnName="DSMHID" msprop:Generator_ColumnPropNameInRow="DSMHID" msprop:Generator_ColumnVarNameInTable="columnDSMHID" msprop:Generator_ColumnPropNameInTable="DSMHIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Selected" msprop:Generator_UserColumnName="Selected" msprop:Generator_ColumnPropNameInRow="Selected" msprop:Generator_ColumnVarNameInTable="columnSelected" msprop:Generator_ColumnPropNameInTable="SelectedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="FlowOrderID" msprop:Generator_UserColumnName="FlowOrderID" msprop:Generator_ColumnVarNameInTable="columnFlowOrderID" msprop:Generator_ColumnPropNameInRow="FlowOrderID" msprop:Generator_ColumnPropNameInTable="FlowOrderIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="OriginalSectionID" msprop:Generator_UserColumnName="OriginalSectionID" msprop:Generator_ColumnPropNameInRow="OriginalSectionID" msprop:Generator_ColumnVarNameInTable="columnOriginalSectionID" msprop:Generator_ColumnPropNameInTable="OriginalSectionIDColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:JlsNavigator" />
+      <xs:field xpath="mstns:WorkID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

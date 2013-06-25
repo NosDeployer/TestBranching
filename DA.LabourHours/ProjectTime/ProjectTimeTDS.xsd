@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ProjectTimeTDS" targetNamespace="http://tempuri.org/ProjectTimeTDS.xsd" xmlns:mstns="http://tempuri.org/ProjectTimeTDS.xsd" xmlns="http://tempuri.org/ProjectTimeTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="6" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LFSDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LFSDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.LabourHours.Properties.Settings.GlobalReference.Default.LFSDBConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LFSDB16ConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="LFSDB16ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.LabourHours.Properties.Settings.GlobalReference.Default.LFSDB16ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="eCRM_50202gConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="eCRM_50202gConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.LabourHours.Properties.Settings.GlobalReference.Default.eCRM_50202gConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LiveSite3ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LiveSite3ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.LabourHours.Properties.Settings.GlobalReference.Default.LiveSite3ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="eCRMLive2ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="eCRMLive2ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.LabourHours.Properties.Settings.GlobalReference.Default.eCRMLive2ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="eCRMLive5ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="eCRMLive5ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.LabourHours.Properties.Settings.GlobalReference.Default.eCRMLive5ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Live1ConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="Live1ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.LabourHours.Properties.Settings.GlobalReference.Default.Live1ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ProjectTimeTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ProjectTimeTDS" msprop:Generator_DataSetName="ProjectTimeTDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LFS_PROJECT_TIME_TEMP" msprop:Generator_UserTableName="LFS_PROJECT_TIME_TEMP" msprop:Generator_RowDeletedName="LFS_PROJECT_TIME_TEMPRowDeleted" msprop:Generator_RowChangedName="LFS_PROJECT_TIME_TEMPRowChanged" msprop:Generator_RowClassName="LFS_PROJECT_TIME_TEMPRow" msprop:Generator_RowChangingName="LFS_PROJECT_TIME_TEMPRowChanging" msprop:Generator_RowEvArgName="LFS_PROJECT_TIME_TEMPRowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_PROJECT_TIME_TEMPRowChangeEventHandler" msprop:Generator_TableClassName="LFS_PROJECT_TIME_TEMPDataTable" msprop:Generator_TableVarName="tableLFS_PROJECT_TIME_TEMP" msprop:Generator_RowDeletingName="LFS_PROJECT_TIME_TEMPRowDeleting" msprop:Generator_TablePropName="LFS_PROJECT_TIME_TEMP">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProjectTimeID" msprop:Generator_UserColumnName="ProjectTimeID" msprop:Generator_ColumnVarNameInTable="columnProjectTimeID" msprop:Generator_ColumnPropNameInRow="ProjectTimeID" msprop:Generator_ColumnPropNameInTable="ProjectTimeIDColumn" type="xs:int" />
+              <xs:element name="EmployeeID" msprop:Generator_UserColumnName="EmployeeID" msprop:Generator_ColumnVarNameInTable="columnEmployeeID" msprop:Generator_ColumnPropNameInRow="EmployeeID" msprop:Generator_ColumnPropNameInTable="EmployeeIDColumn" type="xs:int" />
+              <xs:element name="CompaniesID" msprop:Generator_UserColumnName="CompaniesID" msprop:Generator_ColumnVarNameInTable="columnCompaniesID" msprop:Generator_ColumnPropNameInRow="CompaniesID" msprop:Generator_ColumnPropNameInTable="CompaniesIDColumn" type="xs:int" />
+              <xs:element name="ProjectID" msprop:Generator_UserColumnName="ProjectID" msprop:Generator_ColumnVarNameInTable="columnProjectID" msprop:Generator_ColumnPropNameInRow="ProjectID" msprop:Generator_ColumnPropNameInTable="ProjectIDColumn" type="xs:int" />
+              <xs:element name="Date_" msprop:Generator_UserColumnName="Date_" msprop:Generator_ColumnVarNameInTable="columnDate_" msprop:Generator_ColumnPropNameInRow="Date_" msprop:Generator_ColumnPropNameInTable="Date_Column" type="xs:dateTime" />
+              <xs:element name="StartTime" msprop:Generator_UserColumnName="StartTime" msprop:Generator_ColumnVarNameInTable="columnStartTime" msprop:Generator_ColumnPropNameInRow="StartTime" msprop:Generator_ColumnPropNameInTable="StartTimeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EndTime" msprop:Generator_UserColumnName="EndTime" msprop:Generator_ColumnVarNameInTable="columnEndTime" msprop:Generator_ColumnPropNameInRow="EndTime" msprop:Generator_ColumnPropNameInTable="EndTimeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Offset" msprop:Generator_UserColumnName="Offset" msprop:Generator_ColumnVarNameInTable="columnOffset" msprop:Generator_ColumnPropNameInRow="Offset" msprop:Generator_ColumnPropNameInTable="OffsetColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="ProjectTime" msprop:Generator_UserColumnName="ProjectTime" msprop:Generator_ColumnVarNameInTable="columnProjectTime" msprop:Generator_ColumnPropNameInRow="ProjectTime" msprop:Generator_ColumnPropNameInTable="ProjectTimeColumn" type="xs:double" />
+              <xs:element name="WorkingDetails" msprop:Generator_UserColumnName="WorkingDetails" msprop:Generator_ColumnVarNameInTable="columnWorkingDetails" msprop:Generator_ColumnPropNameInRow="WorkingDetails" msprop:Generator_ColumnPropNameInTable="WorkingDetailsColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Location" msprop:Generator_UserColumnName="Location" msprop:Generator_ColumnVarNameInTable="columnLocation" msprop:Generator_ColumnPropNameInRow="Location" msprop:Generator_ColumnPropNameInTable="LocationColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MealsCountry" msprop:Generator_UserColumnName="MealsCountry" msprop:Generator_ColumnVarNameInTable="columnMealsCountry" msprop:Generator_ColumnPropNameInRow="MealsCountry" msprop:Generator_ColumnPropNameInTable="MealsCountryColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="MealsAllowanceType" msprop:Generator_UserColumnName="MealsAllowanceType" msprop:Generator_ColumnVarNameInTable="columnMealsAllowanceType" msprop:Generator_ColumnPropNameInRow="MealsAllowanceType" msprop:Generator_ColumnPropNameInTable="MealsAllowanceTypeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MealsAllowance" msprop:Generator_UserColumnName="MealsAllowance" msprop:Generator_ColumnVarNameInTable="columnMealsAllowance" msprop:Generator_ColumnPropNameInRow="MealsAllowance" msprop:Generator_ColumnPropNameInTable="MealsAllowanceColumn" type="xs:decimal" />
+              <xs:element name="UnitID" msprop:Generator_UserColumnName="UnitID" msprop:Generator_ColumnVarNameInTable="columnUnitID" msprop:Generator_ColumnPropNameInRow="UnitID" msprop:Generator_ColumnPropNameInTable="UnitIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TowedUnitID" msprop:Generator_UserColumnName="TowedUnitID" msprop:Generator_ColumnVarNameInTable="columnTowedUnitID" msprop:Generator_ColumnPropNameInRow="TowedUnitID" msprop:Generator_ColumnPropNameInTable="TowedUnitIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ProjectTimeState" msprop:Generator_UserColumnName="ProjectTimeState" msprop:Generator_ColumnVarNameInTable="columnProjectTimeState" msprop:Generator_ColumnPropNameInRow="ProjectTimeState" msprop:Generator_ColumnPropNameInTable="ProjectTimeStateColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Comments" msprop:Generator_UserColumnName="Comments" msprop:Generator_ColumnVarNameInTable="columnComments" msprop:Generator_ColumnPropNameInRow="Comments" msprop:Generator_ColumnPropNameInTable="CommentsColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="Work_" msprop:Generator_UserColumnName="Work_" msprop:Generator_ColumnVarNameInTable="columnWork_" msprop:Generator_ColumnPropNameInRow="Work_" msprop:Generator_ColumnPropNameInTable="Work_Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Function_" msprop:Generator_UserColumnName="Function_" msprop:Generator_ColumnVarNameInTable="columnFunction_" msprop:Generator_ColumnPropNameInRow="Function_" msprop:Generator_ColumnPropNameInTable="Function_Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WorkFunctionConcat" msprop:Generator_UserColumnName="WorkFunctionConcat" msprop:Generator_ColumnVarNameInTable="columnWorkFunctionConcat" msprop:Generator_ColumnPropNameInRow="WorkFunctionConcat" msprop:Generator_ColumnPropNameInTable="WorkFunctionConcatColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IsMealsAllowance" msprop:Generator_UserColumnName="IsMealsAllowance" msprop:Generator_ColumnVarNameInTable="columnIsMealsAllowance" msprop:Generator_ColumnPropNameInRow="IsMealsAllowance" msprop:Generator_ColumnPropNameInTable="IsMealsAllowanceColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="FairWage" msprop:Generator_UserColumnName="FairWage" msprop:Generator_ColumnPropNameInRow="FairWage" msprop:Generator_ColumnVarNameInTable="columnFairWage" msprop:Generator_ColumnPropNameInTable="FairWageColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="JobClassType" msprop:Generator_UserColumnName="JobClassType" msprop:Generator_ColumnPropNameInRow="JobClassType" msprop:Generator_ColumnVarNameInTable="columnJobClassType" msprop:Generator_ColumnPropNameInTable="JobClassTypeColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LFS_PROJECT_TIME_SECTION" msprop:Generator_UserTableName="LFS_PROJECT_TIME_SECTION" msprop:Generator_RowDeletedName="LFS_PROJECT_TIME_SECTIONRowDeleted" msprop:Generator_RowChangedName="LFS_PROJECT_TIME_SECTIONRowChanged" msprop:Generator_RowClassName="LFS_PROJECT_TIME_SECTIONRow" msprop:Generator_RowChangingName="LFS_PROJECT_TIME_SECTIONRowChanging" msprop:Generator_RowEvArgName="LFS_PROJECT_TIME_SECTIONRowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_PROJECT_TIME_SECTIONRowChangeEventHandler" msprop:Generator_TableClassName="LFS_PROJECT_TIME_SECTIONDataTable" msprop:Generator_TableVarName="tableLFS_PROJECT_TIME_SECTION" msprop:Generator_RowDeletingName="LFS_PROJECT_TIME_SECTIONRowDeleting" msprop:Generator_TablePropName="LFS_PROJECT_TIME_SECTION">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProjectTimeID" msprop:Generator_UserColumnName="ProjectTimeID" msprop:Generator_ColumnVarNameInTable="columnProjectTimeID" msprop:Generator_ColumnPropNameInRow="ProjectTimeID" msprop:Generator_ColumnPropNameInTable="ProjectTimeIDColumn" type="xs:int" />
+              <xs:element name="SectionID" msprop:Generator_UserColumnName="SectionID" msprop:Generator_ColumnVarNameInTable="columnSectionID" msprop:Generator_ColumnPropNameInRow="SectionID" msprop:Generator_ColumnPropNameInTable="SectionIDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="75" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FlowOrderID" msprop:Generator_UserColumnName="FlowOrderID" msprop:Generator_ColumnVarNameInTable="columnFlowOrderID" msprop:Generator_ColumnPropNameInRow="FlowOrderID" msprop:Generator_ColumnPropNameInTable="FlowOrderIDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Completed" msprop:Generator_UserColumnName="Completed" msprop:Generator_ColumnVarNameInTable="columnCompleted" msprop:Generator_ColumnPropNameInRow="Completed" msprop:Generator_ColumnPropNameInTable="CompletedColumn" type="xs:boolean" />
+              <xs:element name="Date_" msprop:Generator_UserColumnName="Date_" msprop:Generator_ColumnVarNameInTable="columnDate_" msprop:Generator_ColumnPropNameInRow="Date_" msprop:Generator_ColumnPropNameInTable="Date_Column" type="xs:dateTime" />
+              <xs:element name="PercentageOpened" msprop:Generator_UserColumnName="PercentageOpened" msprop:Generator_ColumnVarNameInTable="columnPercentageOpened" msprop:Generator_ColumnPropNameInRow="PercentageOpened" msprop:Generator_ColumnPropNameInTable="PercentageOpenedColumn" type="xs:int" />
+              <xs:element name="PercentageBrushed" msprop:Generator_UserColumnName="PercentageBrushed" msprop:Generator_ColumnVarNameInTable="columnPercentageBrushed" msprop:Generator_ColumnPropNameInRow="PercentageBrushed" msprop:Generator_ColumnPropNameInTable="PercentageBrushedColumn" type="xs:int" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LFS_PROJECT_TIME_SECTION_TEMP" msprop:Generator_UserTableName="LFS_PROJECT_TIME_SECTION_TEMP" msprop:Generator_RowDeletedName="LFS_PROJECT_TIME_SECTION_TEMPRowDeleted" msprop:Generator_RowChangedName="LFS_PROJECT_TIME_SECTION_TEMPRowChanged" msprop:Generator_RowClassName="LFS_PROJECT_TIME_SECTION_TEMPRow" msprop:Generator_RowChangingName="LFS_PROJECT_TIME_SECTION_TEMPRowChanging" msprop:Generator_RowEvArgName="LFS_PROJECT_TIME_SECTION_TEMPRowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_PROJECT_TIME_SECTION_TEMPRowChangeEventHandler" msprop:Generator_TableClassName="LFS_PROJECT_TIME_SECTION_TEMPDataTable" msprop:Generator_TableVarName="tableLFS_PROJECT_TIME_SECTION_TEMP" msprop:Generator_RowDeletingName="LFS_PROJECT_TIME_SECTION_TEMPRowDeleting" msprop:Generator_TablePropName="LFS_PROJECT_TIME_SECTION_TEMP">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProjectTimeID" msprop:Generator_UserColumnName="ProjectTimeID" msprop:Generator_ColumnVarNameInTable="columnProjectTimeID" msprop:Generator_ColumnPropNameInRow="ProjectTimeID" msprop:Generator_ColumnPropNameInTable="ProjectTimeIDColumn" type="xs:int" />
+              <xs:element name="SectionID" msprop:Generator_UserColumnName="SectionID" msprop:Generator_ColumnVarNameInTable="columnSectionID" msprop:Generator_ColumnPropNameInRow="SectionID" msprop:Generator_ColumnPropNameInTable="SectionIDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="75" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FlowOrderID" msprop:Generator_UserColumnName="FlowOrderID" msprop:Generator_ColumnVarNameInTable="columnFlowOrderID" msprop:Generator_ColumnPropNameInRow="FlowOrderID" msprop:Generator_ColumnPropNameInTable="FlowOrderIDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Completed" msprop:Generator_UserColumnName="Completed" msprop:Generator_ColumnVarNameInTable="columnCompleted" msprop:Generator_ColumnPropNameInRow="Completed" msprop:Generator_ColumnPropNameInTable="CompletedColumn" type="xs:boolean" />
+              <xs:element name="Date_" msprop:Generator_UserColumnName="Date_" msprop:Generator_ColumnVarNameInTable="columnDate_" msprop:Generator_ColumnPropNameInRow="Date_" msprop:Generator_ColumnPropNameInTable="Date_Column" type="xs:dateTime" />
+              <xs:element name="PercentageOpened" msprop:Generator_UserColumnName="PercentageOpened" msprop:Generator_ColumnVarNameInTable="columnPercentageOpened" msprop:Generator_ColumnPropNameInRow="PercentageOpened" msprop:Generator_ColumnPropNameInTable="PercentageOpenedColumn" type="xs:int" />
+              <xs:element name="PercentageBrushed" msprop:Generator_UserColumnName="PercentageBrushed" msprop:Generator_ColumnVarNameInTable="columnPercentageBrushed" msprop:Generator_ColumnPropNameInRow="PercentageBrushed" msprop:Generator_ColumnPropNameInTable="PercentageBrushedColumn" type="xs:int" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LFS_PROJECT_TIME" msprop:Generator_UserTableName="LFS_PROJECT_TIME" msprop:Generator_RowDeletedName="LFS_PROJECT_TIMERowDeleted" msprop:Generator_RowChangedName="LFS_PROJECT_TIMERowChanged" msprop:Generator_RowClassName="LFS_PROJECT_TIMERow" msprop:Generator_RowChangingName="LFS_PROJECT_TIMERowChanging" msprop:Generator_RowEvArgName="LFS_PROJECT_TIMERowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_PROJECT_TIMERowChangeEventHandler" msprop:Generator_TableClassName="LFS_PROJECT_TIMEDataTable" msprop:Generator_TableVarName="tableLFS_PROJECT_TIME" msprop:Generator_RowDeletingName="LFS_PROJECT_TIMERowDeleting" msprop:Generator_TablePropName="LFS_PROJECT_TIME">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProjectTimeID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ProjectTimeID" msprop:Generator_ColumnVarNameInTable="columnProjectTimeID" msprop:Generator_ColumnPropNameInRow="ProjectTimeID" msprop:Generator_ColumnPropNameInTable="ProjectTimeIDColumn" type="xs:int" />
+              <xs:element name="EmployeeID" msprop:Generator_UserColumnName="EmployeeID" msprop:Generator_ColumnVarNameInTable="columnEmployeeID" msprop:Generator_ColumnPropNameInRow="EmployeeID" msprop:Generator_ColumnPropNameInTable="EmployeeIDColumn" type="xs:int" />
+              <xs:element name="CompaniesID" msprop:Generator_UserColumnName="CompaniesID" msprop:Generator_ColumnVarNameInTable="columnCompaniesID" msprop:Generator_ColumnPropNameInRow="CompaniesID" msprop:Generator_ColumnPropNameInTable="CompaniesIDColumn" type="xs:int" />
+              <xs:element name="ProjectID" msprop:Generator_UserColumnName="ProjectID" msprop:Generator_ColumnVarNameInTable="columnProjectID" msprop:Generator_ColumnPropNameInRow="ProjectID" msprop:Generator_ColumnPropNameInTable="ProjectIDColumn" type="xs:int" />
+              <xs:element name="Date_" msprop:Generator_UserColumnName="Date_" msprop:Generator_ColumnVarNameInTable="columnDate_" msprop:Generator_ColumnPropNameInRow="Date_" msprop:Generator_ColumnPropNameInTable="Date_Column" type="xs:dateTime" />
+              <xs:element name="StartTime" msprop:Generator_UserColumnName="StartTime" msprop:Generator_ColumnVarNameInTable="columnStartTime" msprop:Generator_ColumnPropNameInRow="StartTime" msprop:Generator_ColumnPropNameInTable="StartTimeColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EndTime" msprop:Generator_UserColumnName="EndTime" msprop:Generator_ColumnVarNameInTable="columnEndTime" msprop:Generator_ColumnPropNameInRow="EndTime" msprop:Generator_ColumnPropNameInTable="EndTimeColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Offset" msprop:Generator_UserColumnName="Offset" msprop:Generator_ColumnVarNameInTable="columnOffset" msprop:Generator_ColumnPropNameInRow="Offset" msprop:Generator_ColumnPropNameInTable="OffsetColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="ProjectTime" msprop:Generator_UserColumnName="ProjectTime" msprop:Generator_ColumnVarNameInTable="columnProjectTime" msprop:Generator_ColumnPropNameInRow="ProjectTime" msprop:Generator_ColumnPropNameInTable="ProjectTimeColumn" type="xs:double" />
+              <xs:element name="WorkingDetails" msprop:Generator_UserColumnName="WorkingDetails" msprop:Generator_ColumnVarNameInTable="columnWorkingDetails" msprop:Generator_ColumnPropNameInRow="WorkingDetails" msprop:Generator_ColumnPropNameInTable="WorkingDetailsColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Location" msprop:Generator_UserColumnName="Location" msprop:Generator_ColumnVarNameInTable="columnLocation" msprop:Generator_ColumnPropNameInRow="Location" msprop:Generator_ColumnPropNameInTable="LocationColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MealsCountry" msprop:Generator_UserColumnName="MealsCountry" msprop:Generator_ColumnVarNameInTable="columnMealsCountry" msprop:Generator_ColumnPropNameInRow="MealsCountry" msprop:Generator_ColumnPropNameInTable="MealsCountryColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="MealsAllowanceType" msprop:Generator_UserColumnName="MealsAllowanceType" msprop:Generator_ColumnVarNameInTable="columnMealsAllowanceType" msprop:Generator_ColumnPropNameInRow="MealsAllowanceType" msprop:Generator_ColumnPropNameInTable="MealsAllowanceTypeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MealsAllowance" msprop:Generator_UserColumnName="MealsAllowance" msprop:Generator_ColumnVarNameInTable="columnMealsAllowance" msprop:Generator_ColumnPropNameInRow="MealsAllowance" msprop:Generator_ColumnPropNameInTable="MealsAllowanceColumn" type="xs:decimal" />
+              <xs:element name="UnitID" msprop:Generator_UserColumnName="UnitID" msprop:Generator_ColumnVarNameInTable="columnUnitID" msprop:Generator_ColumnPropNameInRow="UnitID" msprop:Generator_ColumnPropNameInTable="UnitIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TowedUnitID" msprop:Generator_UserColumnName="TowedUnitID" msprop:Generator_ColumnVarNameInTable="columnTowedUnitID" msprop:Generator_ColumnPropNameInRow="TowedUnitID" msprop:Generator_ColumnPropNameInTable="TowedUnitIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ProjectTimeState" msprop:Generator_UserColumnName="ProjectTimeState" msprop:Generator_ColumnVarNameInTable="columnProjectTimeState" msprop:Generator_ColumnPropNameInRow="ProjectTimeState" msprop:Generator_ColumnPropNameInTable="ProjectTimeStateColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Comments" msprop:Generator_UserColumnName="Comments" msprop:Generator_ColumnVarNameInTable="columnComments" msprop:Generator_ColumnPropNameInRow="Comments" msprop:Generator_ColumnPropNameInTable="CommentsColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="Work_" msprop:Generator_UserColumnName="Work_" msprop:Generator_ColumnVarNameInTable="columnWork_" msprop:Generator_ColumnPropNameInRow="Work_" msprop:Generator_ColumnPropNameInTable="Work_Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Function_" msprop:Generator_UserColumnName="Function_" msprop:Generator_ColumnVarNameInTable="columnFunction_" msprop:Generator_ColumnPropNameInRow="Function_" msprop:Generator_ColumnPropNameInTable="Function_Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="ApprovedByID" msprop:Generator_UserColumnName="ApprovedByID" msprop:Generator_ColumnVarNameInTable="columnApprovedByID" msprop:Generator_ColumnPropNameInRow="ApprovedByID" msprop:Generator_ColumnPropNameInTable="ApprovedByIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="FairWage" msprop:Generator_UserColumnName="FairWage" msprop:Generator_ColumnVarNameInTable="columnFairWage" msprop:Generator_ColumnPropNameInRow="FairWage" msprop:Generator_ColumnPropNameInTable="FairWageColumn" type="xs:boolean" />
+              <xs:element name="JobClassType" msprop:Generator_UserColumnName="JobClassType" msprop:Generator_ColumnVarNameInTable="columnJobClassType" msprop:Generator_ColumnPropNameInRow="JobClassType" msprop:Generator_ColumnPropNameInTable="JobClassTypeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CreatedByID" msprop:Generator_UserColumnName="CreatedByID" msprop:Generator_ColumnVarNameInTable="columnCreatedByID" msprop:Generator_ColumnPropNameInRow="CreatedByID" msprop:Generator_ColumnPropNameInTable="CreatedByIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CreateDate" msprop:Generator_UserColumnName="CreateDate" msprop:Generator_ColumnVarNameInTable="columnCreateDate" msprop:Generator_ColumnPropNameInRow="CreateDate" msprop:Generator_ColumnPropNameInTable="CreateDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UpdateByID" msprop:Generator_UserColumnName="UpdateByID" msprop:Generator_ColumnVarNameInTable="columnUpdateByID" msprop:Generator_ColumnPropNameInRow="UpdateByID" msprop:Generator_ColumnPropNameInTable="UpdateByIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="UpdateDate" msprop:Generator_UserColumnName="UpdateDate" msprop:Generator_ColumnVarNameInTable="columnUpdateDate" msprop:Generator_ColumnPropNameInRow="UpdateDate" msprop:Generator_ColumnPropNameInTable="UpdateDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DeletedByID" msprop:Generator_UserColumnName="DeletedByID" msprop:Generator_ColumnVarNameInTable="columnDeletedByID" msprop:Generator_ColumnPropNameInRow="DeletedByID" msprop:Generator_ColumnPropNameInTable="DeletedByIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DeleteDate" msprop:Generator_UserColumnName="DeleteDate" msprop:Generator_ColumnVarNameInTable="columnDeleteDate" msprop:Generator_ColumnPropNameInRow="DeleteDate" msprop:Generator_ColumnPropNameInTable="DeleteDateColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_PROJECT_TIME_TEMP" />
+      <xs:field xpath="mstns:ProjectTimeID" />
+    </xs:unique>
+    <xs:unique name="LFS_PROJECT_TIME_SECTION_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_PROJECT_TIME_SECTION" />
+      <xs:field xpath="mstns:ProjectTimeID" />
+      <xs:field xpath="mstns:SectionID" />
+    </xs:unique>
+    <xs:unique name="LFS_PROJECT_TIME_SECTION_TEMP_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_PROJECT_TIME_SECTION_TEMP" />
+      <xs:field xpath="mstns:ProjectTimeID" />
+      <xs:field xpath="mstns:SectionID" />
+    </xs:unique>
+    <xs:unique name="LFS_PROJECT_TIME_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_PROJECT_TIME" />
+      <xs:field xpath="mstns:ProjectTimeID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,85 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="mWizard.master.cs" Inherits="LiquiForce.LFSLive.WebUI.mWizard"%>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajax" %>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+    <link href="./common/images/lfslive.css" type="text/css" rel="stylesheet" />
+</head>
+<body runat="server" style="margin: 0px" id="myBody">
+    <form id="form1" runat="server">
+<!-- 
+            FRAMEWORK: WIZARD
+            LAYOUT:    Double left and double top border
+            PARTS:     Title, instruction, content, buttons. 
+        -->
+        
+        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+			<!-- Page element: Ajax Scriptmanager -->
+		    <tr style="height: 30px; background-color: #c8dbed">
+				<td style="width: 30px"></td>
+				<td style="width: 30px"></td>
+				<td>
+                    <ajax:ToolkitScriptManager ID="smWizardMaster" runat="server" ScriptMode="Release" EnableHistory="true" 
+                        EnableSecureHistoryState="false" EnablePageMethods="True" CombineScripts="true" >
+                            <Scripts>
+                                <asp:ScriptReference Path="./App_Themes/LFS2/scripts/webkit.js" />
+                            </Scripts>
+                    </ajax:ToolkitScriptManager>
+                </td>
+			</tr>
+			<tr style="height: 10px">
+				<td style="background-color: #c8dbed"></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="background-color: #c8dbed"></td>
+				<td></td>
+				<td valign="top">
+				    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+				        <tr>
+				            <td>
+				                <!-- TITLE -->
+				                <asp:Label ID="lblTitle" runat="server" Text="Title" SkinID="WizardTitle"></asp:Label>
+				                <hr style="color: #c8dbed; height: 2px" />
+                            </td>
+                        </tr>
+				        <tr>
+				                <!-- TITLESPACE -->
+				            <td style="height: 5px"></td>
+				        </tr>
+				        <tr>
+				            <td>
+				                <!-- INSTRUCTION -->
+				                <asp:Label ID="lblInstruction" runat="server" Text="Instruction" SkinID="WizardInstruction"></asp:Label>
+                            </td>
+                        </tr>
+				        <tr>
+				            <td style="height: 20px"></td>
+				        </tr>
+				        <tr>
+				            <td>
+				                <!-- CONTENT -->
+				                <asp:contentplaceholder id="ContentPlaceHolder" runat="server">
+                                </asp:contentplaceholder>
+				            </td>
+				        </tr>
+				    </table>
+				</td>
+			</tr>
+		</table>
+		<!-- Page element:  refresh IFrame-->
+        <table>
+            <tr>
+                <td style="height: 7px">
+                    <iframe id="iframe" frameborder="0" height="0" width="0" src="../../refresh_iframe.aspx">
+                        Your web browser don't accept iFrame tag. Contact with your Administrator. </iframe>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

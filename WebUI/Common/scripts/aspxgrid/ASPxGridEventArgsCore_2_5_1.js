@@ -1,0 +1,48 @@
+/*
+   ASPxGrid and Editors Library by Developer Express
+
+   Copyright (c) 2000-2005 Developer Express Inc  
+   ALL RIGHTS RESERVED
+
+   The entire contents of this file is protected by U.S. and   
+   International Copyright Laws. Unauthorized reproduction,     
+   reverse-engineering, and distribution of all or any portion of   
+   the code contained in this file is strictly prohibited and may  
+   result in severe civil and criminal penalties and will be        
+   prosecuted to the maximum extent possible under the law.
+*/
+function ASPxClientGridCustomRenderEventArgs(htmlElement, width, height, beforeDefaultRender){
+	this.inherit = ASPxClientEventArgs;
+	this.inherit();
+	this.htmlElement = htmlElement;
+	this.width = width;
+	this.height = height;
+	this.beforeDefaultRender = beforeDefaultRender;
+	this.handled = false;
+}
+function ASPxClientGridCustomRenderCellEventArgs(htmlElement, column, width, height, beforeDefaultRender){
+	this.inherit = ASPxClientGridCustomRenderEventArgs;
+	this.inherit(htmlElement, width, height, beforeDefaultRender);
+	this.column = column;
+}
+function ASPxClientGridCustomRenderExpandBtnEventArgs(htmlElement, rowExpanded, width, height, beforeDefaultRender){
+	this.inherit = ASPxClientGridCustomRenderEventArgs;
+	this.inherit(htmlElement, width, height);
+	this.rowExpanded = rowExpanded;
+}
+function ASPxClientGridCustomRenderRowBtnEventArgs(htmlElement, column, rowButton, inHeaderPanel, width, height, imageUrl, beforeDefaultRender){
+	this.inherit = ASPxClientGridCustomRenderCellEventArgs;
+	this.inherit(htmlElement, column, width, height, beforeDefaultRender);
+	this.rowButton = rowButton;
+	this.inHeaderPanel = inHeaderPanel;
+	this.imageUrl = imageUrl;
+}
+function ASPxClientGridCustomRenderSelectionEventArgs(htmlElement, column, isGroupRow, selected){
+	this.inherit = ASPxClientEventArgs;
+	this.inherit();
+	this.htmlElement = htmlElement;
+	this.column = column;
+	this.isGroupRow = isGroupRow;
+	this.selected = selected;
+	this.handled = false;
+}

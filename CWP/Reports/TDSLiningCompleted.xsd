@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="TDSLiningCompleted" targetNamespace="http://tempuri.org/TDSLiningCompleted.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/TDSLiningCompleted.xsd"
+	xmlns:mstns="http://tempuri.org/TDSLiningCompleted.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="TDSLiningCompleted" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="LiningCompleted">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" />
+							<xs:element name="COMPANY_ID" type="xs:int" />
+							<xs:element name="RecordID" type="xs:string" />
+							<xs:element name="COMPANIES_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="Street" type="xs:string" minOccurs="0" />
+							<xs:element name="USMH" type="xs:string" minOccurs="0" />
+							<xs:element name="DSMH" type="xs:string" minOccurs="0" />
+							<xs:element name="ConfirmedSize" type="xs:int" minOccurs="0" />
+							<xs:element name="InstallDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ActualLength" type="xs:string" minOccurs="0" />
+							<xs:element name="InstallRate" type="xs:decimal" minOccurs="0" />
+							<xs:element name="NAME" type="xs:string" minOccurs="0" />
+							<xs:element name="StartDate" type="xs:string" minOccurs="0" />
+							<xs:element name="EndDate" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="TDSLiningCompletedKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:LiningCompleted" />
+			<xs:field xpath="mstns:ID" />
+			<xs:field xpath="mstns:COMPANY_ID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

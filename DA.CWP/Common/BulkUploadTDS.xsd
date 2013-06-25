@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BulkUploadTDS" targetNamespace="http://tempuri.org/BulkUploadTDS.xsd" xmlns:mstns="http://tempuri.org/BulkUploadTDS.xsd" xmlns="http://tempuri.org/BulkUploadTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BulkUploadTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="BulkUploadTDS" msprop:Generator_DataSetName="BulkUploadTDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BulkUpload" msprop:Generator_UserTableName="BulkUpload" msprop:Generator_RowDeletedName="BulkUploadRowDeleted" msprop:Generator_RowChangedName="BulkUploadRowChanged" msprop:Generator_RowClassName="BulkUploadRow" msprop:Generator_RowChangingName="BulkUploadRowChanging" msprop:Generator_RowEvArgName="BulkUploadRowChangeEvent" msprop:Generator_RowEvHandlerName="BulkUploadRowChangeEventHandler" msprop:Generator_TableClassName="BulkUploadDataTable" msprop:Generator_TableVarName="tableBulkUpload" msprop:Generator_RowDeletingName="BulkUploadRowDeleting" msprop:Generator_TablePropName="BulkUpload">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:string" />
+              <xs:element name="Street" msprop:Generator_UserColumnName="Street" msprop:Generator_ColumnPropNameInRow="Street" msprop:Generator_ColumnVarNameInTable="columnStreet" msprop:Generator_ColumnPropNameInTable="StreetColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ClientID" msprop:Generator_UserColumnName="ClientID" msprop:Generator_ColumnPropNameInRow="ClientID" msprop:Generator_ColumnVarNameInTable="columnClientID" msprop:Generator_ColumnPropNameInTable="ClientIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SubArea" msprop:Generator_UserColumnName="SubArea" msprop:Generator_ColumnVarNameInTable="columnSubArea" msprop:Generator_ColumnPropNameInRow="SubArea" msprop:Generator_ColumnPropNameInTable="SubAreaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="USMH" msprop:Generator_UserColumnName="USMH" msprop:Generator_ColumnPropNameInRow="USMH" msprop:Generator_ColumnVarNameInTable="columnUSMH" msprop:Generator_ColumnPropNameInTable="USMHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DSMH" msprop:Generator_UserColumnName="DSMH" msprop:Generator_ColumnPropNameInRow="DSMH" msprop:Generator_ColumnVarNameInTable="columnDSMH" msprop:Generator_ColumnPropNameInTable="DSMHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MapSize" msprop:Generator_UserColumnName="MapSize" msprop:Generator_ColumnPropNameInRow="MapSize" msprop:Generator_ColumnVarNameInTable="columnMapSize" msprop:Generator_ColumnPropNameInTable="MapSizeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ConfirmedSize" msprop:Generator_UserColumnName="ConfirmedSize" msprop:Generator_ColumnPropNameInRow="ConfirmedSize" msprop:Generator_ColumnVarNameInTable="columnConfirmedSize" msprop:Generator_ColumnPropNameInTable="ConfirmedSizeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MapLength" msprop:Generator_UserColumnName="MapLength" msprop:Generator_ColumnPropNameInRow="MapLength" msprop:Generator_ColumnVarNameInTable="columnMapLength" msprop:Generator_ColumnPropNameInTable="MapLengthColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ActualLength" msprop:Generator_UserColumnName="ActualLength" msprop:Generator_ColumnPropNameInRow="ActualLength" msprop:Generator_ColumnVarNameInTable="columnActualLength" msprop:Generator_ColumnPropNameInTable="ActualLengthColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="RAWork" msprop:Generator_UserColumnName="RAWork" msprop:Generator_ColumnPropNameInRow="RAWork" msprop:Generator_ColumnVarNameInTable="columnRAWork" msprop:Generator_ColumnPropNameInTable="RAWorkColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="RAComments" msprop:Generator_UserColumnName="RAComments" msprop:Generator_ColumnPropNameInRow="RAComments" msprop:Generator_ColumnVarNameInTable="columnRAComments" msprop:Generator_ColumnPropNameInTable="RACommentsColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FLLWork" msprop:Generator_UserColumnName="FLLWork" msprop:Generator_ColumnPropNameInRow="FLLWork" msprop:Generator_ColumnVarNameInTable="columnFLLWork" msprop:Generator_ColumnPropNameInTable="FLLWorkColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="FLLComments" msprop:Generator_UserColumnName="FLLComments" msprop:Generator_ColumnPropNameInRow="FLLComments" msprop:Generator_ColumnVarNameInTable="columnFLLComments" msprop:Generator_ColumnPropNameInTable="FLLCommentsColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="JLWork" msprop:Generator_UserColumnName="JLWork" msprop:Generator_ColumnPropNameInRow="JLWork" msprop:Generator_ColumnVarNameInTable="columnJLWork" msprop:Generator_ColumnPropNameInTable="JLWorkColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BulkUpload" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

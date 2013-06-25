@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SubcontractorsSetupTDS" targetNamespace="http://tempuri.org/SubcontractorsSetupTDS.xsd" xmlns:mstns="http://tempuri.org/SubcontractorsSetupTDS.xsd" xmlns="http://tempuri.org/SubcontractorsSetupTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LFSDB9ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LFSDB9ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.Resources.Properties.Settings.GlobalReference.Default.LFSDB9ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SubcontractorsSetupTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SubcontractorsSetupTDS" msprop:Generator_DataSetName="SubcontractorsSetupTDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SubcontractorsSetup" msprop:Generator_UserTableName="SubcontractorsSetup" msprop:Generator_RowDeletedName="SubcontractorsSetupRowDeleted" msprop:Generator_RowChangedName="SubcontractorsSetupRowChanged" msprop:Generator_RowClassName="SubcontractorsSetupRow" msprop:Generator_RowChangingName="SubcontractorsSetupRowChanging" msprop:Generator_RowEvArgName="SubcontractorsSetupRowChangeEvent" msprop:Generator_RowEvHandlerName="SubcontractorsSetupRowChangeEventHandler" msprop:Generator_TableClassName="SubcontractorsSetupDataTable" msprop:Generator_TableVarName="tableSubcontractorsSetup" msprop:Generator_RowDeletingName="SubcontractorsSetupRowDeleting" msprop:Generator_TablePropName="SubcontractorsSetup">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COMPANIES_ID" msprop:Generator_UserColumnName="COMPANIES_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANIES_ID" msprop:Generator_ColumnPropNameInRow="COMPANIES_ID" msprop:Generator_ColumnPropNameInTable="COMPANIES_IDColumn" type="xs:int" />
+              <xs:element name="Date" msprop:Generator_UserColumnName="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnPropNameInTable="DateColumn" type="xs:dateTime" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Active" msprop:Generator_UserColumnName="Active" msprop:Generator_ColumnVarNameInTable="columnActive" msprop:Generator_ColumnPropNameInRow="Active" msprop:Generator_ColumnPropNameInTable="ActiveColumn" type="xs:boolean" />
+              <xs:element name="Udf" msprop:Generator_UserColumnName="Udf" msprop:Generator_ColumnVarNameInTable="columnUdf" msprop:Generator_ColumnPropNameInRow="Udf" msprop:Generator_ColumnPropNameInTable="UdfColumn" type="xs:boolean" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="DateString" msprop:Generator_UserColumnName="DateString" msprop:Generator_ColumnPropNameInRow="DateString" msprop:Generator_ColumnVarNameInTable="columnDateString" msprop:Generator_ColumnPropNameInTable="DateStringColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SubcontractorsSetup" />
+      <xs:field xpath="mstns:COMPANIES_ID" />
+      <xs:field xpath="mstns:Date" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ActualCostsTDS" targetNamespace="http://tempuri.org/ActualCostsTDS.xsd" xmlns:mstns="http://tempuri.org/ActualCostsTDS.xsd" xmlns="http://tempuri.org/ActualCostsTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LFSDB9ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LFSDB9ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.LabourHours.Properties.Settings.GlobalReference.Default.LFSDB9ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ActualCostsTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ActualCostsTDS" msprop:Generator_DataSetName="ActualCostsTDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LFS_LABOUR_HOURS_ACTUAL_COSTS_SUBCONTRACTOR_COSTS" msprop:Generator_UserTableName="LFS_LABOUR_HOURS_ACTUAL_COSTS_SUBCONTRACTOR_COSTS" msprop:Generator_RowDeletedName="LFS_LABOUR_HOURS_ACTUAL_COSTS_SUBCONTRACTOR_COSTSRowDeleted" msprop:Generator_RowChangedName="LFS_LABOUR_HOURS_ACTUAL_COSTS_SUBCONTRACTOR_COSTSRowChanged" msprop:Generator_RowClassName="LFS_LABOUR_HOURS_ACTUAL_COSTS_SUBCONTRACTOR_COSTSRow" msprop:Generator_RowChangingName="LFS_LABOUR_HOURS_ACTUAL_COSTS_SUBCONTRACTOR_COSTSRowChanging" msprop:Generator_RowEvArgName="LFS_LABOUR_HOURS_ACTUAL_COSTS_SUBCONTRACTOR_COSTSRowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_LABOUR_HOURS_ACTUAL_COSTS_SUBCONTRACTOR_COSTSRowChangeEventHandler" msprop:Generator_TableClassName="LFS_LABOUR_HOURS_ACTUAL_COSTS_SUBCONTRACTOR_COSTSDataTable" msprop:Generator_TableVarName="tableLFS_LABOUR_HOURS_ACTUAL_COSTS_SUBCONTRACTOR_COSTS" msprop:Generator_RowDeletingName="LFS_LABOUR_HOURS_ACTUAL_COSTS_SUBCONTRACTOR_COSTSRowDeleting" msprop:Generator_TablePropName="LFS_LABOUR_HOURS_ACTUAL_COSTS_SUBCONTRACTOR_COSTS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProjectID" msprop:Generator_UserColumnName="ProjectID" msprop:Generator_ColumnPropNameInRow="ProjectID" msprop:Generator_ColumnVarNameInTable="columnProjectID" msprop:Generator_ColumnPropNameInTable="ProjectIDColumn" type="xs:int" />
+              <xs:element name="RefID" msprop:Generator_UserColumnName="RefID" msprop:Generator_ColumnPropNameInRow="RefID" msprop:Generator_ColumnVarNameInTable="columnRefID" msprop:Generator_ColumnPropNameInTable="RefIDColumn" type="xs:int" />
+              <xs:element name="SubcontractorID" msprop:Generator_UserColumnName="SubcontractorID" msprop:Generator_ColumnPropNameInRow="SubcontractorID" msprop:Generator_ColumnVarNameInTable="columnSubcontractorID" msprop:Generator_ColumnPropNameInTable="SubcontractorIDColumn" type="xs:int" />
+              <xs:element name="Date" msprop:Generator_UserColumnName="Date" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInTable="DateColumn" type="xs:dateTime" />
+              <xs:element name="Quantity" msprop:Generator_UserColumnName="Quantity" msprop:Generator_ColumnPropNameInRow="Quantity" msprop:Generator_ColumnVarNameInTable="columnQuantity" msprop:Generator_ColumnPropNameInTable="QuantityColumn" type="xs:double" />
+              <xs:element name="RateCad" msprop:Generator_UserColumnName="RateCad" msprop:Generator_ColumnPropNameInRow="RateCad" msprop:Generator_ColumnVarNameInTable="columnRateCad" msprop:Generator_ColumnPropNameInTable="RateCadColumn" type="xs:decimal" />
+              <xs:element name="TotalCad" msprop:Generator_UserColumnName="TotalCad" msprop:Generator_ColumnPropNameInRow="TotalCad" msprop:Generator_ColumnVarNameInTable="columnTotalCad" msprop:Generator_ColumnPropNameInTable="TotalCadColumn" type="xs:decimal" />
+              <xs:element name="RateUsd" msprop:Generator_UserColumnName="RateUsd" msprop:Generator_ColumnPropNameInRow="RateUsd" msprop:Generator_ColumnVarNameInTable="columnRateUsd" msprop:Generator_ColumnPropNameInTable="RateUsdColumn" type="xs:decimal" />
+              <xs:element name="TotalUsd" msprop:Generator_UserColumnName="TotalUsd" msprop:Generator_ColumnPropNameInRow="TotalUsd" msprop:Generator_ColumnVarNameInTable="columnTotalUsd" msprop:Generator_ColumnPropNameInTable="TotalUsdColumn" type="xs:decimal" />
+              <xs:element name="Comment" msprop:Generator_UserColumnName="Comment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInTable="CommentColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LFS_LABOUR_HOURS_ACTUAL_COSTS_CATEGORY" msprop:Generator_UserTableName="LFS_LABOUR_HOURS_ACTUAL_COSTS_CATEGORY" msprop:Generator_RowDeletedName="LFS_LABOUR_HOURS_ACTUAL_COSTS_CATEGORYRowDeleted" msprop:Generator_RowChangedName="LFS_LABOUR_HOURS_ACTUAL_COSTS_CATEGORYRowChanged" msprop:Generator_RowClassName="LFS_LABOUR_HOURS_ACTUAL_COSTS_CATEGORYRow" msprop:Generator_RowChangingName="LFS_LABOUR_HOURS_ACTUAL_COSTS_CATEGORYRowChanging" msprop:Generator_RowEvArgName="LFS_LABOUR_HOURS_ACTUAL_COSTS_CATEGORYRowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_LABOUR_HOURS_ACTUAL_COSTS_CATEGORYRowChangeEventHandler" msprop:Generator_TableClassName="LFS_LABOUR_HOURS_ACTUAL_COSTS_CATEGORYDataTable" msprop:Generator_TableVarName="tableLFS_LABOUR_HOURS_ACTUAL_COSTS_CATEGORY" msprop:Generator_RowDeletingName="LFS_LABOUR_HOURS_ACTUAL_COSTS_CATEGORYRowDeleting" msprop:Generator_TablePropName="LFS_LABOUR_HOURS_ACTUAL_COSTS_CATEGORY">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Category" msprop:Generator_UserColumnName="Category" msprop:Generator_ColumnVarNameInTable="columnCategory" msprop:Generator_ColumnPropNameInRow="Category" msprop:Generator_ColumnPropNameInTable="CategoryColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LFS_LABOUR_HOURS_ACTUAL_COSTS_BONDING_COSTS" msprop:Generator_UserTableName="LFS_LABOUR_HOURS_ACTUAL_COSTS_BONDING_COSTS" msprop:Generator_RowDeletedName="LFS_LABOUR_HOURS_ACTUAL_COSTS_BONDING_COSTSRowDeleted" msprop:Generator_TableClassName="LFS_LABOUR_HOURS_ACTUAL_COSTS_BONDING_COSTSDataTable" msprop:Generator_RowChangedName="LFS_LABOUR_HOURS_ACTUAL_COSTS_BONDING_COSTSRowChanged" msprop:Generator_RowClassName="LFS_LABOUR_HOURS_ACTUAL_COSTS_BONDING_COSTSRow" msprop:Generator_RowChangingName="LFS_LABOUR_HOURS_ACTUAL_COSTS_BONDING_COSTSRowChanging" msprop:Generator_RowEvArgName="LFS_LABOUR_HOURS_ACTUAL_COSTS_BONDING_COSTSRowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_LABOUR_HOURS_ACTUAL_COSTS_BONDING_COSTSRowChangeEventHandler" msprop:Generator_TablePropName="LFS_LABOUR_HOURS_ACTUAL_COSTS_BONDING_COSTS" msprop:Generator_TableVarName="tableLFS_LABOUR_HOURS_ACTUAL_COSTS_BONDING_COSTS" msprop:Generator_RowDeletingName="LFS_LABOUR_HOURS_ACTUAL_COSTS_BONDING_COSTSRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProjectID" msprop:Generator_UserColumnName="ProjectID" msprop:Generator_ColumnPropNameInRow="ProjectID" msprop:Generator_ColumnVarNameInTable="columnProjectID" msprop:Generator_ColumnPropNameInTable="ProjectIDColumn" type="xs:int" />
+              <xs:element name="RefID" msprop:Generator_UserColumnName="RefID" msprop:Generator_ColumnPropNameInRow="RefID" msprop:Generator_ColumnVarNameInTable="columnRefID" msprop:Generator_ColumnPropNameInTable="RefIDColumn" type="xs:int" />
+              <xs:element name="BondingCompanyID" msprop:Generator_UserColumnName="BondingCompanyID" msprop:Generator_ColumnPropNameInRow="BondingCompanyID" msprop:Generator_ColumnVarNameInTable="columnBondingCompanyID" msprop:Generator_ColumnPropNameInTable="BondingCompanyIDColumn" type="xs:int" />
+              <xs:element name="Date" msprop:Generator_UserColumnName="Date" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInTable="DateColumn" type="xs:dateTime" />
+              <xs:element name="RateCad" msprop:Generator_UserColumnName="RateCad" msprop:Generator_ColumnPropNameInRow="RateCad" msprop:Generator_ColumnVarNameInTable="columnRateCad" msprop:Generator_ColumnPropNameInTable="RateCadColumn" type="xs:decimal" />
+              <xs:element name="RateUsd" msprop:Generator_UserColumnName="RateUsd" msprop:Generator_ColumnPropNameInRow="RateUsd" msprop:Generator_ColumnVarNameInTable="columnRateUsd" msprop:Generator_ColumnPropNameInTable="RateUsdColumn" type="xs:decimal" />
+              <xs:element name="Comment" msprop:Generator_UserColumnName="Comment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInTable="CommentColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LFS_LABOUR_HOURS_ACTUAL_COSTS_HOTEL_COSTS" msprop:Generator_UserTableName="LFS_LABOUR_HOURS_ACTUAL_COSTS_HOTEL_COSTS" msprop:Generator_RowDeletedName="LFS_LABOUR_HOURS_ACTUAL_COSTS_HOTEL_COSTSRowDeleted" msprop:Generator_TableClassName="LFS_LABOUR_HOURS_ACTUAL_COSTS_HOTEL_COSTSDataTable" msprop:Generator_RowChangedName="LFS_LABOUR_HOURS_ACTUAL_COSTS_HOTEL_COSTSRowChanged" msprop:Generator_RowClassName="LFS_LABOUR_HOURS_ACTUAL_COSTS_HOTEL_COSTSRow" msprop:Generator_RowChangingName="LFS_LABOUR_HOURS_ACTUAL_COSTS_HOTEL_COSTSRowChanging" msprop:Generator_RowEvArgName="LFS_LABOUR_HOURS_ACTUAL_COSTS_HOTEL_COSTSRowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_LABOUR_HOURS_ACTUAL_COSTS_HOTEL_COSTSRowChangeEventHandler" msprop:Generator_TablePropName="LFS_LABOUR_HOURS_ACTUAL_COSTS_HOTEL_COSTS" msprop:Generator_TableVarName="tableLFS_LABOUR_HOURS_ACTUAL_COSTS_HOTEL_COSTS" msprop:Generator_RowDeletingName="LFS_LABOUR_HOURS_ACTUAL_COSTS_HOTEL_COSTSRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProjectID" msprop:Generator_UserColumnName="ProjectID" msprop:Generator_ColumnPropNameInRow="ProjectID" msprop:Generator_ColumnVarNameInTable="columnProjectID" msprop:Generator_ColumnPropNameInTable="ProjectIDColumn" type="xs:int" />
+              <xs:element name="RefID" msprop:Generator_UserColumnName="RefID" msprop:Generator_ColumnPropNameInRow="RefID" msprop:Generator_ColumnVarNameInTable="columnRefID" msprop:Generator_ColumnPropNameInTable="RefIDColumn" type="xs:int" />
+              <xs:element name="HotelID" msprop:Generator_UserColumnName="HotelID" msprop:Generator_ColumnPropNameInRow="HotelID" msprop:Generator_ColumnVarNameInTable="columnHotelID" msprop:Generator_ColumnPropNameInTable="HotelIDColumn" type="xs:int" />
+              <xs:element name="Date" msprop:Generator_UserColumnName="Date" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInTable="DateColumn" type="xs:dateTime" />
+              <xs:element name="RateCad" msprop:Generator_UserColumnName="RateCad" msprop:Generator_ColumnPropNameInRow="RateCad" msprop:Generator_ColumnVarNameInTable="columnRateCad" msprop:Generator_ColumnPropNameInTable="RateCadColumn" type="xs:decimal" />
+              <xs:element name="RateUsd" msprop:Generator_UserColumnName="RateUsd" msprop:Generator_ColumnPropNameInRow="RateUsd" msprop:Generator_ColumnVarNameInTable="columnRateUsd" msprop:Generator_ColumnPropNameInTable="RateUsdColumn" type="xs:decimal" />
+              <xs:element name="Comment" msprop:Generator_UserColumnName="Comment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInTable="CommentColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LFS_LABOUR_HOURS_ACTUAL_COSTS_INSURANCE_COSTS" msprop:Generator_UserTableName="LFS_LABOUR_HOURS_ACTUAL_COSTS_INSURANCE_COSTS" msprop:Generator_RowDeletedName="LFS_LABOUR_HOURS_ACTUAL_COSTS_INSURANCE_COSTSRowDeleted" msprop:Generator_TableClassName="LFS_LABOUR_HOURS_ACTUAL_COSTS_INSURANCE_COSTSDataTable" msprop:Generator_RowChangedName="LFS_LABOUR_HOURS_ACTUAL_COSTS_INSURANCE_COSTSRowChanged" msprop:Generator_RowClassName="LFS_LABOUR_HOURS_ACTUAL_COSTS_INSURANCE_COSTSRow" msprop:Generator_RowChangingName="LFS_LABOUR_HOURS_ACTUAL_COSTS_INSURANCE_COSTSRowChanging" msprop:Generator_RowEvArgName="LFS_LABOUR_HOURS_ACTUAL_COSTS_INSURANCE_COSTSRowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_LABOUR_HOURS_ACTUAL_COSTS_INSURANCE_COSTSRowChangeEventHandler" msprop:Generator_TablePropName="LFS_LABOUR_HOURS_ACTUAL_COSTS_INSURANCE_COSTS" msprop:Generator_TableVarName="tableLFS_LABOUR_HOURS_ACTUAL_COSTS_INSURANCE_COSTS" msprop:Generator_RowDeletingName="LFS_LABOUR_HOURS_ACTUAL_COSTS_INSURANCE_COSTSRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProjectID" msprop:Generator_UserColumnName="ProjectID" msprop:Generator_ColumnPropNameInRow="ProjectID" msprop:Generator_ColumnVarNameInTable="columnProjectID" msprop:Generator_ColumnPropNameInTable="ProjectIDColumn" type="xs:int" />
+              <xs:element name="RefID" msprop:Generator_UserColumnName="RefID" msprop:Generator_ColumnPropNameInRow="RefID" msprop:Generator_ColumnVarNameInTable="columnRefID" msprop:Generator_ColumnPropNameInTable="RefIDColumn" type="xs:int" />
+              <xs:element name="InsuranceCompanyID" msprop:Generator_UserColumnName="InsuranceCompanyID" msprop:Generator_ColumnPropNameInRow="InsuranceCompanyID" msprop:Generator_ColumnVarNameInTable="columnInsuranceCompanyID" msprop:Generator_ColumnPropNameInTable="InsuranceCompanyIDColumn" type="xs:int" />
+              <xs:element name="Date" msprop:Generator_UserColumnName="Date" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInTable="DateColumn" type="xs:dateTime" />
+              <xs:element name="RateCad" msprop:Generator_UserColumnName="RateCad" msprop:Generator_ColumnPropNameInRow="RateCad" msprop:Generator_ColumnVarNameInTable="columnRateCad" msprop:Generator_ColumnPropNameInTable="RateCadColumn" type="xs:decimal" />
+              <xs:element name="RateUsd" msprop:Generator_UserColumnName="RateUsd" msprop:Generator_ColumnPropNameInRow="RateUsd" msprop:Generator_ColumnVarNameInTable="columnRateUsd" msprop:Generator_ColumnPropNameInTable="RateUsdColumn" type="xs:decimal" />
+              <xs:element name="Comment" msprop:Generator_UserColumnName="Comment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInTable="CommentColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LFS_LABOUR_HOURS_ACTUAL_COSTS_OTHER_COSTS" msprop:Generator_UserTableName="LFS_LABOUR_HOURS_ACTUAL_COSTS_OTHER_COSTS" msprop:Generator_RowDeletedName="LFS_LABOUR_HOURS_ACTUAL_COSTS_OTHER_COSTSRowDeleted" msprop:Generator_TableClassName="LFS_LABOUR_HOURS_ACTUAL_COSTS_OTHER_COSTSDataTable" msprop:Generator_RowChangedName="LFS_LABOUR_HOURS_ACTUAL_COSTS_OTHER_COSTSRowChanged" msprop:Generator_RowClassName="LFS_LABOUR_HOURS_ACTUAL_COSTS_OTHER_COSTSRow" msprop:Generator_RowChangingName="LFS_LABOUR_HOURS_ACTUAL_COSTS_OTHER_COSTSRowChanging" msprop:Generator_RowEvArgName="LFS_LABOUR_HOURS_ACTUAL_COSTS_OTHER_COSTSRowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_LABOUR_HOURS_ACTUAL_COSTS_OTHER_COSTSRowChangeEventHandler" msprop:Generator_TablePropName="LFS_LABOUR_HOURS_ACTUAL_COSTS_OTHER_COSTS" msprop:Generator_TableVarName="tableLFS_LABOUR_HOURS_ACTUAL_COSTS_OTHER_COSTS" msprop:Generator_RowDeletingName="LFS_LABOUR_HOURS_ACTUAL_COSTS_OTHER_COSTSRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProjectID" msprop:Generator_UserColumnName="ProjectID" msprop:Generator_ColumnPropNameInRow="ProjectID" msprop:Generator_ColumnVarNameInTable="columnProjectID" msprop:Generator_ColumnPropNameInTable="ProjectIDColumn" type="xs:int" />
+              <xs:element name="RefID" msprop:Generator_UserColumnName="RefID" msprop:Generator_ColumnPropNameInRow="RefID" msprop:Generator_ColumnVarNameInTable="columnRefID" msprop:Generator_ColumnPropNameInTable="RefIDColumn" type="xs:int" />
+              <xs:element name="Category" msprop:Generator_UserColumnName="Category" msprop:Generator_ColumnPropNameInRow="Category" msprop:Generator_ColumnVarNameInTable="columnCategory" msprop:Generator_ColumnPropNameInTable="CategoryColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Date" msprop:Generator_UserColumnName="Date" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInTable="DateColumn" type="xs:dateTime" />
+              <xs:element name="RateCad" msprop:Generator_UserColumnName="RateCad" msprop:Generator_ColumnPropNameInRow="RateCad" msprop:Generator_ColumnVarNameInTable="columnRateCad" msprop:Generator_ColumnPropNameInTable="RateCadColumn" type="xs:decimal" />
+              <xs:element name="RateUsd" msprop:Generator_UserColumnName="RateUsd" msprop:Generator_ColumnPropNameInRow="RateUsd" msprop:Generator_ColumnVarNameInTable="columnRateUsd" msprop:Generator_ColumnPropNameInTable="RateUsdColumn" type="xs:decimal" />
+              <xs:element name="Comment" msprop:Generator_UserColumnName="Comment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInTable="CommentColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_LABOUR_HOURS_ACTUAL_COSTS_SUBCONTRACTOR_COSTS" />
+      <xs:field xpath="mstns:ProjectID" />
+      <xs:field xpath="mstns:RefID" />
+    </xs:unique>
+    <xs:unique name="LFS_LABOUR_HOURS_ACTUAL_COSTS_CATEGORY_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_LABOUR_HOURS_ACTUAL_COSTS_CATEGORY" />
+      <xs:field xpath="mstns:Category" />
+    </xs:unique>
+    <xs:unique name="LFS_LABOUR_HOURS_ACTUAL_COSTS_BONDING_COSTS_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_LABOUR_HOURS_ACTUAL_COSTS_BONDING_COSTS" />
+      <xs:field xpath="mstns:ProjectID" />
+      <xs:field xpath="mstns:RefID" />
+    </xs:unique>
+    <xs:unique name="LFS_LABOUR_HOURS_ACTUAL_COSTS_HOTEL_COSTS_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_LABOUR_HOURS_ACTUAL_COSTS_HOTEL_COSTS" />
+      <xs:field xpath="mstns:ProjectID" />
+      <xs:field xpath="mstns:RefID" />
+    </xs:unique>
+    <xs:unique name="LFS_LABOUR_HOURS_ACTUAL_COSTS_INSURANCE_COSTS_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_LABOUR_HOURS_ACTUAL_COSTS_INSURANCE_COSTS" />
+      <xs:field xpath="mstns:ProjectID" />
+      <xs:field xpath="mstns:RefID" />
+    </xs:unique>
+    <xs:unique name="LFS_LABOUR_HOURS_ACTUAL_COSTS_OTHER_COSTS_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_LABOUR_HOURS_ACTUAL_COSTS_OTHER_COSTS" />
+      <xs:field xpath="mstns:ProjectID" />
+      <xs:field xpath="mstns:RefID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

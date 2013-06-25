@@ -1,0 +1,110 @@
+﻿/* Separators */
+.ASPxNavBar1_Separator
+{
+	background-color: #2f82c7;
+}
+
+.ASPxNavBar2_Separator
+{
+	background-color: #2f82b0;
+}
+
+
+
+/* Labels */
+.ASPxNavBar1_Label
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 10px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #2f82c7;
+	background-color: #c8dbed;
+}
+
+.ASPxNavBar2_Label
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 10px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #2f82b0;
+	background-color: #E7E9EB;
+}
+
+
+
+/* Control */
+.ASPxNavBar1_Control
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 10px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #2f82c7;
+}
+
+.ASPxNavBar1_ControlReadOnly
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 10px;
+	font-weight: bold;
+	text-decoration: none;
+	color: Gray;
+}
+
+.ASPxNavBar1_LinkButton
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 10px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #2f82c7;
+	background-color: #c8dbed;
+}
+
+.ASPxNavBar1_LinkButton:hover
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 10px;
+	font-weight: bold;
+	color: #f7941c;
+	background-color: #c8dbed;
+}
+
+.ASPxNavBar2_Control
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 10px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #2f82b0;
+}
+
+.ASPxNavBar2_ControlReadOnly
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 10px;
+	font-weight: bold;
+	text-decoration: none;
+	color: silver;
+}
+
+.ASPxNavBar2_LinkButton
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 10px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #2f82b0;
+	background-color: #e7e9eb;
+}
+
+.ASPxNavBar2_LinkButton:hover
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 10px;
+	font-weight: bold;
+	color: #f7941c;
+	background-color: #e7e9eb;
+}

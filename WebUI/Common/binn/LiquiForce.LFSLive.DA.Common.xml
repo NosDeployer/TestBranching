@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LiquiForce.LFSLive.DA.Common</name>
+    </assembly>
+    <members>
+        <member name="T:LiquiForce.LFSLive.DA.Common.DataTableGateway">
+            <summary>
+            Implements the Data Table Gateway software pattern.
+            </summary>
+        </member>
+        <member name="F:LiquiForce.LFSLive.DA.Common.DataTableGateway._data">
+            <summary>
+            Sets the dataset or typed dataset encapsulated by the class (use only on DataTableGateway's children).
+            </summary>
+        </member>
+        <member name="F:LiquiForce.LFSLive.DA.Common.DataTableGateway._adapter">
+            <summary>
+            Sets the internal data adapter of the class (use only on DataTableGateway's children).
+            </summary>
+        </member>
+        <member name="M:LiquiForce.LFSLive.DA.Common.DataTableGateway.#ctor(System.String)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="tableName">The name of the Table on which the class will work on.</param>
+        </member>
+        <member name="M:LiquiForce.LFSLive.DA.Common.DataTableGateway.#ctor(System.Data.DataSet,System.String)">
+            <summary>
+            Overloaded constructor.
+            </summary>
+            <param name="data">An externally instantiated dataset or typed dataset to be assigned to Data.</param>
+            <param name="tableName">The name of the Table on which the class will work on.</param>
+        </member>
+        <member name="M:LiquiForce.LFSLive.DA.Common.DataTableGateway.InitDataProvider(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="tableName"></param>
+        </member>
+        <member name="M:LiquiForce.LFSLive.DA.Common.DataTableGateway.InitDataProvider(System.Data.DataSet,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+            <param name="tableName"></param>
+        </member>
+        <member name="M:LiquiForce.LFSLive.DA.Common.DataTableGateway.InitData">
+            <summary>
+            Initializes the Data property.
+            </summary>
+        </member>
+        <member name="M:LiquiForce.LFSLive.DA.Common.DataTableGateway.InitAdapter">
+            <summary>
+            Initializes the Adapter property.
+            </summary>
+        </member>
+        <member name="M:LiquiForce.LFSLive.DA.Common.DataTableGateway.FillData(System.String)">
+            <summary>
+            Executes the SELECT command text against the database and fills Table with the results.
+            </summary>
+            <param name="selectCommandText">A valid SELECT command text</param>
+            <returns>Number of rows affected</returns>
+        </member>
+        <member name="M:LiquiForce.LFSLive.DA.Common.DataTableGateway.FillDataWithStoredProcedure(System.String)">
+            <summary>
+            Executes a Stored Procedure in the database and fills Table with the results.
+            </summary>
+            <param name="storedProcedureName">Name of Stored Procedure</param>
+            <returns></returns>
+        </member>
+        <member name="M:LiquiForce.LFSLive.DA.Common.DataTableGateway.FillDataWithStoredProcedure(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Executes a Stored Procedure in the database and fills Table with the results.
+            </summary>
+            <param name="storedProcedureName">Name of Stored Procedure</param>
+            <param name="parameters">List of parameters</param>
+            <returns></returns>
+        </member>
+        <member name="M:LiquiForce.LFSLive.DA.Common.DataTableGateway.ExecuteScalar(System.Data.SqlClient.SqlCommand)">
+            <summary>
+            Executes the SqlCommand against the database returning the first column of the first row as an Object.
+            </summary>
+            <param name="command">A preconfigured SqlCommand</param>
+            <returns>The first column of the first row as an Object</returns>
+        </member>
+        <member name="M:LiquiForce.LFSLive.DA.Common.DataTableGateway.ExecuteScalar(System.String)">
+            <summary>
+            Executes the 'command' against the database returning the first column of the first row as an Object.
+            </summary>
+            <param name="command">command text</param>
+            <returns></returns>
+        </member>
+        <member name="M:LiquiForce.LFSLive.DA.Common.DataTableGateway.ExecuteScalar(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Executes the 'command' against the database returning the first column of the first row as an Object.
+            </summary>
+            <param name="command">command text</param>
+            <param name="parameters">parameters</param>
+            <returns></returns>
+        </member>
+        <member name="M:LiquiForce.LFSLive.DA.Common.DataTableGateway.ExecuteScalarWithStoredProcedure(System.String)">
+            <summary>
+            Executes the Stored Procedure against the database returning the first column of the first row as an Object.
+            </summary>
+            <param name="storedProcedureName">Name of stored procedure</param>
+            <returns>The first column of the first row as an Object</returns>
+        </member>
+        <member name="M:LiquiForce.LFSLive.DA.Common.DataTableGateway.ExecuteScalarWithStoredProcedure(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Executes the Stored Procedure against the database returning the first column of the first row as an Object.
+            </summary>
+            <param name="storedProcedureName">Name of stored procedure</param>
+            <param name="parameters">List of parameters</param>
+            <returns>The first column of the first row as an Object</returns>
+        </member>
+        <member name="M:LiquiForce.LFSLive.DA.Common.DataTableGateway.ExecuteNonQuery(System.Data.SqlClient.SqlCommand)">
+            <summary>
+            Executes the SqlCommand against the database returning the number of rows affected.
+            </summary>
+            <param name="command">SqlCommand to execute</param>
+            <returns></returns>
+        </member>
+        <member name="M:LiquiForce.LFSLive.DA.Common.DataTableGateway.ExecuteNonQuery(System.String)">
+            <summary>
+            Executes the 'command' against the database returning the number of rows affected.
+            </summary>
+            <param name="command">command text</param>
+            <returns></returns>
+        </member>
+        <member name="M:LiquiForce.LFSLive.DA.Common.DataTableGateway.ExecuteNonQuery(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Executes the 'command' against the database returning the number of rows affected.
+            </summary>
+            <param name="command">command text</param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LiquiForce.LFSLive.DA.Common.DataTableGateway.ExecuteNonQueryWithStoredProcedure(System.String)">
+            <summary>
+            Executes the Stored Procedure against the database returning the number of rows affected.
+            </summary>
+            <param name="storedProcedureName">Name of stored procedure</param>
+            <returns>Number of rows affected</returns>
+        </member>
+        <member name="M:LiquiForce.LFSLive.DA.Common.DataTableGateway.ExecuteNonQueryWithStoredProcedure(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Executes the Stored Procedure against the database returning the number of rows affected.
+            </summary>
+            <param name="storedProcedureName">Name of stored procedure</param>
+            <param name="parameters">List of parameters</param>
+            <returns>Number of rows affected</returns>
+        </member>
+        <member name="P:LiquiForce.LFSLive.DA.Common.DataTableGateway.ClearBeforeFill">
+            <summary>
+            Set ClearBeforeFill to true to delete all Table rows before getting new ones.
+            ClearBeforeFill is set to true by default.
+            </summary>
+        </member>
+        <member name="P:LiquiForce.LFSLive.DA.Common.DataTableGateway.Data">
+            <summary>
+            Gets the dataset or typed dataset encapsulated by the class.
+            </summary>
+        </member>
+        <member name="P:LiquiForce.LFSLive.DA.Common.DataTableGateway.TableName">
+            <summary>
+            Gets the name of the Table being encapsulated by the class.
+            </summary>
+        </member>
+        <member name="P:LiquiForce.LFSLive.DA.Common.DataTableGateway.Table">
+            <summary>
+            Gets the data table encapsulated by the class.
+            </summary>
+        </member>
+        <member name="P:LiquiForce.LFSLive.DA.Common.DataTableGateway.Adapter">
+            <summary>
+            Gets the internal data adapter of the class.
+            </summary>
+        </member>
+    </members>
+</doc>

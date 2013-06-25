@@ -1,0 +1,43 @@
+﻿a.hint {
+	display: inline;
+	position:relative;	
+	text-decoration:none;
+	}
+	
+ a.hint b.hint,  
+ a.hint span.hint {
+	display: inline;
+	position:absolute;
+	left:-10000px;
+	}
+ 
+ a.hint:hover b.hint,
+ a.hint:focus b.hint { /* focus shows up hints - in compliant browsers - for tab navigation */ 
+	font-size:9px;
+	font-family: 'Verdana';
+	color:#797b7d;
+	background:#ffc;
+	border:1px solid #c93;
+	width:225px;
+	padding:5px 8px; 
+	position:absolute; 
+	top:-10px;
+	left:21px;
+	font-weight:normal;
+	min-height:20px;
+	display: inline;
+	z-index: 2;
+	}
+	
+ a.hint:hover span.hint,
+ a.hint:focus span.hint
+  { /* focus shows up hints - in compliant browsers - for tab navigation */
+	background: url(images/pointer.gif) no-repeat;
+	display: inline;
+	position:absolute; 
+	top:-5px;
+	left:85%;
+	width:15px;
+	height:22px;
+	z-index: 2;
+	}

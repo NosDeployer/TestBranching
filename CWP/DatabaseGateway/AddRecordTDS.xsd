@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AddRecordTDS" targetNamespace="http://tempuri.org/AddRecordTDS.xsd" xmlns:mstns="http://tempuri.org/AddRecordTDS.xsd" xmlns="http://tempuri.org/AddRecordTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LFSDB9ConnectionString" IsAppSettingsProperty="True" Modifier="Assembly" Name="LFSDB9ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.CWP.Properties.Settings.GlobalReference.Default.LFSDB9ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AddRecordTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="AddRecordTDS" msprop:Generator_DataSetName="AddRecordTDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PointRepairs" msprop:Generator_UserTableName="PointRepairs" msprop:Generator_RowDeletedName="PointRepairsRowDeleted" msprop:Generator_RowChangedName="PointRepairsRowChanged" msprop:Generator_RowClassName="PointRepairsRow" msprop:Generator_RowChangingName="PointRepairsRowChanging" msprop:Generator_RowEvArgName="PointRepairsRowChangeEvent" msprop:Generator_RowEvHandlerName="PointRepairsRowChangeEventHandler" msprop:Generator_TableClassName="PointRepairsDataTable" msprop:Generator_TableVarName="tablePointRepairs" msprop:Generator_RowDeletingName="PointRepairsRowDeleting" msprop:Generator_TablePropName="PointRepairs">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:string" />
+              <xs:element name="RefID" msprop:Generator_UserColumnName="RefID" msprop:Generator_ColumnPropNameInRow="RefID" msprop:Generator_ColumnVarNameInTable="columnRefID" msprop:Generator_ColumnPropNameInTable="RefIDColumn" type="xs:int" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="DetailID" msprop:Generator_UserColumnName="DetailID" msprop:Generator_ColumnPropNameInRow="DetailID" msprop:Generator_ColumnVarNameInTable="columnDetailID" msprop:Generator_ColumnPropNameInTable="DetailIDColumn" type="xs:string" />
+              <xs:element name="RepairSize" msprop:Generator_UserColumnName="RepairSize" msprop:Generator_ColumnPropNameInRow="RepairSize" msprop:Generator_ColumnVarNameInTable="columnRepairSize" msprop:Generator_ColumnPropNameInTable="RepairSizeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="InstallDate" msprop:Generator_UserColumnName="InstallDate" msprop:Generator_ColumnPropNameInRow="InstallDate" msprop:Generator_ColumnVarNameInTable="columnInstallDate" msprop:Generator_ColumnPropNameInTable="InstallDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Distance" msprop:Generator_UserColumnName="Distance" msprop:Generator_ColumnPropNameInRow="Distance" msprop:Generator_ColumnVarNameInTable="columnDistance" msprop:Generator_ColumnPropNameInTable="DistanceColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Cost" msprop:Generator_UserColumnName="Cost" msprop:Generator_ColumnPropNameInRow="Cost" msprop:Generator_ColumnVarNameInTable="columnCost" msprop:Generator_ColumnPropNameInTable="CostColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Reinstates" msprop:Generator_UserColumnName="Reinstates" msprop:Generator_ColumnPropNameInRow="Reinstates" msprop:Generator_ColumnVarNameInTable="columnReinstates" msprop:Generator_ColumnPropNameInTable="ReinstatesColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LTAtMH" msprop:Generator_UserColumnName="LTAtMH" msprop:Generator_ColumnPropNameInRow="LTAtMH" msprop:Generator_ColumnVarNameInTable="columnLTAtMH" msprop:Generator_ColumnPropNameInTable="LTAtMHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VTAtMH" msprop:Generator_UserColumnName="VTAtMH" msprop:Generator_ColumnPropNameInRow="VTAtMH" msprop:Generator_ColumnVarNameInTable="columnVTAtMH" msprop:Generator_ColumnPropNameInTable="VTAtMHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LinerDistance" msprop:Generator_UserColumnName="LinerDistance" msprop:Generator_ColumnPropNameInRow="LinerDistance" msprop:Generator_ColumnVarNameInTable="columnLinerDistance" msprop:Generator_ColumnPropNameInTable="LinerDistanceColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Direction" msprop:Generator_UserColumnName="Direction" msprop:Generator_ColumnPropNameInRow="Direction" msprop:Generator_ColumnVarNameInTable="columnDirection" msprop:Generator_ColumnPropNameInTable="DirectionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MHShot" msprop:Generator_UserColumnName="MHShot" msprop:Generator_ColumnPropNameInRow="MHShot" msprop:Generator_ColumnVarNameInTable="columnMHShot" msprop:Generator_ColumnPropNameInTable="MHShotColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Comments" msprop:Generator_UserColumnName="Comments" msprop:Generator_ColumnPropNameInRow="Comments" msprop:Generator_ColumnVarNameInTable="columnComments" msprop:Generator_ColumnPropNameInTable="CommentsColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ExtraRepair" msprop:Generator_UserColumnName="ExtraRepair" msprop:Generator_ColumnPropNameInRow="ExtraRepair" msprop:Generator_ColumnVarNameInTable="columnExtraRepair" msprop:Generator_ColumnPropNameInTable="ExtraRepairColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Cancelled" msprop:Generator_UserColumnName="Cancelled" msprop:Generator_ColumnPropNameInRow="Cancelled" msprop:Generator_ColumnVarNameInTable="columnCancelled" msprop:Generator_ColumnPropNameInTable="CancelledColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Approved" msprop:Generator_UserColumnName="Approved" msprop:Generator_ColumnPropNameInRow="Approved" msprop:Generator_ColumnVarNameInTable="columnApproved" msprop:Generator_ColumnPropNameInTable="ApprovedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="NotApproved" msprop:Generator_UserColumnName="NotApproved" msprop:Generator_ColumnPropNameInRow="NotApproved" msprop:Generator_ColumnVarNameInTable="columnNotApproved" msprop:Generator_ColumnPropNameInTable="NotApprovedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Archived" msprop:Generator_UserColumnName="Archived" msprop:Generator_ColumnPropNameInRow="Archived" msprop:Generator_ColumnVarNameInTable="columnArchived" msprop:Generator_ColumnPropNameInTable="ArchivedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="InDatabase" msprop:Generator_UserColumnName="InDatabase" msprop:Generator_ColumnPropNameInRow="InDatabase" msprop:Generator_ColumnVarNameInTable="columnInDatabase" msprop:Generator_ColumnPropNameInTable="InDatabaseColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="TDSLFSRecordKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PointRepairs" />
+      <xs:field xpath="mstns:ID" />
+      <xs:field xpath="mstns:RefID" />
+      <xs:field xpath="mstns:COMPANY_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

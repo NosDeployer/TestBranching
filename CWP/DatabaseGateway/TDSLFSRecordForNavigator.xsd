@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TDSLFSRecordForNavigator" targetNamespace="http://tempuri.org/TDSLFSRecordForNavigator.xsd" xmlns:mstns="http://tempuri.org/TDSLFSRecordForNavigator.xsd" xmlns="http://tempuri.org/TDSLFSRecordForNavigator.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TDSLFSRecordForNavigator" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="TDSLFSRecordForNavigator" msprop:Generator_DataSetName="TDSLFSRecordForNavigator">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="NAVIGATOR" msprop:Generator_UserTableName="NAVIGATOR" msprop:Generator_RowDeletedName="NAVIGATORRowDeleted" msprop:Generator_TableClassName="NAVIGATORDataTable" msprop:Generator_RowChangedName="NAVIGATORRowChanged" msprop:Generator_RowClassName="NAVIGATORRow" msprop:Generator_RowChangingName="NAVIGATORRowChanging" msprop:Generator_RowEvArgName="NAVIGATORRowChangeEvent" msprop:Generator_RowEvHandlerName="NAVIGATORRowChangeEventHandler" msprop:Generator_TablePropName="NAVIGATOR" msprop:Generator_TableVarName="tableNAVIGATOR" msprop:Generator_RowDeletingName="NAVIGATORRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:string" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="RecordID" msprop:Generator_UserColumnName="RecordID" msprop:Generator_ColumnPropNameInRow="RecordID" msprop:Generator_ColumnVarNameInTable="columnRecordID" msprop:Generator_ColumnPropNameInTable="RecordIDColumn" type="xs:string" />
+              <xs:element name="COMPANIES_ID" msprop:Generator_UserColumnName="COMPANIES_ID" msprop:Generator_ColumnPropNameInRow="COMPANIES_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANIES_ID" msprop:Generator_ColumnPropNameInTable="COMPANIES_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="NAME" msprop:Generator_UserColumnName="NAME" msprop:Generator_ColumnPropNameInRow="NAME" msprop:Generator_ColumnVarNameInTable="columnNAME" msprop:Generator_ColumnPropNameInTable="NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Street" msprop:Generator_UserColumnName="Street" msprop:Generator_ColumnPropNameInRow="Street" msprop:Generator_ColumnVarNameInTable="columnStreet" msprop:Generator_ColumnPropNameInTable="StreetColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="USMH" msprop:Generator_UserColumnName="USMH" msprop:Generator_ColumnPropNameInRow="USMH" msprop:Generator_ColumnVarNameInTable="columnUSMH" msprop:Generator_ColumnPropNameInTable="USMHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DSMH" msprop:Generator_UserColumnName="DSMH" msprop:Generator_ColumnPropNameInRow="DSMH" msprop:Generator_ColumnVarNameInTable="columnDSMH" msprop:Generator_ColumnPropNameInTable="DSMHColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="P1Date" msprop:Generator_UserColumnName="P1Date" msprop:Generator_ColumnPropNameInRow="P1Date" msprop:Generator_ColumnVarNameInTable="columnP1Date" msprop:Generator_ColumnPropNameInTable="P1DateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="M1Date" msprop:Generator_UserColumnName="M1Date" msprop:Generator_ColumnPropNameInRow="M1Date" msprop:Generator_ColumnVarNameInTable="columnM1Date" msprop:Generator_ColumnPropNameInTable="M1DateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="M2Date" msprop:Generator_UserColumnName="M2Date" msprop:Generator_ColumnPropNameInRow="M2Date" msprop:Generator_ColumnVarNameInTable="columnM2Date" msprop:Generator_ColumnPropNameInTable="M2DateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="InstallDate" msprop:Generator_UserColumnName="InstallDate" msprop:Generator_ColumnPropNameInRow="InstallDate" msprop:Generator_ColumnVarNameInTable="columnInstallDate" msprop:Generator_ColumnPropNameInTable="InstallDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Archived" msprop:Generator_UserColumnName="Archived" msprop:Generator_ColumnPropNameInRow="Archived" msprop:Generator_ColumnVarNameInTable="columnArchived" msprop:Generator_ColumnPropNameInTable="ArchivedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Selected" msprop:Generator_UserColumnName="Selected" msprop:Generator_ColumnPropNameInRow="Selected" msprop:Generator_ColumnVarNameInTable="columnSelected" msprop:Generator_ColumnPropNameInTable="SelectedColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="TDSLFSRecordForNavigatorKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:NAVIGATOR" />
+      <xs:field xpath="mstns:ID" />
+      <xs:field xpath="mstns:COMPANY_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

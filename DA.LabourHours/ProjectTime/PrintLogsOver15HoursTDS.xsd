@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PrintLogsOver15HoursTDS" targetNamespace="http://tempuri.org/PrintLogsOver15HoursTDS.xsd" xmlns:mstns="http://tempuri.org/PrintLogsOver15HoursTDS.xsd" xmlns="http://tempuri.org/PrintLogsOver15HoursTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LFSDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="LFSDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.LabourHours.Properties.Settings.GlobalReference.Default.LFSDBConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PrintLogsOver15HoursTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PrintLogsOver15HoursTDS" msprop:Generator_DataSetName="PrintLogsOver15HoursTDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LFS_PROJECT_TIME" msprop:Generator_UserTableName="LFS_PROJECT_TIME" msprop:Generator_RowDeletedName="LFS_PROJECT_TIMERowDeleted" msprop:Generator_RowChangedName="LFS_PROJECT_TIMERowChanged" msprop:Generator_RowClassName="LFS_PROJECT_TIMERow" msprop:Generator_RowChangingName="LFS_PROJECT_TIMERowChanging" msprop:Generator_RowEvArgName="LFS_PROJECT_TIMERowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_PROJECT_TIMERowChangeEventHandler" msprop:Generator_TableClassName="LFS_PROJECT_TIMEDataTable" msprop:Generator_TableVarName="tableLFS_PROJECT_TIME" msprop:Generator_RowDeletingName="LFS_PROJECT_TIMERowDeleting" msprop:Generator_TablePropName="LFS_PROJECT_TIME">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FullName" msdata:ReadOnly="true" msprop:Generator_UserColumnName="FullName" msprop:Generator_ColumnVarNameInTable="columnFullName" msprop:Generator_ColumnPropNameInRow="FullName" msprop:Generator_ColumnPropNameInTable="FullNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="102" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Country" msprop:Generator_UserColumnName="Country" msprop:Generator_ColumnVarNameInTable="columnCountry" msprop:Generator_ColumnPropNameInRow="Country" msprop:Generator_ColumnPropNameInTable="CountryColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Date_" msprop:Generator_UserColumnName="Date_" msprop:Generator_ColumnVarNameInTable="columnDate_" msprop:Generator_ColumnPropNameInRow="Date_" msprop:Generator_ColumnPropNameInTable="Date_Column" type="xs:dateTime" />
+              <xs:element name="ProjectTime" msprop:Generator_UserColumnName="ProjectTime" msprop:Generator_ColumnVarNameInTable="columnProjectTime" msprop:Generator_ColumnPropNameInRow="ProjectTime" msprop:Generator_ColumnPropNameInTable="ProjectTimeColumn" type="xs:double" />
+              <xs:element name="UnitID" msprop:Generator_UserColumnName="UnitID" msprop:Generator_ColumnVarNameInTable="columnUnitID" msprop:Generator_ColumnPropNameInRow="UnitID" msprop:Generator_ColumnPropNameInTable="UnitIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TowedUnitID" msprop:Generator_UserColumnName="TowedUnitID" msprop:Generator_ColumnVarNameInTable="columnTowedUnitID" msprop:Generator_ColumnPropNameInRow="TowedUnitID" msprop:Generator_ColumnPropNameInTable="TowedUnitIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ProjectTimeState" msprop:Generator_UserColumnName="ProjectTimeState" msprop:Generator_ColumnPropNameInRow="ProjectTimeState" msprop:Generator_ColumnVarNameInTable="columnProjectTimeState" msprop:Generator_ColumnPropNameInTable="ProjectTimeStateColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LFS_UNIT" msprop:Generator_UserTableName="LFS_UNIT" msprop:Generator_RowDeletedName="LFS_UNITRowDeleted" msprop:Generator_RowChangedName="LFS_UNITRowChanged" msprop:Generator_RowClassName="LFS_UNITRow" msprop:Generator_RowChangingName="LFS_UNITRowChanging" msprop:Generator_RowEvArgName="LFS_UNITRowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_UNITRowChangeEventHandler" msprop:Generator_TableClassName="LFS_UNITDataTable" msprop:Generator_TableVarName="tableLFS_UNIT" msprop:Generator_RowDeletingName="LFS_UNITRowDeleting" msprop:Generator_TablePropName="LFS_UNIT">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UnitID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="UnitID" msprop:Generator_ColumnVarNameInTable="columnUnitID" msprop:Generator_ColumnPropNameInRow="UnitID" msprop:Generator_ColumnPropNameInTable="UnitIDColumn" type="xs:int" />
+              <xs:element name="UnitCode" msprop:Generator_UserColumnName="UnitCode" msprop:Generator_ColumnVarNameInTable="columnUnitCode" msprop:Generator_ColumnPropNameInRow="UnitCode" msprop:Generator_ColumnPropNameInTable="UnitCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LFS_TOWED" msprop:Generator_UserTableName="LFS_TOWED" msprop:Generator_RowDeletedName="LFS_TOWEDRowDeleted" msprop:Generator_RowChangedName="LFS_TOWEDRowChanged" msprop:Generator_RowClassName="LFS_TOWEDRow" msprop:Generator_RowChangingName="LFS_TOWEDRowChanging" msprop:Generator_RowEvArgName="LFS_TOWEDRowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_TOWEDRowChangeEventHandler" msprop:Generator_TableClassName="LFS_TOWEDDataTable" msprop:Generator_TableVarName="tableLFS_TOWED" msprop:Generator_RowDeletingName="LFS_TOWEDRowDeleting" msprop:Generator_TablePropName="LFS_TOWED">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UnitID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="UnitID" msprop:Generator_ColumnVarNameInTable="columnUnitID" msprop:Generator_ColumnPropNameInRow="UnitID" msprop:Generator_ColumnPropNameInTable="UnitIDColumn" type="xs:int" />
+              <xs:element name="UnitCode" msprop:Generator_UserColumnName="UnitCode" msprop:Generator_ColumnVarNameInTable="columnUnitCode" msprop:Generator_ColumnPropNameInRow="UnitCode" msprop:Generator_ColumnPropNameInTable="UnitCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_UNIT" />
+      <xs:field xpath="mstns:UnitID" />
+    </xs:unique>
+    <xs:unique name="LFS_TOWED_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_TOWED" />
+      <xs:field xpath="mstns:UnitID" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_LFS_PROJECT_TIME_LFS_UNIT" msdata:parent="LFS_UNIT" msdata:child="LFS_PROJECT_TIME" msdata:parentkey="UnitID" msdata:childkey="UnitID" msprop:Generator_UserRelationName="FK_LFS_PROJECT_TIME_LFS_UNIT" msprop:Generator_RelationVarName="relationFK_LFS_PROJECT_TIME_LFS_UNIT" msprop:Generator_UserChildTable="LFS_PROJECT_TIME" msprop:Generator_UserParentTable="LFS_UNIT" msprop:Generator_ParentPropName="LFS_UNITRow" msprop:Generator_ChildPropName="GetLFS_PROJECT_TIMERows" />
+      <msdata:Relationship name="FK_LFS_PROJECT_TIME_LFS_UNIT11" msdata:parent="LFS_TOWED" msdata:child="LFS_PROJECT_TIME" msdata:parentkey="UnitID" msdata:childkey="TowedUnitID" msprop:Generator_UserRelationName="FK_LFS_PROJECT_TIME_LFS_UNIT11" msprop:Generator_RelationVarName="relationFK_LFS_PROJECT_TIME_LFS_UNIT11" msprop:Generator_UserChildTable="LFS_PROJECT_TIME" msprop:Generator_UserParentTable="LFS_TOWED" msprop:Generator_ParentPropName="LFS_TOWEDRow" msprop:Generator_ChildPropName="GetLFS_PROJECT_TIMERows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

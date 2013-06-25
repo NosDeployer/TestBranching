@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="TDSM2ReportByID" targetNamespace="http://tempuri.org/TDSM2ReportByID.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/TDSM2ReportByID.xsd" xmlns:mstns="http://tempuri.org/TDSM2ReportByID.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="TDSM2ReportByID" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="LFS_MASTER_AREA">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:string" />
+							<xs:element name="COMPANY_ID" type="xs:int" />
+							<xs:element name="RecordID" type="xs:string" minOccurs="0" />
+							<xs:element name="COMPANIES_ID" type="xs:int" minOccurs="0" />
+							<xs:element name="NAME" type="xs:string" minOccurs="0" />
+							<xs:element name="Street" type="xs:string" minOccurs="0" />
+							<xs:element name="USMH" type="xs:string" minOccurs="0" />
+							<xs:element name="DSMH" type="xs:string" minOccurs="0" />
+							<xs:element name="ConfirmedSize" type="xs:int" minOccurs="0" />
+							<xs:element name="LiveLats" type="xs:double" minOccurs="0" />
+							<xs:element name="M2Date" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="VideoDoneFrom" type="xs:string" minOccurs="0" />
+							<xs:element name="ToManhole" type="xs:string" minOccurs="0" />
+							<xs:element name="CutterDescriptionDuringMeasuring" type="xs:string" minOccurs="0" />
+							<xs:element name="MeasurementType" type="xs:string" minOccurs="0" />
+							<xs:element name="MeasuredFromManhole" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="LFS_M2_TABLES">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:string" />
+							<xs:element name="RefID" type="xs:int" />
+							<xs:element name="COMPANY_ID" type="xs:int" />
+							<xs:element name="VideoDistance" type="xs:float" minOccurs="0" />
+							<xs:element name="ClockPosition" type="xs:string" minOccurs="0" />
+							<xs:element name="LiveOrAbandoned" type="xs:string" minOccurs="0" />
+							<xs:element name="DistanceToCentreOfLateral" type="xs:string" minOccurs="0" />
+							<xs:element name="LateralDiameter" type="xs:string" minOccurs="0" />
+							<xs:element name="LateralType" type="xs:string" minOccurs="0" />
+							<xs:element name="DateTimeOpened" type="xs:string" minOccurs="0" />
+							<xs:element name="Comments" type="xs:string" minOccurs="0" />
+							<xs:element name="ReverseSetup" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="TDSM2ReportByIDKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:LFS_MASTER_AREA" />
+			<xs:field xpath="mstns:ID" />
+			<xs:field xpath="mstns:COMPANY_ID" />
+		</xs:unique>
+		<xs:unique name="TDSM2ReportByIDKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:LFS_M2_TABLES" />
+			<xs:field xpath="mstns:ID" />
+			<xs:field xpath="mstns:RefID" />
+			<xs:field xpath="mstns:COMPANY_ID" />
+		</xs:unique>
+		<xs:keyref name="LFS_MASTER_AREALFS_M2_TABLES" refer="TDSM2ReportByIDKey1">
+			<xs:selector xpath=".//mstns:LFS_M2_TABLES" />
+			<xs:field xpath="mstns:ID" />
+			<xs:field xpath="mstns:COMPANY_ID" />
+		</xs:keyref>
+	</xs:element>
+</xs:schema>

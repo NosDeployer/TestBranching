@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ToDoListInformationTDS" targetNamespace="http://tempuri.org/ToDoListInformationTDS.xsd" xmlns:mstns="http://tempuri.org/ToDoListInformationTDS.xsd" xmlns="http://tempuri.org/ToDoListInformationTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LFSDB9ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LFSDB9ConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.FleetManagement.Properties.Settings.GlobalReference.Default.LFSDB9ConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ToDoListInformationTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ToDoListInformationTDS" msprop:Generator_DataSetName="ToDoListInformationTDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BasicInformation" msprop:Generator_UserTableName="BasicInformation" msprop:Generator_RowDeletedName="BasicInformationRowDeleted" msprop:Generator_RowChangedName="BasicInformationRowChanged" msprop:Generator_RowClassName="BasicInformationRow" msprop:Generator_RowChangingName="BasicInformationRowChanging" msprop:Generator_RowEvArgName="BasicInformationRowChangeEvent" msprop:Generator_RowEvHandlerName="BasicInformationRowChangeEventHandler" msprop:Generator_TableClassName="BasicInformationDataTable" msprop:Generator_TableVarName="tableBasicInformation" msprop:Generator_RowDeletingName="BasicInformationRowDeleting" msprop:Generator_TablePropName="BasicInformation">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ToDoID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ToDoID" msprop:Generator_ColumnVarNameInTable="columnToDoID" msprop:Generator_ColumnPropNameInRow="ToDoID" msprop:Generator_ColumnPropNameInTable="ToDoIDColumn" type="xs:int" />
+              <xs:element name="Subject" msprop:Generator_UserColumnName="Subject" msprop:Generator_ColumnVarNameInTable="columnSubject" msprop:Generator_ColumnPropNameInRow="Subject" msprop:Generator_ColumnPropNameInTable="SubjectColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CreationDate" msprop:Generator_UserColumnName="CreationDate" msprop:Generator_ColumnVarNameInTable="columnCreationDate" msprop:Generator_ColumnPropNameInRow="CreationDate" msprop:Generator_ColumnPropNameInTable="CreationDateColumn" type="xs:dateTime" />
+              <xs:element name="CreatedByID" msprop:Generator_UserColumnName="CreatedByID" msprop:Generator_ColumnVarNameInTable="columnCreatedByID" msprop:Generator_ColumnPropNameInRow="CreatedByID" msprop:Generator_ColumnPropNameInTable="CreatedByIDColumn" type="xs:int" />
+              <xs:element name="State" msprop:Generator_UserColumnName="State" msprop:Generator_ColumnVarNameInTable="columnState" msprop:Generator_ColumnPropNameInRow="State" msprop:Generator_ColumnPropNameInTable="StateColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DueDate" msprop:Generator_UserColumnName="DueDate" msprop:Generator_ColumnVarNameInTable="columnDueDate" msprop:Generator_ColumnPropNameInRow="DueDate" msprop:Generator_ColumnPropNameInTable="DueDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UnitID" msprop:Generator_UserColumnName="UnitID" msprop:Generator_ColumnVarNameInTable="columnUnitID" msprop:Generator_ColumnPropNameInRow="UnitID" msprop:Generator_ColumnPropNameInTable="UnitIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ActivityInformation" msprop:Generator_UserTableName="ActivityInformation" msprop:Generator_RowDeletedName="ActivityInformationRowDeleted" msprop:Generator_RowChangedName="ActivityInformationRowChanged" msprop:Generator_RowClassName="ActivityInformationRow" msprop:Generator_RowChangingName="ActivityInformationRowChanging" msprop:Generator_RowEvArgName="ActivityInformationRowChangeEvent" msprop:Generator_RowEvHandlerName="ActivityInformationRowChangeEventHandler" msprop:Generator_TableClassName="ActivityInformationDataTable" msprop:Generator_TableVarName="tableActivityInformation" msprop:Generator_RowDeletingName="ActivityInformationRowDeleting" msprop:Generator_TablePropName="ActivityInformation">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ToDoID" msprop:Generator_UserColumnName="ToDoID" msprop:Generator_ColumnVarNameInTable="columnToDoID" msprop:Generator_ColumnPropNameInRow="ToDoID" msprop:Generator_ColumnPropNameInTable="ToDoIDColumn" type="xs:int" />
+              <xs:element name="RefID" msprop:Generator_UserColumnName="RefID" msprop:Generator_ColumnVarNameInTable="columnRefID" msprop:Generator_ColumnPropNameInRow="RefID" msprop:Generator_ColumnPropNameInTable="RefIDColumn" type="xs:int" />
+              <xs:element name="EmployeeID" msprop:Generator_UserColumnName="EmployeeID" msprop:Generator_ColumnVarNameInTable="columnEmployeeID" msprop:Generator_ColumnPropNameInRow="EmployeeID" msprop:Generator_ColumnPropNameInTable="EmployeeIDColumn" type="xs:int" />
+              <xs:element name="Type_" msprop:Generator_UserColumnName="Type_" msprop:Generator_ColumnPropNameInRow="Type_" msprop:Generator_ColumnVarNameInTable="columnType_" msprop:Generator_ColumnPropNameInTable="Type_Column" type="xs:string" minOccurs="0" />
+              <xs:element name="DateTime_" msprop:Generator_UserColumnName="DateTime_" msprop:Generator_ColumnVarNameInTable="columnDateTime_" msprop:Generator_ColumnPropNameInRow="DateTime_" msprop:Generator_ColumnPropNameInTable="DateTime_Column" type="xs:dateTime" />
+              <xs:element name="Comment" msprop:Generator_UserColumnName="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="InDataBase" msprop:Generator_UserColumnName="InDataBase" msprop:Generator_ColumnVarNameInTable="columnInDataBase" msprop:Generator_ColumnPropNameInRow="InDataBase" msprop:Generator_ColumnPropNameInTable="InDataBaseColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="EmployeeFullName" msprop:Generator_UserColumnName="EmployeeFullName" msprop:Generator_ColumnPropNameInRow="EmployeeFullName" msprop:Generator_ColumnVarNameInTable="columnEmployeeFullName" msprop:Generator_ColumnPropNameInTable="EmployeeFullNameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BasicInformation" />
+      <xs:field xpath="mstns:ToDoID" />
+    </xs:unique>
+    <xs:unique name="ActivityInformation_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ActivityInformation" />
+      <xs:field xpath="mstns:ToDoID" />
+      <xs:field xpath="mstns:RefID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

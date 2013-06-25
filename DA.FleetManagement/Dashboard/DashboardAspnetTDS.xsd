@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DashboardAspnetTDS" targetNamespace="http://tempuri.org/DashboardAspnetTDS.xsd" xmlns:mstns="http://tempuri.org/DashboardAspnetTDS.xsd" xmlns="http://tempuri.org/DashboardAspnetTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LFSDB9ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="LFSDB9ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.FleetManagement.Properties.Settings.GlobalReference.Default.LFSDB9ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DashboardAspnetTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DashboardAspnetTDS" msprop:Generator_DataSetName="DashboardAspnetTDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="aspnet_Applications" msprop:Generator_UserTableName="aspnet_Applications" msprop:Generator_RowDeletedName="aspnet_ApplicationsRowDeleted" msprop:Generator_TableClassName="aspnet_ApplicationsDataTable" msprop:Generator_RowChangedName="aspnet_ApplicationsRowChanged" msprop:Generator_RowClassName="aspnet_ApplicationsRow" msprop:Generator_RowChangingName="aspnet_ApplicationsRowChanging" msprop:Generator_RowEvArgName="aspnet_ApplicationsRowChangeEvent" msprop:Generator_RowEvHandlerName="aspnet_ApplicationsRowChangeEventHandler" msprop:Generator_TablePropName="aspnet_Applications" msprop:Generator_TableVarName="tableaspnet_Applications" msprop:Generator_RowDeletingName="aspnet_ApplicationsRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ApplicationName" msprop:Generator_UserColumnName="ApplicationName" msprop:Generator_ColumnPropNameInRow="ApplicationName" msprop:Generator_ColumnVarNameInTable="columnApplicationName" msprop:Generator_ColumnPropNameInTable="ApplicationNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LoweredApplicationName" msprop:Generator_UserColumnName="LoweredApplicationName" msprop:Generator_ColumnPropNameInRow="LoweredApplicationName" msprop:Generator_ColumnVarNameInTable="columnLoweredApplicationName" msprop:Generator_ColumnPropNameInTable="LoweredApplicationNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ApplicationId" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="ApplicationId" msprop:Generator_ColumnPropNameInRow="ApplicationId" msprop:Generator_ColumnVarNameInTable="columnApplicationId" msprop:Generator_ColumnPropNameInTable="ApplicationIdColumn" type="xs:string" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="aspnet_Users" msprop:Generator_UserTableName="aspnet_Users" msprop:Generator_RowDeletedName="aspnet_UsersRowDeleted" msprop:Generator_TableClassName="aspnet_UsersDataTable" msprop:Generator_RowChangedName="aspnet_UsersRowChanged" msprop:Generator_RowClassName="aspnet_UsersRow" msprop:Generator_RowChangingName="aspnet_UsersRowChanging" msprop:Generator_RowEvArgName="aspnet_UsersRowChangeEvent" msprop:Generator_RowEvHandlerName="aspnet_UsersRowChangeEventHandler" msprop:Generator_TablePropName="aspnet_Users" msprop:Generator_TableVarName="tableaspnet_Users" msprop:Generator_RowDeletingName="aspnet_UsersRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ApplicationId" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="ApplicationId" msprop:Generator_ColumnPropNameInRow="ApplicationId" msprop:Generator_ColumnVarNameInTable="columnApplicationId" msprop:Generator_ColumnPropNameInTable="ApplicationIdColumn" type="xs:string" />
+              <xs:element name="UserId" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="UserId" msprop:Generator_ColumnPropNameInRow="UserId" msprop:Generator_ColumnVarNameInTable="columnUserId" msprop:Generator_ColumnPropNameInTable="UserIdColumn" type="xs:string" />
+              <xs:element name="UserName" msprop:Generator_UserColumnName="UserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LoweredUserName" msprop:Generator_UserColumnName="LoweredUserName" msprop:Generator_ColumnPropNameInRow="LoweredUserName" msprop:Generator_ColumnVarNameInTable="columnLoweredUserName" msprop:Generator_ColumnPropNameInTable="LoweredUserNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MobileAlias" msprop:Generator_UserColumnName="MobileAlias" msprop:Generator_ColumnPropNameInRow="MobileAlias" msprop:Generator_ColumnVarNameInTable="columnMobileAlias" msprop:Generator_ColumnPropNameInTable="MobileAliasColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IsAnonymous" msprop:Generator_UserColumnName="IsAnonymous" msprop:Generator_ColumnPropNameInRow="IsAnonymous" msprop:Generator_ColumnVarNameInTable="columnIsAnonymous" msprop:Generator_ColumnPropNameInTable="IsAnonymousColumn" type="xs:boolean" />
+              <xs:element name="LastActivityDate" msprop:Generator_UserColumnName="LastActivityDate" msprop:Generator_ColumnPropNameInRow="LastActivityDate" msprop:Generator_ColumnVarNameInTable="columnLastActivityDate" msprop:Generator_ColumnPropNameInTable="LastActivityDateColumn" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="aspnet_Membership" msprop:Generator_UserTableName="aspnet_Membership" msprop:Generator_RowDeletedName="aspnet_MembershipRowDeleted" msprop:Generator_TableClassName="aspnet_MembershipDataTable" msprop:Generator_RowChangedName="aspnet_MembershipRowChanged" msprop:Generator_RowClassName="aspnet_MembershipRow" msprop:Generator_RowChangingName="aspnet_MembershipRowChanging" msprop:Generator_RowEvArgName="aspnet_MembershipRowChangeEvent" msprop:Generator_RowEvHandlerName="aspnet_MembershipRowChangeEventHandler" msprop:Generator_TablePropName="aspnet_Membership" msprop:Generator_TableVarName="tableaspnet_Membership" msprop:Generator_RowDeletingName="aspnet_MembershipRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ApplicationId" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="ApplicationId" msprop:Generator_ColumnPropNameInRow="ApplicationId" msprop:Generator_ColumnVarNameInTable="columnApplicationId" msprop:Generator_ColumnPropNameInTable="ApplicationIdColumn" type="xs:string" />
+              <xs:element name="UserId" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="UserId" msprop:Generator_ColumnPropNameInRow="UserId" msprop:Generator_ColumnVarNameInTable="columnUserId" msprop:Generator_ColumnPropNameInTable="UserIdColumn" type="xs:string" />
+              <xs:element name="Password" msprop:Generator_UserColumnName="Password" msprop:Generator_ColumnPropNameInRow="Password" msprop:Generator_ColumnVarNameInTable="columnPassword" msprop:Generator_ColumnPropNameInTable="PasswordColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PasswordFormat" msprop:Generator_UserColumnName="PasswordFormat" msprop:Generator_ColumnPropNameInRow="PasswordFormat" msprop:Generator_ColumnVarNameInTable="columnPasswordFormat" msprop:Generator_ColumnPropNameInTable="PasswordFormatColumn" type="xs:int" />
+              <xs:element name="PasswordSalt" msprop:Generator_UserColumnName="PasswordSalt" msprop:Generator_ColumnPropNameInRow="PasswordSalt" msprop:Generator_ColumnVarNameInTable="columnPasswordSalt" msprop:Generator_ColumnPropNameInTable="PasswordSaltColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MobilePIN" msprop:Generator_UserColumnName="MobilePIN" msprop:Generator_ColumnPropNameInRow="MobilePIN" msprop:Generator_ColumnVarNameInTable="columnMobilePIN" msprop:Generator_ColumnPropNameInTable="MobilePINColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Email" msprop:Generator_UserColumnName="Email" msprop:Generator_ColumnPropNameInRow="Email" msprop:Generator_ColumnVarNameInTable="columnEmail" msprop:Generator_ColumnPropNameInTable="EmailColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LoweredEmail" msprop:Generator_UserColumnName="LoweredEmail" msprop:Generator_ColumnPropNameInRow="LoweredEmail" msprop:Generator_ColumnVarNameInTable="columnLoweredEmail" msprop:Generator_ColumnPropNameInTable="LoweredEmailColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PasswordQuestion" msprop:Generator_UserColumnName="PasswordQuestion" msprop:Generator_ColumnPropNameInRow="PasswordQuestion" msprop:Generator_ColumnVarNameInTable="columnPasswordQuestion" msprop:Generator_ColumnPropNameInTable="PasswordQuestionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PasswordAnswer" msprop:Generator_UserColumnName="PasswordAnswer" msprop:Generator_ColumnPropNameInRow="PasswordAnswer" msprop:Generator_ColumnVarNameInTable="columnPasswordAnswer" msprop:Generator_ColumnPropNameInTable="PasswordAnswerColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IsApproved" msprop:Generator_UserColumnName="IsApproved" msprop:Generator_ColumnPropNameInRow="IsApproved" msprop:Generator_ColumnVarNameInTable="columnIsApproved" msprop:Generator_ColumnPropNameInTable="IsApprovedColumn" type="xs:boolean" />
+              <xs:element name="IsLockedOut" msprop:Generator_UserColumnName="IsLockedOut" msprop:Generator_ColumnPropNameInRow="IsLockedOut" msprop:Generator_ColumnVarNameInTable="columnIsLockedOut" msprop:Generator_ColumnPropNameInTable="IsLockedOutColumn" type="xs:boolean" />
+              <xs:element name="CreateDate" msprop:Generator_UserColumnName="CreateDate" msprop:Generator_ColumnPropNameInRow="CreateDate" msprop:Generator_ColumnVarNameInTable="columnCreateDate" msprop:Generator_ColumnPropNameInTable="CreateDateColumn" type="xs:dateTime" />
+              <xs:element name="LastLoginDate" msprop:Generator_UserColumnName="LastLoginDate" msprop:Generator_ColumnPropNameInRow="LastLoginDate" msprop:Generator_ColumnVarNameInTable="columnLastLoginDate" msprop:Generator_ColumnPropNameInTable="LastLoginDateColumn" type="xs:dateTime" />
+              <xs:element name="LastPasswordChangedDate" msprop:Generator_UserColumnName="LastPasswordChangedDate" msprop:Generator_ColumnPropNameInRow="LastPasswordChangedDate" msprop:Generator_ColumnVarNameInTable="columnLastPasswordChangedDate" msprop:Generator_ColumnPropNameInTable="LastPasswordChangedDateColumn" type="xs:dateTime" />
+              <xs:element name="LastLockoutDate" msprop:Generator_UserColumnName="LastLockoutDate" msprop:Generator_ColumnPropNameInRow="LastLockoutDate" msprop:Generator_ColumnVarNameInTable="columnLastLockoutDate" msprop:Generator_ColumnPropNameInTable="LastLockoutDateColumn" type="xs:dateTime" />
+              <xs:element name="FailedPasswordAttemptCount" msprop:Generator_UserColumnName="FailedPasswordAttemptCount" msprop:Generator_ColumnPropNameInRow="FailedPasswordAttemptCount" msprop:Generator_ColumnVarNameInTable="columnFailedPasswordAttemptCount" msprop:Generator_ColumnPropNameInTable="FailedPasswordAttemptCountColumn" type="xs:int" />
+              <xs:element name="FailedPasswordAttemptWindowStart" msprop:Generator_UserColumnName="FailedPasswordAttemptWindowStart" msprop:Generator_ColumnPropNameInRow="FailedPasswordAttemptWindowStart" msprop:Generator_ColumnVarNameInTable="columnFailedPasswordAttemptWindowStart" msprop:Generator_ColumnPropNameInTable="FailedPasswordAttemptWindowStartColumn" type="xs:dateTime" />
+              <xs:element name="FailedPasswordAnswerAttemptCount" msprop:Generator_UserColumnName="FailedPasswordAnswerAttemptCount" msprop:Generator_ColumnPropNameInRow="FailedPasswordAnswerAttemptCount" msprop:Generator_ColumnVarNameInTable="columnFailedPasswordAnswerAttemptCount" msprop:Generator_ColumnPropNameInTable="FailedPasswordAnswerAttemptCountColumn" type="xs:int" />
+              <xs:element name="FailedPasswordAnswerAttemptWindowStart" msprop:Generator_UserColumnName="FailedPasswordAnswerAttemptWindowStart" msprop:Generator_ColumnPropNameInRow="FailedPasswordAnswerAttemptWindowStart" msprop:Generator_ColumnVarNameInTable="columnFailedPasswordAnswerAttemptWindowStart" msprop:Generator_ColumnPropNameInTable="FailedPasswordAnswerAttemptWindowStartColumn" type="xs:dateTime" />
+              <xs:element name="Comment" msprop:Generator_UserColumnName="Comment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInTable="CommentColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:aspnet_Applications" />
+      <xs:field xpath="mstns:ApplicationId" />
+    </xs:unique>
+    <xs:unique name="aspnet_Users_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:aspnet_Users" />
+      <xs:field xpath="mstns:ApplicationId" />
+      <xs:field xpath="mstns:LoweredUserName" />
+    </xs:unique>
+    <xs:unique name="aspnet_Membership_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:aspnet_Membership" />
+      <xs:field xpath="mstns:UserId" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK__aspnet_Us__Appli__5E225724" msdata:parent="aspnet_Applications" msdata:child="aspnet_Users" msdata:parentkey="ApplicationId" msdata:childkey="ApplicationId" msprop:Generator_UserRelationName="FK__aspnet_Us__Appli__5E225724" msprop:Generator_RelationVarName="relationFK__aspnet_Us__Appli__5E225724" msprop:Generator_UserChildTable="aspnet_Users" msprop:Generator_UserParentTable="aspnet_Applications" msprop:Generator_ParentPropName="aspnet_ApplicationsRow" msprop:Generator_ChildPropName="Getaspnet_UsersRows" />
+      <msdata:Relationship name="FK__aspnet_Me__Appli__12961F63" msdata:parent="aspnet_Applications" msdata:child="aspnet_Membership" msdata:parentkey="ApplicationId" msdata:childkey="ApplicationId" msprop:Generator_UserRelationName="FK__aspnet_Me__Appli__12961F63" msprop:Generator_RelationVarName="relationFK__aspnet_Me__Appli__12961F63" msprop:Generator_UserChildTable="aspnet_Membership" msprop:Generator_UserParentTable="aspnet_Applications" msprop:Generator_ParentPropName="aspnet_ApplicationsRow" msprop:Generator_ChildPropName="Getaspnet_MembershipRows" />
+      <msdata:Relationship name="FK__aspnet_Me__UserI__138A439C" msdata:parent="aspnet_Users" msdata:child="aspnet_Membership" msdata:parentkey="UserId" msdata:childkey="UserId" msprop:Generator_UserRelationName="FK__aspnet_Me__UserI__138A439C" msprop:Generator_RelationVarName="relationFK__aspnet_Me__UserI__138A439C" msprop:Generator_UserChildTable="aspnet_Membership" msprop:Generator_UserParentTable="aspnet_Users" msprop:Generator_ParentPropName="aspnet_UsersRow" msprop:Generator_ChildPropName="Getaspnet_MembershipRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

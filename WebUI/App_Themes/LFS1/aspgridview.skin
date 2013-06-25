@@ -1,0 +1,10 @@
+<%-- Labels --%>
+<asp:Label SkinId="ViewGridHeader" runat="server" CssClass="ViewGrid_Header"></asp:Label>
+
+<%-- GridViews --%>
+<asp:GridView SkinID="GridView" runat="server" BackColor="#E7E9EB" BorderColor="#2F82C7" BorderStyle="Solid" BorderWidth="2px" CellPadding="3" Font-Bold="True" Font-Names="Microsoft Sans Serif" Font-Size="10px" CaptionAlign="Top" ForeColor="#2F82C7">
+    <RowStyle ForeColor="#2F82C7" />
+    <SelectedRowStyle Font-Bold="True" />
+    <HeaderStyle BackColor="#2F82C7" Font-Bold="False" ForeColor="White" />
+    <AlternatingRowStyle BackColor="#E1E3E5" />
+</asp:GridView>

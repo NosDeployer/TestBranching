@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TimesheetAllTDS" targetNamespace="http://tempuri.org/TimesheetAllTDS.xsd" xmlns:mstns="http://tempuri.org/TimesheetAllTDS.xsd" xmlns="http://tempuri.org/TimesheetAllTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LFSDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="LFSDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.LabourHours.Properties.Settings.GlobalReference.Default.LFSDBConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TimesheetAllTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="TimesheetAllTDS" msprop:Generator_DataSetName="TimesheetAllTDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TIMESHEET_ALL" msprop:Generator_UserTableName="TIMESHEET_ALL" msprop:Generator_RowDeletedName="TIMESHEET_ALLRowDeleted" msprop:Generator_RowChangedName="TIMESHEET_ALLRowChanged" msprop:Generator_RowClassName="TIMESHEET_ALLRow" msprop:Generator_RowChangingName="TIMESHEET_ALLRowChanging" msprop:Generator_RowEvArgName="TIMESHEET_ALLRowChangeEvent" msprop:Generator_RowEvHandlerName="TIMESHEET_ALLRowChangeEventHandler" msprop:Generator_TableClassName="TIMESHEET_ALLDataTable" msprop:Generator_TableVarName="tableTIMESHEET_ALL" msprop:Generator_RowDeletingName="TIMESHEET_ALLRowDeleting" msprop:Generator_TablePropName="TIMESHEET_ALL">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PayPeriodID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="PayPeriodID" msprop:Generator_ColumnPropNameInRow="PayPeriodID" msprop:Generator_ColumnVarNameInTable="columnPayPeriodID" msprop:Generator_ColumnPropNameInTable="PayPeriodIDColumn" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInTable="NameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StartDate" msprop:Generator_UserColumnName="StartDate" msprop:Generator_ColumnPropNameInRow="StartDate" msprop:Generator_ColumnVarNameInTable="columnStartDate" msprop:Generator_ColumnPropNameInTable="StartDateColumn" type="xs:dateTime" />
+              <xs:element name="EndDate" msprop:Generator_UserColumnName="EndDate" msprop:Generator_ColumnPropNameInRow="EndDate" msprop:Generator_ColumnVarNameInTable="columnEndDate" msprop:Generator_ColumnPropNameInTable="EndDateColumn" type="xs:dateTime" />
+              <xs:element name="ProjectTime" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ProjectTime" msprop:Generator_ColumnPropNameInRow="ProjectTime" msprop:Generator_ColumnVarNameInTable="columnProjectTime" msprop:Generator_ColumnPropNameInTable="ProjectTimeColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Selected" msprop:Generator_UserColumnName="Selected" msprop:Generator_ColumnPropNameInRow="Selected" msprop:Generator_ColumnVarNameInTable="columnSelected" msprop:Generator_ColumnPropNameInTable="SelectedColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TIMESHEET_ALL" />
+      <xs:field xpath="mstns:PayPeriodID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

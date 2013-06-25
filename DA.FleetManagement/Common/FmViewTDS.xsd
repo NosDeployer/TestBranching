@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FmViewTDS" targetNamespace="http://tempuri.org/FmViewTDS.xsd" xmlns:mstns="http://tempuri.org/FmViewTDS.xsd" xmlns="http://tempuri.org/FmViewTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LFSDB9ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="LFSDB9ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.FleetManagement.Properties.Settings.GlobalReference.Default.LFSDB9ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FmViewTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="FmViewTDS" msprop:Generator_DataSetName="FmViewTDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LFS_FM_TYPE_VIEW_DISPLAY" msprop:Generator_UserTableName="LFS_FM_TYPE_VIEW_DISPLAY" msprop:Generator_RowDeletedName="LFS_FM_TYPE_VIEW_DISPLAYRowDeleted" msprop:Generator_RowChangedName="LFS_FM_TYPE_VIEW_DISPLAYRowChanged" msprop:Generator_RowClassName="LFS_FM_TYPE_VIEW_DISPLAYRow" msprop:Generator_RowChangingName="LFS_FM_TYPE_VIEW_DISPLAYRowChanging" msprop:Generator_RowEvArgName="LFS_FM_TYPE_VIEW_DISPLAYRowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_FM_TYPE_VIEW_DISPLAYRowChangeEventHandler" msprop:Generator_TableClassName="LFS_FM_TYPE_VIEW_DISPLAYDataTable" msprop:Generator_TableVarName="tableLFS_FM_TYPE_VIEW_DISPLAY" msprop:Generator_RowDeletingName="LFS_FM_TYPE_VIEW_DISPLAYRowDeleting" msprop:Generator_TablePropName="LFS_FM_TYPE_VIEW_DISPLAY">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FmType" msprop:Generator_UserColumnName="FmType" msprop:Generator_ColumnPropNameInRow="FmType" msprop:Generator_ColumnVarNameInTable="columnFmType" msprop:Generator_ColumnPropNameInTable="FmTypeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="DisplayID" msprop:Generator_UserColumnName="DisplayID" msprop:Generator_ColumnPropNameInRow="DisplayID" msprop:Generator_ColumnVarNameInTable="columnDisplayID" msprop:Generator_ColumnPropNameInTable="DisplayIDColumn" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInTable="NameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Always" msprop:Generator_UserColumnName="Always" msprop:Generator_ColumnPropNameInRow="Always" msprop:Generator_ColumnVarNameInTable="columnAlways" msprop:Generator_ColumnPropNameInTable="AlwaysColumn" type="xs:boolean" />
+              <xs:element name="Column_" msprop:Generator_UserColumnName="Column_" msprop:Generator_ColumnPropNameInRow="Column_" msprop:Generator_ColumnVarNameInTable="columnColumn_" msprop:Generator_ColumnPropNameInTable="Column_Column">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Table_" msprop:Generator_UserColumnName="Table_" msprop:Generator_ColumnPropNameInRow="Table_" msprop:Generator_ColumnVarNameInTable="columnTable_" msprop:Generator_ColumnPropNameInTable="Table_Column">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Selected" msprop:Generator_UserColumnName="Selected" msprop:Generator_ColumnVarNameInTable="columnSelected" msprop:Generator_ColumnPropNameInRow="Selected" msprop:Generator_ColumnPropNameInTable="SelectedColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LFS_FM_TYPE_VIEW_SORT" msprop:Generator_UserTableName="LFS_FM_TYPE_VIEW_SORT" msprop:Generator_RowDeletedName="LFS_FM_TYPE_VIEW_SORTRowDeleted" msprop:Generator_RowChangedName="LFS_FM_TYPE_VIEW_SORTRowChanged" msprop:Generator_RowClassName="LFS_FM_TYPE_VIEW_SORTRow" msprop:Generator_RowChangingName="LFS_FM_TYPE_VIEW_SORTRowChanging" msprop:Generator_RowEvArgName="LFS_FM_TYPE_VIEW_SORTRowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_FM_TYPE_VIEW_SORTRowChangeEventHandler" msprop:Generator_TableClassName="LFS_FM_TYPE_VIEW_SORTDataTable" msprop:Generator_TableVarName="tableLFS_FM_TYPE_VIEW_SORT" msprop:Generator_RowDeletingName="LFS_FM_TYPE_VIEW_SORTRowDeleting" msprop:Generator_TablePropName="LFS_FM_TYPE_VIEW_SORT">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FmType" msprop:Generator_UserColumnName="FmType" msprop:Generator_ColumnPropNameInRow="FmType" msprop:Generator_ColumnVarNameInTable="columnFmType" msprop:Generator_ColumnPropNameInTable="FmTypeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="SortID" msprop:Generator_UserColumnName="SortID" msprop:Generator_ColumnPropNameInRow="SortID" msprop:Generator_ColumnVarNameInTable="columnSortID" msprop:Generator_ColumnPropNameInTable="SortIDColumn" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInTable="NameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InFor" msprop:Generator_UserColumnName="InFor" msprop:Generator_ColumnPropNameInRow="InFor" msprop:Generator_ColumnVarNameInTable="columnInFor" msprop:Generator_ColumnPropNameInTable="InForColumn" type="xs:boolean" />
+              <xs:element name="InView" msprop:Generator_UserColumnName="InView" msprop:Generator_ColumnPropNameInRow="InView" msprop:Generator_ColumnVarNameInTable="columnInView" msprop:Generator_ColumnPropNameInTable="InViewColumn" type="xs:boolean" />
+              <xs:element name="Column_" msprop:Generator_UserColumnName="Column_" msprop:Generator_ColumnPropNameInRow="Column_" msprop:Generator_ColumnVarNameInTable="columnColumn_" msprop:Generator_ColumnPropNameInTable="Column_Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Table_" msprop:Generator_UserColumnName="Table_" msprop:Generator_ColumnPropNameInRow="Table_" msprop:Generator_ColumnVarNameInTable="columnTable_" msprop:Generator_ColumnPropNameInTable="Table_Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Selected" msprop:Generator_UserColumnName="Selected" msprop:Generator_ColumnVarNameInTable="columnSelected" msprop:Generator_ColumnPropNameInRow="Selected" msprop:Generator_ColumnPropNameInTable="SelectedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Order_" msprop:Generator_UserColumnName="Order_" msprop:Generator_ColumnPropNameInRow="Order_" msprop:Generator_ColumnVarNameInTable="columnOrder_" msprop:Generator_ColumnPropNameInTable="Order_Column" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LFS_FM_TYPE_VIEW_CONDITION" msprop:Generator_UserTableName="LFS_FM_TYPE_VIEW_CONDITION" msprop:Generator_RowDeletedName="LFS_FM_TYPE_VIEW_CONDITIONRowDeleted" msprop:Generator_RowChangedName="LFS_FM_TYPE_VIEW_CONDITIONRowChanged" msprop:Generator_RowClassName="LFS_FM_TYPE_VIEW_CONDITIONRow" msprop:Generator_RowChangingName="LFS_FM_TYPE_VIEW_CONDITIONRowChanging" msprop:Generator_RowEvArgName="LFS_FM_TYPE_VIEW_CONDITIONRowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_FM_TYPE_VIEW_CONDITIONRowChangeEventHandler" msprop:Generator_TableClassName="LFS_FM_TYPE_VIEW_CONDITIONDataTable" msprop:Generator_TableVarName="tableLFS_FM_TYPE_VIEW_CONDITION" msprop:Generator_RowDeletingName="LFS_FM_TYPE_VIEW_CONDITIONRowDeleting" msprop:Generator_TablePropName="LFS_FM_TYPE_VIEW_CONDITION">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FmType" msprop:Generator_UserColumnName="FmType" msprop:Generator_ColumnPropNameInRow="FmType" msprop:Generator_ColumnVarNameInTable="columnFmType" msprop:Generator_ColumnPropNameInTable="FmTypeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="ConditionID" msprop:Generator_UserColumnName="ConditionID" msprop:Generator_ColumnPropNameInRow="ConditionID" msprop:Generator_ColumnVarNameInTable="columnConditionID" msprop:Generator_ColumnPropNameInTable="ConditionIDColumn" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInTable="NameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Type" msprop:Generator_UserColumnName="Type" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInTable="TypeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InFor" msprop:Generator_UserColumnName="InFor" msprop:Generator_ColumnPropNameInRow="InFor" msprop:Generator_ColumnVarNameInTable="columnInFor" msprop:Generator_ColumnPropNameInTable="InForColumn" type="xs:boolean" />
+              <xs:element name="InView" msprop:Generator_UserColumnName="InView" msprop:Generator_ColumnPropNameInRow="InView" msprop:Generator_ColumnVarNameInTable="columnInView" msprop:Generator_ColumnPropNameInTable="InViewColumn" type="xs:boolean" />
+              <xs:element name="Column_" msprop:Generator_UserColumnName="Column_" msprop:Generator_ColumnPropNameInRow="Column_" msprop:Generator_ColumnVarNameInTable="columnColumn_" msprop:Generator_ColumnPropNameInTable="Column_Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Table_" msprop:Generator_UserColumnName="Table_" msprop:Generator_ColumnPropNameInRow="Table_" msprop:Generator_ColumnVarNameInTable="columnTable_" msprop:Generator_ColumnPropNameInTable="Table_Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LFS_FM_VIEW" msprop:Generator_UserTableName="LFS_FM_VIEW" msprop:Generator_RowDeletedName="LFS_FM_VIEWRowDeleted" msprop:Generator_RowChangedName="LFS_FM_VIEWRowChanged" msprop:Generator_RowClassName="LFS_FM_VIEWRow" msprop:Generator_RowChangingName="LFS_FM_VIEWRowChanging" msprop:Generator_RowEvArgName="LFS_FM_VIEWRowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_FM_VIEWRowChangeEventHandler" msprop:Generator_TableClassName="LFS_FM_VIEWDataTable" msprop:Generator_TableVarName="tableLFS_FM_VIEW" msprop:Generator_RowDeletingName="LFS_FM_VIEWRowDeleting" msprop:Generator_TablePropName="LFS_FM_VIEW">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ViewID" msprop:Generator_UserColumnName="ViewID" msprop:Generator_ColumnPropNameInRow="ViewID" msprop:Generator_ColumnVarNameInTable="columnViewID" msprop:Generator_ColumnPropNameInTable="ViewIDColumn" type="xs:int" />
+              <xs:element name="LoginID" msprop:Generator_UserColumnName="LoginID" msprop:Generator_ColumnPropNameInRow="LoginID" msprop:Generator_ColumnVarNameInTable="columnLoginID" msprop:Generator_ColumnPropNameInTable="LoginIDColumn" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInTable="NameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Type" msprop:Generator_UserColumnName="Type" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInTable="TypeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Logic" msprop:Generator_UserColumnName="Logic" msprop:Generator_ColumnPropNameInRow="Logic" msprop:Generator_ColumnVarNameInTable="columnLogic" msprop:Generator_ColumnPropNameInTable="LogicColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SqlCommand" msprop:Generator_UserColumnName="SqlCommand" msprop:Generator_ColumnPropNameInRow="SqlCommand" msprop:Generator_ColumnVarNameInTable="columnSqlCommand" msprop:Generator_ColumnPropNameInTable="SqlCommandColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FmType" msprop:Generator_UserColumnName="FmType" msprop:Generator_ColumnPropNameInRow="FmType" msprop:Generator_ColumnVarNameInTable="columnFmType" msprop:Generator_ColumnPropNameInTable="FmTypeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LFS_FM_VIEW_CONDITION" msprop:Generator_UserTableName="LFS_FM_VIEW_CONDITION" msprop:Generator_RowDeletedName="LFS_FM_VIEW_CONDITIONRowDeleted" msprop:Generator_RowChangedName="LFS_FM_VIEW_CONDITIONRowChanged" msprop:Generator_RowClassName="LFS_FM_VIEW_CONDITIONRow" msprop:Generator_RowChangingName="LFS_FM_VIEW_CONDITIONRowChanging" msprop:Generator_RowEvArgName="LFS_FM_VIEW_CONDITIONRowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_FM_VIEW_CONDITIONRowChangeEventHandler" msprop:Generator_TableClassName="LFS_FM_VIEW_CONDITIONDataTable" msprop:Generator_TableVarName="tableLFS_FM_VIEW_CONDITION" msprop:Generator_RowDeletingName="LFS_FM_VIEW_CONDITIONRowDeleting" msprop:Generator_TablePropName="LFS_FM_VIEW_CONDITION">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ViewID" msprop:Generator_UserColumnName="ViewID" msprop:Generator_ColumnPropNameInRow="ViewID" msprop:Generator_ColumnVarNameInTable="columnViewID" msprop:Generator_ColumnPropNameInTable="ViewIDColumn" type="xs:int" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="FmType" msprop:Generator_UserColumnName="FmType" msprop:Generator_ColumnPropNameInRow="FmType" msprop:Generator_ColumnVarNameInTable="columnFmType" msprop:Generator_ColumnPropNameInTable="FmTypeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ConditionID" msprop:Generator_UserColumnName="ConditionID" msprop:Generator_ColumnPropNameInRow="ConditionID" msprop:Generator_ColumnVarNameInTable="columnConditionID" msprop:Generator_ColumnPropNameInTable="ConditionIDColumn" type="xs:int" />
+              <xs:element name="RefID" msprop:Generator_UserColumnName="RefID" msprop:Generator_ColumnPropNameInRow="RefID" msprop:Generator_ColumnVarNameInTable="columnRefID" msprop:Generator_ColumnPropNameInTable="RefIDColumn" type="xs:int" />
+              <xs:element name="Operator" msprop:Generator_UserColumnName="Operator" msprop:Generator_ColumnPropNameInRow="Operator" msprop:Generator_ColumnVarNameInTable="columnOperator" msprop:Generator_ColumnPropNameInTable="OperatorColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ConditionNumber" msprop:Generator_UserColumnName="ConditionNumber" msprop:Generator_ColumnPropNameInRow="ConditionNumber" msprop:Generator_ColumnVarNameInTable="columnConditionNumber" msprop:Generator_ColumnPropNameInTable="ConditionNumberColumn" type="xs:int" />
+              <xs:element name="Value_" msprop:Generator_UserColumnName="Value_" msprop:Generator_ColumnPropNameInRow="Value_" msprop:Generator_ColumnVarNameInTable="columnValue_" msprop:Generator_ColumnPropNameInTable="Value_Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LFS_FM_VIEW_DISPLAY" msprop:Generator_UserTableName="LFS_FM_VIEW_DISPLAY" msprop:Generator_RowDeletedName="LFS_FM_VIEW_DISPLAYRowDeleted" msprop:Generator_RowChangedName="LFS_FM_VIEW_DISPLAYRowChanged" msprop:Generator_RowClassName="LFS_FM_VIEW_DISPLAYRow" msprop:Generator_RowChangingName="LFS_FM_VIEW_DISPLAYRowChanging" msprop:Generator_RowEvArgName="LFS_FM_VIEW_DISPLAYRowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_FM_VIEW_DISPLAYRowChangeEventHandler" msprop:Generator_TableClassName="LFS_FM_VIEW_DISPLAYDataTable" msprop:Generator_TableVarName="tableLFS_FM_VIEW_DISPLAY" msprop:Generator_RowDeletingName="LFS_FM_VIEW_DISPLAYRowDeleting" msprop:Generator_TablePropName="LFS_FM_VIEW_DISPLAY">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ViewID" msprop:Generator_UserColumnName="ViewID" msprop:Generator_ColumnPropNameInRow="ViewID" msprop:Generator_ColumnVarNameInTable="columnViewID" msprop:Generator_ColumnPropNameInTable="ViewIDColumn" type="xs:int" />
+              <xs:element name="FmType" msprop:Generator_UserColumnName="FmType" msprop:Generator_ColumnPropNameInRow="FmType" msprop:Generator_ColumnVarNameInTable="columnFmType" msprop:Generator_ColumnPropNameInTable="FmTypeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="DisplayID" msprop:Generator_UserColumnName="DisplayID" msprop:Generator_ColumnPropNameInRow="DisplayID" msprop:Generator_ColumnVarNameInTable="columnDisplayID" msprop:Generator_ColumnPropNameInTable="DisplayIDColumn" type="xs:int" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LFS_FM_VIEW_SORT" msprop:Generator_UserTableName="LFS_FM_VIEW_SORT" msprop:Generator_RowDeletedName="LFS_FM_VIEW_SORTRowDeleted" msprop:Generator_RowChangedName="LFS_FM_VIEW_SORTRowChanged" msprop:Generator_RowClassName="LFS_FM_VIEW_SORTRow" msprop:Generator_RowChangingName="LFS_FM_VIEW_SORTRowChanging" msprop:Generator_RowEvArgName="LFS_FM_VIEW_SORTRowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_FM_VIEW_SORTRowChangeEventHandler" msprop:Generator_TableClassName="LFS_FM_VIEW_SORTDataTable" msprop:Generator_TableVarName="tableLFS_FM_VIEW_SORT" msprop:Generator_RowDeletingName="LFS_FM_VIEW_SORTRowDeleting" msprop:Generator_TablePropName="LFS_FM_VIEW_SORT">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ViewID" msprop:Generator_UserColumnName="ViewID" msprop:Generator_ColumnPropNameInRow="ViewID" msprop:Generator_ColumnVarNameInTable="columnViewID" msprop:Generator_ColumnPropNameInTable="ViewIDColumn" type="xs:int" />
+              <xs:element name="FmType" msprop:Generator_UserColumnName="FmType" msprop:Generator_ColumnPropNameInRow="FmType" msprop:Generator_ColumnVarNameInTable="columnFmType" msprop:Generator_ColumnPropNameInTable="FmTypeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="SortID" msprop:Generator_UserColumnName="SortID" msprop:Generator_ColumnPropNameInRow="SortID" msprop:Generator_ColumnVarNameInTable="columnSortID" msprop:Generator_ColumnPropNameInTable="SortIDColumn" type="xs:int" />
+              <xs:element name="Order_" msprop:Generator_UserColumnName="Order_" msprop:Generator_ColumnPropNameInRow="Order_" msprop:Generator_ColumnVarNameInTable="columnOrder_" msprop:Generator_ColumnPropNameInTable="Order_Column" type="xs:int" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FmViewConditionTemp" msprop:Generator_UserTableName="FmViewConditionTemp" msprop:Generator_RowDeletedName="FmViewConditionTempRowDeleted" msprop:Generator_RowChangedName="FmViewConditionTempRowChanged" msprop:Generator_RowClassName="FmViewConditionTempRow" msprop:Generator_RowChangingName="FmViewConditionTempRowChanging" msprop:Generator_RowEvArgName="FmViewConditionTempRowChangeEvent" msprop:Generator_RowEvHandlerName="FmViewConditionTempRowChangeEventHandler" msprop:Generator_TableClassName="FmViewConditionTempDataTable" msprop:Generator_TableVarName="tableFmViewConditionTemp" msprop:Generator_RowDeletingName="FmViewConditionTempRowDeleting" msprop:Generator_TablePropName="FmViewConditionTemp">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" />
+              <xs:element name="ConditionID" msprop:Generator_UserColumnName="ConditionID" msprop:Generator_ColumnPropNameInRow="ConditionID" msprop:Generator_ColumnVarNameInTable="columnConditionID" msprop:Generator_ColumnPropNameInTable="ConditionIDColumn" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInTable="NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="RefID" msprop:Generator_UserColumnName="RefID" msprop:Generator_ColumnPropNameInRow="RefID" msprop:Generator_ColumnVarNameInTable="columnRefID" msprop:Generator_ColumnPropNameInTable="RefIDColumn" type="xs:int" />
+              <xs:element name="Operator" msprop:Generator_UserColumnName="Operator" msprop:Generator_ColumnPropNameInRow="Operator" msprop:Generator_ColumnVarNameInTable="columnOperator" msprop:Generator_ColumnPropNameInTable="OperatorColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Sign" msprop:Generator_UserColumnName="Sign" msprop:Generator_ColumnPropNameInRow="Sign" msprop:Generator_ColumnVarNameInTable="columnSign" msprop:Generator_ColumnPropNameInTable="SignColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ConditionNumber" msprop:Generator_UserColumnName="ConditionNumber" msprop:Generator_ColumnPropNameInRow="ConditionNumber" msprop:Generator_ColumnVarNameInTable="columnConditionNumber" msprop:Generator_ColumnPropNameInTable="ConditionNumberColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Value_" msprop:Generator_UserColumnName="Value_" msprop:Generator_ColumnPropNameInRow="Value_" msprop:Generator_ColumnVarNameInTable="columnValue_" msprop:Generator_ColumnPropNameInTable="Value_Column" type="xs:string" minOccurs="0" />
+              <xs:element name="InDatabase" msprop:Generator_UserColumnName="InDatabase" msprop:Generator_ColumnPropNameInRow="InDatabase" msprop:Generator_ColumnVarNameInTable="columnInDatabase" msprop:Generator_ColumnPropNameInTable="InDatabaseColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FmViewDisplayTemp" msprop:Generator_UserTableName="FmViewDisplayTemp" msprop:Generator_RowDeletedName="FmViewDisplayTempRowDeleted" msprop:Generator_RowChangedName="FmViewDisplayTempRowChanged" msprop:Generator_RowClassName="FmViewDisplayTempRow" msprop:Generator_RowChangingName="FmViewDisplayTempRowChanging" msprop:Generator_RowEvArgName="FmViewDisplayTempRowChangeEvent" msprop:Generator_RowEvHandlerName="FmViewDisplayTempRowChangeEventHandler" msprop:Generator_TableClassName="FmViewDisplayTempDataTable" msprop:Generator_TableVarName="tableFmViewDisplayTemp" msprop:Generator_RowDeletingName="FmViewDisplayTempRowDeleting" msprop:Generator_TablePropName="FmViewDisplayTemp">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ViewID" msprop:Generator_UserColumnName="ViewID" msprop:Generator_ColumnPropNameInRow="ViewID" msprop:Generator_ColumnVarNameInTable="columnViewID" msprop:Generator_ColumnPropNameInTable="ViewIDColumn" type="xs:int" />
+              <xs:element name="FmType" msdata:Caption="WorkType" msprop:Generator_UserColumnName="FmType" msprop:Generator_ColumnPropNameInRow="FmType" msprop:Generator_ColumnVarNameInTable="columnFmType" msprop:Generator_ColumnPropNameInTable="FmTypeColumn" type="xs:string" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="DisplayID" msprop:Generator_UserColumnName="DisplayID" msprop:Generator_ColumnPropNameInRow="DisplayID" msprop:Generator_ColumnVarNameInTable="columnDisplayID" msprop:Generator_ColumnPropNameInTable="DisplayIDColumn" type="xs:int" />
+              <xs:element name="Selected" msprop:Generator_UserColumnName="Selected" msprop:Generator_ColumnPropNameInRow="Selected" msprop:Generator_ColumnVarNameInTable="columnSelected" msprop:Generator_ColumnPropNameInTable="SelectedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="InDatabase" msprop:Generator_UserColumnName="InDatabase" msprop:Generator_ColumnPropNameInRow="InDatabase" msprop:Generator_ColumnVarNameInTable="columnInDatabase" msprop:Generator_ColumnPropNameInTable="InDatabaseColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FmViewSortTemp" msprop:Generator_UserTableName="FmViewSortTemp" msprop:Generator_RowDeletedName="FmViewSortTempRowDeleted" msprop:Generator_RowChangedName="FmViewSortTempRowChanged" msprop:Generator_RowClassName="FmViewSortTempRow" msprop:Generator_RowChangingName="FmViewSortTempRowChanging" msprop:Generator_RowEvArgName="FmViewSortTempRowChangeEvent" msprop:Generator_RowEvHandlerName="FmViewSortTempRowChangeEventHandler" msprop:Generator_TableClassName="FmViewSortTempDataTable" msprop:Generator_TableVarName="tableFmViewSortTemp" msprop:Generator_RowDeletingName="FmViewSortTempRowDeleting" msprop:Generator_TablePropName="FmViewSortTemp">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ViewID" msprop:Generator_UserColumnName="ViewID" msprop:Generator_ColumnPropNameInRow="ViewID" msprop:Generator_ColumnVarNameInTable="columnViewID" msprop:Generator_ColumnPropNameInTable="ViewIDColumn" type="xs:int" />
+              <xs:element name="FmType" msdata:Caption="WorkType" msprop:Generator_UserColumnName="FmType" msprop:Generator_ColumnPropNameInRow="FmType" msprop:Generator_ColumnVarNameInTable="columnFmType" msprop:Generator_ColumnPropNameInTable="FmTypeColumn" type="xs:string" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="SortID" msprop:Generator_UserColumnName="SortID" msprop:Generator_ColumnPropNameInRow="SortID" msprop:Generator_ColumnVarNameInTable="columnSortID" msprop:Generator_ColumnPropNameInTable="SortIDColumn" type="xs:int" />
+              <xs:element name="Order_" msprop:Generator_UserColumnName="Order_" msprop:Generator_ColumnPropNameInRow="Order_" msprop:Generator_ColumnVarNameInTable="columnOrder_" msprop:Generator_ColumnPropNameInTable="Order_Column" type="xs:int" minOccurs="0" />
+              <xs:element name="Selected" msprop:Generator_UserColumnName="Selected" msprop:Generator_ColumnPropNameInRow="Selected" msprop:Generator_ColumnVarNameInTable="columnSelected" msprop:Generator_ColumnPropNameInTable="SelectedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="InDatabase" msprop:Generator_UserColumnName="InDatabase" msprop:Generator_ColumnPropNameInRow="InDatabase" msprop:Generator_ColumnVarNameInTable="columnInDatabase" msprop:Generator_ColumnPropNameInTable="InDatabaseColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FmViewConditionNew" msprop:Generator_UserTableName="FmViewConditionNew" msprop:Generator_RowDeletedName="FmViewConditionNewRowDeleted" msprop:Generator_RowChangedName="FmViewConditionNewRowChanged" msprop:Generator_RowClassName="FmViewConditionNewRow" msprop:Generator_RowChangingName="FmViewConditionNewRowChanging" msprop:Generator_RowEvArgName="FmViewConditionNewRowChangeEvent" msprop:Generator_RowEvHandlerName="FmViewConditionNewRowChangeEventHandler" msprop:Generator_TableClassName="FmViewConditionNewDataTable" msprop:Generator_TableVarName="tableFmViewConditionNew" msprop:Generator_RowDeletingName="FmViewConditionNewRowDeleting" msprop:Generator_TablePropName="FmViewConditionNew">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" />
+              <xs:element name="ConditionID" msprop:Generator_UserColumnName="ConditionID" msprop:Generator_ColumnPropNameInRow="ConditionID" msprop:Generator_ColumnVarNameInTable="columnConditionID" msprop:Generator_ColumnPropNameInTable="ConditionIDColumn" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInTable="NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="RefID" msprop:Generator_UserColumnName="RefID" msprop:Generator_ColumnPropNameInRow="RefID" msprop:Generator_ColumnVarNameInTable="columnRefID" msprop:Generator_ColumnPropNameInTable="RefIDColumn" type="xs:int" />
+              <xs:element name="Operator" msprop:Generator_UserColumnName="Operator" msprop:Generator_ColumnPropNameInRow="Operator" msprop:Generator_ColumnVarNameInTable="columnOperator" msprop:Generator_ColumnPropNameInTable="OperatorColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Sign" msprop:Generator_UserColumnName="Sign" msprop:Generator_ColumnPropNameInRow="Sign" msprop:Generator_ColumnVarNameInTable="columnSign" msprop:Generator_ColumnPropNameInTable="SignColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ConditionNumber" msprop:Generator_UserColumnName="ConditionNumber" msprop:Generator_ColumnPropNameInRow="ConditionNumber" msprop:Generator_ColumnVarNameInTable="columnConditionNumber" msprop:Generator_ColumnPropNameInTable="ConditionNumberColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Value_" msprop:Generator_UserColumnName="Value_" msprop:Generator_ColumnPropNameInRow="Value_" msprop:Generator_ColumnVarNameInTable="columnValue_" msprop:Generator_ColumnPropNameInTable="Value_Column" type="xs:string" minOccurs="0" />
+              <xs:element name="InDatabase" msprop:Generator_UserColumnName="InDatabase" msprop:Generator_ColumnPropNameInRow="InDatabase" msprop:Generator_ColumnVarNameInTable="columnInDatabase" msprop:Generator_ColumnPropNameInTable="InDatabaseColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_FM_TYPE_VIEW_DISPLAY" />
+      <xs:field xpath="mstns:FmType" />
+      <xs:field xpath="mstns:COMPANY_ID" />
+      <xs:field xpath="mstns:DisplayID" />
+    </xs:unique>
+    <xs:unique name="LFS_FM_TYPE_VIEW_SORT_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_FM_TYPE_VIEW_SORT" />
+      <xs:field xpath="mstns:FmType" />
+      <xs:field xpath="mstns:COMPANY_ID" />
+      <xs:field xpath="mstns:SortID" />
+    </xs:unique>
+    <xs:unique name="LFS_FM_TYPE_VIEW_CONDITION_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_FM_TYPE_VIEW_CONDITION" />
+      <xs:field xpath="mstns:FmType" />
+      <xs:field xpath="mstns:COMPANY_ID" />
+      <xs:field xpath="mstns:ConditionID" />
+    </xs:unique>
+    <xs:unique name="LFS_FM_VIEW_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_FM_VIEW" />
+      <xs:field xpath="mstns:ViewID" />
+    </xs:unique>
+    <xs:unique name="LFS_FM_VIEW_CONDITION_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_FM_VIEW_CONDITION" />
+      <xs:field xpath="mstns:ViewID" />
+      <xs:field xpath="mstns:COMPANY_ID" />
+      <xs:field xpath="mstns:FmType" />
+      <xs:field xpath="mstns:ConditionID" />
+      <xs:field xpath="mstns:RefID" />
+    </xs:unique>
+    <xs:unique name="LFS_FM_VIEW_DISPLAY_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_FM_VIEW_DISPLAY" />
+      <xs:field xpath="mstns:ViewID" />
+      <xs:field xpath="mstns:FmType" />
+      <xs:field xpath="mstns:COMPANY_ID" />
+      <xs:field xpath="mstns:DisplayID" />
+    </xs:unique>
+    <xs:unique name="LFS_FM_VIEW_SORT_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_FM_VIEW_SORT" />
+      <xs:field xpath="mstns:ViewID" />
+      <xs:field xpath="mstns:FmType" />
+      <xs:field xpath="mstns:COMPANY_ID" />
+      <xs:field xpath="mstns:SortID" />
+    </xs:unique>
+    <xs:unique name="FmViewConditionTemp_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:FmViewConditionTemp" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="FmViewDisplayTemp_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:FmViewDisplayTemp" />
+      <xs:field xpath="mstns:ViewID" />
+      <xs:field xpath="mstns:FmType" />
+      <xs:field xpath="mstns:COMPANY_ID" />
+      <xs:field xpath="mstns:DisplayID" />
+    </xs:unique>
+    <xs:unique name="FmViewSortTemp_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:FmViewSortTemp" />
+      <xs:field xpath="mstns:ViewID" />
+      <xs:field xpath="mstns:FmType" />
+      <xs:field xpath="mstns:COMPANY_ID" />
+      <xs:field xpath="mstns:SortID" />
+    </xs:unique>
+    <xs:unique name="FmViewConditionNew_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:FmViewConditionNew" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_LFS_FM_VIEW_CONDITION_LFS_FM_TYPE_VIEW_CONDITION" msdata:parent="LFS_FM_TYPE_VIEW_CONDITION" msdata:child="LFS_FM_VIEW_CONDITION" msdata:parentkey="FmType COMPANY_ID ConditionID" msdata:childkey="FmType COMPANY_ID ConditionID" msprop:Generator_UserRelationName="FK_LFS_FM_VIEW_CONDITION_LFS_FM_TYPE_VIEW_CONDITION" msprop:Generator_RelationVarName="relationFK_LFS_FM_VIEW_CONDITION_LFS_FM_TYPE_VIEW_CONDITION" msprop:Generator_UserChildTable="LFS_FM_VIEW_CONDITION" msprop:Generator_UserParentTable="LFS_FM_TYPE_VIEW_CONDITION" msprop:Generator_ParentPropName="LFS_FM_TYPE_VIEW_CONDITIONRowParent" msprop:Generator_ChildPropName="GetLFS_FM_VIEW_CONDITIONRows" />
+      <msdata:Relationship name="FK_LFS_FM_VIEW_LFS_FM_VIEW_CONDITION" msdata:parent="LFS_FM_VIEW" msdata:child="LFS_FM_VIEW_CONDITION" msdata:parentkey="ViewID" msdata:childkey="ViewID" msprop:Generator_UserRelationName="FK_LFS_FM_VIEW_LFS_FM_VIEW_CONDITION" msprop:Generator_RelationVarName="relationFK_LFS_FM_VIEW_LFS_FM_VIEW_CONDITION" msprop:Generator_UserChildTable="LFS_FM_VIEW_CONDITION" msprop:Generator_UserParentTable="LFS_FM_VIEW" msprop:Generator_ParentPropName="LFS_FM_VIEWRow" msprop:Generator_ChildPropName="GetLFS_FM_VIEW_CONDITIONRows" />
+      <msdata:Relationship name="FK_LFS_FM_VIEW_DISPLAY_LFS_FM_TYPE_VIEW_DISPLAY" msdata:parent="LFS_FM_TYPE_VIEW_DISPLAY" msdata:child="LFS_FM_VIEW_DISPLAY" msdata:parentkey="FmType COMPANY_ID DisplayID" msdata:childkey="FmType COMPANY_ID DisplayID" msprop:Generator_UserRelationName="FK_LFS_FM_VIEW_DISPLAY_LFS_FM_TYPE_VIEW_DISPLAY" msprop:Generator_RelationVarName="relationFK_LFS_FM_VIEW_DISPLAY_LFS_FM_TYPE_VIEW_DISPLAY" msprop:Generator_UserChildTable="LFS_FM_VIEW_DISPLAY" msprop:Generator_UserParentTable="LFS_FM_TYPE_VIEW_DISPLAY" msprop:Generator_ParentPropName="LFS_FM_TYPE_VIEW_DISPLAYRowParent" msprop:Generator_ChildPropName="GetLFS_FM_VIEW_DISPLAYRows" />
+      <msdata:Relationship name="FK_LFS_FM_VIEW_DISPLAY_LFS_FM_VIEW" msdata:parent="LFS_FM_VIEW" msdata:child="LFS_FM_VIEW_DISPLAY" msdata:parentkey="ViewID" msdata:childkey="ViewID" msprop:Generator_UserRelationName="FK_LFS_FM_VIEW_DISPLAY_LFS_FM_VIEW" msprop:Generator_RelationVarName="relationFK_LFS_FM_VIEW_DISPLAY_LFS_FM_VIEW" msprop:Generator_UserChildTable="LFS_FM_VIEW_DISPLAY" msprop:Generator_UserParentTable="LFS_FM_VIEW" msprop:Generator_ParentPropName="LFS_FM_VIEWRow" msprop:Generator_ChildPropName="GetLFS_FM_VIEW_DISPLAYRows" />
+      <msdata:Relationship name="FK_LFS_FM_VIEW_SORT_LFS_FM_TYPE_VIEW_SORT" msdata:parent="LFS_FM_TYPE_VIEW_SORT" msdata:child="LFS_FM_VIEW_SORT" msdata:parentkey="FmType COMPANY_ID SortID" msdata:childkey="FmType COMPANY_ID SortID" msprop:Generator_UserRelationName="FK_LFS_FM_VIEW_SORT_LFS_FM_TYPE_VIEW_SORT" msprop:Generator_RelationVarName="relationFK_LFS_FM_VIEW_SORT_LFS_FM_TYPE_VIEW_SORT" msprop:Generator_UserChildTable="LFS_FM_VIEW_SORT" msprop:Generator_UserParentTable="LFS_FM_TYPE_VIEW_SORT" msprop:Generator_ParentPropName="LFS_FM_TYPE_VIEW_SORTRowParent" msprop:Generator_ChildPropName="GetLFS_FM_VIEW_SORTRows" />
+      <msdata:Relationship name="FK_LFS_FM_VIEW_SORT_LFS_FM_VIEW" msdata:parent="LFS_FM_VIEW" msdata:child="LFS_FM_VIEW_SORT" msdata:parentkey="ViewID" msdata:childkey="ViewID" msprop:Generator_UserRelationName="FK_LFS_FM_VIEW_SORT_LFS_FM_VIEW" msprop:Generator_RelationVarName="relationFK_LFS_FM_VIEW_SORT_LFS_FM_VIEW" msprop:Generator_UserChildTable="LFS_FM_VIEW_SORT" msprop:Generator_UserParentTable="LFS_FM_VIEW" msprop:Generator_ParentPropName="LFS_FM_VIEWRow" msprop:Generator_ChildPropName="GetLFS_FM_VIEW_SORTRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

@@ -1,0 +1,225 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Codebehind="mForm6.master.cs" Inherits="LiquiForce.LFSLive.WebUI.mForm6" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajax" %>
+<%@ Register Assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" Namespace="System.Web.UI" TagPrefix="asp" %> 
+    
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="HeadMForm6" runat="server">
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+    <meta http-equiv="X-UA-Compatible" content="IE=8"/>
+   <%-- <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="en" />--%>
+    <title>Untitled Page</title>    
+</head>
+<body id="myBody" runat="server" style="margin: 0px" class="MasterPage_Background">
+    <form id="form1" runat="server">
+        <!-- 
+            FRAMEWORK: FORM6
+            LAYOUT:    Centered [950]
+            PARTS:     Header, title [750], toolbar [750], left menu [200], content [750], footer [750]. 
+            EXTRAS:    Script Manager for MS Ajax, Refresh iFrame 
+        -->
+        <table cellspacing="0" cellpadding="0" border="0" style="width: 100%; height: 100%">
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td style="width: 970px; height: 100%">
+                    <!-- Page element: Header -->
+                    <table cellpadding="0" cellspacing="0" border="0" style="width: 100%" class="MasterPage_Header_Background">
+                        <tr>
+                            <td style="width: 300px">
+                                <!-- .. Logo -->
+                                <asp:Image ID="iLogo" runat="server" SkinID="MasterPage_Logo"/>
+                            </td>
+                            <td style="width: 20px">
+                            </td>
+                            <td style="width: 650px">
+                                <table cellpadding="0" cellspacing="0" border="0" style="width: 100%">
+                                    <tr>
+                                        <td style="height: 10px">
+                                            <!-- .. Scrip Manager -->
+                                            <ajax:ToolkitScriptManager ID="ScriptManagerMaster6" runat="server" ScriptMode="Release" EnableHistory="true" 
+                                                EnableSecureHistoryState="false" EnablePageMethods="True" CombineScripts="true" >
+                                                    <Scripts>
+                                                        <asp:ScriptReference Path="./App_Themes/LFS2/scripts/webkit.js" />
+                                                    </Scripts>
+                                            </ajax:ToolkitScriptManager>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="height: 25px">
+                                            <!-- .. User & SignOut -->
+                                            <table cellpadding="0" cellspacing="0" border="0" style="width: 100%">
+                                                <tr>
+                                                    <td style="text-align: right; position: relative; top: -3px;">
+                                                        <asp:Label ID="lblUser" runat="server" Text="danzovino@liquiforce.com" SkinID="MasterPage_UserMail"></asp:Label>
+                                                    </td>
+                                                    <td style="width: 24px; text-align: center">
+                                                        <asp:ImageButton ID="ibtnSignOut" runat="server" SkinID="MasterPage_SignOut" OnClick="ibtnSignOut_Click"/>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="height: 85px">
+                                            <!-- .. Toolbar -->
+                                            <%--<dxm:aspxmenu id="mMaster" runat="server" SkinID="MasterPage_Menu">
+                                            </dxm:aspxmenu>--%>
+                                            
+                                            <telerik:RadMenu ID="mMaster" SkinID="MasterPage_RadMenu" runat="server" >                                                
+                                            </telerik:RadMenu>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="height: 30px">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td style="width: 10px">
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- Page element: Left Menu & Title & Toolbar & Content-->
+                    <table cellspacing="0" cellpadding="0" border="0" style="width: 100%; height: 100%">
+                        <tr>
+                            <td style="width: 200px" valign="top" class="MasterPage_Left_BackGround">
+                                <!-- Page element: Left Menu -->
+                                <table cellpadding="0" cellspacing="0" border="0" style="width: 100%">
+                                    <tr>
+                                        <td  colspan="2" style="height: 10px">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 10px">
+                                        </td>
+                                        <td>
+                                            <!-- .. Left Menu -->
+                                            <asp:ContentPlaceHolder ID="LeftMenuPlaceHolder" runat="server">
+                                            </asp:ContentPlaceHolder>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td style="width: 760px" valign="top" class="MasterPage_Right1_BackGround">
+                                <!-- Page element: Title & Toolbar & Content -->
+                                <table cellspacing="0" cellpadding="0" border="0" style="width: 100%">
+                                    <tr>
+                                        <td style="height: 10px">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <!-- Page element: Title -->
+                                            <table cellspacing="0" cellpadding="0" border="0" style="width: 100%" class="MasterPage_Title_BackGround">
+                                                <tr>
+                                                    <td colspan="2" style="height: 5px">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 10px">
+                                                    </td>
+                                                    <td style="width: 750px">
+                                                        <!-- .. title -->
+                                                        <asp:ContentPlaceHolder ID="TitlePlaceHolder" runat="server">
+                                                        </asp:ContentPlaceHolder>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- Page element: Toolbar -->
+                                            <table cellspacing="0" cellpadding="0" border="0" style="width: 100%" class="MasterPage_Toolbar_BackGround">
+                                                <tr>
+                                                    <td colspan="2" style="height: 5px">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 10px">
+                                                    </td>
+                                                    <td style="width: 750px">
+                                                        <!-- .. toolbar -->
+                                                        <asp:ContentPlaceHolder ID="ToolbarPlaceHolder" runat="server">
+                                                        </asp:ContentPlaceHolder>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" style="height: 10px">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- Page element: Content -->
+                                            <table cellspacing="0" cellpadding="0" border="0" style="width: 100%">
+                                                <tr>
+                                                    <td colspan="2" style="height: 10px">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 10px">
+                                                    </td>
+                                                    <td style="width: 750px; vertical-align: top">
+                                                        <!-- CONTENT -->
+                                                        <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+                                                        </asp:ContentPlaceHolder>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td style="width: 10px" class="MasterPage_Right2_BackGround">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    <!-- Page element : Footer -->
+                    <table cellspacing="0" cellpadding="0" border="0" style="width: 100%" class="MasterPage_Footer_BackGround2">
+                        <tr>
+                            <td style="height: 100px">
+                            </td>
+                        </tr>
+                    </table>
+                    <table cellspacing="0" cellpadding="0" border="0" style="width: 100%; height: 25px" class="MasterPage_Footer_BackGround4">
+                        <tr>
+                            <td style="width: 10px">
+                            </td>
+                            <td>
+                                <asp:Label ID="lblFooter" runat="server" Text="� LiquiForce Services � Powered by Nerds On Site Inc." SkinID="MasterPage_Footer"></asp:Label>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <!-- Page element: Bottom border -->
+                <td colspan="3" style="height: 10px">
+                </td>
+            </tr>
+        </table>
+        <!-- Page element:  refresh iFrame-->
+        <table cellpadding="0" cellspacing="0" border="0" style="width: 100%">
+            <tr>
+                <td>
+                    <iframe id="iframe" frameborder="0" height="0" width="0" src="../../refresh_iframe.aspx">
+                        Your web browser don't accept iFrame tag. Contact with your Administrator. </iframe>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

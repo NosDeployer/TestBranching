@@ -1,0 +1,116 @@
+﻿<%@ Register TagPrefix="asp" Namespace="System.Web.UI.WebControls.WebParts" Assembly="System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" %>
+
+<%-- Menus --%>
+<telerik:RadMenu SkinID="MasterPage_RadMenu" runat="server" EnableEmbeddedSkins="false" Skin="LFS2" BorderStyle="None" Font-Names="Verdana" Font-Size="11px" ForeColor="#3A94CC" BorderColor="#C2C2C4" BackColor="#C2C2C4">
+    <Items>
+        <telerik:RadMenuItem Value="mProjects" Text="" NavigateUrl="./../../projects/projects/projects.aspx?source_page=out">
+        </telerik:RadMenuItem>
+        
+        <telerik:RadMenuItem Value="mEsewers" Text="" PostBack="false">
+            <Items>
+                <telerik:RadMenuItem Value="mRehabAssessment" Text="REHAB ASSESSMENT" NavigateUrl="./../../CWP/Common/select_project.aspx?source_page=rehabAssessment&amp;work_type=Rehab Assessment" />
+                <telerik:RadMenuItem Value="mFullLengthLining" Text="FULL LENGTH LINING" NavigateUrl="./../../CWP/Common/select_project.aspx?source_page=fullLengthLining&amp;work_type=Full Length Lining" />
+                <telerik:RadMenuItem Value="mPointRepairs" Text="POINT REPAIRS" NavigateUrl="./../../CWP/Common/select_project.aspx?source_page=pointRepairs&amp;work_type=Point Repairs" />
+                <telerik:RadMenuItem Value="mJunctionLining" Text="JUNCTION LINING" NavigateUrl="./../../CWP/Common/select_project.aspx?source_page=junctionLining&amp;work_type=Junction Lining" />
+                <telerik:RadMenuItem Value="mManholeRehab" Text="MANHOLE REHABILITATION" NavigateUrl="./../../CWP/Common/select_project.aspx?source_page=manholeRehabilitation&amp;work_type=Manhole Rehabilitation" /> 
+            </Items>
+        </telerik:RadMenuItem>
+        
+        <telerik:RadMenuItem Value="mLabourHours" Text="" NavigateUrl="./../../labourhours/timesheet/timesheet.aspx?source_page=out">
+            <Items>
+                <telerik:RadMenuItem Value="mLabourHours" Text="LABOUR HOURS" NavigateUrl="./../../labourhours/timesheet/timesheet.aspx?source_page=out" />
+                <telerik:RadMenuItem Value="mVacations" Text="VACATIONS" NavigateUrl="./../../labourhours/vacations/vacations_all.aspx?source_page=out" />
+                <telerik:RadMenuItem Text="" PostBack="false">
+                    <ItemTemplate>
+                        <table style="width: 100%" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td style="height: 1px" class="ASPxNavBar1_Separator">
+                                </td>
+                            </tr>
+                        </table>
+                    </ItemTemplate>
+                </telerik:RadMenuItem>
+                <telerik:RadMenuItem Value="mActualCosts" Text="ACTUAL COSTS" NavigateUrl="./../../labourhours/ActualCosts/actual_costs_navigator.aspx?source_page=out" />
+            </Items>
+        </telerik:RadMenuItem>
+        
+        <telerik:RadMenuItem Value="mFleetManagement" Text="" NavigateUrl="./../../FleetManagement/Dashboard/dashboard_login.aspx?source_page=out">
+            <Items>
+                <telerik:RadMenuItem Value="mFMUnits" Text="UNITS" NavigateUrl="./../../FleetManagement/Units/units_navigator.aspx?source_page=out" />
+                <telerik:RadMenuItem Value="mFMServices" Text="SERVICES" NavigateUrl="./../../FleetManagement/Services/services_navigator.aspx?source_page=out" />
+                <telerik:RadMenuItem Text="" PostBack="false">
+                    <ItemTemplate>
+                        <table style="width: 100%" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td style="height: 1px" class="ASPxNavBar1_Separator">
+                                </td>
+                            </tr>
+                        </table>
+                    </ItemTemplate>
+                </telerik:RadMenuItem>
+                <telerik:RadMenuItem Value="mToDoList" Text="TO DO LIST" NavigateUrl="./../../FleetManagement/ToDoList/toDoList_navigator.aspx?source_page=out" />
+                <telerik:RadMenuItem Text="" PostBack="false">
+                    <ItemTemplate>
+                        <table style="width: 100%" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td style="height: 1px" class="ASPxNavBar1_Separator">
+                                </td>
+                            </tr>
+                        </table>
+                    </ItemTemplate>
+                </telerik:RadMenuItem>
+                <telerik:RadMenuItem Value="mCheckListRules" Text="CHECKLIST RULES" NavigateUrl="./../../FleetManagement/ChecklistRules/checklist_rules_navigator.aspx?source_page=out" />                                                                                                                       
+            </Items>
+        </telerik:RadMenuItem>
+        
+        <telerik:RadMenuItem Value="mCwp" Text="" NavigateUrl="./../../default.aspx">
+            <Items>
+                <telerik:RadMenuItem Value="mCwp" Text="CWP" NavigateUrl="./../../default.aspx" />
+                <telerik:RadMenuItem Text="" PostBack="false">
+                    <ItemTemplate>
+                        <table style="width: 100%" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td style="height: 1px" class="ASPxNavBar1_Separator">
+                                </td>
+                            </tr>
+                        </table>
+                    </ItemTemplate>
+                </telerik:RadMenuItem>
+                <telerik:RadMenuItem Value="mClaudes" Text="CLAUDE'S LATERAL DATABASE" NavigateUrl="./../../CWP/Jliner/jliner_main.aspx?source_page=out" />
+            </Items>
+        </telerik:RadMenuItem>
+        
+        <telerik:RadMenuItem Value="mResources" Text="">
+            <Items>
+                <telerik:RadMenuItem Value="mTeamMembers" Text="TEAM MEMBERS" NavigateUrl="./../../Resources/Employees/employees_navigator.aspx?source_page=out" />
+                <telerik:RadMenuItem Value="mMaterials" Text="MATERIALS" NavigateUrl="./../../Resources/Materials/materials_navigator.aspx?source_page=out" />
+                <telerik:RadMenuItem Value="mSubcontractors" Text="SUBCONTRACTORS" NavigateUrl="./../../Resources/Subcontractors/subcontractors_navigator.aspx?source_page=out" />
+                <telerik:RadMenuItem Value="mUnitsOfMeasurement" Text="UNITS OF MEASUREMENT" NavigateUrl="./../../Resources/UnitsOfMeasurement/unitsOfMeasurement_navigator.aspx?source_page=out" />
+            </Items>
+        </telerik:RadMenuItem>
+        
+    </Items>
+</telerik:RadMenu>
+
+
+
+<%-- Images --%>
+<asp:Image SkinID="MasterPage_Logo" runat="server" ImageUrl="images/logo.png" />
+
+
+
+<%-- Labels --%>
+
+<asp:Label SkinID="MasterPage_Footer" runat="server" ForeColor="White" Font-Bold="True" Font-Names="Microsoft Sans Serif" Font-Size="9px"></asp:Label>
+<asp:Label SkinId="MasterPage_UserMail" runat="Server" style="font-weight: bold; font-size: 11px; color: #2f82c7; font-family: 'Microsoft Sans Serif'"></asp:Label>
+<asp:Label SkinId="MasterPage_DialogTitle" runat="server" Font-Bold="True" Font-Names="Microsoft Sans Serif" Font-Size="18px" ForeColor="white"></asp:Label>
+<asp:Label SkinId="MasterPage_ReportTitle" runat="server" Font-Bold="True" Font-Names="Microsoft Sans Serif" Font-Size="18px" ForeColor="white"></asp:Label>
+<asp:Label SkinId="MasterPage_ReportNoRecords" runat="server" Font-Bold="True" Font-Names="Microsoft Sans Serif" Font-Size="14px" ForeColor="silver"></asp:Label>
+<asp:Label SkinId="MasterPage_WizardTitle" runat="server" Font-Bold="True" Font-Names="Microsoft Sans Serif" Font-Size="18px" ForeColor="white"></asp:Label>
+<asp:Label SkinId="MasterPage_WizardInstruction" runat="server" Font-Bold="True" Font-Names="Microsoft Sans Serif" Font-Size="14px" ForeColor="white"></asp:Label>
+
+
+
+<%-- Link Buttons --%>
+
+<asp:LinkButton SkinId="MasterPage_LogOut" runat="server" style="font-weight: bold; font-size: 11px; color: #f7941c; font-family: 'Microsoft Sans Serif'" Font-Underline="False"></asp:LinkButton>

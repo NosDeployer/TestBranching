@@ -1,0 +1,132 @@
+/* LFS Live CSS Document */
+
+
+/* MASTER PAGE: mForm1, mForm2, mForm3 */
+
+.* 
+{
+}
+
+.SignOut
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 11px;
+	color:#f7941c;
+	font-weight:bolder;
+	text-decoration:none;
+}
+
+.SignOut:hover
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 11px;
+	color:#2f82c7;
+	font-weight:bolder;
+}
+
+
+
+
+
+/* TOOLBARS */
+
+.ToolBar
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 11px;
+	color:#ffffff;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.ToolBar:hover
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 11px;
+	color:#f7941c;
+	font-weight:bold;
+}
+
+.ToolBarHighlighted
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 11px;
+	color:#f7941c;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.ToolBarHighlighted:hover
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 11px;
+	color:#ffffff;
+	font-weight:bold;
+}
+
+
+
+
+
+/* NAVBARS */
+.ASPxNavBar_Label
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #2f82c7;
+	background-color: #c8dbed;
+}
+
+.ASPxNavBar_DropDownList
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #2f82c7;
+}
+
+.ASPxNavBar_TextBoxReadOnly
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	color: Gray;
+}
+
+.ASPxNavBar_LinkButton
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #2f82c7;
+	background-color: #c8dbed;
+}
+
+.ASPxNavBar_LinkButton:hover
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 11px;
+	font-weight: bold;
+	color: #f7941c;
+	background-color: #c8dbed;
+}
+
+
+
+
+
+/* GRIDS */
+
+.ASPxGRID_Item
+{
+	font-weight: bold;
+	font-size: 10px;
+	color: #2f82c7;
+	font-family: "Microsoft Sans Serif";
+	background-color: #e7e9eb;
+}

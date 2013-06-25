@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FlResinsAddTDS" targetNamespace="http://tempuri.org/FlResinsAddTDS.xsd" xmlns:mstns="http://tempuri.org/FlResinsAddTDS.xsd" xmlns="http://tempuri.org/FlResinsAddTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LFSDB9ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LFSDB9ConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.CWP.Properties.Settings.GlobalReference.Default.LFSDB9ConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FlResinsAddTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="FlResinsAddTDS" msprop:Generator_DataSetName="FlResinsAddTDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FlResinsAdd" msprop:Generator_UserTableName="FlResinsAdd" msprop:Generator_RowDeletedName="FlResinsAddRowDeleted" msprop:Generator_RowChangedName="FlResinsAddRowChanged" msprop:Generator_RowClassName="FlResinsAddRow" msprop:Generator_RowChangingName="FlResinsAddRowChanging" msprop:Generator_RowEvArgName="FlResinsAddRowChangeEvent" msprop:Generator_RowEvHandlerName="FlResinsAddRowChangeEventHandler" msprop:Generator_TableClassName="FlResinsAddDataTable" msprop:Generator_TableVarName="tableFlResinsAdd" msprop:Generator_RowDeletingName="FlResinsAddRowDeleting" msprop:Generator_TablePropName="FlResinsAdd">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ResinID" msprop:Generator_UserColumnName="ResinID" msprop:Generator_ColumnVarNameInTable="columnResinID" msprop:Generator_ColumnPropNameInRow="ResinID" msprop:Generator_ColumnPropNameInTable="ResinIDColumn" type="xs:int" />
+              <xs:element name="ResinMake" msprop:Generator_UserColumnName="ResinMake" msprop:Generator_ColumnVarNameInTable="columnResinMake" msprop:Generator_ColumnPropNameInRow="ResinMake" msprop:Generator_ColumnPropNameInTable="ResinMakeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ResinType" msprop:Generator_UserColumnName="ResinType" msprop:Generator_ColumnVarNameInTable="columnResinType" msprop:Generator_ColumnPropNameInRow="ResinType" msprop:Generator_ColumnPropNameInTable="ResinTypeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ResinNumber" msprop:Generator_UserColumnName="ResinNumber" msprop:Generator_ColumnVarNameInTable="columnResinNumber" msprop:Generator_ColumnPropNameInRow="ResinNumber" msprop:Generator_ColumnPropNameInTable="ResinNumberColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LbUsg" msprop:Generator_UserColumnName="LbUsg" msprop:Generator_ColumnVarNameInTable="columnLbUsg" msprop:Generator_ColumnPropNameInRow="LbUsg" msprop:Generator_ColumnPropNameInTable="LbUsgColumn" type="xs:decimal" />
+              <xs:element name="LbDrums" msprop:Generator_UserColumnName="LbDrums" msprop:Generator_ColumnVarNameInTable="columnLbDrums" msprop:Generator_ColumnPropNameInRow="LbDrums" msprop:Generator_ColumnPropNameInTable="LbDrumsColumn" type="xs:int" />
+              <xs:element name="ActiveResin" msprop:Generator_UserColumnName="ActiveResin" msprop:Generator_ColumnVarNameInTable="columnActiveResin" msprop:Generator_ColumnPropNameInRow="ActiveResin" msprop:Generator_ColumnPropNameInTable="ActiveResinColumn" type="xs:decimal" />
+              <xs:element name="ApplyCatalystTo" msprop:Generator_UserColumnName="ApplyCatalystTo" msprop:Generator_ColumnVarNameInTable="columnApplyCatalystTo" msprop:Generator_ColumnPropNameInRow="ApplyCatalystTo" msprop:Generator_ColumnPropNameInTable="ApplyCatalystToColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Filter" msprop:Generator_UserColumnName="Filter" msprop:Generator_ColumnVarNameInTable="columnFilter" msprop:Generator_ColumnPropNameInRow="Filter" msprop:Generator_ColumnPropNameInTable="FilterColumn" type="xs:decimal" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="InDatabase" msprop:Generator_UserColumnName="InDatabase" msprop:Generator_ColumnPropNameInRow="InDatabase" msprop:Generator_ColumnVarNameInTable="columnInDatabase" msprop:Generator_ColumnPropNameInTable="InDatabaseColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:FlResinsAdd" />
+      <xs:field xpath="mstns:ResinID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

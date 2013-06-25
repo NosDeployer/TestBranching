@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ProjectSectionsNavigatorTDS" targetNamespace="http://tempuri.org/ProjectSectionsNavigatorTDS.xsd" xmlns:mstns="http://tempuri.org/ProjectSectionsNavigatorTDS.xsd" xmlns="http://tempuri.org/ProjectSectionsNavigatorTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LFSDB9ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="LFSDB9ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.Projects.Properties.Settings.GlobalReference.Default.LFSDB9ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ProjectSectionsNavigatorTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ProjectSectionsNavigatorTDS" msprop:Generator_DataSetName="ProjectSectionsNavigatorTDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LFS_PROJECT_SECTIONS_NAVIGATOR" msprop:Generator_UserTableName="LFS_PROJECT_SECTIONS_NAVIGATOR" msprop:Generator_RowDeletedName="LFS_PROJECT_SECTIONS_NAVIGATORRowDeleted" msprop:Generator_RowChangedName="LFS_PROJECT_SECTIONS_NAVIGATORRowChanged" msprop:Generator_RowClassName="LFS_PROJECT_SECTIONS_NAVIGATORRow" msprop:Generator_RowChangingName="LFS_PROJECT_SECTIONS_NAVIGATORRowChanging" msprop:Generator_RowEvArgName="LFS_PROJECT_SECTIONS_NAVIGATORRowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_PROJECT_SECTIONS_NAVIGATORRowChangeEventHandler" msprop:Generator_TableClassName="LFS_PROJECT_SECTIONS_NAVIGATORDataTable" msprop:Generator_TableVarName="tableLFS_PROJECT_SECTIONS_NAVIGATOR" msprop:Generator_RowDeletingName="LFS_PROJECT_SECTIONS_NAVIGATORRowDeleting" msprop:Generator_TablePropName="LFS_PROJECT_SECTIONS_NAVIGATOR">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AssetID" msprop:Generator_UserColumnName="AssetID" msprop:Generator_ColumnVarNameInTable="columnAssetID" msprop:Generator_ColumnPropNameInRow="AssetID" msprop:Generator_ColumnPropNameInTable="AssetIDColumn" type="xs:int" />
+              <xs:element name="SectionID" msprop:Generator_UserColumnName="SectionID" msprop:Generator_ColumnVarNameInTable="columnSectionID" msprop:Generator_ColumnPropNameInRow="SectionID" msprop:Generator_ColumnPropNameInTable="SectionIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Street" msprop:Generator_UserColumnName="Street" msprop:Generator_ColumnVarNameInTable="columnStreet" msprop:Generator_ColumnPropNameInRow="Street" msprop:Generator_ColumnPropNameInTable="StreetColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="USMH" msprop:Generator_UserColumnName="USMH" msprop:Generator_ColumnVarNameInTable="columnUSMH" msprop:Generator_ColumnPropNameInRow="USMH" msprop:Generator_ColumnPropNameInTable="USMHColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DSMH" msprop:Generator_UserColumnName="DSMH" msprop:Generator_ColumnVarNameInTable="columnDSMH" msprop:Generator_ColumnPropNameInRow="DSMH" msprop:Generator_ColumnPropNameInTable="DSMHColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Laterals" msprop:Generator_UserColumnName="Laterals" msprop:Generator_ColumnVarNameInTable="columnLaterals" msprop:Generator_ColumnPropNameInRow="Laterals" msprop:Generator_ColumnPropNameInTable="LateralsColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LiveLaterals" msprop:Generator_UserColumnName="LiveLaterals" msprop:Generator_ColumnVarNameInTable="columnLiveLaterals" msprop:Generator_ColumnPropNameInRow="LiveLaterals" msprop:Generator_ColumnPropNameInTable="LiveLateralsColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LateralsDescription" msprop:Generator_UserColumnName="LateralsDescription" msprop:Generator_ColumnVarNameInTable="columnLateralsDescription" msprop:Generator_ColumnPropNameInRow="LateralsDescription" msprop:Generator_ColumnPropNameInTable="LateralsDescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="USMHDescription" msprop:Generator_UserColumnName="USMHDescription" msprop:Generator_ColumnVarNameInTable="columnUSMHDescription" msprop:Generator_ColumnPropNameInRow="USMHDescription" msprop:Generator_ColumnPropNameInTable="USMHDescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DSMHDescription" msprop:Generator_UserColumnName="DSMHDescription" msprop:Generator_ColumnVarNameInTable="columnDSMHDescription" msprop:Generator_ColumnPropNameInRow="DSMHDescription" msprop:Generator_ColumnPropNameInTable="DSMHDescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="RehabAssessment" msprop:Generator_UserColumnName="RehabAssessment" msprop:Generator_ColumnVarNameInTable="columnRehabAssessment" msprop:Generator_ColumnPropNameInRow="RehabAssessment" msprop:Generator_ColumnPropNameInTable="RehabAssessmentColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="FullLengthLining" msprop:Generator_UserColumnName="FullLengthLining" msprop:Generator_ColumnVarNameInTable="columnFullLengthLining" msprop:Generator_ColumnPropNameInRow="FullLengthLining" msprop:Generator_ColumnPropNameInTable="FullLengthLiningColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="JunctionLining" msprop:Generator_UserColumnName="JunctionLining" msprop:Generator_ColumnVarNameInTable="columnJunctionLining" msprop:Generator_ColumnPropNameInRow="JunctionLining" msprop:Generator_ColumnPropNameInTable="JunctionLiningColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="WorkID" msprop:Generator_UserColumnName="WorkID" msprop:Generator_ColumnPropNameInRow="WorkID" msprop:Generator_ColumnVarNameInTable="columnWorkID" msprop:Generator_ColumnPropNameInTable="WorkIDColumn" type="xs:int" />
+              <xs:element name="WorksDescription" msprop:Generator_UserColumnName="WorksDescription" msprop:Generator_ColumnVarNameInTable="columnWorksDescription" msprop:Generator_ColumnPropNameInRow="WorksDescription" msprop:Generator_ColumnPropNameInTable="WorksDescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Selected" msprop:Generator_UserColumnName="Selected" msprop:Generator_ColumnPropNameInRow="Selected" msprop:Generator_ColumnVarNameInTable="columnSelected" msprop:Generator_ColumnPropNameInTable="SelectedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="FlowOrderID" msprop:Generator_UserColumnName="FlowOrderID" msprop:Generator_ColumnVarNameInTable="columnFlowOrderID" msprop:Generator_ColumnPropNameInRow="FlowOrderID" msprop:Generator_ColumnPropNameInTable="FlowOrderIDColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ProjectSectionNavigatorLaterals" msprop:Generator_UserTableName="ProjectSectionNavigatorLaterals" msprop:Generator_RowDeletedName="ProjectSectionNavigatorLateralsRowDeleted" msprop:Generator_RowChangedName="ProjectSectionNavigatorLateralsRowChanged" msprop:Generator_RowClassName="ProjectSectionNavigatorLateralsRow" msprop:Generator_RowChangingName="ProjectSectionNavigatorLateralsRowChanging" msprop:Generator_RowEvArgName="ProjectSectionNavigatorLateralsRowChangeEvent" msprop:Generator_RowEvHandlerName="ProjectSectionNavigatorLateralsRowChangeEventHandler" msprop:Generator_TableClassName="ProjectSectionNavigatorLateralsDataTable" msprop:Generator_TableVarName="tableProjectSectionNavigatorLaterals" msprop:Generator_RowDeletingName="ProjectSectionNavigatorLateralsRowDeleting" msprop:Generator_TablePropName="ProjectSectionNavigatorLaterals">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AssetID" msprop:Generator_UserColumnName="AssetID" msprop:Generator_ColumnVarNameInTable="columnAssetID" msprop:Generator_ColumnPropNameInRow="AssetID" msprop:Generator_ColumnPropNameInTable="AssetIDColumn" type="xs:int" />
+              <xs:element name="Address" msprop:Generator_UserColumnName="Address" msprop:Generator_ColumnVarNameInTable="columnAddress" msprop:Generator_ColumnPropNameInRow="Address" msprop:Generator_ColumnPropNameInTable="AddressColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LateralID" msprop:Generator_UserColumnName="LateralID" msprop:Generator_ColumnVarNameInTable="columnLateralID" msprop:Generator_ColumnPropNameInRow="LateralID" msprop:Generator_ColumnPropNameInTable="LateralIDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="State" msprop:Generator_UserColumnName="State" msprop:Generator_ColumnVarNameInTable="columnState" msprop:Generator_ColumnPropNameInRow="State" msprop:Generator_ColumnPropNameInTable="StateColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InProject" msprop:Generator_UserColumnName="InProject" msprop:Generator_ColumnVarNameInTable="columnInProject" msprop:Generator_ColumnPropNameInRow="InProject" msprop:Generator_ColumnPropNameInTable="InProjectColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_PROJECT_SECTIONS_NAVIGATOR" />
+      <xs:field xpath="mstns:AssetID" />
+    </xs:unique>
+    <xs:unique name="ProjectSectionNavigatorLaterals_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ProjectSectionNavigatorLaterals" />
+      <xs:field xpath="mstns:AssetID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

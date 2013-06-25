@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TotalValueWorkAheadReportTDS" targetNamespace="http://tempuri.org/TotalValueWorkAheadReportTDS.xsd" xmlns:mstns="http://tempuri.org/TotalValueWorkAheadReportTDS.xsd" xmlns="http://tempuri.org/TotalValueWorkAheadReportTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LFSDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="LFSDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.Projects.Properties.Settings.GlobalReference.Default.LFSDBConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TotalValueWorkAheadReportTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="TotalValueWorkAheadReportTDS" msprop:Generator_DataSetName="TotalValueWorkAheadReportTDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TotalValueWorkAheadReport" msprop:Generator_UserTableName="TotalValueWorkAheadReport" msprop:Generator_RowDeletedName="TotalValueWorkAheadReportRowDeleted" msprop:Generator_RowChangedName="TotalValueWorkAheadReportRowChanged" msprop:Generator_RowClassName="TotalValueWorkAheadReportRow" msprop:Generator_RowChangingName="TotalValueWorkAheadReportRowChanging" msprop:Generator_RowEvArgName="TotalValueWorkAheadReportRowChangeEvent" msprop:Generator_RowEvHandlerName="TotalValueWorkAheadReportRowChangeEventHandler" msprop:Generator_TableClassName="TotalValueWorkAheadReportDataTable" msprop:Generator_TableVarName="tableTotalValueWorkAheadReport" msprop:Generator_RowDeletingName="TotalValueWorkAheadReportRowDeleting" msprop:Generator_TablePropName="TotalValueWorkAheadReport">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProjectID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="ProjectID" msprop:Generator_ColumnVarNameInTable="columnProjectID" msprop:Generator_ColumnPropNameInRow="ProjectID" msprop:Generator_ColumnPropNameInTable="ProjectIDColumn" type="xs:int" />
+              <xs:element name="ProjectState" msprop:Generator_UserColumnName="ProjectState" msprop:Generator_ColumnVarNameInTable="columnProjectState" msprop:Generator_ColumnPropNameInRow="ProjectState" msprop:Generator_ColumnPropNameInTable="ProjectStateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CountryID" msprop:Generator_UserColumnName="CountryID" msprop:Generator_ColumnVarNameInTable="columnCountryID" msprop:Generator_ColumnPropNameInRow="CountryID" msprop:Generator_ColumnPropNameInTable="CountryIDColumn" type="xs:int" />
+              <xs:element name="ProjectNumber" msprop:Generator_UserColumnName="ProjectNumber" msprop:Generator_ColumnVarNameInTable="columnProjectNumber" msprop:Generator_ColumnPropNameInRow="ProjectNumber" msprop:Generator_ColumnPropNameInTable="ProjectNumberColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ClientID" msprop:Generator_UserColumnName="ClientID" msprop:Generator_ColumnVarNameInTable="columnClientID" msprop:Generator_ColumnPropNameInRow="ClientID" msprop:Generator_ColumnPropNameInTable="ClientIDColumn" type="xs:int" />
+              <xs:element name="ClientName" msprop:Generator_UserColumnName="ClientName" msprop:Generator_ColumnVarNameInTable="columnClientName" msprop:Generator_ColumnPropNameInRow="ClientName" msprop:Generator_ColumnPropNameInTable="ClientNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StartDate" msprop:Generator_UserColumnName="StartDate" msprop:Generator_ColumnVarNameInTable="columnStartDate" msprop:Generator_ColumnPropNameInRow="StartDate" msprop:Generator_ColumnPropNameInTable="StartDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EndDate" msprop:Generator_UserColumnName="EndDate" msprop:Generator_ColumnVarNameInTable="columnEndDate" msprop:Generator_ColumnPropNameInRow="EndDate" msprop:Generator_ColumnPropNameInTable="EndDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SaleGettingJob" msprop:Generator_UserColumnName="SaleGettingJob" msprop:Generator_ColumnVarNameInTable="columnSaleGettingJob" msprop:Generator_ColumnPropNameInRow="SaleGettingJob" msprop:Generator_ColumnPropNameInTable="SaleGettingJobColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="BillMoney" msprop:Generator_UserColumnName="BillMoney" msprop:Generator_ColumnVarNameInTable="columnBillMoney" msprop:Generator_ColumnPropNameInRow="BillMoney" msprop:Generator_ColumnPropNameInTable="BillMoneyColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BillPrice" msprop:Generator_UserColumnName="BillPrice" msprop:Generator_ColumnVarNameInTable="columnBillPrice" msprop:Generator_ColumnPropNameInRow="BillPrice" msprop:Generator_ColumnPropNameInTable="BillPriceColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Total" msprop:Generator_UserColumnName="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

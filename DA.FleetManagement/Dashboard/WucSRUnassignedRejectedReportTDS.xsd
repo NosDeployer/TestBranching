@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="WucSRUnassignedRejectedReportTDS" targetNamespace="http://tempuri.org/WucSRUnassignedRejectedReportTDS.xsd" xmlns:mstns="http://tempuri.org/WucSRUnassignedRejectedReportTDS.xsd" xmlns="http://tempuri.org/WucSRUnassignedRejectedReportTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="WucSRUnassignedRejectedReportTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="WucSRUnassignedRejectedReportTDS" msprop:Generator_DataSetName="WucSRUnassignedRejectedReportTDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RejectedServiceRequests" msprop:Generator_UserTableName="RejectedServiceRequests" msprop:Generator_RowDeletedName="RejectedServiceRequestsRowDeleted" msprop:Generator_RowChangedName="RejectedServiceRequestsRowChanged" msprop:Generator_RowClassName="RejectedServiceRequestsRow" msprop:Generator_RowChangingName="RejectedServiceRequestsRowChanging" msprop:Generator_RowEvArgName="RejectedServiceRequestsRowChangeEvent" msprop:Generator_RowEvHandlerName="RejectedServiceRequestsRowChangeEventHandler" msprop:Generator_TableClassName="RejectedServiceRequestsDataTable" msprop:Generator_TableVarName="tableRejectedServiceRequests" msprop:Generator_RowDeletingName="RejectedServiceRequestsRowDeleting" msprop:Generator_TablePropName="RejectedServiceRequests">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ServiceID" msprop:Generator_UserColumnName="ServiceID" msprop:Generator_ColumnPropNameInRow="ServiceID" msprop:Generator_ColumnVarNameInTable="columnServiceID" msprop:Generator_ColumnPropNameInTable="ServiceIDColumn" type="xs:int" />
+              <xs:element name="Number" msprop:Generator_UserColumnName="Number" msprop:Generator_ColumnPropNameInRow="Number" msprop:Generator_ColumnVarNameInTable="columnNumber" msprop:Generator_ColumnPropNameInTable="NumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MTO" msprop:Generator_UserColumnName="MTO" msprop:Generator_ColumnPropNameInRow="MTO" msprop:Generator_ColumnVarNameInTable="columnMTO" msprop:Generator_ColumnPropNameInTable="MTOColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ServiceDescription" msprop:Generator_UserColumnName="ServiceDescription" msprop:Generator_ColumnPropNameInRow="ServiceDescription" msprop:Generator_ColumnVarNameInTable="columnServiceDescription" msprop:Generator_ColumnPropNameInTable="ServiceDescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="UnitDescription" msprop:Generator_UserColumnName="UnitDescription" msprop:Generator_ColumnPropNameInRow="UnitDescription" msprop:Generator_ColumnVarNameInTable="columnUnitDescription" msprop:Generator_ColumnPropNameInTable="UnitDescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="AssignDateTime" msprop:Generator_UserColumnName="AssignDateTime" msprop:Generator_ColumnPropNameInRow="AssignDateTime" msprop:Generator_ColumnVarNameInTable="columnAssignDateTime" msprop:Generator_ColumnPropNameInTable="AssignDateTimeColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="AssignDeadlineDate" msprop:Generator_UserColumnName="AssignDeadlineDate" msprop:Generator_ColumnPropNameInRow="AssignDeadlineDate" msprop:Generator_ColumnVarNameInTable="columnAssignDeadlineDate" msprop:Generator_ColumnPropNameInTable="AssignDeadlineDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="AssignedTeamMember" msprop:Generator_UserColumnName="AssignedTeamMember" msprop:Generator_ColumnPropNameInRow="AssignedTeamMember" msprop:Generator_ColumnVarNameInTable="columnAssignedTeamMember" msprop:Generator_ColumnPropNameInTable="AssignedTeamMemberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="AssignThirdPartyVendor" msprop:Generator_UserColumnName="AssignThirdPartyVendor" msprop:Generator_ColumnPropNameInRow="AssignThirdPartyVendor" msprop:Generator_ColumnVarNameInTable="columnAssignThirdPartyVendor" msprop:Generator_ColumnPropNameInTable="AssignThirdPartyVendorColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="RejectDateTime" msprop:Generator_UserColumnName="RejectDateTime" msprop:Generator_ColumnPropNameInRow="RejectDateTime" msprop:Generator_ColumnVarNameInTable="columnRejectDateTime" msprop:Generator_ColumnPropNameInTable="RejectDateTimeColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RejectReason" msprop:Generator_UserColumnName="RejectReason" msprop:Generator_ColumnPropNameInRow="RejectReason" msprop:Generator_ColumnVarNameInTable="columnRejectReason" msprop:Generator_ColumnPropNameInTable="RejectReasonColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:RejectedServiceRequests" />
+      <xs:field xpath="mstns:ServiceID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

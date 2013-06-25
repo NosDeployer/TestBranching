@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LinningPlanTDS" targetNamespace="http://tempuri.org/LinningPlanTDS.xsd" xmlns:mstns="http://tempuri.org/LinningPlanTDS.xsd" xmlns="http://tempuri.org/LinningPlanTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LFSDB_productionConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="LFSDB_productionConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.CWP.Properties.Settings.GlobalReference.Default.LFSDB_productionConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LinningPlanTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="LinningPlanTDS" msprop:Generator_DataSetName="LinningPlanTDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LinningPlan" msprop:Generator_UserTableName="LinningPlan" msprop:Generator_RowDeletedName="LinningPlanRowDeleted" msprop:Generator_RowChangedName="LinningPlanRowChanged" msprop:Generator_RowClassName="LinningPlanRow" msprop:Generator_RowChangingName="LinningPlanRowChanging" msprop:Generator_RowEvArgName="LinningPlanRowChangeEvent" msprop:Generator_RowEvHandlerName="LinningPlanRowChangeEventHandler" msprop:Generator_TableClassName="LinningPlanDataTable" msprop:Generator_TableVarName="tableLinningPlan" msprop:Generator_RowDeletingName="LinningPlanRowDeleting" msprop:Generator_TablePropName="LinningPlan">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:string" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="RecordID" msprop:Generator_UserColumnName="RecordID" msprop:Generator_ColumnPropNameInRow="RecordID" msprop:Generator_ColumnVarNameInTable="columnRecordID" msprop:Generator_ColumnPropNameInTable="RecordIDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Street" msprop:Generator_UserColumnName="Street" msprop:Generator_ColumnPropNameInRow="Street" msprop:Generator_ColumnVarNameInTable="columnStreet" msprop:Generator_ColumnPropNameInTable="StreetColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ConfirmedSize" msprop:Generator_UserColumnName="ConfirmedSize" msprop:Generator_ColumnPropNameInRow="ConfirmedSize" msprop:Generator_ColumnVarNameInTable="columnConfirmedSize" msprop:Generator_ColumnPropNameInTable="ConfirmedSizeColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="BypassRequired" msprop:Generator_UserColumnName="BypassRequired" msprop:Generator_ColumnPropNameInRow="BypassRequired" msprop:Generator_ColumnVarNameInTable="columnBypassRequired" msprop:Generator_ColumnPropNameInTable="BypassRequiredColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="DegreeOfTrafficControl" msprop:Generator_UserColumnName="DegreeOfTrafficControl" msprop:Generator_ColumnPropNameInRow="DegreeOfTrafficControl" msprop:Generator_ColumnVarNameInTable="columnDegreeOfTrafficControl" msprop:Generator_ColumnPropNameInTable="DegreeOfTrafficControlColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NumLats" msprop:Generator_UserColumnName="NumLats" msprop:Generator_ColumnPropNameInRow="NumLats" msprop:Generator_ColumnVarNameInTable="columnNumLats" msprop:Generator_ColumnPropNameInTable="NumLatsColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="NotLinedYet" msprop:Generator_UserColumnName="NotLinedYet" msprop:Generator_ColumnPropNameInRow="NotLinedYet" msprop:Generator_ColumnVarNameInTable="columnNotLinedYet" msprop:Generator_ColumnPropNameInTable="NotLinedYetColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ActualLength" msprop:Generator_UserColumnName="ActualLength" msprop:Generator_ColumnPropNameInRow="ActualLength" msprop:Generator_ColumnVarNameInTable="columnActualLength" msprop:Generator_ColumnPropNameInTable="ActualLengthColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USMH" msprop:Generator_UserColumnName="USMH" msprop:Generator_ColumnPropNameInRow="USMH" msprop:Generator_ColumnVarNameInTable="columnUSMH" msprop:Generator_ColumnPropNameInTable="USMHColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DSMH" msprop:Generator_UserColumnName="DSMH" msprop:Generator_ColumnPropNameInRow="DSMH" msprop:Generator_ColumnVarNameInTable="columnDSMH" msprop:Generator_ColumnPropNameInTable="DSMHColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AllMeasured" msprop:Generator_UserColumnName="AllMeasured" msprop:Generator_ColumnPropNameInRow="AllMeasured" msprop:Generator_ColumnVarNameInTable="columnAllMeasured" msprop:Generator_ColumnPropNameInTable="AllMeasuredColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Date_" msprop:Generator_UserColumnName="Date_" msprop:Generator_ColumnPropNameInRow="Date_" msprop:Generator_ColumnVarNameInTable="columnDate_" msprop:Generator_ColumnPropNameInTable="Date_Column" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Flusher" msprop:Generator_UserColumnName="Flusher" msprop:Generator_ColumnPropNameInRow="Flusher" msprop:Generator_ColumnVarNameInTable="columnFlusher" msprop:Generator_ColumnPropNameInTable="FlusherColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FlusherMN" msprop:Generator_UserColumnName="FlusherMN" msprop:Generator_ColumnPropNameInRow="FlusherMN" msprop:Generator_ColumnVarNameInTable="columnFlusherMN" msprop:Generator_ColumnPropNameInTable="FlusherMNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Liner" msprop:Generator_UserColumnName="Liner" msprop:Generator_ColumnPropNameInRow="Liner" msprop:Generator_ColumnVarNameInTable="columnLiner" msprop:Generator_ColumnPropNameInTable="LinerColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LinerMN" msprop:Generator_UserColumnName="LinerMN" msprop:Generator_ColumnPropNameInRow="LinerMN" msprop:Generator_ColumnVarNameInTable="columnLinerMN" msprop:Generator_ColumnPropNameInTable="LinerMNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Rotator" msprop:Generator_UserColumnName="Rotator" msprop:Generator_ColumnPropNameInRow="Rotator" msprop:Generator_ColumnVarNameInTable="columnRotator" msprop:Generator_ColumnPropNameInTable="RotatorColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="RotatorMN" msprop:Generator_UserColumnName="RotatorMN" msprop:Generator_ColumnPropNameInRow="RotatorMN" msprop:Generator_ColumnVarNameInTable="columnRotatorMN" msprop:Generator_ColumnPropNameInTable="RotatorMNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Compressor" msprop:Generator_UserColumnName="Compressor" msprop:Generator_ColumnPropNameInRow="Compressor" msprop:Generator_ColumnVarNameInTable="columnCompressor" msprop:Generator_ColumnPropNameInTable="CompressorColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CompressorMN" msprop:Generator_UserColumnName="CompressorMN" msprop:Generator_ColumnPropNameInRow="CompressorMN" msprop:Generator_ColumnVarNameInTable="columnCompressorMN" msprop:Generator_ColumnPropNameInTable="CompressorMNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Selected" msprop:Generator_UserColumnName="Selected" msprop:Generator_ColumnPropNameInRow="Selected" msprop:Generator_ColumnVarNameInTable="columnSelected" msprop:Generator_ColumnPropNameInTable="SelectedColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NotMeasuredYet" msprop:Generator_UserColumnName="NotMeasuredYet" msprop:Generator_ColumnVarNameInTable="columnNotMeasuredYet" msprop:Generator_ColumnPropNameInRow="NotMeasuredYet" msprop:Generator_ColumnPropNameInTable="NotMeasuredYetColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="IssueWithLaterals" msprop:Generator_UserColumnName="IssueWithLaterals" msprop:Generator_ColumnVarNameInTable="columnIssueWithLaterals" msprop:Generator_ColumnPropNameInRow="IssueWithLaterals" msprop:Generator_ColumnPropNameInTable="IssueWithLateralsColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NotDeliveredYet" msprop:Generator_UserColumnName="NotDeliveredYet" msprop:Generator_ColumnPropNameInRow="NotDeliveredYet" msprop:Generator_ColumnVarNameInTable="columnNotDeliveredYet" msprop:Generator_ColumnPropNameInTable="NotDeliveredYetColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LinerMNType" msprop:Generator_UserColumnName="LinerMNType" msprop:Generator_ColumnPropNameInRow="LinerMNType" msprop:Generator_ColumnVarNameInTable="columnLinerMNType" msprop:Generator_ColumnPropNameInTable="LinerMNTypeColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LFS_JUNCTION_LINER2" msprop:Generator_UserTableName="LFS_JUNCTION_LINER2" msprop:Generator_RowDeletedName="LFS_JUNCTION_LINER2RowDeleted" msprop:Generator_RowChangedName="LFS_JUNCTION_LINER2RowChanged" msprop:Generator_RowClassName="LFS_JUNCTION_LINER2Row" msprop:Generator_RowChangingName="LFS_JUNCTION_LINER2RowChanging" msprop:Generator_RowEvArgName="LFS_JUNCTION_LINER2RowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_JUNCTION_LINER2RowChangeEventHandler" msprop:Generator_TableClassName="LFS_JUNCTION_LINER2DataTable" msprop:Generator_TableVarName="tableLFS_JUNCTION_LINER2" msprop:Generator_RowDeletingName="LFS_JUNCTION_LINER2RowDeleting" msprop:Generator_TablePropName="LFS_JUNCTION_LINER2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:string" />
+              <xs:element name="RefID" msprop:Generator_UserColumnName="RefID" msprop:Generator_ColumnVarNameInTable="columnRefID" msprop:Generator_ColumnPropNameInRow="RefID" msprop:Generator_ColumnPropNameInTable="RefIDColumn" type="xs:int" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="DetailID" msprop:Generator_UserColumnName="DetailID" msprop:Generator_ColumnVarNameInTable="columnDetailID" msprop:Generator_ColumnPropNameInRow="DetailID" msprop:Generator_ColumnPropNameInTable="DetailIDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Address" msprop:Generator_UserColumnName="Address" msprop:Generator_ColumnVarNameInTable="columnAddress" msprop:Generator_ColumnPropNameInRow="Address" msprop:Generator_ColumnPropNameInTable="AddressColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PullInDistance" msprop:Generator_UserColumnName="PullInDistance" msprop:Generator_ColumnVarNameInTable="columnPullInDistance" msprop:Generator_ColumnPropNameInRow="PullInDistance" msprop:Generator_ColumnPropNameInTable="PullInDistanceColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="LinerSize" msprop:Generator_UserColumnName="LinerSize" msprop:Generator_ColumnVarNameInTable="columnLinerSize" msprop:Generator_ColumnPropNameInRow="LinerSize" msprop:Generator_ColumnPropNameInTable="LinerSizeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Comments" msprop:Generator_UserColumnName="Comments" msprop:Generator_ColumnVarNameInTable="columnComments" msprop:Generator_ColumnPropNameInRow="Comments" msprop:Generator_ColumnPropNameInTable="CommentsColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ClientLateralID" msprop:Generator_UserColumnName="ClientLateralID" msprop:Generator_ColumnVarNameInTable="columnClientLateralID" msprop:Generator_ColumnPropNameInRow="ClientLateralID" msprop:Generator_ColumnPropNameInTable="ClientLateralIDColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LinningPlan" />
+      <xs:field xpath="mstns:ID" />
+      <xs:field xpath="mstns:COMPANY_ID" />
+    </xs:unique>
+    <xs:unique name="LFS_JUNCTION_LINER2_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_JUNCTION_LINER2" />
+      <xs:field xpath="mstns:ID" />
+      <xs:field xpath="mstns:RefID" />
+      <xs:field xpath="mstns:COMPANY_ID" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="LinningPlan_LFS_JUNCTION_LINER2" msdata:parent="LinningPlan" msdata:child="LFS_JUNCTION_LINER2" msdata:parentkey="ID COMPANY_ID" msdata:childkey="ID COMPANY_ID" msprop:Generator_UserRelationName="LinningPlan_LFS_JUNCTION_LINER2" msprop:Generator_RelationVarName="relationLinningPlan_LFS_JUNCTION_LINER2" msprop:Generator_UserChildTable="LFS_JUNCTION_LINER2" msprop:Generator_UserParentTable="LinningPlan" msprop:Generator_ParentPropName="LinningPlanRowParent" msprop:Generator_ChildPropName="GetLFS_JUNCTION_LINER2Rows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

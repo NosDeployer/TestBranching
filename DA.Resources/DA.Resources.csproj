@@ -1,0 +1,615 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{337C14FC-8E53-45E5-9687-6B86AEE5BC2F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LiquiForce.LFSLive.DA.Resources</RootNamespace>
+    <AssemblyName>LiquiForce.LFSLive.DA.Resources</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LiquiForce.LFSLive.DA.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.DA.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LiquiForce.LFSLive.Server, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BondingCompanies\BondingCompaniesAddBondingCompaniesGateway.cs" />
+    <Compile Include="BondingCompanies\BondingCompaniesAddTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BondingCompaniesAddTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BondingCompanies\BondingCompaniesGateway.cs" />
+    <Compile Include="BondingCompanies\BondingCompaniesListGateway.cs" />
+    <Compile Include="BondingCompanies\BondingCompaniesSetupBondingCompaniesSetupGateway.cs" />
+    <Compile Include="BondingCompanies\BondingCompaniesSetupTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BondingCompaniesSetupTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BondingCompanies\BondingCompaniesTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BondingCompaniesTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ResourceTypeViewConditionListGateway.cs" />
+    <Compile Include="Common\ResourceTypeViewConditionGateway.cs" />
+    <Compile Include="Common\ResourceTypeViewSortGateway.cs" />
+    <Compile Include="Common\ResourceTypeViewSortListGateway.cs" />
+    <Compile Include="Common\ResourceViewTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceViewTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ResourceTypeViewDisplayGateway.cs" />
+    <Compile Include="Companies\CompaniesGateway.cs" />
+    <Compile Include="Companies\CompaniesListGateway.cs" />
+    <Compile Include="Employees\EmployeeInformationTypeHistoryInformationGateway.cs" />
+    <Compile Include="Employees\EmployeeAddTypeHistoryGateway.cs" />
+    <Compile Include="Employees\EmployeeTypeHistoryGateway.cs" />
+    <Compile Include="Employees\CrewListGateway.cs" />
+    <Compile Include="Employees\EmployeeAddGateway.cs" />
+    <Compile Include="Employees\EmployeeCategoryApproveTimesheetsGateway.cs" />
+    <Compile Include="Employees\EmployeeCategoryListGateway.cs" />
+    <Compile Include="Employees\EmployeeCostHistoryGateway.cs" />
+    <Compile Include="Employees\EmployeeCostHistoryExceptionsGateway.cs" />
+    <Compile Include="Employees\EmployeeGateway.cs" />
+    <Compile Include="Employees\EmployeeInformationBasicInformationGateway.cs" />
+    <Compile Include="Employees\EmployeeInformationCategoryApproveTimesheetsInformationGateway.cs" />
+    <Compile Include="Employees\EmployeeInformationCostExceptionsInformationGateway.cs" />
+    <Compile Include="Employees\EmployeeInformationCostInformationGateway.cs" />
+    <Compile Include="Employees\EmployeeInformationNoteInformationGateway.cs" />
+    <Compile Include="Employees\EmployeeInformationPayVacationDaysInformationGateway.cs" />
+    <Compile Include="Employees\EmployeeInformationPayVacationDaysInformationListGateway.cs" />
+    <Compile Include="Employees\EmployeeInformationTDS.cs">
+      <DependentUpon>EmployeeInformationTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Employees\EmployeeInformationTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeInformationTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\EmployeeInformationVacationInformationGateway.cs" />
+    <Compile Include="Employees\EmployeeListGateway.cs" />
+    <Compile Include="Employees\EmployeeNavigatorGateway.cs" />
+    <Compile Include="Employees\EmployeeNavigatorTDS.cs">
+      <DependentUpon>EmployeeNavigatorTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Employees\EmployeeNavigatorTDS.Designer.cs">
+      <DependentUpon>EmployeeNavigatorTDS.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Employees\EmployeeNotesGateway.cs" />
+    <Compile Include="Employees\EmployeePersonalAgencyGateway.cs" />
+    <Compile Include="Employees\EmployeesAddTDS.cs">
+      <DependentUpon>EmployeesAddTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Employees\EmployeesAddTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeesAddTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\EmployeeStandardCostsSetupGateway.cs" />
+    <Compile Include="Employees\EmployeeStandardCostsSetupTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeStandardCostsSetupTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\EmployeeStateGateway.cs" />
+    <Compile Include="Employees\EmployeeTDS.cs">
+      <DependentUpon>EmployeeTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Employees\EmployeeTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\EmployeeTypeGateway.cs" />
+    <Compile Include="Employees\PersonalAgencyInformationGateway.cs" />
+    <Compile Include="Employees\PersonalAgencyInformationTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PersonalAgencyInformationTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\PersonalAgencyListGateway.cs" />
+    <Compile Include="Employees\SalesmanGateway.cs" />
+    <Compile Include="Employees\SalesmanListGateway.cs" />
+    <Compile Include="Employees\SalesmanNavigatorGateway.cs" />
+    <Compile Include="Hotels\HotelsAddHotelsGateway.cs" />
+    <Compile Include="Hotels\HotelsAddTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HotelsAddTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hotels\HotelsGateway.cs" />
+    <Compile Include="Hotels\HotelsListGateway.cs" />
+    <Compile Include="Hotels\HotelsSetupHotelsSetupGateway.cs" />
+    <Compile Include="Hotels\HotelsSetupTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HotelsSetupTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hotels\HotelsTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HotelsTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InsuranceCompanies\InsuranceCompaniesAddInsuranceCompaniesGateway.cs" />
+    <Compile Include="InsuranceCompanies\InsuranceCompaniesAddTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InsuranceCompaniesAddTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InsuranceCompanies\InsuranceCompaniesGateway.cs" />
+    <Compile Include="InsuranceCompanies\InsuranceCompaniesListGateway.cs" />
+    <Compile Include="InsuranceCompanies\InsuranceCompaniesSetupInsuranceCompaniesSetupGateway.cs" />
+    <Compile Include="InsuranceCompanies\InsuranceCompaniesSetupTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InsuranceCompaniesSetupTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InsuranceCompanies\InsuranceCompaniesTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InsuranceCompaniesTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Materials\MaterialsAddGateway.cs" />
+    <Compile Include="Materials\MaterialsAddTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaterialsAddTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Materials\MaterialsByProcessReportGateway.cs" />
+    <Compile Include="Materials\MaterialsByProcessReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaterialsByProcessReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Materials\MaterialsCostHistoryExceptionsGateway.cs" />
+    <Compile Include="Materials\MaterialsCostHistoryGateway.cs" />
+    <Compile Include="Materials\MaterialsGateway.cs" />
+    <Compile Include="Materials\MaterialsInformationBasicInformationGateway.cs" />
+    <Compile Include="Materials\MaterialsInformationCostHistoryExceptionsInformationGateway.cs" />
+    <Compile Include="Materials\MaterialsInformationCostHistoryInformationGateway.cs" />
+    <Compile Include="Materials\MaterialsInformationNoteInformationGateway.cs" />
+    <Compile Include="Materials\MaterialsInformationTDS.cs">
+      <DependentUpon>MaterialsInformationTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Materials\MaterialsInformationTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaterialsInformationTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Materials\MaterialsListGateway.cs" />
+    <Compile Include="Materials\MaterialsNavigatorGateway.cs" />
+    <Compile Include="Materials\MaterialsNavigatorTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaterialsNavigatorTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Materials\MaterialsNotesGateway.cs" />
+    <Compile Include="Materials\MaterialsTDS.cs">
+      <DependentUpon>MaterialsTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Materials\MaterialsTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaterialsTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Materials\MaterialsTypeListGateway.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="BondingCompanies\BondingCompaniesAddTDS.xsc">
+      <DependentUpon>BondingCompaniesAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="BondingCompanies\BondingCompaniesAddTDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BondingCompaniesAddTDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BondingCompanies\BondingCompaniesAddTDS.xss">
+      <DependentUpon>BondingCompaniesAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="BondingCompanies\BondingCompaniesSetupTDS.xsc">
+      <DependentUpon>BondingCompaniesSetupTDS.xsd</DependentUpon>
+    </None>
+    <None Include="BondingCompanies\BondingCompaniesSetupTDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BondingCompaniesSetupTDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BondingCompanies\BondingCompaniesSetupTDS.xss">
+      <DependentUpon>BondingCompaniesSetupTDS.xsd</DependentUpon>
+    </None>
+    <None Include="BondingCompanies\BondingCompaniesTDS.xsc">
+      <DependentUpon>BondingCompaniesTDS.xsd</DependentUpon>
+    </None>
+    <None Include="BondingCompanies\BondingCompaniesTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BondingCompaniesTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="BondingCompanies\BondingCompaniesTDS.xss">
+      <DependentUpon>BondingCompaniesTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Common\ResourceViewTDS.xsc">
+      <DependentUpon>ResourceViewTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Common\ResourceViewTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResourceViewTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Common\ResourceViewTDS.xss">
+      <DependentUpon>ResourceViewTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Employees\EmployeeInformationTDS.xsc">
+      <DependentUpon>EmployeeInformationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Employees\EmployeeInformationTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeInformationTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Employees\EmployeeInformationTDS.xss">
+      <DependentUpon>EmployeeInformationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Employees\EmployeeNavigatorTDS.xsc">
+      <DependentUpon>EmployeeNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Employees\EmployeeNavigatorTDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeNavigatorTDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Employees\EmployeeNavigatorTDS.xss">
+      <DependentUpon>EmployeeNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Employees\EmployeesAddTDS.xsc">
+      <DependentUpon>EmployeesAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Employees\EmployeesAddTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeesAddTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Employees\EmployeesAddTDS.xss">
+      <DependentUpon>EmployeesAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Employees\EmployeeStandardCostsSetupTDS.xsc">
+      <DependentUpon>EmployeeStandardCostsSetupTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Employees\EmployeeStandardCostsSetupTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeStandardCostsSetupTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Employees\EmployeeStandardCostsSetupTDS.xss">
+      <DependentUpon>EmployeeStandardCostsSetupTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Employees\EmployeeTDS.xsc">
+      <DependentUpon>EmployeeTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Employees\EmployeeTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Employees\EmployeeTDS.xss">
+      <DependentUpon>EmployeeTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Employees\PersonalAgencyInformationTDS.xsc">
+      <DependentUpon>PersonalAgencyInformationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Employees\PersonalAgencyInformationTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PersonalAgencyInformationTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Employees\PersonalAgencyInformationTDS.xss">
+      <DependentUpon>PersonalAgencyInformationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Hotels\HotelsAddTDS.xsc">
+      <DependentUpon>HotelsAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Hotels\HotelsAddTDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HotelsAddTDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hotels\HotelsAddTDS.xss">
+      <DependentUpon>HotelsAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Hotels\HotelsSetupTDS.xsc">
+      <DependentUpon>HotelsSetupTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Hotels\HotelsSetupTDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HotelsSetupTDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hotels\HotelsSetupTDS.xss">
+      <DependentUpon>HotelsSetupTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Hotels\HotelsTDS.xsc">
+      <DependentUpon>HotelsTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Hotels\HotelsTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HotelsTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Hotels\HotelsTDS.xss">
+      <DependentUpon>HotelsTDS.xsd</DependentUpon>
+    </None>
+    <None Include="InsuranceCompanies\InsuranceCompaniesAddTDS.xsc">
+      <DependentUpon>InsuranceCompaniesAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="InsuranceCompanies\InsuranceCompaniesAddTDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InsuranceCompaniesAddTDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InsuranceCompanies\InsuranceCompaniesAddTDS.xss">
+      <DependentUpon>InsuranceCompaniesAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="InsuranceCompanies\InsuranceCompaniesSetupTDS.xsc">
+      <DependentUpon>InsuranceCompaniesSetupTDS.xsd</DependentUpon>
+    </None>
+    <None Include="InsuranceCompanies\InsuranceCompaniesSetupTDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InsuranceCompaniesSetupTDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InsuranceCompanies\InsuranceCompaniesSetupTDS.xss">
+      <DependentUpon>InsuranceCompaniesSetupTDS.xsd</DependentUpon>
+    </None>
+    <None Include="InsuranceCompanies\InsuranceCompaniesTDS.xsc">
+      <DependentUpon>InsuranceCompaniesTDS.xsd</DependentUpon>
+    </None>
+    <None Include="InsuranceCompanies\InsuranceCompaniesTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InsuranceCompaniesTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="InsuranceCompanies\InsuranceCompaniesTDS.xss">
+      <DependentUpon>InsuranceCompaniesTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Materials\MaterialsAddTDS.xsc">
+      <DependentUpon>MaterialsAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Materials\MaterialsAddTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MaterialsAddTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Materials\MaterialsAddTDS.xss">
+      <DependentUpon>MaterialsAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Materials\MaterialsByProcessReportTDS.xsc">
+      <DependentUpon>MaterialsByProcessReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Materials\MaterialsByProcessReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MaterialsByProcessReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Materials\MaterialsByProcessReportTDS.xss">
+      <DependentUpon>MaterialsByProcessReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Materials\MaterialsInformationTDS.xsc">
+      <DependentUpon>MaterialsInformationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Materials\MaterialsInformationTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MaterialsInformationTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Materials\MaterialsInformationTDS.xss">
+      <DependentUpon>MaterialsInformationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Materials\MaterialsNavigatorTDS.xsc">
+      <DependentUpon>MaterialsNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Materials\MaterialsNavigatorTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MaterialsNavigatorTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Materials\MaterialsNavigatorTDS.xss">
+      <DependentUpon>MaterialsNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Materials\MaterialsTDS.xsc">
+      <DependentUpon>MaterialsTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Materials\MaterialsTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MaterialsTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Materials\MaterialsTDS.xss">
+      <DependentUpon>MaterialsTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Subcontractors\SubcontractorsAddTDS.xsc">
+      <DependentUpon>SubcontractorsAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Subcontractors\SubcontractorsAddTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SubcontractorsAddTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Subcontractors\SubcontractorsAddTDS.xss">
+      <DependentUpon>SubcontractorsAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Subcontractors\SubcontractorsSetupTDS.xsc">
+      <DependentUpon>SubcontractorsSetupTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Subcontractors\SubcontractorsSetupTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SubcontractorsSetupTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Subcontractors\SubcontractorsSetupTDS.xss">
+      <DependentUpon>SubcontractorsSetupTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Subcontractors\SubcontractorsTDS.xsc">
+      <DependentUpon>SubcontractorsTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Subcontractors\SubcontractorsTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SubcontractorsTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Subcontractors\SubcontractorsTDS.xss">
+      <DependentUpon>SubcontractorsTDS.xsd</DependentUpon>
+    </None>
+    <None Include="UnitsOfMeasurement\UnitsOfMeasurementAssociationsToolTDS.xsc">
+      <DependentUpon>UnitsOfMeasurementAssociationsToolTDS.xsd</DependentUpon>
+    </None>
+    <None Include="UnitsOfMeasurement\UnitsOfMeasurementAssociationsToolTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UnitsOfMeasurementAssociationsToolTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UnitsOfMeasurement\UnitsOfMeasurementAssociationsToolTDS.xss">
+      <DependentUpon>UnitsOfMeasurementAssociationsToolTDS.xsd</DependentUpon>
+    </None>
+    <None Include="UnitsOfMeasurement\UnitsOfMeasurementNavigatorTDS.xsc">
+      <DependentUpon>UnitsOfMeasurementNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="UnitsOfMeasurement\UnitsOfMeasurementNavigatorTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UnitsOfMeasurementNavigatorTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UnitsOfMeasurement\UnitsOfMeasurementNavigatorTDS.xss">
+      <DependentUpon>UnitsOfMeasurementNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="UnitsOfMeasurement\UnitsOfMeasurementTDS.xsc">
+      <DependentUpon>UnitsOfMeasurementTDS.xsd</DependentUpon>
+    </None>
+    <None Include="UnitsOfMeasurement\UnitsOfMeasurementTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UnitsOfMeasurementTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UnitsOfMeasurement\UnitsOfMeasurementTDS.xss">
+      <DependentUpon>UnitsOfMeasurementTDS.xsd</DependentUpon>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Subcontractors\SubcontractorsListGateway.cs" />
+    <Compile Include="Subcontractors\SubcontractorsAddSubcontractorsGateway.cs" />
+    <Compile Include="Subcontractors\SubcontractorsAddTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SubcontractorsAddTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Subcontractors\SubcontractorsSetupTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SubcontractorsSetupTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Subcontractors\SubcontractorsResoucesSubcontractorsGateway.cs" />
+    <Compile Include="Subcontractors\SubcontractorsSetupSubcontractorsSetupGateway.cs" />
+    <Compile Include="Subcontractors\SubcontractorsTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SubcontractorsTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UnitsOfMeasurement\UnitsOfMeasurementAssociationsGateway.cs" />
+    <Compile Include="UnitsOfMeasurement\UnitsOfMeasurementAssociationsToolAssociatedUnitsGateway.cs" />
+    <Compile Include="UnitsOfMeasurement\UnitsOfMeasurementAssociationsToolAssociatedUnitsListGateway.cs" />
+    <Compile Include="UnitsOfMeasurement\UnitsOfMeasurementAssociationsToolTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UnitsOfMeasurementAssociationsToolTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UnitsOfMeasurement\UnitsOfMeasurementGateway.cs" />
+    <Compile Include="UnitsOfMeasurement\UnitsOfMeasurementModulesToAssociateListGateway.cs" />
+    <Compile Include="UnitsOfMeasurement\UnitsOfMeasurementNavigatorGateway.cs" />
+    <Compile Include="UnitsOfMeasurement\UnitsOfMeasurementNavigatorTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UnitsOfMeasurementNavigatorTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UnitsOfMeasurement\UnitsOfMeasurementTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UnitsOfMeasurementTDS.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

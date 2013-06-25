@@ -1,0 +1,818 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{80016E93-9B76-4284-9018-B0D156B5DC2D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LiquiForce.LFSLive.DA.FleetManagement</RootNamespace>
+    <AssemblyName>LiquiForce.LFSLive.DA.FleetManagement</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>http://localhost/LiquiForce.LFSLive.DA.FleetManagement/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LiquiForce.LFSLive.DA.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.DA.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LiquiForce.LFSLive.Server, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Categories\CategoriesAddNewGateway.cs" />
+    <Compile Include="Categories\CategoriesAddTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CategoriesAddTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Categories\CategoriesTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CategoriesTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Categories\CategoryGateway.cs" />
+    <Compile Include="ChecklistRules\ChecklistGateway.cs" />
+    <Compile Include="ChecklistRules\ChecklistRulesAddNewGateway.cs" />
+    <Compile Include="ChecklistRules\ChecklistRulesAddTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChecklistRulesAddTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ChecklistRules\ChecklistRulesDetailsGateway.cs" />
+    <Compile Include="ChecklistRules\ChecklistRulesNavigatorGateway.cs" />
+    <Compile Include="ChecklistRules\ChecklistRulesNavigatorTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChecklistRulesNavigatorTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ChecklistRules\RuleCategoryGateway.cs" />
+    <Compile Include="ChecklistRules\RuleCategoryUnitsGateway.cs" />
+    <Compile Include="ChecklistRules\RuleCompanyLevelGateway.cs" />
+    <Compile Include="ChecklistRules\RuleFrecuencyListGateway.cs" />
+    <Compile Include="ChecklistRules\RuleGateway.cs" />
+    <Compile Include="ChecklistRules\RuleTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RuleTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FmTypeViewConditionGateway.cs" />
+    <Compile Include="Common\FmTypeViewConditionListGateway.cs" />
+    <Compile Include="Common\FmTypeViewSortGateway.cs" />
+    <Compile Include="Common\FmTypeViewSortListGateway.cs" />
+    <Compile Include="Common\FmTypeViewStateListGateway.cs" />
+    <Compile Include="Common\FmViewListGateway.cs" />
+    <Compile Include="Common\FmViewTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FmViewTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FmViewGateway.cs" />
+    <Compile Include="Common\FmViewTypeListGateway.cs" />
+    <Compile Include="Common\FmTypeViewDisplayGateway.cs" />
+    <Compile Include="Common\FmViewDisplayGateway.cs" />
+    <Compile Include="Common\FmViewConditionGateway.cs" />
+    <Compile Include="Common\FmTypeViewOperatorListGateway.cs" />
+    <Compile Include="Common\FmViewConditionNewGateway.cs" />
+    <Compile Include="Common\FmTypeViewConditionItemListGateway.cs" />
+    <Compile Include="Common\FmViewSortGateway.cs" />
+    <Compile Include="CompanyLevels\CompanyLevelGateway.cs" />
+    <Compile Include="CompanyLevels\CompanyLevelsAddManagersGateway.cs.cs" />
+    <Compile Include="CompanyLevels\CompanyLevelsManagersGateway.cs" />
+    <Compile Include="CompanyLevels\CompanyLevelsAddNewGateway.cs" />
+    <Compile Include="CompanyLevels\CompanyLevelsAddTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CompanyLevelsAddTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyLevels\CompanyLevelsTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CompanyLevelsTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\DashboardToDoListAssignedToMeOnHoldGateway.cs" />
+    <Compile Include="Dashboard\DashboardToDoListAssignedToMeGateway.cs" />
+    <Compile Include="Dashboard\DashboardMyToDoListOnHoldGateway.cs" />
+    <Compile Include="Dashboard\DashboardMyToDoListGateway.cs" />
+    <Compile Include="Dashboard\DashboardAspnetMembershipGateway.cs" />
+    <Compile Include="Dashboard\DashboardAspnetTDS.cs">
+      <DependentUpon>DashboardAspnetTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dashboard\DashboardAspnetTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DashboardAspnetTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\DashboardChecklistAlarmsGateway.cs" />
+    <Compile Include="Dashboard\DashboardExpiredServiceRequestsGateway.cs" />
+    <Compile Include="Dashboard\DashboardInProgressServiceRequestsGateway.cs" />
+    <Compile Include="Dashboard\DashboardItemsAboutToExpireGateway.cs" />
+    <Compile Include="Dashboard\DashboardMyServiceRequestsGateway.cs" />
+    <Compile Include="Dashboard\DashboardTDS.cs">
+      <DependentUpon>DashboardTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dashboard\DashboardTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DashboardTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\DashboardUnassignedServiceRequestsGateway.cs" />
+    <Compile Include="Dashboard\WucSRUnassignedRejectedReportGateway.cs" />
+    <Compile Include="Dashboard\WucSRUnassignedRejectedReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WucSRUnassignedRejectedReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\WucSRUnassignedUnassignedReportGateway.cs" />
+    <Compile Include="Dashboard\WucSRUnassignedUnassignedReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WucSRUnassignedUnassignedReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="app.config" />
+    <None Include="Categories\CategoriesAddTDS.xsc">
+      <DependentUpon>CategoriesAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Categories\CategoriesAddTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CategoriesAddTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Categories\CategoriesAddTDS.xss">
+      <DependentUpon>CategoriesAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Categories\CategoriesTDS.xsc">
+      <DependentUpon>CategoriesTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Categories\CategoriesTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CategoriesTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Categories\CategoriesTDS.xss">
+      <DependentUpon>CategoriesTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ChecklistRules\ChecklistRulesAddTDS.xsc">
+      <DependentUpon>ChecklistRulesAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ChecklistRules\ChecklistRulesAddTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ChecklistRulesAddTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ChecklistRules\ChecklistRulesAddTDS.xss">
+      <DependentUpon>ChecklistRulesAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ChecklistRules\ChecklistRulesNavigatorTDS.xsc">
+      <DependentUpon>ChecklistRulesNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ChecklistRules\ChecklistRulesNavigatorTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ChecklistRulesNavigatorTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ChecklistRules\ChecklistRulesNavigatorTDS.xss">
+      <DependentUpon>ChecklistRulesNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ChecklistRules\RuleTDS.xsc">
+      <DependentUpon>RuleTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ChecklistRules\RuleTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RuleTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ChecklistRules\RuleTDS.xss">
+      <DependentUpon>RuleTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Common\FmViewTDS.xsc">
+      <DependentUpon>FmViewTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Common\FmViewTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FmViewTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Common\FmViewTDS.xss">
+      <DependentUpon>FmViewTDS.xsd</DependentUpon>
+    </None>
+    <None Include="CompanyLevels\CompanyLevelsAddTDS.xsc">
+      <DependentUpon>CompanyLevelsAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="CompanyLevels\CompanyLevelsAddTDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CompanyLevelsAddTDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CompanyLevels\CompanyLevelsAddTDS.xss">
+      <DependentUpon>CompanyLevelsAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="CompanyLevels\CompanyLevelsTDS.xsc">
+      <DependentUpon>CompanyLevelsTDS.xsd</DependentUpon>
+    </None>
+    <None Include="CompanyLevels\CompanyLevelsTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CompanyLevelsTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="CompanyLevels\CompanyLevelsTDS.xss">
+      <DependentUpon>CompanyLevelsTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\DashboardAspnetTDS.xsc">
+      <DependentUpon>DashboardAspnetTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\DashboardAspnetTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DashboardAspnetTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dashboard\DashboardAspnetTDS.xss">
+      <DependentUpon>DashboardAspnetTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\DashboardTDS.xsc">
+      <DependentUpon>DashboardTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\DashboardTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DashboardTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dashboard\DashboardTDS.xss">
+      <DependentUpon>DashboardTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\WucSRUnassignedRejectedReportTDS.xsc">
+      <DependentUpon>WucSRUnassignedRejectedReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\WucSRUnassignedRejectedReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WucSRUnassignedRejectedReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dashboard\WucSRUnassignedRejectedReportTDS.xss">
+      <DependentUpon>WucSRUnassignedRejectedReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\WucSRUnassignedUnassignedReportTDS.xsc">
+      <DependentUpon>WucSRUnassignedUnassignedReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\WucSRUnassignedUnassignedReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WucSRUnassignedUnassignedReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dashboard\WucSRUnassignedUnassignedReportTDS.xss">
+      <DependentUpon>WucSRUnassignedUnassignedReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Services\ServiceInformationTDS.xsc">
+      <DependentUpon>ServiceInformationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Services\ServiceInformationTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ServiceInformationTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Services\ServiceInformationTDS.xss">
+      <DependentUpon>ServiceInformationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Services\ServiceRequestsManagerToolTDS.xsc">
+      <DependentUpon>ServiceRequestsManagerToolTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Services\ServiceRequestsManagerToolTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ServiceRequestsManagerToolTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Services\ServiceRequestsManagerToolTDS.xss">
+      <DependentUpon>ServiceRequestsManagerToolTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Services\ServicesAddRequestTDS.xsc">
+      <DependentUpon>ServicesAddRequestTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Services\ServicesAddRequestTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ServicesAddRequestTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Services\ServicesAddRequestTDS.xss">
+      <DependentUpon>ServicesAddRequestTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Services\ServicesMyCurrentSRReportTDS.xsc">
+      <DependentUpon>ServicesMyCurrentSRReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Services\ServicesMyCurrentSRReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ServicesMyCurrentSRReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Services\ServicesMyCurrentSRReportTDS.xss">
+      <DependentUpon>ServicesMyCurrentSRReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Services\ServicesNavigatorTDS.xsc">
+      <DependentUpon>ServicesNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Services\ServicesNavigatorTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ServicesNavigatorTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Services\ServicesNavigatorTDS.xss">
+      <DependentUpon>ServicesNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Services\ServicesSRAboutToExpireReportTDS.xsc">
+      <DependentUpon>ServicesSRAboutToExpireReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Services\ServicesSRAboutToExpireReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ServicesSRAboutToExpireReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Services\ServicesSRAboutToExpireReportTDS.xss">
+      <DependentUpon>ServicesSRAboutToExpireReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Services\ServicesSRExpiredReportTDS.xsc">
+      <DependentUpon>ServicesSRExpiredReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Services\ServicesSRExpiredReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ServicesSRExpiredReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Services\ServicesSRExpiredReportTDS.xss">
+      <DependentUpon>ServicesSRExpiredReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Services\ServicesSRRejectedReportTDS.xsc">
+      <DependentUpon>ServicesSRRejectedReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Services\ServicesSRRejectedReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ServicesSRRejectedReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Services\ServicesSRRejectedReportTDS.xss">
+      <DependentUpon>ServicesSRRejectedReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Services\ServicesSRUnassignedReportTDS.xsc">
+      <DependentUpon>ServicesSRUnassignedReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Services\ServicesSRUnassignedReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ServicesSRUnassignedReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Services\ServicesSRUnassignedReportTDS.xss">
+      <DependentUpon>ServicesSRUnassignedReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Services\ServicesTDS.xsc">
+      <DependentUpon>ServicesTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Services\ServicesTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ServicesTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Services\ServicesTDS.xss">
+      <DependentUpon>ServicesTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ToDoList\ToDoListToDoAssignedToMeReportTDS.xsc">
+      <DependentUpon>ToDoListToDoAssignedToMeReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ToDoList\ToDoListToDoAssignedToMeReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ToDoListToDoAssignedToMeReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ToDoList\ToDoListToDoAssignedToMeReportTDS.xss">
+      <DependentUpon>ToDoListToDoAssignedToMeReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ToDoList\ToDoListAddTDS.xsc">
+      <DependentUpon>ToDoListAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ToDoList\ToDoListAddTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ToDoListAddTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ToDoList\ToDoListAddTDS.xss">
+      <DependentUpon>ToDoListAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ToDoList\ToDoListInformationTDS.xsc">
+      <DependentUpon>ToDoListInformationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ToDoList\ToDoListInformationTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ToDoListInformationTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ToDoList\ToDoListInformationTDS.xss">
+      <DependentUpon>ToDoListInformationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ToDoList\ToDoListMyToDoReportTDS.xsc">
+      <DependentUpon>ToDoListMyToDoReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ToDoList\ToDoListMyToDoReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ToDoListMyToDoReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ToDoList\ToDoListMyToDoReportTDS.xss">
+      <DependentUpon>ToDoListMyToDoReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ToDoList\ToDoListNavigatorTDS.xsc">
+      <DependentUpon>ToDoListNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ToDoList\ToDoListNavigatorTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ToDoListNavigatorTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ToDoList\ToDoListNavigatorTDS.xss">
+      <DependentUpon>ToDoListNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ToDoList\ToDoListTDS.xsc">
+      <DependentUpon>ToDoListTDS.xsd</DependentUpon>
+    </None>
+    <None Include="ToDoList\ToDoListTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ToDoListTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ToDoList\ToDoListTDS.xss">
+      <DependentUpon>ToDoListTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Units\UnitChecklistsReportTDS.xsc">
+      <DependentUpon>UnitChecklistsReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Units\UnitChecklistsReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UnitChecklistsReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Units\UnitChecklistsReportTDS.xss">
+      <DependentUpon>UnitChecklistsReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Units\UnitInformationReportTDS.xsc">
+      <DependentUpon>UnitInformationReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Units\UnitInformationReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UnitInformationReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Units\UnitInformationReportTDS.xss">
+      <DependentUpon>UnitInformationReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Units\UnitInformationTDS.xsc">
+      <DependentUpon>UnitInformationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Units\UnitInformationTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UnitInformationTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Units\UnitInformationTDS.xss">
+      <DependentUpon>UnitInformationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Units\UnitsAddTDS.xsc">
+      <DependentUpon>UnitsAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Units\UnitsAddTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UnitsAddTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Units\UnitsAddTDS.xss">
+      <DependentUpon>UnitsAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Units\UnitsNavigatorTDS.xsc">
+      <DependentUpon>UnitsNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Units\UnitsNavigatorTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UnitsNavigatorTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Units\UnitsNavigatorTDS.xss">
+      <DependentUpon>UnitsNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Units\UnitsTDS.xsc">
+      <DependentUpon>UnitsTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Units\UnitsTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UnitsTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Units\UnitsTDS.xss">
+      <DependentUpon>UnitsTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Units\UnitWithAlarmsReportTDS.xsc">
+      <DependentUpon>UnitWithAlarmsReportTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Units\UnitWithAlarmsReportTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UnitWithAlarmsReportTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Units\UnitWithAlarmsReportTDS.xss">
+      <DependentUpon>UnitWithAlarmsReportTDS.xsd</DependentUpon>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Services\ServiceInformationServiceCostGateway.cs" />
+    <Compile Include="Services\ServiceInformationServiceNoteGateway.cs" />
+    <Compile Include="Services\ServiceInformationTDS.cs">
+      <DependentUpon>ServiceInformationTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\ServiceInformationTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ServiceInformationTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ServiceRequestsManagerToolCostInformationGateway.cs" />
+    <Compile Include="Services\ServiceRequestsManagerToolServiceRequestsGateway.cs" />
+    <Compile Include="Services\ServiceRequestsManagerToolTDS.cs">
+      <DependentUpon>ServiceRequestsManagerToolTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\ServiceRequestsManagerToolTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ServiceRequestsManagerToolTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ServiceRequestsManagerToolBasicInformationGateway.cs" />
+    <Compile Include="Services\ServicesAddRequestBasicInformationGateway.cs" />
+    <Compile Include="Services\ServicesAddRequestCostInformationGateway.cs" />
+    <Compile Include="Services\ServicesAddRequestTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ServicesAddRequestTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ServiceInformationBasicInformationGateway.cs" />
+    <Compile Include="Services\ServicesCostGateway.cs" />
+    <Compile Include="Services\ServicesGateway.cs" />
+    <Compile Include="Services\ServicesMyCurrentSRReportGateway.cs" />
+    <Compile Include="Services\ServicesMyCurrentSRReportTDS.cs">
+      <DependentUpon>ServicesMyCurrentSRReportTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\ServicesMyCurrentSRReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ServicesMyCurrentSRReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ServicesNavigatorGateway.cs" />
+    <Compile Include="Services\ServicesNavigatorTDS.cs">
+      <DependentUpon>ServicesNavigatorTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\ServicesNavigatorTDS.Designer.cs">
+      <DependentUpon>ServicesNavigatorTDS.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Services\ServicesNoteGateway.cs" />
+    <Compile Include="Services\ServicesSRAboutToExpireReportGateway.cs" />
+    <Compile Include="Services\ServicesSRAboutToExpireReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ServicesSRAboutToExpireReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ServicesSRExpiredReportGateway.cs" />
+    <Compile Include="Services\ServicesSRExpiredReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ServicesSRExpiredReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ServicesSRRejectedReportGateway.cs" />
+    <Compile Include="Services\ServicesSRRejectedReportTDS.cs">
+      <DependentUpon>ServicesSRRejectedReportTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\ServicesSRRejectedReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ServicesSRRejectedReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ServicesSRUnassignedReportGateway.cs" />
+    <Compile Include="Services\ServicesSRUnassignedReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ServicesSRUnassignedReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ServiceStateListGateway.cs" />
+    <Compile Include="Services\ServicesTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ServicesTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ServicesThirdPartyVendorGateway.cs" />
+    <Compile Include="Services\ServicesVehicleGateway.cs" />
+    <Compile Include="ToDoList\ToDoListToDoAssignedToMeActivityReportGateway.cs" />
+    <Compile Include="ToDoList\ToDoListToDoAssignedToMeReportGateway.cs" />
+    <Compile Include="ToDoList\ToDoListToDoAssignedToMeReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ToDoListToDoAssignedToMeReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ToDoList\ToDoListMyToDoActivityReportGateway.cs" />
+    <Compile Include="ToDoList\ToDoListMyToDoReportGateway.cs" />
+    <Compile Include="ToDoList\ToDoListInformationActivityInformationGateway.cs" />
+    <Compile Include="ToDoList\ToDoListInformationBasicInformationGateway.cs" />
+    <Compile Include="ToDoList\ToDoListInformationTDS.cs">
+      <DependentUpon>ToDoListInformationTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToDoList\ToDoListInformationTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ToDoListInformationTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ToDoList\ToDoListMyToDoReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ToDoListMyToDoReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ToDoList\ToDoListNavigatorGateway.cs" />
+    <Compile Include="ToDoList\ToDoListNavigatorTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ToDoListNavigatorTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ToDoList\ToDoListStateListGateway.cs" />
+    <Compile Include="ToDoList\ToDoListAddBasicInformationGateway.cs" />
+    <Compile Include="ToDoList\ToDoListAddTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ToDoListAddTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ToDoList\ToDoListTDS.cs">
+      <DependentUpon>ToDoListTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToDoList\ToDoListTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ToDoListTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ToDoList\ToDoListToDoListActivityGateway.cs" />
+    <Compile Include="ToDoList\ToDoListToDoListGateway.cs" />
+    <Compile Include="Units\UnitChecklistsReportChecklistDetailsGateway.cs" />
+    <Compile Include="Units\UnitChecklistsReportTDS.cs">
+      <DependentUpon>UnitChecklistsReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Units\UnitChecklistsReportTDS.Designer.cs">
+      <DependentUpon>UnitChecklistsReportTDS.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Units\UnitChecklistsReportUnitDetailsGateway.cs" />
+    <Compile Include="Units\UnitInformationChecklistDetailsGateway.cs" />
+    <Compile Include="Units\UnitInformationCostExceptionsInformationGateway.cs" />
+    <Compile Include="Units\UnitInformationCostInformationGateway.cs" />
+    <Compile Include="Units\UnitInformationInspectionDetailsGateway.cs" />
+    <Compile Include="Units\UnitInformationNoteDetailsGateway.cs" />
+    <Compile Include="Units\UnitInformationReportGateway.cs" />
+    <Compile Include="Units\UnitInformationReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UnitInformationReportTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Units\UnitInformationServiceDetailsGateway.cs" />
+    <Compile Include="Units\UnitInformationTDS.cs">
+      <DependentUpon>UnitInformationTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Units\UnitInformationTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UnitInformationTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Units\UnitInformationUnitDetailsGateway.cs" />
+    <Compile Include="Units\UnitOwnerTypeListGateway.cs" />
+    <Compile Include="Units\UnitsAddNewGateway.cs" />
+    <Compile Include="Units\UnitsAddTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UnitsAddTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Units\UnitsCategoryGateway.cs" />
+    <Compile Include="Units\UnitsChecklistRulesTempGateway.cs" />
+    <Compile Include="Units\UnitsCostHistoryExceptionsGateway.cs" />
+    <Compile Include="Units\UnitsCostHistoryGateway.cs" />
+    <Compile Include="Units\UnitsGateway.cs" />
+    <Compile Include="Units\UnitsInspectionGateway.cs" />
+    <Compile Include="Units\UnitsListGateway.cs" />
+    <Compile Include="Units\UnitsNavigatorGateway.cs" />
+    <Compile Include="Units\UnitsNavigatorTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UnitsNavigatorTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Units\UnitsNoteGateway.cs" />
+    <Compile Include="Units\UnitsTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UnitsTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Units\UnitsVehicleGateway.cs" />
+    <Compile Include="Units\UnitVehicleFuelTypeListGateway.cs" />
+    <Compile Include="Units\UnitVehicleNumberOfAxesListGateway.cs" />
+    <Compile Include="Units\UnitVehicleTireSizeListGateway.cs" />
+    <Compile Include="Units\UnitVehicleWeightListGateway.cs" />
+    <Compile Include="Units\UnitWithAlarmsReportGateway.cs" />
+    <Compile Include="Units\UnitWithAlarmsReportTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UnitWithAlarmsReportTDS.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

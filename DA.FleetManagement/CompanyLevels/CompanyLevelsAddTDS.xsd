@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CompanyLevelsAddTDS" targetNamespace="http://tempuri.org/CompanyLevelsAddTDS.xsd" xmlns:mstns="http://tempuri.org/CompanyLevelsAddTDS.xsd" xmlns="http://tempuri.org/CompanyLevelsAddTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CompanyLevelsAddTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="CompanyLevelsAddTDS" msprop:Generator_DataSetName="CompanyLevelsAddTDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CompanyLevelsAddNew" msprop:Generator_UserTableName="CompanyLevelsAddNew" msprop:Generator_RowDeletedName="CompanyLevelsAddNewRowDeleted" msprop:Generator_RowChangedName="CompanyLevelsAddNewRowChanged" msprop:Generator_RowClassName="CompanyLevelsAddNewRow" msprop:Generator_RowChangingName="CompanyLevelsAddNewRowChanging" msprop:Generator_RowEvArgName="CompanyLevelsAddNewRowChangeEvent" msprop:Generator_RowEvHandlerName="CompanyLevelsAddNewRowChangeEventHandler" msprop:Generator_TableClassName="CompanyLevelsAddNewDataTable" msprop:Generator_TableVarName="tableCompanyLevelsAddNew" msprop:Generator_RowDeletingName="CompanyLevelsAddNewRowDeleting" msprop:Generator_TablePropName="CompanyLevelsAddNew">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CompanyLevelID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="CompanyLevelID" msprop:Generator_ColumnVarNameInTable="columnCompanyLevelID" msprop:Generator_ColumnPropNameInRow="CompanyLevelID" msprop:Generator_ColumnPropNameInTable="CompanyLevelIDColumn" type="xs:int" />
+              <xs:element name="NewCompanyLevelID" msprop:Generator_UserColumnName="NewCompanyLevelID" msprop:Generator_ColumnVarNameInTable="columnNewCompanyLevelID" msprop:Generator_ColumnPropNameInRow="NewCompanyLevelID" msprop:Generator_ColumnPropNameInTable="NewCompanyLevelIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ParentID" msprop:Generator_UserColumnName="ParentID" msprop:Generator_ColumnVarNameInTable="columnParentID" msprop:Generator_ColumnPropNameInRow="ParentID" msprop:Generator_ColumnPropNameInTable="ParentIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="InDatabase" msprop:Generator_UserColumnName="InDatabase" msprop:Generator_ColumnVarNameInTable="columnInDatabase" msprop:Generator_ColumnPropNameInRow="InDatabase" msprop:Generator_ColumnPropNameInTable="InDatabaseColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="UnitsUnitOfMeasurement" msprop:Generator_UserColumnName="UnitsUnitOfMeasurement" msprop:Generator_ColumnPropNameInRow="UnitsUnitOfMeasurement" msprop:Generator_ColumnVarNameInTable="columnUnitsUnitOfMeasurement" msprop:Generator_ColumnPropNameInTable="UnitsUnitOfMeasurementColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CompanyLevelManagers" msprop:Generator_UserTableName="CompanyLevelManagers" msprop:Generator_RowDeletedName="CompanyLevelManagersRowDeleted" msprop:Generator_RowChangedName="CompanyLevelManagersRowChanged" msprop:Generator_RowClassName="CompanyLevelManagersRow" msprop:Generator_RowChangingName="CompanyLevelManagersRowChanging" msprop:Generator_RowEvArgName="CompanyLevelManagersRowChangeEvent" msprop:Generator_RowEvHandlerName="CompanyLevelManagersRowChangeEventHandler" msprop:Generator_TableClassName="CompanyLevelManagersDataTable" msprop:Generator_TableVarName="tableCompanyLevelManagers" msprop:Generator_RowDeletingName="CompanyLevelManagersRowDeleting" msprop:Generator_TablePropName="CompanyLevelManagers">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EmployeeID" msprop:Generator_UserColumnName="EmployeeID" msprop:Generator_ColumnPropNameInRow="EmployeeID" msprop:Generator_ColumnVarNameInTable="columnEmployeeID" msprop:Generator_ColumnPropNameInTable="EmployeeIDColumn" type="xs:int" />
+              <xs:element name="CompanyLevelID" msprop:Generator_UserColumnName="CompanyLevelID" msprop:Generator_ColumnPropNameInRow="CompanyLevelID" msprop:Generator_ColumnVarNameInTable="columnCompanyLevelID" msprop:Generator_ColumnPropNameInTable="CompanyLevelIDColumn" type="xs:int" />
+              <xs:element name="FullName" msprop:Generator_UserColumnName="FullName" msprop:Generator_ColumnPropNameInRow="FullName" msprop:Generator_ColumnVarNameInTable="columnFullName" msprop:Generator_ColumnPropNameInTable="FullNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Selected" msprop:Generator_UserColumnName="Selected" msprop:Generator_ColumnPropNameInRow="Selected" msprop:Generator_ColumnVarNameInTable="columnSelected" msprop:Generator_ColumnPropNameInTable="SelectedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="InDatabase" msprop:Generator_UserColumnName="InDatabase" msprop:Generator_ColumnPropNameInRow="InDatabase" msprop:Generator_ColumnVarNameInTable="columnInDatabase" msprop:Generator_ColumnPropNameInTable="InDatabaseColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CompanyLevelsAddNew" />
+      <xs:field xpath="mstns:CompanyLevelID" />
+    </xs:unique>
+    <xs:unique name="CompanyLevelManagers_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CompanyLevelManagers" />
+      <xs:field xpath="mstns:EmployeeID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

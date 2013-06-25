@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PhoneTDS" targetNamespace="http://tempuri.org/PhoneTDS.xsd" xmlns:mstns="http://tempuri.org/PhoneTDS.xsd" xmlns="http://tempuri.org/PhoneTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LFSDB9ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="LFSDB9ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.RAF.Properties.Settings.GlobalReference.Default.LFSDB9ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PhoneTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PhoneTDS" msprop:Generator_DataSetName="PhoneTDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Phone" msprop:Generator_UserTableName="Phone" msprop:Generator_RowDeletedName="PhoneRowDeleted" msprop:Generator_TableClassName="PhoneDataTable" msprop:Generator_RowChangedName="PhoneRowChanged" msprop:Generator_RowClassName="PhoneRow" msprop:Generator_RowChangingName="PhoneRowChanging" msprop:Generator_RowEvArgName="PhoneRowChangeEvent" msprop:Generator_RowEvHandlerName="PhoneRowChangeEventHandler" msprop:Generator_TablePropName="Phone" msprop:Generator_TableVarName="tablePhone" msprop:Generator_RowDeletingName="PhoneRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PHONE_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="PHONE_ID" msprop:Generator_ColumnPropNameInRow="PHONE_ID" msprop:Generator_ColumnVarNameInTable="columnPHONE_ID" msprop:Generator_ColumnPropNameInTable="PHONE_IDColumn" type="xs:int" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="CONTACTS_ID" msprop:Generator_UserColumnName="CONTACTS_ID" msprop:Generator_ColumnPropNameInRow="CONTACTS_ID" msprop:Generator_ColumnVarNameInTable="columnCONTACTS_ID" msprop:Generator_ColumnPropNameInTable="CONTACTS_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="COMPANIES_ID" msprop:Generator_UserColumnName="COMPANIES_ID" msprop:Generator_ColumnPropNameInRow="COMPANIES_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANIES_ID" msprop:Generator_ColumnPropNameInTable="COMPANIES_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TELEPHONE" msprop:Generator_UserColumnName="TELEPHONE" msprop:Generator_ColumnPropNameInRow="TELEPHONE" msprop:Generator_ColumnVarNameInTable="columnTELEPHONE" msprop:Generator_ColumnPropNameInTable="TELEPHONEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TELEPHONE_EXT" msprop:Generator_UserColumnName="TELEPHONE_EXT" msprop:Generator_ColumnPropNameInRow="TELEPHONE_EXT" msprop:Generator_ColumnVarNameInTable="columnTELEPHONE_EXT" msprop:Generator_ColumnPropNameInTable="TELEPHONE_EXTColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TELEPHONE_TYPE" msprop:Generator_UserColumnName="TELEPHONE_TYPE" msprop:Generator_ColumnPropNameInRow="TELEPHONE_TYPE" msprop:Generator_ColumnVarNameInTable="columnTELEPHONE_TYPE" msprop:Generator_ColumnPropNameInTable="TELEPHONE_TYPEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ACTIVE" msprop:Generator_UserColumnName="ACTIVE" msprop:Generator_ColumnPropNameInRow="ACTIVE" msprop:Generator_ColumnVarNameInTable="columnACTIVE" msprop:Generator_ColumnPropNameInTable="ACTIVEColumn" type="xs:boolean" />
+              <xs:element name="PRIMARY_PHONE" msprop:Generator_UserColumnName="PRIMARY_PHONE" msprop:Generator_ColumnPropNameInRow="PRIMARY_PHONE" msprop:Generator_ColumnVarNameInTable="columnPRIMARY_PHONE" msprop:Generator_ColumnPropNameInTable="PRIMARY_PHONEColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Phone" />
+      <xs:field xpath="mstns:PHONE_ID" />
+      <xs:field xpath="mstns:COMPANY_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

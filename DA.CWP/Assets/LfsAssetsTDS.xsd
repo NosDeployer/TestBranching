@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LfsAssetsTDS" targetNamespace="http://tempuri.org/LfsAssetsTDS.xsd" xmlns:mstns="http://tempuri.org/LfsAssetsTDS.xsd" xmlns="http://tempuri.org/LfsAssetsTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="3" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LFSDB5ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LFSDB5ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.CWP.Properties.Settings.GlobalReference.Default.LFSDB5ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LfsdbLiveSite3ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LfsdbLiveSite3ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.CWP.Properties.Settings.GlobalReference.Default.LfsdbLiveSite3ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Dev_Raf3ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Dev_Raf3ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.CWP.Properties.Settings.GlobalReference.Default.Dev_Raf3ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LFSDB9ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LFSDB9ConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.CWP.Properties.Settings.GlobalReference.Default.LFSDB9ConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LfsAssetsTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="LfsAssetsTDS" msprop:Generator_DataSetName="LfsAssetsTDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LFS_ASSET" msprop:Generator_UserTableName="LFS_ASSET" msprop:Generator_RowDeletedName="LFS_ASSETRowDeleted" msprop:Generator_RowChangedName="LFS_ASSETRowChanged" msprop:Generator_RowClassName="LFS_ASSETRow" msprop:Generator_RowChangingName="LFS_ASSETRowChanging" msprop:Generator_RowEvArgName="LFS_ASSETRowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_ASSETRowChangeEventHandler" msprop:Generator_TableClassName="LFS_ASSETDataTable" msprop:Generator_TableVarName="tableLFS_ASSET" msprop:Generator_RowDeletingName="LFS_ASSETRowDeleting" msprop:Generator_TablePropName="LFS_ASSET">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AssetID" msprop:Generator_UserColumnName="AssetID" msprop:Generator_ColumnPropNameInRow="AssetID" msprop:Generator_ColumnVarNameInTable="columnAssetID" msprop:Generator_ColumnPropNameInTable="AssetIDColumn" type="xs:int" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LFS_ASSET_SEWER" msprop:Generator_UserTableName="LFS_ASSET_SEWER" msprop:Generator_RowDeletedName="LFS_ASSET_SEWERRowDeleted" msprop:Generator_RowChangedName="LFS_ASSET_SEWERRowChanged" msprop:Generator_RowClassName="LFS_ASSET_SEWERRow" msprop:Generator_RowChangingName="LFS_ASSET_SEWERRowChanging" msprop:Generator_RowEvArgName="LFS_ASSET_SEWERRowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_ASSET_SEWERRowChangeEventHandler" msprop:Generator_TableClassName="LFS_ASSET_SEWERDataTable" msprop:Generator_TableVarName="tableLFS_ASSET_SEWER" msprop:Generator_RowDeletingName="LFS_ASSET_SEWERRowDeleting" msprop:Generator_TablePropName="LFS_ASSET_SEWER">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AssetID" msprop:Generator_UserColumnName="AssetID" msprop:Generator_ColumnPropNameInRow="AssetID" msprop:Generator_ColumnVarNameInTable="columnAssetID" msprop:Generator_ColumnPropNameInTable="AssetIDColumn" type="xs:int" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LFS_ASSET_SEWER_LATERAL" msprop:Generator_UserTableName="LFS_ASSET_SEWER_LATERAL" msprop:Generator_RowDeletedName="LFS_ASSET_SEWER_LATERALRowDeleted" msprop:Generator_RowChangedName="LFS_ASSET_SEWER_LATERALRowChanged" msprop:Generator_RowClassName="LFS_ASSET_SEWER_LATERALRow" msprop:Generator_RowChangingName="LFS_ASSET_SEWER_LATERALRowChanging" msprop:Generator_RowEvArgName="LFS_ASSET_SEWER_LATERALRowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_ASSET_SEWER_LATERALRowChangeEventHandler" msprop:Generator_TableClassName="LFS_ASSET_SEWER_LATERALDataTable" msprop:Generator_TableVarName="tableLFS_ASSET_SEWER_LATERAL" msprop:Generator_RowDeletingName="LFS_ASSET_SEWER_LATERALRowDeleting" msprop:Generator_TablePropName="LFS_ASSET_SEWER_LATERAL">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AssetID" msprop:Generator_UserColumnName="AssetID" msprop:Generator_ColumnPropNameInRow="AssetID" msprop:Generator_ColumnVarNameInTable="columnAssetID" msprop:Generator_ColumnPropNameInTable="AssetIDColumn" type="xs:int" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LFS_ASSET_SEWER_LATERAL_CLIENT" msprop:Generator_UserTableName="LFS_ASSET_SEWER_LATERAL_CLIENT" msprop:Generator_RowDeletedName="LFS_ASSET_SEWER_LATERAL_CLIENTRowDeleted" msprop:Generator_RowChangedName="LFS_ASSET_SEWER_LATERAL_CLIENTRowChanged" msprop:Generator_RowClassName="LFS_ASSET_SEWER_LATERAL_CLIENTRow" msprop:Generator_RowChangingName="LFS_ASSET_SEWER_LATERAL_CLIENTRowChanging" msprop:Generator_RowEvArgName="LFS_ASSET_SEWER_LATERAL_CLIENTRowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_ASSET_SEWER_LATERAL_CLIENTRowChangeEventHandler" msprop:Generator_TableClassName="LFS_ASSET_SEWER_LATERAL_CLIENTDataTable" msprop:Generator_TableVarName="tableLFS_ASSET_SEWER_LATERAL_CLIENT" msprop:Generator_RowDeletingName="LFS_ASSET_SEWER_LATERAL_CLIENTRowDeleting" msprop:Generator_TablePropName="LFS_ASSET_SEWER_LATERAL_CLIENT">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AssetID" msprop:Generator_UserColumnName="AssetID" msprop:Generator_ColumnPropNameInRow="AssetID" msprop:Generator_ColumnVarNameInTable="columnAssetID" msprop:Generator_ColumnPropNameInTable="AssetIDColumn" type="xs:int" />
+              <xs:element name="ClientID" msprop:Generator_UserColumnName="ClientID" msprop:Generator_ColumnPropNameInRow="ClientID" msprop:Generator_ColumnVarNameInTable="columnClientID" msprop:Generator_ColumnPropNameInTable="ClientIDColumn" type="xs:int" />
+              <xs:element name="ClientLateralID" msprop:Generator_UserColumnName="ClientLateralID" msprop:Generator_ColumnPropNameInRow="ClientLateralID" msprop:Generator_ColumnVarNameInTable="columnClientLateralID" msprop:Generator_ColumnPropNameInTable="ClientLateralIDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LFS_ASSET_SEWER_SECTION" msprop:Generator_UserTableName="LFS_ASSET_SEWER_SECTION" msprop:Generator_RowDeletedName="LFS_ASSET_SEWER_SECTIONRowDeleted" msprop:Generator_RowChangedName="LFS_ASSET_SEWER_SECTIONRowChanged" msprop:Generator_RowClassName="LFS_ASSET_SEWER_SECTIONRow" msprop:Generator_RowChangingName="LFS_ASSET_SEWER_SECTIONRowChanging" msprop:Generator_RowEvArgName="LFS_ASSET_SEWER_SECTIONRowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_ASSET_SEWER_SECTIONRowChangeEventHandler" msprop:Generator_TableClassName="LFS_ASSET_SEWER_SECTIONDataTable" msprop:Generator_TableVarName="tableLFS_ASSET_SEWER_SECTION" msprop:Generator_RowDeletingName="LFS_ASSET_SEWER_SECTIONRowDeleting" msprop:Generator_TablePropName="LFS_ASSET_SEWER_SECTION">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AssetID" msprop:Generator_UserColumnName="AssetID" msprop:Generator_ColumnVarNameInTable="columnAssetID" msprop:Generator_ColumnPropNameInRow="AssetID" msprop:Generator_ColumnPropNameInTable="AssetIDColumn" type="xs:int" />
+              <xs:element name="SteelTapeThroughSewer" msprop:Generator_UserColumnName="SteelTapeThroughSewer" msprop:Generator_ColumnVarNameInTable="columnSteelTapeThroughSewer" msprop:Generator_ColumnPropNameInRow="SteelTapeThroughSewer" msprop:Generator_ColumnPropNameInTable="SteelTapeThroughSewerColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USMHMouth12" msprop:Generator_UserColumnName="USMHMouth12" msprop:Generator_ColumnVarNameInTable="columnUSMHMouth12" msprop:Generator_ColumnPropNameInRow="USMHMouth12" msprop:Generator_ColumnPropNameInTable="USMHMouth12Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USMHMouth1" msprop:Generator_UserColumnName="USMHMouth1" msprop:Generator_ColumnVarNameInTable="columnUSMHMouth1" msprop:Generator_ColumnPropNameInRow="USMHMouth1" msprop:Generator_ColumnPropNameInTable="USMHMouth1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USMHMouth2" msprop:Generator_UserColumnName="USMHMouth2" msprop:Generator_ColumnVarNameInTable="columnUSMHMouth2" msprop:Generator_ColumnPropNameInRow="USMHMouth2" msprop:Generator_ColumnPropNameInTable="USMHMouth2Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USMHMouth3" msprop:Generator_UserColumnName="USMHMouth3" msprop:Generator_ColumnVarNameInTable="columnUSMHMouth3" msprop:Generator_ColumnPropNameInRow="USMHMouth3" msprop:Generator_ColumnPropNameInTable="USMHMouth3Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USMHMouth4" msprop:Generator_UserColumnName="USMHMouth4" msprop:Generator_ColumnVarNameInTable="columnUSMHMouth4" msprop:Generator_ColumnPropNameInRow="USMHMouth4" msprop:Generator_ColumnPropNameInTable="USMHMouth4Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USMHMouth5" msprop:Generator_UserColumnName="USMHMouth5" msprop:Generator_ColumnVarNameInTable="columnUSMHMouth5" msprop:Generator_ColumnPropNameInRow="USMHMouth5" msprop:Generator_ColumnPropNameInTable="USMHMouth5Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DSMHMouth12" msprop:Generator_UserColumnName="DSMHMouth12" msprop:Generator_ColumnVarNameInTable="columnDSMHMouth12" msprop:Generator_ColumnPropNameInRow="DSMHMouth12" msprop:Generator_ColumnPropNameInTable="DSMHMouth12Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DSMHMouth1" msprop:Generator_UserColumnName="DSMHMouth1" msprop:Generator_ColumnVarNameInTable="columnDSMHMouth1" msprop:Generator_ColumnPropNameInRow="DSMHMouth1" msprop:Generator_ColumnPropNameInTable="DSMHMouth1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DSMHMouth2" msprop:Generator_UserColumnName="DSMHMouth2" msprop:Generator_ColumnVarNameInTable="columnDSMHMouth2" msprop:Generator_ColumnPropNameInRow="DSMHMouth2" msprop:Generator_ColumnPropNameInTable="DSMHMouth2Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DSMHMouth3" msprop:Generator_UserColumnName="DSMHMouth3" msprop:Generator_ColumnVarNameInTable="columnDSMHMouth3" msprop:Generator_ColumnPropNameInRow="DSMHMouth3" msprop:Generator_ColumnPropNameInTable="DSMHMouth3Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DSMHMouth4" msprop:Generator_UserColumnName="DSMHMouth4" msprop:Generator_ColumnVarNameInTable="columnDSMHMouth4" msprop:Generator_ColumnPropNameInRow="DSMHMouth4" msprop:Generator_ColumnPropNameInTable="DSMHMouth4Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DSMHMouth5" msprop:Generator_UserColumnName="DSMHMouth5" msprop:Generator_ColumnVarNameInTable="columnDSMHMouth5" msprop:Generator_ColumnPropNameInRow="DSMHMouth5" msprop:Generator_ColumnPropNameInTable="DSMHMouth5Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="SubArea" msprop:Generator_UserColumnName="SubArea" msprop:Generator_ColumnVarNameInTable="columnSubArea" msprop:Generator_ColumnPropNameInRow="SubArea" msprop:Generator_ColumnPropNameInTable="SubAreaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Thickness" msprop:Generator_UserColumnName="Thickness" msprop:Generator_ColumnVarNameInTable="columnThickness" msprop:Generator_ColumnPropNameInRow="Thickness" msprop:Generator_ColumnPropNameInTable="ThicknessColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LFS_ASSET_SEWER_SECTION_THICKNESS" msprop:Generator_UserTableName="LFS_ASSET_SEWER_SECTION_THICKNESS" msprop:Generator_RowDeletedName="LFS_ASSET_SEWER_SECTION_THICKNESSRowDeleted" msprop:Generator_RowChangedName="LFS_ASSET_SEWER_SECTION_THICKNESSRowChanged" msprop:Generator_RowClassName="LFS_ASSET_SEWER_SECTION_THICKNESSRow" msprop:Generator_RowChangingName="LFS_ASSET_SEWER_SECTION_THICKNESSRowChanging" msprop:Generator_RowEvArgName="LFS_ASSET_SEWER_SECTION_THICKNESSRowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_ASSET_SEWER_SECTION_THICKNESSRowChangeEventHandler" msprop:Generator_TableClassName="LFS_ASSET_SEWER_SECTION_THICKNESSDataTable" msprop:Generator_TableVarName="tableLFS_ASSET_SEWER_SECTION_THICKNESS" msprop:Generator_RowDeletingName="LFS_ASSET_SEWER_SECTION_THICKNESSRowDeleting" msprop:Generator_TablePropName="LFS_ASSET_SEWER_SECTION_THICKNESS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Thickness" msprop:Generator_UserColumnName="Thickness" msprop:Generator_ColumnVarNameInTable="columnThickness" msprop:Generator_ColumnPropNameInRow="Thickness" msprop:Generator_ColumnPropNameInTable="ThicknessColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LFS_ASSET_SEWER_MH" msprop:Generator_UserTableName="LFS_ASSET_SEWER_MH" msprop:Generator_RowDeletedName="LFS_ASSET_SEWER_MHRowDeleted" msprop:Generator_TableClassName="LFS_ASSET_SEWER_MHDataTable" msprop:Generator_RowChangedName="LFS_ASSET_SEWER_MHRowChanged" msprop:Generator_RowClassName="LFS_ASSET_SEWER_MHRow" msprop:Generator_RowChangingName="LFS_ASSET_SEWER_MHRowChanging" msprop:Generator_RowEvArgName="LFS_ASSET_SEWER_MHRowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_ASSET_SEWER_MHRowChangeEventHandler" msprop:Generator_TablePropName="LFS_ASSET_SEWER_MH" msprop:Generator_TableVarName="tableLFS_ASSET_SEWER_MH" msprop:Generator_RowDeletingName="LFS_ASSET_SEWER_MHRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AssetID" msprop:Generator_UserColumnName="AssetID" msprop:Generator_ColumnPropNameInRow="AssetID" msprop:Generator_ColumnVarNameInTable="columnAssetID" msprop:Generator_ColumnPropNameInTable="AssetIDColumn" type="xs:int" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="ConditionRating" msprop:Generator_UserColumnName="ConditionRating" msprop:Generator_ColumnPropNameInRow="ConditionRating" msprop:Generator_ColumnVarNameInTable="columnConditionRating" msprop:Generator_ColumnPropNameInTable="ConditionRatingColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_ASSET" />
+      <xs:field xpath="mstns:AssetID" />
+    </xs:unique>
+    <xs:unique name="LFS_ASSET_SEWER_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_ASSET_SEWER" />
+      <xs:field xpath="mstns:AssetID" />
+    </xs:unique>
+    <xs:unique name="LFS_ASSET_SEWER_LATERAL_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_ASSET_SEWER_LATERAL" />
+      <xs:field xpath="mstns:AssetID" />
+    </xs:unique>
+    <xs:unique name="LFS_ASSET_SEWER_LATERAL_CLIENT_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_ASSET_SEWER_LATERAL_CLIENT" />
+      <xs:field xpath="mstns:AssetID" />
+      <xs:field xpath="mstns:ClientID" />
+    </xs:unique>
+    <xs:unique name="LFS_ASSET_SEWER_SECTION_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_ASSET_SEWER_SECTION" />
+      <xs:field xpath="mstns:AssetID" />
+    </xs:unique>
+    <xs:unique name="LFS_ASSET_SEWER_SECTION_THICKNESS_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_ASSET_SEWER_SECTION_THICKNESS" />
+      <xs:field xpath="mstns:Thickness" />
+      <xs:field xpath="mstns:COMPANY_ID" />
+    </xs:unique>
+    <xs:unique name="LFS_ASSET_SEWER_MH_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_ASSET_SEWER_MH" />
+      <xs:field xpath="mstns:AssetID" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_LFS_ASSET_LFS_ASSET_SEWER" msdata:parent="LFS_ASSET" msdata:child="LFS_ASSET_SEWER" msdata:parentkey="AssetID" msdata:childkey="AssetID" msprop:Generator_UserRelationName="FK_LFS_ASSET_LFS_ASSET_SEWER" msprop:Generator_RelationVarName="relationFK_LFS_ASSET_LFS_ASSET_SEWER" msprop:Generator_UserChildTable="LFS_ASSET_SEWER" msprop:Generator_UserParentTable="LFS_ASSET" msprop:Generator_ParentPropName="LFS_ASSETRow" msprop:Generator_ChildPropName="GetLFS_ASSET_SEWERRows" />
+      <msdata:Relationship name="LFS_ASSET_SEWER_LFS_ASSET_SEWER_LATERAL" msdata:parent="LFS_ASSET_SEWER" msdata:child="LFS_ASSET_SEWER_LATERAL" msdata:parentkey="AssetID" msdata:childkey="AssetID" msprop:Generator_UserRelationName="LFS_ASSET_SEWER_LFS_ASSET_SEWER_LATERAL" msprop:Generator_RelationVarName="relationLFS_ASSET_SEWER_LFS_ASSET_SEWER_LATERAL" msprop:Generator_UserChildTable="LFS_ASSET_SEWER_LATERAL" msprop:Generator_UserParentTable="LFS_ASSET_SEWER" msprop:Generator_ParentPropName="LFS_ASSET_SEWERRow" msprop:Generator_ChildPropName="GetLFS_ASSET_SEWER_LATERALRows" />
+      <msdata:Relationship name="LFS_ASSET_SEWER_LFS_ASSET_SEWER_LATERAL_CLIENT" msdata:parent="LFS_ASSET_SEWER" msdata:child="LFS_ASSET_SEWER_LATERAL_CLIENT" msdata:parentkey="AssetID" msdata:childkey="AssetID" msprop:Generator_UserRelationName="LFS_ASSET_SEWER_LFS_ASSET_SEWER_LATERAL_CLIENT" msprop:Generator_RelationVarName="relationLFS_ASSET_SEWER_LFS_ASSET_SEWER_LATERAL_CLIENT" msprop:Generator_UserChildTable="LFS_ASSET_SEWER_LATERAL_CLIENT" msprop:Generator_UserParentTable="LFS_ASSET_SEWER" msprop:Generator_ParentPropName="LFS_ASSET_SEWERRow" msprop:Generator_ChildPropName="GetLFS_ASSET_SEWER_LATERAL_CLIENTRows" />
+      <msdata:Relationship name="FK_LFS_ASSET_SEWER_SECTION_THICKNESS_LFS_ASSET_SEWER_SECTION" msdata:parent="LFS_ASSET_SEWER_SECTION_THICKNESS" msdata:child="LFS_ASSET_SEWER_SECTION" msdata:parentkey="Thickness COMPANY_ID" msdata:childkey="Thickness COMPANY_ID" msprop:Generator_UserRelationName="FK_LFS_ASSET_SEWER_SECTION_THICKNESS_LFS_ASSET_SEWER_SECTION" msprop:Generator_RelationVarName="relationFK_LFS_ASSET_SEWER_SECTION_THICKNESS_LFS_ASSET_SEWER_SECTION" msprop:Generator_UserChildTable="LFS_ASSET_SEWER_SECTION" msprop:Generator_UserParentTable="LFS_ASSET_SEWER_SECTION_THICKNESS" msprop:Generator_ParentPropName="LFS_ASSET_SEWER_SECTION_THICKNESSRowParent" msprop:Generator_ChildPropName="GetLFS_ASSET_SEWER_SECTIONRows" />
+      <msdata:Relationship name="LFS_ASSET_LFS_ASSET_SEWER_SECTION" msdata:parent="LFS_ASSET_SEWER" msdata:child="LFS_ASSET_SEWER_SECTION" msdata:parentkey="AssetID" msdata:childkey="AssetID" msprop:Generator_UserRelationName="LFS_ASSET_LFS_ASSET_SEWER_SECTION" msprop:Generator_RelationVarName="relationLFS_ASSET_LFS_ASSET_SEWER_SECTION" msprop:Generator_UserChildTable="LFS_ASSET_SEWER_SECTION" msprop:Generator_UserParentTable="LFS_ASSET_SEWER" msprop:Generator_ParentPropName="LFS_ASSET_SEWERRow" msprop:Generator_ChildPropName="GetLFS_ASSET_SEWER_SECTIONRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

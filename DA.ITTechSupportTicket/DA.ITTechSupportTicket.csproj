@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{30882274-F34B-40F9-AC12-9382347C2EE4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LiquiForce.LFSLive.DA.ITTechSupportTicket</RootNamespace>
+    <AssemblyName>LiquiForce.LFSLive.DA.ITTechSupportTicket</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LiquiForce.LFSLive.DA.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.DA.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="LiquiForce.LFSLive.Server, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebUI\Common\binn\LiquiForce.LFSLive.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Dashboard\DashboardTDS.xsc">
+      <DependentUpon>DashboardTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\DashboardTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DashboardTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dashboard\DashboardTDS.xss">
+      <DependentUpon>DashboardTDS.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SupportTicket\SupportTicketAddTDS.xsc">
+      <DependentUpon>SupportTicketAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="SupportTicket\SupportTicketAddTDS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SupportTicket\SupportTicketAddTDS.xss">
+      <DependentUpon>SupportTicketAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="SupportTicket\SupportTicketCategoriesAddTDS.xsc">
+      <DependentUpon>SupportTicketCategoriesAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="SupportTicket\SupportTicketCategoriesAddTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SupportTicketCategoriesAddTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SupportTicket\SupportTicketCategoriesAddTDS.xss">
+      <DependentUpon>SupportTicketCategoriesAddTDS.xsd</DependentUpon>
+    </None>
+    <None Include="SupportTicket\SupportTicketCategoriesTDS.xsc">
+      <DependentUpon>SupportTicketCategoriesTDS.xsd</DependentUpon>
+    </None>
+    <None Include="SupportTicket\SupportTicketCategoriesTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SupportTicketCategoriesTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SupportTicket\SupportTicketCategoriesTDS.xss">
+      <DependentUpon>SupportTicketCategoriesTDS.xsd</DependentUpon>
+    </None>
+    <None Include="SupportTicket\SupportTicketInformationTDS.xsc">
+      <DependentUpon>SupportTicketInformationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="SupportTicket\SupportTicketInformationTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SupportTicketInformationTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SupportTicket\SupportTicketInformationTDS.xss">
+      <DependentUpon>SupportTicketInformationTDS.xsd</DependentUpon>
+    </None>
+    <None Include="SupportTicket\SupportTicketNavigatorTDS.xsc">
+      <DependentUpon>SupportTicketNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="SupportTicket\SupportTicketNavigatorTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SupportTicketNavigatorTDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SupportTicket\SupportTicketNavigatorTDS.xss">
+      <DependentUpon>SupportTicketNavigatorTDS.xsd</DependentUpon>
+    </None>
+    <None Include="SupportTicket\SupportTicketTDS.xsc">
+      <DependentUpon>SupportTicketTDS.xsd</DependentUpon>
+    </None>
+    <None Include="SupportTicket\SupportTicketTDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SupportTicketTDS1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SupportTicket\SupportTicketTDS.xss">
+      <DependentUpon>SupportTicketTDS.xsd</DependentUpon>
+    </None>
+    <Compile Include="Dashboard\DashboardMySupportTicketGateway.cs" />
+    <Compile Include="Dashboard\DashboardMySupportTicketOnHoldGateway.cs" />
+    <Compile Include="Dashboard\DashboardSupportTicketAssignedToMeGateway.cs" />
+    <Compile Include="Dashboard\DashboardSupportTicketAssignedToMeOnHoldGateway.cs" />
+    <Compile Include="Dashboard\DashboardTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DashboardTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SupportTicket\SupportTicketAddBasicInformationGateway.cs" />
+    <Compile Include="SupportTicket\SupportTicketAddTDS.cs">
+      <DependentUpon>SupportTicketAddTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SupportTicket\SupportTicketAddTDS.Designer.cs">
+      <DependentUpon>SupportTicketAddTDS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupportTicket\SupportTicketCategoriesAddNewGateway.cs" />
+    <Compile Include="SupportTicket\SupportTicketCategoriesAddTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SupportTicketCategoriesAddTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SupportTicket\SupportTicketCategoriesTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SupportTicketCategoriesTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SupportTicket\SupportTicketCategoryGateway.cs" />
+    <Compile Include="SupportTicket\SupportTicketInformationTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SupportTicketInformationTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SupportTicket\SupportTicketInformationActivityInformationGateway.cs" />
+    <Compile Include="SupportTicket\SupportTicketInformationBasicInformationGateway.cs" />
+    <Compile Include="SupportTicket\SupportTicketNavigatorGateway.cs" />
+    <Compile Include="SupportTicket\SupportTicketNavigatorTDS.cs">
+      <DependentUpon>SupportTicketNavigatorTDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SupportTicket\SupportTicketNavigatorTDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SupportTicketNavigatorTDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SupportTicket\SupportTicketSupportTicketActivityGateway.cs" />
+    <Compile Include="SupportTicket\SupportTicketSupportTicketGateway.cs" />
+    <Compile Include="SupportTicket\SupportTicketTDS1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SupportTicketTDS.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

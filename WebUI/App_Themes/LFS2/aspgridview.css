@@ -1,0 +1,61 @@
+﻿/* GridView General*/
+.GridView_Pager, .GridView_Pager td
+{
+	color: white;
+	font-size: 9px;
+	font-family: Verdana;
+}
+
+
+
+
+
+/* Labels */
+.ViewGrid_Header
+{
+	font-size: 10px;
+	color: white;
+	font-family: 'Verdana';
+	font-weight: bold;
+	background-color: #797b7d;
+	height: 20px;
+	vertical-align: middle;
+}
+
+/* Backgrounds */
+.ViewGrid_Separator
+{
+    background-color: #797b7d;
+}
+
+.Background_ViewGrid_Td
+{
+	background-color: #DFE7EC;
+}
+
+.Background2_ViewGrid_Td
+{
+	background-color: #ECECEC;
+}
+
+.Background_ViewGrid_Table
+{
+	border-right: white 1px solid;
+	border-top: white 1px solid;
+	border-left: white 1px solid;
+	border-bottom: white 1px solid;
+}
+
+
+.Background_ViewGrid_Header
+{
+	background-color: #797b7d; 
+	text-align: center;
+}
+
+
+
+.Background_ViewGrid_Separator
+{
+	background-color: #c2c2c4; 	
+}

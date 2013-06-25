@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RuleTDS" targetNamespace="http://tempuri.org/RuleTDS.xsd" xmlns:mstns="http://tempuri.org/RuleTDS.xsd" xmlns="http://tempuri.org/RuleTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Dev_Raf3ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Dev_Raf3ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.FleetManagement.Properties.Settings.GlobalReference.Default.Dev_Raf3ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LFSDB9ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LFSDB9ConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.FleetManagement.Properties.Settings.GlobalReference.Default.LFSDB9ConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RuleTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="RuleTDS" msprop:Generator_DataSetName="RuleTDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LFS_FM_RULE_CATEGORY" msprop:Generator_UserTableName="LFS_FM_RULE_CATEGORY" msprop:Generator_RowDeletedName="LFS_FM_RULE_CATEGORYRowDeleted" msprop:Generator_RowChangedName="LFS_FM_RULE_CATEGORYRowChanged" msprop:Generator_RowClassName="LFS_FM_RULE_CATEGORYRow" msprop:Generator_RowChangingName="LFS_FM_RULE_CATEGORYRowChanging" msprop:Generator_RowEvArgName="LFS_FM_RULE_CATEGORYRowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_FM_RULE_CATEGORYRowChangeEventHandler" msprop:Generator_TableClassName="LFS_FM_RULE_CATEGORYDataTable" msprop:Generator_TableVarName="tableLFS_FM_RULE_CATEGORY" msprop:Generator_RowDeletingName="LFS_FM_RULE_CATEGORYRowDeleting" msprop:Generator_TablePropName="LFS_FM_RULE_CATEGORY">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RuleID" msprop:Generator_UserColumnName="RuleID" msprop:Generator_ColumnPropNameInRow="RuleID" msprop:Generator_ColumnVarNameInTable="columnRuleID" msprop:Generator_ColumnPropNameInTable="RuleIDColumn" type="xs:int" />
+              <xs:element name="CategoryID" msprop:Generator_UserColumnName="CategoryID" msprop:Generator_ColumnPropNameInRow="CategoryID" msprop:Generator_ColumnVarNameInTable="columnCategoryID" msprop:Generator_ColumnPropNameInTable="CategoryIDColumn" type="xs:int" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LFS_FM_RULE_COMPANYLEVEL" msprop:Generator_UserTableName="LFS_FM_RULE_COMPANYLEVEL" msprop:Generator_RowDeletedName="LFS_FM_RULE_COMPANYLEVELRowDeleted" msprop:Generator_RowChangedName="LFS_FM_RULE_COMPANYLEVELRowChanged" msprop:Generator_RowClassName="LFS_FM_RULE_COMPANYLEVELRow" msprop:Generator_RowChangingName="LFS_FM_RULE_COMPANYLEVELRowChanging" msprop:Generator_RowEvArgName="LFS_FM_RULE_COMPANYLEVELRowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_FM_RULE_COMPANYLEVELRowChangeEventHandler" msprop:Generator_TableClassName="LFS_FM_RULE_COMPANYLEVELDataTable" msprop:Generator_TableVarName="tableLFS_FM_RULE_COMPANYLEVEL" msprop:Generator_RowDeletingName="LFS_FM_RULE_COMPANYLEVELRowDeleting" msprop:Generator_TablePropName="LFS_FM_RULE_COMPANYLEVEL">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RuleID" msprop:Generator_UserColumnName="RuleID" msprop:Generator_ColumnPropNameInRow="RuleID" msprop:Generator_ColumnVarNameInTable="columnRuleID" msprop:Generator_ColumnPropNameInTable="RuleIDColumn" type="xs:int" />
+              <xs:element name="CompanyLevelID" msprop:Generator_UserColumnName="CompanyLevelID" msprop:Generator_ColumnPropNameInRow="CompanyLevelID" msprop:Generator_ColumnVarNameInTable="columnCompanyLevelID" msprop:Generator_ColumnPropNameInTable="CompanyLevelIDColumn" type="xs:int" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LFS_FM_RULE" msprop:Generator_UserTableName="LFS_FM_RULE" msprop:Generator_RowDeletedName="LFS_FM_RULERowDeleted" msprop:Generator_RowChangedName="LFS_FM_RULERowChanged" msprop:Generator_RowClassName="LFS_FM_RULERow" msprop:Generator_RowChangingName="LFS_FM_RULERowChanging" msprop:Generator_RowEvArgName="LFS_FM_RULERowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_FM_RULERowChangeEventHandler" msprop:Generator_TableClassName="LFS_FM_RULEDataTable" msprop:Generator_TableVarName="tableLFS_FM_RULE" msprop:Generator_RowDeletingName="LFS_FM_RULERowDeleting" msprop:Generator_TablePropName="LFS_FM_RULE">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RuleID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="RuleID" msprop:Generator_ColumnPropNameInRow="RuleID" msprop:Generator_ColumnVarNameInTable="columnRuleID" msprop:Generator_ColumnPropNameInTable="RuleIDColumn" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInTable="NameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MTO" msprop:Generator_UserColumnName="MTO" msprop:Generator_ColumnPropNameInRow="MTO" msprop:Generator_ColumnVarNameInTable="columnMTO" msprop:Generator_ColumnPropNameInTable="MTOColumn" type="xs:boolean" />
+              <xs:element name="Frequency" msprop:Generator_UserColumnName="Frequency" msprop:Generator_ColumnPropNameInRow="Frequency" msprop:Generator_ColumnVarNameInTable="columnFrequency" msprop:Generator_ColumnPropNameInTable="FrequencyColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Alarm" msprop:Generator_UserColumnName="Alarm" msprop:Generator_ColumnPropNameInRow="Alarm" msprop:Generator_ColumnVarNameInTable="columnAlarm" msprop:Generator_ColumnPropNameInTable="AlarmColumn" type="xs:boolean" />
+              <xs:element name="AlarmDays" msprop:Generator_UserColumnName="AlarmDays" msprop:Generator_ColumnPropNameInRow="AlarmDays" msprop:Generator_ColumnVarNameInTable="columnAlarmDays" msprop:Generator_ColumnPropNameInTable="AlarmDaysColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ServiceRequest" msprop:Generator_UserColumnName="ServiceRequest" msprop:Generator_ColumnPropNameInRow="ServiceRequest" msprop:Generator_ColumnVarNameInTable="columnServiceRequest" msprop:Generator_ColumnPropNameInTable="ServiceRequestColumn" type="xs:boolean" />
+              <xs:element name="ServiceRequestDays" msprop:Generator_UserColumnName="ServiceRequestDays" msprop:Generator_ColumnPropNameInRow="ServiceRequestDays" msprop:Generator_ColumnVarNameInTable="columnServiceRequestDays" msprop:Generator_ColumnPropNameInTable="ServiceRequestDaysColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ChecklistRulesDetails" msprop:Generator_UserTableName="ChecklistRulesDetails" msprop:Generator_RowDeletedName="ChecklistRulesDetailsRowDeleted" msprop:Generator_RowChangedName="ChecklistRulesDetailsRowChanged" msprop:Generator_RowClassName="ChecklistRulesDetailsRow" msprop:Generator_RowChangingName="ChecklistRulesDetailsRowChanging" msprop:Generator_RowEvArgName="ChecklistRulesDetailsRowChangeEvent" msprop:Generator_RowEvHandlerName="ChecklistRulesDetailsRowChangeEventHandler" msprop:Generator_TableClassName="ChecklistRulesDetailsDataTable" msprop:Generator_TableVarName="tableChecklistRulesDetails" msprop:Generator_RowDeletingName="ChecklistRulesDetailsRowDeleting" msprop:Generator_TablePropName="ChecklistRulesDetails">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RuleID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="RuleID" msprop:Generator_ColumnVarNameInTable="columnRuleID" msprop:Generator_ColumnPropNameInRow="RuleID" msprop:Generator_ColumnPropNameInTable="RuleIDColumn" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MTO" msprop:Generator_UserColumnName="MTO" msprop:Generator_ColumnVarNameInTable="columnMTO" msprop:Generator_ColumnPropNameInRow="MTO" msprop:Generator_ColumnPropNameInTable="MTOColumn" type="xs:boolean" />
+              <xs:element name="Frequency" msprop:Generator_UserColumnName="Frequency" msprop:Generator_ColumnVarNameInTable="columnFrequency" msprop:Generator_ColumnPropNameInRow="Frequency" msprop:Generator_ColumnPropNameInTable="FrequencyColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Alarm" msprop:Generator_UserColumnName="Alarm" msprop:Generator_ColumnVarNameInTable="columnAlarm" msprop:Generator_ColumnPropNameInRow="Alarm" msprop:Generator_ColumnPropNameInTable="AlarmColumn" type="xs:boolean" />
+              <xs:element name="AlarmDays" msprop:Generator_UserColumnName="AlarmDays" msprop:Generator_ColumnVarNameInTable="columnAlarmDays" msprop:Generator_ColumnPropNameInRow="AlarmDays" msprop:Generator_ColumnPropNameInTable="AlarmDaysColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ServiceRequest" msprop:Generator_UserColumnName="ServiceRequest" msprop:Generator_ColumnVarNameInTable="columnServiceRequest" msprop:Generator_ColumnPropNameInRow="ServiceRequest" msprop:Generator_ColumnPropNameInTable="ServiceRequestColumn" type="xs:boolean" />
+              <xs:element name="ServiceRequestDays" msprop:Generator_UserColumnName="ServiceRequestDays" msprop:Generator_ColumnVarNameInTable="columnServiceRequestDays" msprop:Generator_ColumnPropNameInRow="ServiceRequestDays" msprop:Generator_ColumnPropNameInTable="ServiceRequestDaysColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LFS_FM_CHECKLIST" msprop:Generator_UserTableName="LFS_FM_CHECKLIST" msprop:Generator_RowDeletedName="LFS_FM_CHECKLISTRowDeleted" msprop:Generator_RowChangedName="LFS_FM_CHECKLISTRowChanged" msprop:Generator_RowClassName="LFS_FM_CHECKLISTRow" msprop:Generator_RowChangingName="LFS_FM_CHECKLISTRowChanging" msprop:Generator_RowEvArgName="LFS_FM_CHECKLISTRowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_FM_CHECKLISTRowChangeEventHandler" msprop:Generator_TableClassName="LFS_FM_CHECKLISTDataTable" msprop:Generator_TableVarName="tableLFS_FM_CHECKLIST" msprop:Generator_RowDeletingName="LFS_FM_CHECKLISTRowDeleting" msprop:Generator_TablePropName="LFS_FM_CHECKLIST">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UnitID" msprop:Generator_UserColumnName="UnitID" msprop:Generator_ColumnPropNameInRow="UnitID" msprop:Generator_ColumnVarNameInTable="columnUnitID" msprop:Generator_ColumnPropNameInTable="UnitIDColumn" type="xs:int" />
+              <xs:element name="RuleID" msprop:Generator_UserColumnName="RuleID" msprop:Generator_ColumnPropNameInRow="RuleID" msprop:Generator_ColumnVarNameInTable="columnRuleID" msprop:Generator_ColumnPropNameInTable="RuleIDColumn" type="xs:int" />
+              <xs:element name="LastService" msprop:Generator_UserColumnName="LastService" msprop:Generator_ColumnPropNameInRow="LastService" msprop:Generator_ColumnVarNameInTable="columnLastService" msprop:Generator_ColumnPropNameInTable="LastServiceColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NextDue" msprop:Generator_UserColumnName="NextDue" msprop:Generator_ColumnPropNameInRow="NextDue" msprop:Generator_ColumnVarNameInTable="columnNextDue" msprop:Generator_ColumnPropNameInTable="NextDueColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Done" msprop:Generator_UserColumnName="Done" msprop:Generator_ColumnPropNameInRow="Done" msprop:Generator_ColumnVarNameInTable="columnDone" msprop:Generator_ColumnPropNameInTable="DoneColumn" type="xs:boolean" />
+              <xs:element name="State" msprop:Generator_UserColumnName="State" msprop:Generator_ColumnPropNameInRow="State" msprop:Generator_ColumnVarNameInTable="columnState" msprop:Generator_ColumnPropNameInTable="StateColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LFS_FM_RULE_CATEGORY_UNITS" msprop:Generator_UserTableName="LFS_FM_RULE_CATEGORY_UNITS" msprop:Generator_RowDeletedName="LFS_FM_RULE_CATEGORY_UNITSRowDeleted" msprop:Generator_TableClassName="LFS_FM_RULE_CATEGORY_UNITSDataTable" msprop:Generator_RowChangedName="LFS_FM_RULE_CATEGORY_UNITSRowChanged" msprop:Generator_RowClassName="LFS_FM_RULE_CATEGORY_UNITSRow" msprop:Generator_RowChangingName="LFS_FM_RULE_CATEGORY_UNITSRowChanging" msprop:Generator_RowEvArgName="LFS_FM_RULE_CATEGORY_UNITSRowChangeEvent" msprop:Generator_RowEvHandlerName="LFS_FM_RULE_CATEGORY_UNITSRowChangeEventHandler" msprop:Generator_TablePropName="LFS_FM_RULE_CATEGORY_UNITS" msprop:Generator_TableVarName="tableLFS_FM_RULE_CATEGORY_UNITS" msprop:Generator_RowDeletingName="LFS_FM_RULE_CATEGORY_UNITSRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RuleID" msprop:Generator_UserColumnName="RuleID" msprop:Generator_ColumnPropNameInRow="RuleID" msprop:Generator_ColumnVarNameInTable="columnRuleID" msprop:Generator_ColumnPropNameInTable="RuleIDColumn" type="xs:int" />
+              <xs:element name="CategoryID" msprop:Generator_UserColumnName="CategoryID" msprop:Generator_ColumnPropNameInRow="CategoryID" msprop:Generator_ColumnVarNameInTable="columnCategoryID" msprop:Generator_ColumnPropNameInTable="CategoryIDColumn" type="xs:int" />
+              <xs:element name="UnitID" msprop:Generator_UserColumnName="UnitID" msprop:Generator_ColumnPropNameInRow="UnitID" msprop:Generator_ColumnVarNameInTable="columnUnitID" msprop:Generator_ColumnPropNameInTable="UnitIDColumn" type="xs:int" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_FM_RULE_CATEGORY" />
+      <xs:field xpath="mstns:RuleID" />
+      <xs:field xpath="mstns:CategoryID" />
+    </xs:unique>
+    <xs:unique name="LFS_FM_RULE_COMPANYLEVEL_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_FM_RULE_COMPANYLEVEL" />
+      <xs:field xpath="mstns:RuleID" />
+      <xs:field xpath="mstns:CompanyLevelID" />
+    </xs:unique>
+    <xs:unique name="LFS_FM_RULE_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_FM_RULE" />
+      <xs:field xpath="mstns:RuleID" />
+    </xs:unique>
+    <xs:unique name="ChecklistRulesDetails_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ChecklistRulesDetails" />
+      <xs:field xpath="mstns:RuleID" />
+    </xs:unique>
+    <xs:unique name="LFS_FM_CHECKLIST_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_FM_CHECKLIST" />
+      <xs:field xpath="mstns:UnitID" />
+      <xs:field xpath="mstns:RuleID" />
+    </xs:unique>
+    <xs:unique name="LFS_FM_RULE_CATEGORY_UNITS_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LFS_FM_RULE_CATEGORY_UNITS" />
+      <xs:field xpath="mstns:RuleID" />
+      <xs:field xpath="mstns:CategoryID" />
+      <xs:field xpath="mstns:UnitID" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="LFS_FM_RULE_LFS_FM_RULE_CATEGORY" msdata:parent="LFS_FM_RULE" msdata:child="LFS_FM_RULE_CATEGORY" msdata:parentkey="RuleID" msdata:childkey="RuleID" msprop:Generator_UserRelationName="LFS_FM_RULE_LFS_FM_RULE_CATEGORY" msprop:Generator_RelationVarName="relationLFS_FM_RULE_LFS_FM_RULE_CATEGORY" msprop:Generator_UserChildTable="LFS_FM_RULE_CATEGORY" msprop:Generator_UserParentTable="LFS_FM_RULE" msprop:Generator_ParentPropName="LFS_FM_RULERow" msprop:Generator_ChildPropName="GetLFS_FM_RULE_CATEGORYRows" />
+      <msdata:Relationship name="LFS_FM_RULE_LFS_FM_RULE_COMPANYLEVEL" msdata:parent="LFS_FM_RULE" msdata:child="LFS_FM_RULE_COMPANYLEVEL" msdata:parentkey="RuleID" msdata:childkey="RuleID" msprop:Generator_UserRelationName="LFS_FM_RULE_LFS_FM_RULE_COMPANYLEVEL" msprop:Generator_RelationVarName="relationLFS_FM_RULE_LFS_FM_RULE_COMPANYLEVEL" msprop:Generator_UserChildTable="LFS_FM_RULE_COMPANYLEVEL" msprop:Generator_UserParentTable="LFS_FM_RULE" msprop:Generator_ParentPropName="LFS_FM_RULERow" msprop:Generator_ChildPropName="GetLFS_FM_RULE_COMPANYLEVELRows" />
+      <msdata:Relationship name="LFS_FM_RULE_LFS_FM_CHECKLIST" msdata:parent="LFS_FM_RULE" msdata:child="LFS_FM_CHECKLIST" msdata:parentkey="RuleID" msdata:childkey="RuleID" msprop:Generator_UserRelationName="LFS_FM_RULE_LFS_FM_CHECKLIST" msprop:Generator_RelationVarName="relationLFS_FM_RULE_LFS_FM_CHECKLIST" msprop:Generator_UserChildTable="LFS_FM_CHECKLIST" msprop:Generator_UserParentTable="LFS_FM_RULE" msprop:Generator_ParentPropName="LFS_FM_RULERow" msprop:Generator_ChildPropName="GetLFS_FM_CHECKLISTRows" />
+      <msdata:Relationship name="LFS_FM_RULE_LFS_FM_RULE_CATEGORY_UNITS" msdata:parent="LFS_FM_RULE" msdata:child="LFS_FM_RULE_CATEGORY_UNITS" msdata:parentkey="RuleID" msdata:childkey="RuleID" msprop:Generator_UserRelationName="LFS_FM_RULE_LFS_FM_RULE_CATEGORY_UNITS" msprop:Generator_RelationVarName="relationLFS_FM_RULE_LFS_FM_RULE_CATEGORY_UNITS" msprop:Generator_UserChildTable="LFS_FM_RULE_CATEGORY_UNITS" msprop:Generator_UserParentTable="LFS_FM_RULE" msprop:Generator_ParentPropName="LFS_FM_RULERow" msprop:Generator_ChildPropName="GetLFS_FM_RULE_CATEGORY_UNITSRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AssetsTDS" targetNamespace="http://tempuri.org/AssetsTDS.xsd" xmlns:mstns="http://tempuri.org/AssetsTDS.xsd" xmlns="http://tempuri.org/AssetsTDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="4" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LFSDBTempConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LFSDBTempConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.Assets.Properties.Settings.GlobalReference.Default.LFSDBTempConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LFSDB7ConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="LFSDB7ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.Assets.Properties.Settings.GlobalReference.Default.LFSDB7ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LFSDB8ConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="LFSDB8ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.Assets.Properties.Settings.GlobalReference.Default.LFSDB8ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LiveSite3ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LiveSite3ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.Assets.Properties.Settings.GlobalReference.Default.LiveSite3ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LFSDB9ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LFSDB9ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LiquiForce.LFSLive.DA.Assets.Properties.Settings.GlobalReference.Default.LFSDB9ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AssetsTDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="AssetsTDS" msprop:Generator_DataSetName="AssetsTDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="AM_ASSET_SEWER" msprop:Generator_UserTableName="AM_ASSET_SEWER" msprop:Generator_RowDeletedName="AM_ASSET_SEWERRowDeleted" msprop:Generator_RowChangedName="AM_ASSET_SEWERRowChanged" msprop:Generator_RowClassName="AM_ASSET_SEWERRow" msprop:Generator_RowChangingName="AM_ASSET_SEWERRowChanging" msprop:Generator_RowEvArgName="AM_ASSET_SEWERRowChangeEvent" msprop:Generator_RowEvHandlerName="AM_ASSET_SEWERRowChangeEventHandler" msprop:Generator_TableClassName="AM_ASSET_SEWERDataTable" msprop:Generator_TableVarName="tableAM_ASSET_SEWER" msprop:Generator_RowDeletingName="AM_ASSET_SEWERRowDeleting" msprop:Generator_TablePropName="AM_ASSET_SEWER">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AssetID" msprop:Generator_UserColumnName="AssetID" msprop:Generator_ColumnPropNameInRow="AssetID" msprop:Generator_ColumnVarNameInTable="columnAssetID" msprop:Generator_ColumnPropNameInTable="AssetIDColumn" type="xs:int" />
+              <xs:element name="AssetSewerType" msprop:Generator_UserColumnName="AssetSewerType" msprop:Generator_ColumnPropNameInRow="AssetSewerType" msprop:Generator_ColumnVarNameInTable="columnAssetSewerType" msprop:Generator_ColumnPropNameInTable="AssetSewerTypeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AM_ASSET_SEWER_MATERIAL" msprop:Generator_UserTableName="AM_ASSET_SEWER_MATERIAL" msprop:Generator_RowDeletedName="AM_ASSET_SEWER_MATERIALRowDeleted" msprop:Generator_RowChangedName="AM_ASSET_SEWER_MATERIALRowChanged" msprop:Generator_RowClassName="AM_ASSET_SEWER_MATERIALRow" msprop:Generator_RowChangingName="AM_ASSET_SEWER_MATERIALRowChanging" msprop:Generator_RowEvArgName="AM_ASSET_SEWER_MATERIALRowChangeEvent" msprop:Generator_RowEvHandlerName="AM_ASSET_SEWER_MATERIALRowChangeEventHandler" msprop:Generator_TableClassName="AM_ASSET_SEWER_MATERIALDataTable" msprop:Generator_TableVarName="tableAM_ASSET_SEWER_MATERIAL" msprop:Generator_RowDeletingName="AM_ASSET_SEWER_MATERIALRowDeleting" msprop:Generator_TablePropName="AM_ASSET_SEWER_MATERIAL">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AssetID" msprop:Generator_UserColumnName="AssetID" msprop:Generator_ColumnPropNameInRow="AssetID" msprop:Generator_ColumnVarNameInTable="columnAssetID" msprop:Generator_ColumnPropNameInTable="AssetIDColumn" type="xs:int" />
+              <xs:element name="RefID" msprop:Generator_UserColumnName="RefID" msprop:Generator_ColumnPropNameInRow="RefID" msprop:Generator_ColumnVarNameInTable="columnRefID" msprop:Generator_ColumnPropNameInTable="RefIDColumn" type="xs:int" />
+              <xs:element name="MaterialType" msprop:Generator_UserColumnName="MaterialType" msprop:Generator_ColumnPropNameInRow="MaterialType" msprop:Generator_ColumnVarNameInTable="columnMaterialType" msprop:Generator_ColumnPropNameInTable="MaterialTypeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Date_" msprop:Generator_UserColumnName="Date_" msprop:Generator_ColumnPropNameInRow="Date_" msprop:Generator_ColumnVarNameInTable="columnDate_" msprop:Generator_ColumnPropNameInTable="Date_Column" type="xs:dateTime" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AM_ASSET" msprop:Generator_UserTableName="AM_ASSET" msprop:Generator_RowDeletedName="AM_ASSETRowDeleted" msprop:Generator_RowChangedName="AM_ASSETRowChanged" msprop:Generator_RowClassName="AM_ASSETRow" msprop:Generator_RowChangingName="AM_ASSETRowChanging" msprop:Generator_RowEvArgName="AM_ASSETRowChangeEvent" msprop:Generator_RowEvHandlerName="AM_ASSETRowChangeEventHandler" msprop:Generator_TableClassName="AM_ASSETDataTable" msprop:Generator_TableVarName="tableAM_ASSET" msprop:Generator_RowDeletingName="AM_ASSETRowDeleting" msprop:Generator_TablePropName="AM_ASSET">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AssetID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="AssetID" msprop:Generator_ColumnPropNameInRow="AssetID" msprop:Generator_ColumnVarNameInTable="columnAssetID" msprop:Generator_ColumnPropNameInTable="AssetIDColumn" type="xs:int" />
+              <xs:element name="AssetType" msprop:Generator_UserColumnName="AssetType" msprop:Generator_ColumnPropNameInRow="AssetType" msprop:Generator_ColumnVarNameInTable="columnAssetType" msprop:Generator_ColumnPropNameInTable="AssetTypeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CountryID" msprop:Generator_UserColumnName="CountryID" msprop:Generator_ColumnPropNameInRow="CountryID" msprop:Generator_ColumnVarNameInTable="columnCountryID" msprop:Generator_ColumnPropNameInTable="CountryIDColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="ProvinceID" msprop:Generator_UserColumnName="ProvinceID" msprop:Generator_ColumnPropNameInRow="ProvinceID" msprop:Generator_ColumnVarNameInTable="columnProvinceID" msprop:Generator_ColumnPropNameInTable="ProvinceIDColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="CountyID" msprop:Generator_UserColumnName="CountyID" msprop:Generator_ColumnPropNameInRow="CountyID" msprop:Generator_ColumnVarNameInTable="columnCountyID" msprop:Generator_ColumnPropNameInTable="CountyIDColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="CityID" msprop:Generator_UserColumnName="CityID" msprop:Generator_ColumnPropNameInRow="CityID" msprop:Generator_ColumnVarNameInTable="columnCityID" msprop:Generator_ColumnPropNameInTable="CityIDColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AM_ASSET_SEWER_SECTION" msprop:Generator_UserTableName="AM_ASSET_SEWER_SECTION" msprop:Generator_RowDeletedName="AM_ASSET_SEWER_SECTIONRowDeleted" msprop:Generator_RowChangedName="AM_ASSET_SEWER_SECTIONRowChanged" msprop:Generator_RowClassName="AM_ASSET_SEWER_SECTIONRow" msprop:Generator_RowChangingName="AM_ASSET_SEWER_SECTIONRowChanging" msprop:Generator_RowEvArgName="AM_ASSET_SEWER_SECTIONRowChangeEvent" msprop:Generator_RowEvHandlerName="AM_ASSET_SEWER_SECTIONRowChangeEventHandler" msprop:Generator_TableClassName="AM_ASSET_SEWER_SECTIONDataTable" msprop:Generator_TableVarName="tableAM_ASSET_SEWER_SECTION" msprop:Generator_RowDeletingName="AM_ASSET_SEWER_SECTIONRowDeleting" msprop:Generator_TablePropName="AM_ASSET_SEWER_SECTION">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AssetID" msprop:Generator_UserColumnName="AssetID" msprop:Generator_ColumnVarNameInTable="columnAssetID" msprop:Generator_ColumnPropNameInRow="AssetID" msprop:Generator_ColumnPropNameInTable="AssetIDColumn" type="xs:int" />
+              <xs:element name="SectionID" msprop:Generator_UserColumnName="SectionID" msprop:Generator_ColumnVarNameInTable="columnSectionID" msprop:Generator_ColumnPropNameInRow="SectionID" msprop:Generator_ColumnPropNameInTable="SectionIDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="75" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Street" msprop:Generator_UserColumnName="Street" msprop:Generator_ColumnVarNameInTable="columnStreet" msprop:Generator_ColumnPropNameInRow="Street" msprop:Generator_ColumnPropNameInTable="StreetColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USMH" msprop:Generator_UserColumnName="USMH" msprop:Generator_ColumnVarNameInTable="columnUSMH" msprop:Generator_ColumnPropNameInRow="USMH" msprop:Generator_ColumnPropNameInTable="USMHColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DSMH" msprop:Generator_UserColumnName="DSMH" msprop:Generator_ColumnVarNameInTable="columnDSMH" msprop:Generator_ColumnPropNameInRow="DSMH" msprop:Generator_ColumnPropNameInTable="DSMHColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="MapSize" msprop:Generator_UserColumnName="MapSize" msprop:Generator_ColumnVarNameInTable="columnMapSize" msprop:Generator_ColumnPropNameInRow="MapSize" msprop:Generator_ColumnPropNameInTable="MapSizeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Size_" msprop:Generator_UserColumnName="Size_" msprop:Generator_ColumnVarNameInTable="columnSize_" msprop:Generator_ColumnPropNameInRow="Size_" msprop:Generator_ColumnPropNameInTable="Size_Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MapLength" msprop:Generator_UserColumnName="MapLength" msprop:Generator_ColumnVarNameInTable="columnMapLength" msprop:Generator_ColumnPropNameInRow="MapLength" msprop:Generator_ColumnPropNameInTable="MapLengthColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Length" msprop:Generator_UserColumnName="Length" msprop:Generator_ColumnVarNameInTable="columnLength" msprop:Generator_ColumnPropNameInRow="Length" msprop:Generator_ColumnPropNameInTable="LengthColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Laterals" msprop:Generator_UserColumnName="Laterals" msprop:Generator_ColumnVarNameInTable="columnLaterals" msprop:Generator_ColumnPropNameInRow="Laterals" msprop:Generator_ColumnPropNameInTable="LateralsColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LiveLaterals" msprop:Generator_UserColumnName="LiveLaterals" msprop:Generator_ColumnVarNameInTable="columnLiveLaterals" msprop:Generator_ColumnPropNameInRow="LiveLaterals" msprop:Generator_ColumnPropNameInTable="LiveLateralsColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="FlowDirection" msprop:Generator_UserColumnName="FlowDirection" msprop:Generator_ColumnVarNameInTable="columnFlowDirection" msprop:Generator_ColumnPropNameInRow="FlowDirection" msprop:Generator_ColumnPropNameInTable="FlowDirectionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USMHDepth" msprop:Generator_UserColumnName="USMHDepth" msprop:Generator_ColumnVarNameInTable="columnUSMHDepth" msprop:Generator_ColumnPropNameInRow="USMHDepth" msprop:Generator_ColumnPropNameInTable="USMHDepthColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DSMHDepth" msprop:Generator_UserColumnName="DSMHDepth" msprop:Generator_ColumnVarNameInTable="columnDSMHDepth" msprop:Generator_ColumnPropNameInRow="DSMHDepth" msprop:Generator_ColumnPropNameInTable="DSMHDepthColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="FlowOrderID" msprop:Generator_UserColumnName="FlowOrderID" msprop:Generator_ColumnVarNameInTable="columnFlowOrderID" msprop:Generator_ColumnPropNameInRow="FlowOrderID" msprop:Generator_ColumnPropNameInTable="FlowOrderIDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AM_ASSET_SEWER_LATERAL" msprop:Generator_UserTableName="AM_ASSET_SEWER_LATERAL" msprop:Generator_RowDeletedName="AM_ASSET_SEWER_LATERALRowDeleted" msprop:Generator_RowChangedName="AM_ASSET_SEWER_LATERALRowChanged" msprop:Generator_RowClassName="AM_ASSET_SEWER_LATERALRow" msprop:Generator_RowChangingName="AM_ASSET_SEWER_LATERALRowChanging" msprop:Generator_RowEvArgName="AM_ASSET_SEWER_LATERALRowChangeEvent" msprop:Generator_RowEvHandlerName="AM_ASSET_SEWER_LATERALRowChangeEventHandler" msprop:Generator_TableClassName="AM_ASSET_SEWER_LATERALDataTable" msprop:Generator_TableVarName="tableAM_ASSET_SEWER_LATERAL" msprop:Generator_RowDeletingName="AM_ASSET_SEWER_LATERALRowDeleting" msprop:Generator_TablePropName="AM_ASSET_SEWER_LATERAL">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AssetID" msprop:Generator_UserColumnName="AssetID" msprop:Generator_ColumnPropNameInRow="AssetID" msprop:Generator_ColumnVarNameInTable="columnAssetID" msprop:Generator_ColumnPropNameInTable="AssetIDColumn" type="xs:int" />
+              <xs:element name="Section_" msprop:Generator_UserColumnName="Section_" msprop:Generator_ColumnPropNameInRow="Section_" msprop:Generator_ColumnVarNameInTable="columnSection_" msprop:Generator_ColumnPropNameInTable="Section_Column" type="xs:int" />
+              <xs:element name="Address" msprop:Generator_UserColumnName="Address" msprop:Generator_ColumnPropNameInRow="Address" msprop:Generator_ColumnVarNameInTable="columnAddress" msprop:Generator_ColumnPropNameInTable="AddressColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LateralID" msprop:Generator_UserColumnName="LateralID" msprop:Generator_ColumnPropNameInRow="LateralID" msprop:Generator_ColumnVarNameInTable="columnLateralID" msprop:Generator_ColumnPropNameInTable="LateralIDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LatitudeAtSection" msprop:Generator_UserColumnName="LatitudeAtSection" msprop:Generator_ColumnPropNameInRow="LatitudeAtSection" msprop:Generator_ColumnVarNameInTable="columnLatitudeAtSection" msprop:Generator_ColumnPropNameInTable="LatitudeAtSectionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LongitudeAtSection" msprop:Generator_UserColumnName="LongitudeAtSection" msprop:Generator_ColumnPropNameInRow="LongitudeAtSection" msprop:Generator_ColumnVarNameInTable="columnLongitudeAtSection" msprop:Generator_ColumnPropNameInTable="LongitudeAtSectionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LatitudeAtPropertyLine" msprop:Generator_UserColumnName="LatitudeAtPropertyLine" msprop:Generator_ColumnPropNameInRow="LatitudeAtPropertyLine" msprop:Generator_ColumnVarNameInTable="columnLatitudeAtPropertyLine" msprop:Generator_ColumnPropNameInTable="LatitudeAtPropertyLineColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LongitudeAtPropertyLine" msprop:Generator_UserColumnName="LongitudeAtPropertyLine" msprop:Generator_ColumnPropNameInRow="LongitudeAtPropertyLine" msprop:Generator_ColumnVarNameInTable="columnLongitudeAtPropertyLine" msprop:Generator_ColumnPropNameInTable="LongitudeAtPropertyLineColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="State" msprop:Generator_UserColumnName="State" msprop:Generator_ColumnPropNameInRow="State" msprop:Generator_ColumnVarNameInTable="columnState" msprop:Generator_ColumnPropNameInTable="StateColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Size_" msprop:Generator_UserColumnName="Size_" msprop:Generator_ColumnPropNameInRow="Size_" msprop:Generator_ColumnVarNameInTable="columnSize_" msprop:Generator_ColumnPropNameInTable="Size_Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DistanceFromUSMH" msprop:Generator_UserColumnName="DistanceFromUSMH" msprop:Generator_ColumnPropNameInRow="DistanceFromUSMH" msprop:Generator_ColumnVarNameInTable="columnDistanceFromUSMH" msprop:Generator_ColumnPropNameInTable="DistanceFromUSMHColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DistanceFromDSMH" msprop:Generator_UserColumnName="DistanceFromDSMH" msprop:Generator_ColumnPropNameInRow="DistanceFromDSMH" msprop:Generator_ColumnVarNameInTable="columnDistanceFromDSMH" msprop:Generator_ColumnPropNameInTable="DistanceFromDSMHColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MapSize" msprop:Generator_UserColumnName="MapSize" msprop:Generator_ColumnPropNameInRow="MapSize" msprop:Generator_ColumnVarNameInTable="columnMapSize" msprop:Generator_ColumnPropNameInTable="MapSizeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="ConnectionType" msprop:Generator_UserColumnName="ConnectionType" msprop:Generator_ColumnPropNameInRow="ConnectionType" msprop:Generator_ColumnVarNameInTable="columnConnectionType" msprop:Generator_ColumnPropNameInTable="ConnectionTypeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AM_ASSET_SEWER_MH" msprop:Generator_UserTableName="AM_ASSET_SEWER_MH" msprop:Generator_RowDeletedName="AM_ASSET_SEWER_MHRowDeleted" msprop:Generator_RowChangedName="AM_ASSET_SEWER_MHRowChanged" msprop:Generator_RowClassName="AM_ASSET_SEWER_MHRow" msprop:Generator_RowChangingName="AM_ASSET_SEWER_MHRowChanging" msprop:Generator_RowEvArgName="AM_ASSET_SEWER_MHRowChangeEvent" msprop:Generator_RowEvHandlerName="AM_ASSET_SEWER_MHRowChangeEventHandler" msprop:Generator_TableClassName="AM_ASSET_SEWER_MHDataTable" msprop:Generator_TableVarName="tableAM_ASSET_SEWER_MH" msprop:Generator_RowDeletingName="AM_ASSET_SEWER_MHRowDeleting" msprop:Generator_TablePropName="AM_ASSET_SEWER_MH">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AssetID" msprop:Generator_UserColumnName="AssetID" msprop:Generator_ColumnVarNameInTable="columnAssetID" msprop:Generator_ColumnPropNameInRow="AssetID" msprop:Generator_ColumnPropNameInTable="AssetIDColumn" type="xs:int" />
+              <xs:element name="MHID" msprop:Generator_UserColumnName="MHID" msprop:Generator_ColumnVarNameInTable="columnMHID" msprop:Generator_ColumnPropNameInRow="MHID" msprop:Generator_ColumnPropNameInTable="MHIDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Latitud" msprop:Generator_UserColumnName="Latitud" msprop:Generator_ColumnVarNameInTable="columnLatitud" msprop:Generator_ColumnPropNameInRow="Latitud" msprop:Generator_ColumnPropNameInTable="LatitudColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Longitude" msprop:Generator_UserColumnName="Longitude" msprop:Generator_ColumnVarNameInTable="columnLongitude" msprop:Generator_ColumnPropNameInRow="Longitude" msprop:Generator_ColumnPropNameInTable="LongitudeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Address" msprop:Generator_UserColumnName="Address" msprop:Generator_ColumnVarNameInTable="columnAddress" msprop:Generator_ColumnPropNameInRow="Address" msprop:Generator_ColumnPropNameInTable="AddressColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Deleted" msprop:Generator_UserColumnName="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" type="xs:boolean" />
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="ManholeShape" msprop:Generator_UserColumnName="ManholeShape" msprop:Generator_ColumnVarNameInTable="columnManholeShape" msprop:Generator_ColumnPropNameInRow="ManholeShape" msprop:Generator_ColumnPropNameInTable="ManholeShapeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Location" msprop:Generator_UserColumnName="Location" msprop:Generator_ColumnVarNameInTable="columnLocation" msprop:Generator_ColumnPropNameInRow="Location" msprop:Generator_ColumnPropNameInTable="LocationColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MaterialID" msprop:Generator_UserColumnName="MaterialID" msprop:Generator_ColumnVarNameInTable="columnMaterialID" msprop:Generator_ColumnPropNameInRow="MaterialID" msprop:Generator_ColumnPropNameInTable="MaterialIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TopDiameter" msprop:Generator_UserColumnName="TopDiameter" msprop:Generator_ColumnVarNameInTable="columnTopDiameter" msprop:Generator_ColumnPropNameInRow="TopDiameter" msprop:Generator_ColumnPropNameInTable="TopDiameterColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TopDepth" msprop:Generator_UserColumnName="TopDepth" msprop:Generator_ColumnVarNameInTable="columnTopDepth" msprop:Generator_ColumnPropNameInRow="TopDepth" msprop:Generator_ColumnPropNameInTable="TopDepthColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TopFloor" msprop:Generator_UserColumnName="TopFloor" msprop:Generator_ColumnVarNameInTable="columnTopFloor" msprop:Generator_ColumnPropNameInRow="TopFloor" msprop:Generator_ColumnPropNameInTable="TopFloorColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TopCeiling" msprop:Generator_UserColumnName="TopCeiling" msprop:Generator_ColumnVarNameInTable="columnTopCeiling" msprop:Generator_ColumnPropNameInRow="TopCeiling" msprop:Generator_ColumnPropNameInTable="TopCeilingColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TopBenching" msprop:Generator_UserColumnName="TopBenching" msprop:Generator_ColumnVarNameInTable="columnTopBenching" msprop:Generator_ColumnPropNameInRow="TopBenching" msprop:Generator_ColumnPropNameInTable="TopBenchingColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DownDiameter" msprop:Generator_UserColumnName="DownDiameter" msprop:Generator_ColumnVarNameInTable="columnDownDiameter" msprop:Generator_ColumnPropNameInRow="DownDiameter" msprop:Generator_ColumnPropNameInTable="DownDiameterColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DownDepth" msprop:Generator_UserColumnName="DownDepth" msprop:Generator_ColumnVarNameInTable="columnDownDepth" msprop:Generator_ColumnPropNameInRow="DownDepth" msprop:Generator_ColumnPropNameInTable="DownDepthColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DownFloor" msprop:Generator_UserColumnName="DownFloor" msprop:Generator_ColumnVarNameInTable="columnDownFloor" msprop:Generator_ColumnPropNameInRow="DownFloor" msprop:Generator_ColumnPropNameInTable="DownFloorColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DownCeiling" msprop:Generator_UserColumnName="DownCeiling" msprop:Generator_ColumnVarNameInTable="columnDownCeiling" msprop:Generator_ColumnPropNameInRow="DownCeiling" msprop:Generator_ColumnPropNameInTable="DownCeilingColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DownBenching" msprop:Generator_UserColumnName="DownBenching" msprop:Generator_ColumnVarNameInTable="columnDownBenching" msprop:Generator_ColumnPropNameInRow="DownBenching" msprop:Generator_ColumnPropNameInTable="DownBenchingColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Rectangle1LongSide" msprop:Generator_UserColumnName="Rectangle1LongSide" msprop:Generator_ColumnVarNameInTable="columnRectangle1LongSide" msprop:Generator_ColumnPropNameInRow="Rectangle1LongSide" msprop:Generator_ColumnPropNameInTable="Rectangle1LongSideColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Rectangle1ShortSide" msprop:Generator_UserColumnName="Rectangle1ShortSide" msprop:Generator_ColumnVarNameInTable="columnRectangle1ShortSide" msprop:Generator_ColumnPropNameInRow="Rectangle1ShortSide" msprop:Generator_ColumnPropNameInTable="Rectangle1ShortSideColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Rectangle2LongSide" msprop:Generator_UserColumnName="Rectangle2LongSide" msprop:Generator_ColumnVarNameInTable="columnRectangle2LongSide" msprop:Generator_ColumnPropNameInRow="Rectangle2LongSide" msprop:Generator_ColumnPropNameInTable="Rectangle2LongSideColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Rectangle2ShortSide" msprop:Generator_UserColumnName="Rectangle2ShortSide" msprop:Generator_ColumnVarNameInTable="columnRectangle2ShortSide" msprop:Generator_ColumnPropNameInRow="Rectangle2ShortSide" msprop:Generator_ColumnPropNameInTable="Rectangle2ShortSideColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TopSurfaceArea" msprop:Generator_UserColumnName="TopSurfaceArea" msprop:Generator_ColumnVarNameInTable="columnTopSurfaceArea" msprop:Generator_ColumnPropNameInRow="TopSurfaceArea" msprop:Generator_ColumnPropNameInTable="TopSurfaceAreaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DownSurfaceArea" msprop:Generator_UserColumnName="DownSurfaceArea" msprop:Generator_ColumnVarNameInTable="columnDownSurfaceArea" msprop:Generator_ColumnPropNameInRow="DownSurfaceArea" msprop:Generator_ColumnPropNameInTable="DownSurfaceAreaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ManholeRugs" msprop:Generator_UserColumnName="ManholeRugs" msprop:Generator_ColumnVarNameInTable="columnManholeRugs" msprop:Generator_ColumnPropNameInRow="ManholeRugs" msprop:Generator_ColumnPropNameInTable="ManholeRugsColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalDepth" msprop:Generator_UserColumnName="TotalDepth" msprop:Generator_ColumnVarNameInTable="columnTotalDepth" msprop:Generator_ColumnPropNameInRow="TotalDepth" msprop:Generator_ColumnPropNameInTable="TotalDepthColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TotalSurfaceArea" msprop:Generator_UserColumnName="TotalSurfaceArea" msprop:Generator_ColumnVarNameInTable="columnTotalSurfaceArea" msprop:Generator_ColumnPropNameInRow="TotalSurfaceArea" msprop:Generator_ColumnPropNameInTable="TotalSurfaceAreaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AM_ASSET_SEWER_MH_MATERIAL_TYPE" msprop:Generator_UserTableName="AM_ASSET_SEWER_MH_MATERIAL_TYPE" msprop:Generator_RowDeletedName="AM_ASSET_SEWER_MH_MATERIAL_TYPERowDeleted" msprop:Generator_TableClassName="AM_ASSET_SEWER_MH_MATERIAL_TYPEDataTable" msprop:Generator_RowChangedName="AM_ASSET_SEWER_MH_MATERIAL_TYPERowChanged" msprop:Generator_RowClassName="AM_ASSET_SEWER_MH_MATERIAL_TYPERow" msprop:Generator_RowChangingName="AM_ASSET_SEWER_MH_MATERIAL_TYPERowChanging" msprop:Generator_RowEvArgName="AM_ASSET_SEWER_MH_MATERIAL_TYPERowChangeEvent" msprop:Generator_RowEvHandlerName="AM_ASSET_SEWER_MH_MATERIAL_TYPERowChangeEventHandler" msprop:Generator_TablePropName="AM_ASSET_SEWER_MH_MATERIAL_TYPE" msprop:Generator_TableVarName="tableAM_ASSET_SEWER_MH_MATERIAL_TYPE" msprop:Generator_RowDeletingName="AM_ASSET_SEWER_MH_MATERIAL_TYPERowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MaterialID" msprop:Generator_UserColumnName="MaterialID" msprop:Generator_ColumnPropNameInRow="MaterialID" msprop:Generator_ColumnVarNameInTable="columnMaterialID" msprop:Generator_ColumnPropNameInTable="MaterialIDColumn" type="xs:int" />
+              <xs:element name="MaterialType" msprop:Generator_UserColumnName="MaterialType" msprop:Generator_ColumnPropNameInRow="MaterialType" msprop:Generator_ColumnVarNameInTable="columnMaterialType" msprop:Generator_ColumnPropNameInTable="MaterialTypeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMPANY_ID" msprop:Generator_UserColumnName="COMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" type="xs:int" />
+              <xs:element name="Code" msprop:Generator_UserColumnName="Code" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInTable="CodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DisplayID" msprop:Generator_UserColumnName="DisplayID" msprop:Generator_ColumnPropNameInRow="DisplayID" msprop:Generator_ColumnVarNameInTable="columnDisplayID" msprop:Generator_ColumnPropNameInTable="DisplayIDColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AM_ASSET_SEWER" />
+      <xs:field xpath="mstns:AssetID" />
+    </xs:unique>
+    <xs:unique name="AM_ASSET_SEWER_MATERIAL_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AM_ASSET_SEWER_MATERIAL" />
+      <xs:field xpath="mstns:AssetID" />
+      <xs:field xpath="mstns:RefID" />
+    </xs:unique>
+    <xs:unique name="AM_ASSET_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AM_ASSET" />
+      <xs:field xpath="mstns:AssetID" />
+    </xs:unique>
+    <xs:unique name="AM_ASSET_SEWER_SECTION_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AM_ASSET_SEWER_SECTION" />
+      <xs:field xpath="mstns:AssetID" />
+    </xs:unique>
+    <xs:unique name="AM_ASSET_SEWER_LATERAL_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AM_ASSET_SEWER_LATERAL" />
+      <xs:field xpath="mstns:AssetID" />
+    </xs:unique>
+    <xs:unique name="AM_ASSET_SEWER_MH_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AM_ASSET_SEWER_MH" />
+      <xs:field xpath="mstns:AssetID" />
+    </xs:unique>
+    <xs:unique name="AM_ASSET_SEWER_MH_MATERIAL_TYPE_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AM_ASSET_SEWER_MH_MATERIAL_TYPE" />
+      <xs:field xpath="mstns:MaterialID" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_AM_ASSET_SEWER_AM_ASSET_SEWER_MATERIAL" msdata:parent="AM_ASSET_SEWER" msdata:child="AM_ASSET_SEWER_MATERIAL" msdata:parentkey="AssetID" msdata:childkey="AssetID" msprop:Generator_UserRelationName="FK_AM_ASSET_SEWER_AM_ASSET_SEWER_MATERIAL" msprop:Generator_RelationVarName="relationFK_AM_ASSET_SEWER_AM_ASSET_SEWER_MATERIAL" msprop:Generator_UserChildTable="AM_ASSET_SEWER_MATERIAL" msprop:Generator_UserParentTable="AM_ASSET_SEWER" msprop:Generator_ParentPropName="AM_ASSET_SEWERRow" msprop:Generator_ChildPropName="GetAM_ASSET_SEWER_MATERIALRows" />
+      <msdata:Relationship name="AM_ASSET_SEWER_AM_ASSET" msdata:parent="AM_ASSET_SEWER" msdata:child="AM_ASSET" msdata:parentkey="AssetID" msdata:childkey="AssetID" msprop:Generator_UserRelationName="AM_ASSET_SEWER_AM_ASSET" msprop:Generator_RelationVarName="relationAM_ASSET_SEWER_AM_ASSET" msprop:Generator_UserChildTable="AM_ASSET" msprop:Generator_UserParentTable="AM_ASSET_SEWER" msprop:Generator_ParentPropName="AM_ASSET_SEWERRow" msprop:Generator_ChildPropName="GetAM_ASSETRows" />
+      <msdata:Relationship name="FK_AM_ASSET_SEWER_AM_ASSET_SEWER_SECTION" msdata:parent="AM_ASSET_SEWER" msdata:child="AM_ASSET_SEWER_SECTION" msdata:parentkey="AssetID" msdata:childkey="AssetID" msprop:Generator_UserRelationName="FK_AM_ASSET_SEWER_AM_ASSET_SEWER_SECTION" msprop:Generator_RelationVarName="relationFK_AM_ASSET_SEWER_AM_ASSET_SEWER_SECTION" msprop:Generator_UserChildTable="AM_ASSET_SEWER_SECTION" msprop:Generator_UserParentTable="AM_ASSET_SEWER" msprop:Generator_ParentPropName="AM_ASSET_SEWERRow" msprop:Generator_ChildPropName="GetAM_ASSET_SEWER_SECTIONRows" />
+      <msdata:Relationship name="AM_ASSET_SEWER_AM_ASSET_SEWER_LATERAL" msdata:parent="AM_ASSET_SEWER" msdata:child="AM_ASSET_SEWER_LATERAL" msdata:parentkey="AssetID" msdata:childkey="AssetID" msprop:Generator_UserRelationName="AM_ASSET_SEWER_AM_ASSET_SEWER_LATERAL" msprop:Generator_RelationVarName="relationAM_ASSET_SEWER_AM_ASSET_SEWER_LATERAL" msprop:Generator_UserChildTable="AM_ASSET_SEWER_LATERAL" msprop:Generator_UserParentTable="AM_ASSET_SEWER" msprop:Generator_ParentPropName="AM_ASSET_SEWERRow" msprop:Generator_ChildPropName="GetAM_ASSET_SEWER_LATERALRows" />
+      <msdata:Relationship name="AM_ASSET_SEWER_SECTION_AM_ASSET_SEWER_LATERAL" msdata:parent="AM_ASSET_SEWER_SECTION" msdata:child="AM_ASSET_SEWER_LATERAL" msdata:parentkey="AssetID" msdata:childkey="Section_" msprop:Generator_UserRelationName="AM_ASSET_SEWER_SECTION_AM_ASSET_SEWER_LATERAL" msprop:Generator_RelationVarName="relationAM_ASSET_SEWER_SECTION_AM_ASSET_SEWER_LATERAL" msprop:Generator_UserChildTable="AM_ASSET_SEWER_LATERAL" msprop:Generator_UserParentTable="AM_ASSET_SEWER_SECTION" msprop:Generator_ParentPropName="AM_ASSET_SEWER_SECTIONRow" msprop:Generator_ChildPropName="GetAM_ASSET_SEWER_LATERALRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

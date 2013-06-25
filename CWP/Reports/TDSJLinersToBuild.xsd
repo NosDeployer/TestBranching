@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="TDSJLinersToBuild" targetNamespace="http://tempuri.org/TDSJLinersToBuild.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/TDSJLinersToBuild.xsd"
+	xmlns:mstns="http://tempuri.org/TDSJLinersToBuild.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="TDSJLinersToBuild" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="JLinersToBuild">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:string" />
+							<xs:element name="RefID" type="xs:int" />
+							<xs:element name="COMPANY_ID" type="xs:int" />
+							<xs:element name="RecordID" type="xs:string" minOccurs="0" />
+							<xs:element name="DetailID" type="xs:string" />
+							<xs:element name="MN" type="xs:string" minOccurs="0" />
+							<xs:element name="Street" type="xs:string" minOccurs="0" />
+							<xs:element name="ConfirmedSize" type="xs:int" minOccurs="0" />
+							<xs:element name="ConfirmedLatSize" type="xs:string" minOccurs="0" />
+							<xs:element name="MeasuredLatLength" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="LFS_JUNCTION_LINER">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:string" />
+							<xs:element name="RefID" type="xs:int" />
+							<xs:element name="COMPANY_ID" type="xs:int" />
+							<xs:element name="Field" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:key name="TDSJLinersToBuildKey1">
+			<xs:selector xpath=".//mstns:JLinersToBuild" />
+			<xs:field xpath="mstns:ID" />
+			<xs:field xpath="mstns:RefID" />
+			<xs:field xpath="mstns:COMPANY_ID" />
+		</xs:key>
+		<xs:key name="TDSJLinersToBuildKey2">
+			<xs:selector xpath=".//mstns:LFS_JUNCTION_LINER" />
+			<xs:field xpath="mstns:ID" />
+			<xs:field xpath="mstns:RefID" />
+			<xs:field xpath="mstns:COMPANY_ID" />
+		</xs:key>
+	</xs:element>
+</xs:schema>
